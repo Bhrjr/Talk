@@ -45,8 +45,8 @@ class MsgDevil_B < MsgBase
           @cp_leader = "you" if $msg.age3 > 0 #年下相方への二人称
           @cp_leader = "you" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "you" if @doppel_cp #同属相方への二人称
-          @cp_leader = "shorty" if $data_SDB[$msg.coop_leader.class_id].name == "インプ" #連携相手がインプ
-          @cp_leader = "Big Sister" if $data_SDB[$msg.coop_leader.class_id].name == "デーモン" #連携相手がデーモン
+          @cp_leader = "shorty" if $data_SDB[$msg.coop_leader.class_id].name == "Imp" #連携相手がインプ
+          @cp_leader = "Big Sister" if $data_SDB[$msg.coop_leader.class_id].name == "Daemon" #連携相手がデーモン
         end
       end
     #=====================================================================
@@ -66,7 +66,7 @@ class MsgDevil_B < MsgBase
             @partner = "you" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "you" if @doppel_pt #同属仲間への二人称
-            @partner = "shorty" if $data_SDB[$msg.t_partner.class_id].name == "インプ" #相手がインプ
+            @partner = "shorty" if $data_SDB[$msg.t_partner.class_id].name == "Imp" #相手がインプ
           end
         end
       #▼会話対象が主人公でない場合
@@ -81,7 +81,7 @@ class MsgDevil_B < MsgBase
           @target = "you" if $msg.age > 0 #年下仲間への二人称
           @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
           @target = "you" if @doppel #同属仲間への二人称
-          @target = "shorty" if $data_SDB[$msg.t_target.class_id].name == "インプ" #相手がインプ
+          @target = "shorty" if $data_SDB[$msg.t_target.class_id].name == "Imp" #相手がインプ
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -98,7 +98,7 @@ class MsgDevil_B < MsgBase
             @cp_leader = "you" if $msg.age3 > 0 #年下仲間への二人称
             @cp_leader = "Big Sister" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "you" if @doppel_cp #同属仲間への二人称
-            @cp_leader = "shorty" if $data_SDB[$msg.coop_leader.class_id].name == "インプ" #連携相手がインプ
+            @cp_leader = "shorty" if $data_SDB[$msg.coop_leader.class_id].name == "Imp" #連携相手がインプ
           end
         end
       end
