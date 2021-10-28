@@ -20,33 +20,33 @@ class MsgFamiliar_A < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0 or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "お客様" #主人公への二人称
+        @target = "Mister" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "お客様" #仲間への二人称
-          @partner = "お客様" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "お客様" if $msg.age2 < 0 #年上仲間への二人称
-          @partner = "貴女" if @doppel_pt #同属仲間への二人称
+          @partner = "Miss" #仲間への二人称
+          @partner = "Miss" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Miss" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Lady" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @myname = "私" if @doppel #会話対象が同属なら一人称が変更される
-        @target = "お客様" #仲間への二人称
-        @target = "お客様" if $msg.age > 0 #年下仲間への二人称
-        @target = "お客様" if $msg.age < 0 #年上仲間への二人称
-        @target = "貴女" if @doppel #同属仲間への二人称
+        @myname = "I" if @doppel #会話対象が同属なら一人称が変更される
+        @target = "Miss" #仲間への二人称
+        @target = "Miss" if $msg.age > 0 #年下仲間への二人称
+        @target = "Miss" if $msg.age < 0 #年上仲間への二人称
+        @target = "Lady" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "お客様" #主人公への二人称
+        @partner = "Mister" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @myname = "私" if @doppel_cp #連携対象が同属なら一人称が変更される
-          @cp_leader = "お嬢様" #相方への二人称
-          @cp_leader = "お嬢様" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "お嬢様" if $msg.age3 < 0 #年上相方への二人称
-          @cp_leader = "貴女" if @doppel_cp #同属相方への二人称
+          @myname = "I" if @doppel_cp #連携対象が同属なら一人称が変更される
+          @cp_leader = "Miss" #相方への二人称
+          @cp_leader = "Miss" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Miss" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Lady" if @doppel_cp #同属相方への二人称
         end
       end
     #=====================================================================
@@ -57,51 +57,51 @@ class MsgFamiliar_A < MsgBase
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
           if @companion_pt == true#相手の事を知っている場合の二人称
-            @partner = "#{$msg.short_name($msg.t_partner)}様" #仲間への二人称
-            @partner = "#{$msg.short_name($msg.t_partner)}様" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "#{$msg.short_name($msg.t_partner)}様" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Master #{$msg.short_name($msg.t_partner)}" #仲間への二人称
+            @partner = "Master #{$msg.short_name($msg.t_partner)}" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Master #{$msg.short_name($msg.t_partner)}" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
           else
-            @partner = "お嬢様" #仲間への二人称
-            @partner = "お嬢様" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "お嬢様" if $msg.age2 < 0 #年上仲間への二人称
-            @partner = "貴女" if @doppel_pt #同属仲間への二人称
+            @partner = "Madam" #仲間への二人称
+            @partner = "Madam" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Madam" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Lady" if @doppel_pt #同属仲間への二人称
           end
-          @partner = "奥様" if $msg.t_partner.have_ability?("大切な人") #対象が【大切な人】持ちの場合特殊呼称になる
+          @partner = "Missus" if $msg.t_partner.have_ability?("Significant Other") #対象が【大切な人】持ちの場合特殊呼称になる
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @myname = "私" if @doppel #会話対象が同属なら一人称が変更される
+        @myname = "I" if @doppel #会話対象が同属なら一人称が変更される
         if @companion == true#相手の事を知っている場合の二人称
-          @target = "#{$msg.short_name($msg.t_target)}様" #仲間への二人称
-          @target = "#{$msg.short_name($msg.t_target)}様" if $msg.age > 0 #年下仲間への二人称
-          @target = "#{$msg.short_name($msg.t_target)}様" if $msg.age < 0 #年上仲間への二人称
+          @target = "Master #{$msg.short_name($msg.t_target)}様" #仲間への二人称
+          @target = "Master #{$msg.short_name($msg.t_target)}様" if $msg.age > 0 #年下仲間への二人称
+          @target = "Master #{$msg.short_name($msg.t_target)}様" if $msg.age < 0 #年上仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
         else
-          @target = "お嬢様" #仲間への二人称
-          @target = "お嬢様" if $msg.age > 0 #年下仲間への二人称
-          @target = "お嬢様" if $msg.age < 0 #年上仲間への二人称
-          @target = "貴女" if @doppel #同属仲間への二人称
+          @target = "Madam" #仲間への二人称
+          @target = "Madam" if $msg.age > 0 #年下仲間への二人称
+          @target = "Madam" if $msg.age < 0 #年上仲間への二人称
+          @target = "Lady" if @doppel #同属仲間への二人称
         end
-        @target = "奥様" if $msg.t_target.have_ability?("大切な人") #対象が【大切な人】持ちの場合特殊呼称になる
+        @target = "Missus" if $msg.t_target.have_ability?("Significant Other") #対象が【大切な人】持ちの場合特殊呼称になる
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @myname = "私" if @doppel_cp #連携対象が同属なら一人称が変更される
+          @myname = "I" if @doppel_cp #連携対象が同属なら一人称が変更される
           if @companion_cp == true
-            @cp_leader = "#{$msg.short_name($msg.coop_leader)}様" #相方への二人称
-            @cp_leader = "#{$msg.short_name($msg.coop_leader)}様" if $msg.age3 > 0 #年下相方への二人称
-            @cp_leader = "#{$msg.short_name($msg.coop_leader)}様" if $msg.age3 < 0 #年上相方への二人称
+            @cp_leader = "Master #{$msg.short_name($msg.coop_leader)}" #相方への二人称
+            @cp_leader = "Master #{$msg.short_name($msg.coop_leader)}" if $msg.age3 > 0 #年下相方への二人称
+            @cp_leader = "Master #{$msg.short_name($msg.coop_leader)}" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
           else
-            @cp_leader = "お嬢様" #相方への二人称
-            @cp_leader = "お嬢様" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "お嬢様" if $msg.age3 < 0 #年上仲間への二人称
-            @cp_leader = "貴女" if @doppel_cp #同属仲間への二人称
+            @cp_leader = "Madam" #相方への二人称
+            @cp_leader = "Madam" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Madam" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Lady" if @doppel_cp #同属仲間への二人称
           end
-          @cp_leader = "奥様" if $msg.coop_leader.have_ability?("大切な人") #対象が【大切な人】持ちの場合特殊呼称になる
+          @cp_leader = "Missus" if $msg.coop_leader.have_ability?("大切な人") #対象が【大切な人】持ちの場合特殊呼称になる
         end
       end
     end
