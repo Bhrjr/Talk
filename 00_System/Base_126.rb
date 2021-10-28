@@ -25,15 +25,15 @@ class MsgAlraune_A < MsgBase
         if $msg.t_partner != nil
           @partner = "honey" #仲間への二人称
           @partner = "honey" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "Sis" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "honey" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "you" #仲間への二人称
-        @target = "you" if $msg.age > 0 #年下仲間への二人称
-        @target = "Sis" if $msg.age < 0 #年上仲間への二人称
-        @target = "you" if @doppel #同属仲間への二人称
+        @target = "Sister" #仲間への二人称
+        @target = "Sister" if $msg.age > 0 #年下仲間への二人称
+        @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
+        @target = "Sister" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
         @partner = "honey" #主人公への二人称
       end
@@ -41,10 +41,10 @@ class MsgAlraune_A < MsgBase
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "you" #相方への二人称
-          @cp_leader = "you" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "Sis" if $msg.age3 < 0 #年上相方への二人称
-          @cp_leader = "you" if @doppel_cp #同属相方への二人称
+          @cp_leader = "Sister" #相方への二人称
+          @cp_leader = "Sister" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Big Sister" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Sister" if @doppel_cp #同属相方への二人称
         end
       end
     #=====================================================================
@@ -62,7 +62,7 @@ class MsgAlraune_A < MsgBase
           else
             @partner = "honey" #仲間への二人称
             @partner = "honey" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "Sis" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "honey" if @doppel_pt #同属仲間への二人称
           end
         end
@@ -74,10 +74,10 @@ class MsgAlraune_A < MsgBase
           @target = "Ms. #{$msg.short_name($msg.t_target)}さん" if $msg.age < 0 #年上仲間への二人称
           @target = "Ms. #{$msg.short_name($msg.t_target)}さん" if @doppel #同属仲間への二人称
         else
-          @target = "you" #仲間への二人称
-          @target = "you" if $msg.age > 0 #年下仲間への二人称
-          @target = "Sis" if $msg.age < 0 #年上仲間への二人称
-          @target = "you" if @doppel #同属仲間への二人称
+          @target = "Sister" #仲間への二人称
+          @target = "Sister" if $msg.age > 0 #年下仲間への二人称
+          @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
+          @target = "Sister" if @doppel #同属仲間への二人称
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -90,10 +90,10 @@ class MsgAlraune_A < MsgBase
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
           else
-            @cp_leader = "you" #相方への二人称
-            @cp_leader = "you" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "Sis" if $msg.age3 < 0 #年上仲間への二人称
-            @cp_leader = "you" if @doppel_cp #同属仲間への二人称
+            @cp_leader = "Sister" #相方への二人称
+            @cp_leader = "Sister" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Big Sister" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Sister" if @doppel_cp #同属仲間への二人称
           end
         end
       end
