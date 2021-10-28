@@ -65,7 +65,7 @@ class MsgTamamo_A < MsgBase
             @partner = "you" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "girl" if @doppel_pt #同属仲間への二人称
           end
-          @partner = "love" if $msg.t_partner.have_ability?("大切な人") #対象が【大切な人】持ちの場合特殊呼称になる
+          @partner = "love" if $msg.t_partner.have_ability?("Significant Other") #対象が【大切な人】持ちの場合特殊呼称になる
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
@@ -80,7 +80,7 @@ class MsgTamamo_A < MsgBase
           @target = "you" if $msg.age < 0 #年上仲間への二人称
           @target = "girl" if @doppel #同属仲間への二人称
         end
-        @target = "love" if $msg.t_target.have_ability?("大切な人") #対象が【大切な人】持ちの場合特殊呼称になる
+        @target = "love" if $msg.t_target.have_ability?("Significant Other") #対象が【大切な人】持ちの場合特殊呼称になる
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
@@ -97,7 +97,7 @@ class MsgTamamo_A < MsgBase
             @cp_leader = "you" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "girl" if @doppel_cp #同属仲間への二人称
           end
-          @cp_leader = "love" if $msg.coop_leader.have_ability?("大切な人") #対象が【大切な人】持ちの場合特殊呼称になる
+          @cp_leader = "love" if $msg.coop_leader.have_ability?("Significant Other") #対象が【大切な人】持ちの場合特殊呼称になる
         end
       end
     end
