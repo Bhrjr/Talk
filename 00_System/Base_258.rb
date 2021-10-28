@@ -24,16 +24,16 @@ class MsgVermiena < MsgBase
         #主人公への二人称は最初期から知っているため変更無し
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "貴女" #仲間への二人称
-          @partner = "貴女" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "貴女" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "love" #仲間への二人称
+          @partner = "love" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "love" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "#{$msg.t_partner.name}" if $msg.t_partner.boss_graphic? #相手がユニークキャラクター
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "貴女" #仲間への二人称
-        @target = "貴女" if $msg.age > 0 #年下仲間への二人称
-        @target = "貴女" if $msg.age < 0 #年上仲間への二人称
+        @target = "love" #仲間への二人称
+        @target = "love" if $msg.age > 0 #年下仲間への二人称
+        @target = "love" if $msg.age < 0 #年上仲間への二人称
         @target = "#{$msg.t_target.name}" if $msg.t_target.boss_graphic? #相手がユニークキャラクター
         @partner = "#{$msg.t_partner.name}"
       end
@@ -41,9 +41,9 @@ class MsgVermiena < MsgBase
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "貴女" #相方への二人称
-          @cp_leader = "貴女" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "貴女" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "love" #相方への二人称
+          @cp_leader = "love" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "love" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "#{$msg.coop_leader.name}" if $msg.coop_leader.boss_graphic? #連携相手がユニークキャラクター
         end
       end
@@ -59,9 +59,9 @@ class MsgVermiena < MsgBase
             @partner = "#{$msg.t_partner}" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "#{$msg.t_partner}" if $msg.age2 < 0 #年上仲間への二人称
           else
-            @partner = "貴女" #仲間への二人称
-            @partner = "貴女" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "貴女" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "love" #仲間への二人称
+            @partner = "love" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "love" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "#{$msg.t_partner.name}" if $msg.t_partner.boss_graphic? #相手がユニークキャラクター
           end
         end
@@ -72,9 +72,9 @@ class MsgVermiena < MsgBase
           @target = "#{$msg.t_target}" if $msg.age > 0 #年下仲間への二人称
           @target = "#{$msg.t_target}" if $msg.age < 0 #年上仲間への二人称
         else
-          @target = "貴女" #仲間への二人称
-          @target = "貴女" if $msg.age > 0 #年下仲間への二人称
-          @target = "貴女" if $msg.age < 0 #年上仲間への二人称
+          @target = "love" #仲間への二人称
+          @target = "love" if $msg.age > 0 #年下仲間への二人称
+          @target = "love" if $msg.age < 0 #年上仲間への二人称
           @target = "#{$msg.t_target.name}" if $msg.t_target.boss_graphic? #相手がユニークキャラクター
         end
       end
@@ -87,9 +87,9 @@ class MsgVermiena < MsgBase
             @cp_leader = "#{$msg.coop_leader}" if $msg.age3 > 0 #年下相方への二人称
             @cp_leader = "#{$msg.coop_leader}" if $msg.age3 < 0 #年上相方への二人称
           else
-            @cp_leader = "貴女" #相方への二人称
-            @cp_leader = "貴女" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "貴女" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "love" #相方への二人称
+            @cp_leader = "love" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "love" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "#{$msg.coop_leader.name}" if $msg.coop_leader.boss_graphic? #連携相手がユニークキャラクター
           end
         end
