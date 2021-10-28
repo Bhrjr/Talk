@@ -25,14 +25,14 @@ class MsgDevil_A < MsgBase
         if $msg.t_partner != nil
           @partner = "you" #仲間への二人称
           @partner = "lassie" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "Sister" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "you" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "you" #仲間への二人称
         @target = "lassie" if $msg.age > 0 #年下仲間への二人称
-        @target = "Sister" if $msg.age < 0 #年上仲間への二人称
+        @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
         @target = "you" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
         @partner = "Bro" #主人公への二人称
@@ -43,7 +43,7 @@ class MsgDevil_A < MsgBase
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "you" #相方への二人称
           @cp_leader = "lassie" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "Sister" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Big Sister" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "you" if @doppel_cp #同属相方への二人称
         end
       end
@@ -62,7 +62,7 @@ class MsgDevil_A < MsgBase
           else
             @partner = "you" #仲間への二人称
             @partner = "lassie" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "Sister" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "you" if @doppel_pt #同属仲間への二人称
           end
         end
@@ -76,7 +76,7 @@ class MsgDevil_A < MsgBase
         else
           @target = "you" #仲間への二人称
           @target = "lassie" if $msg.age > 0 #年下仲間への二人称
-          @target = "Sister" if $msg.age < 0 #年上仲間への二人称
+          @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
           @target = "you" if @doppel #同属仲間への二人称
         end
       end
@@ -92,7 +92,7 @@ class MsgDevil_A < MsgBase
           else
             @cp_leader = "you" #相方への二人称
             @cp_leader = "lassie" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "Sister" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Big Sister" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "you" if @doppel_cp #同属仲間への二人称
           end
         end
