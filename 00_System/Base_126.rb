@@ -69,10 +69,10 @@ class MsgAlraune_A < MsgBase
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         if @companion == true#相手の事を知っている場合の二人称
-          @target = "Ms. #{$msg.short_name($msg.t_target)}さん" #仲間への二人称
+          @target = "Ms. #{$msg.short_name($msg.t_target)}" #仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}-girl" if $msg.age > 0 #年下仲間への二人称
-          @target = "Ms. #{$msg.short_name($msg.t_target)}さん" if $msg.age < 0 #年上仲間への二人称
-          @target = "Ms. #{$msg.short_name($msg.t_target)}さん" if @doppel #同属仲間への二人称
+          @target = "Ms. #{$msg.short_name($msg.t_target)}" if $msg.age < 0 #年上仲間への二人称
+          @target = "Ms. #{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
         else
           @target = "Sister" #仲間への二人称
           @target = "Sister" if $msg.age > 0 #年下仲間への二人称
