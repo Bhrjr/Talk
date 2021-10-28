@@ -20,32 +20,32 @@ class MsgPetitwitch_A < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "お兄さん" #主人公への二人称
+        @target = "Big Brother" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "キミ" #仲間への二人称
-          @partner = "キミ" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "お姉さん" if $msg.age2 < 0 #年上仲間への二人称
-          @partner = "キミ" if @doppel_pt #同属仲間への二人称
+          @partner = "pal" #仲間への二人称
+          @partner = "Sister" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "pal" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "キミ" #仲間への二人称
-        @target = "キミ" if $msg.age > 0 #年下仲間への二人称
-        @target = "お姉さん" if $msg.age < 0 #年上仲間への二人称
-        @target = "キミ" if @doppel #同属仲間への二人称
+        @target = "pal" #仲間への二人称
+        @target = "Sister" if $msg.age > 0 #年下仲間への二人称
+        @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
+        @target = "pal" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "お兄さん" #主人公への二人称
+        @partner = "Big Brother" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "キミ" #相方への二人称
-          @cp_leader = "キミ" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "お姉さん" if $msg.age3 < 0 #年上相方への二人称
-          @cp_leader = "キミ" if @doppel_cp #同属相方への二人称
-          @cp_leader = "先生" if $data_SDB[$msg.coop_leader.class_id].name == "ウィッチ" #連携相手がウィッチ
+          @cp_leader = "pal" #相方への二人称
+          @cp_leader = "Sister" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Big Sister" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "pal" if @doppel_cp #同属相方への二人称
+          @cp_leader = "teacher" if $data_SDB[$msg.coop_leader.class_id].name == "ウィッチ" #連携相手がウィッチ
         end
       end
     #=====================================================================
@@ -58,15 +58,15 @@ class MsgPetitwitch_A < MsgBase
           if @companion_pt == true#相手の事を知っている場合の二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" #仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "#{$msg.short_name($msg.t_partner)}さん" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Ms. #{$msg.short_name($msg.t_partner)}" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
-            @partner = "#{$msg.short_name($msg.t_partner)}先生" if $data_SDB[$msg.t_target.class_id].name == "ウィッチ" #相手がウィッチ
+            @partner = "Ms. #{$msg.short_name($msg.t_partner)}" if $data_SDB[$msg.t_target.class_id].name == "ウィッチ" #相手がウィッチ
           else
-            @partner = "キミ" #仲間への二人称
-            @partner = "キミ" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "お姉さん" if $msg.age2 < 0 #年上仲間への二人称
-            @partner = "キミ" if @doppel_pt #同属仲間への二人称
-            @partner = "先生" if $data_SDB[$msg.t_target.class_id].name == "ウィッチ" #相手がウィッチ
+            @partner = "pal" #仲間への二人称
+            @partner = "Sister" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "pal" if @doppel_pt #同属仲間への二人称
+            @partner = "teacher" if $data_SDB[$msg.t_target.class_id].name == "ウィッチ" #相手がウィッチ
           end
         end
       #▼会話対象が主人公でない場合
@@ -74,15 +74,15 @@ class MsgPetitwitch_A < MsgBase
         if @companion == true#相手の事を知っている場合の二人称
           @target = "#{$msg.short_name($msg.t_target)}" #仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if $msg.age > 0 #年下仲間への二人称
-          @target = "#{$msg.short_name($msg.t_target)}さん" if $msg.age < 0 #年上仲間への二人称
+          @target = "Ms. #{$msg.short_name($msg.t_target)}" if $msg.age < 0 #年上仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
-          @target = "#{$msg.short_name($msg.t_target)}先生" if $data_SDB[$msg.t_target.class_id].name == "ウィッチ" #相手がウィッチ
+          @target = "Ms. #{$msg.short_name($msg.t_target)}" if $data_SDB[$msg.t_target.class_id].name == "ウィッチ" #相手がウィッチ
         else
-          @target = "キミ" #仲間への二人称
-          @target = "キミ" if $msg.age > 0 #年下仲間への二人称
-          @target = "お姉さん" if $msg.age < 0 #年上仲間への二人称
-          @target = "キミ" if @doppel #同属仲間への二人称
-          @target = "先生" if $data_SDB[$msg.t_target.class_id].name == "ウィッチ" #相手がウィッチ
+          @target = "pal" #仲間への二人称
+          @target = "Sister" if $msg.age > 0 #年下仲間への二人称
+          @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
+          @target = "pal" if @doppel #同属仲間への二人称
+          @target = "teacher" if $data_SDB[$msg.t_target.class_id].name == "ウィッチ" #相手がウィッチ
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -92,15 +92,15 @@ class MsgPetitwitch_A < MsgBase
           if @companion_cp == true
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" #相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $msg.age3 > 0 #年下相方への二人称
-            @cp_leader = "#{$msg.short_name($msg.coop_leader)}さん" if $msg.age3 < 0 #年上相方への二人称
+            @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
-            @cp_leader = "#{$msg.short_name($msg.coop_leader)}先生" if $data_SDB[$msg.coop_leader.class_id].name == "ウィッチ" #連携相手がウィッチ
+            @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if $data_SDB[$msg.coop_leader.class_id].name == "ウィッチ" #連携相手がウィッチ
           else
-            @cp_leader = "キミ" #相方への二人称
-            @cp_leader = "キミ" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "お姉さん" if $msg.age3 < 0 #年上仲間への二人称
-            @cp_leader = "キミ" if @doppel_cp #同属仲間への二人称
-            @cp_leader = "先生" if $data_SDB[$msg.coop_leader.class_id].name == "ウィッチ" #連携相手がウィッチ
+            @cp_leader = "pal" #相方への二人称
+            @cp_leader = "Sister" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Big Sister" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "pal" if @doppel_cp #同属仲間への二人称
+            @cp_leader = "teacher" if $data_SDB[$msg.coop_leader.class_id].name == "ウィッチ" #連携相手がウィッチ
           end
         end
       end
