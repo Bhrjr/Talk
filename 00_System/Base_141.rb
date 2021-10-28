@@ -20,32 +20,32 @@ class MsgGargoyle_A < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "お前" #主人公への二人称
+        @target = "you" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "あいつ" #仲間への二人称
-          @partner = "あいつ" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "あいつ" if $msg.age2 < 0 #年上仲間への二人称
-          @partner = "あいつ" if @doppel_pt #同属仲間への二人称
+          @partner = "you" #仲間への二人称
+          @partner = "you" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "you" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "you" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "あんた" #仲間への二人称
-        @target = "あんた" if $msg.age > 0 #年下仲間への二人称
-        @target = "あんた" if $msg.age < 0 #年上仲間への二人称
-        @target = "あんた" if @doppel #同属仲間への二人称
+        @target = "girl" #仲間への二人称
+        @target = "girl" if $msg.age > 0 #年下仲間への二人称
+        @target = "girl" if $msg.age < 0 #年上仲間への二人称
+        @target = "girl" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "あいつ" #主人公への二人称
+        @partner = "man" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "あんた" #相方への二人称
-          @cp_leader = "あんた" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "あんた" if $msg.age3 < 0 #年上相方への二人称
-          @cp_leader = "あんた" if @doppel_cp #同属相方への二人称
-#          @cp_leader = "あんた" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
+          @cp_leader = "girl" #相方への二人称
+          @cp_leader = "girl" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "girl" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "girl" if @doppel_cp #同属相方への二人称
+#          @cp_leader = "girlie" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
         end
       end
     #=====================================================================
@@ -62,11 +62,11 @@ class MsgGargoyle_A < MsgBase
             @partner = "#{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
 #            @partner = "#{$msg.short_name($msg.t_partner)}" if $data_SDB[$msg.t_partner.class_id].name == "夢魔" #相手が夢魔
           else
-            @partner = "あいつ" #仲間への二人称
-            @partner = "あいつ" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "あいつ" if $msg.age2 < 0 #年上仲間への二人称
-            @partner = "あいつ" if @doppel_pt #同属仲間への二人称
-#            @partner = "あいつ" if $data_SDB[$msg.t_partner.class_id].name == "夢魔" #相手が夢魔
+            @partner = "you" #仲間への二人称
+            @partner = "you" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "you" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "you" if @doppel_pt #同属仲間への二人称
+#            @partner = "you" if $data_SDB[$msg.t_partner.class_id].name == "夢魔" #相手が夢魔
           end
         end
       #▼会話対象が主人公でない場合
@@ -78,11 +78,11 @@ class MsgGargoyle_A < MsgBase
           @target = "#{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
 #          @target = "#{$msg.short_name($msg.t_target)}" if $data_SDB[$msg.t_target.class_id].name == "夢魔" #相手が夢魔
         else
-          @target = "あんた" #仲間への二人称
-          @target = "あんた" if $msg.age > 0 #年下仲間への二人称
-          @target = "あんた" if $msg.age < 0 #年上仲間への二人称
-          @target = "あんた" if @doppel #同属仲間への二人称
-#          @target = "あんた" if $data_SDB[$msg.t_target.class_id].name == "夢魔" #相手が夢魔
+          @target = "girl" #仲間への二人称
+          @target = "girl" if $msg.age > 0 #年下仲間への二人称
+          @target = "girl" if $msg.age < 0 #年上仲間への二人称
+          @target = "girl" if @doppel #同属仲間への二人称
+#          @target = "girlie" if $data_SDB[$msg.t_target.class_id].name == "夢魔" #相手が夢魔
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -96,11 +96,11 @@ class MsgGargoyle_A < MsgBase
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
 #            @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
           else
-            @cp_leader = "あんた" #相方への二人称
-            @cp_leader = "あんた" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "あんた" if $msg.age3 < 0 #年上仲間への二人称
-            @cp_leader = "あんた" if @doppel_cp #同属仲間への二人称
-#            @cp_leader = "あんた" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
+            @cp_leader = "girl" #相方への二人称
+            @cp_leader = "girl" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "girl" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "girl" if @doppel_cp #同属仲間への二人称
+#            @cp_leader = "girlie" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
           end
         end
       end
