@@ -20,32 +20,32 @@ class MsgGoblin_A < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "にーちゃん" #主人公への二人称
+        @target = "Big bro" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "あんた" #仲間への二人称
-          @partner = "おまえ" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "ねーちゃん" if $msg.age2 < 0 #年上仲間への二人称
-          @partner = "おまえ" if @doppel_pt #同属仲間への二人称
+          @partner = "you" #仲間への二人称
+          @partner = "you" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Sissy" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "you" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "あんた" #仲間への二人称
-        @target = "おまえ" if $msg.age > 0 #年下仲間への二人称
-        @target = "ねーちゃん" if $msg.age < 0 #年上仲間への二人称
-        @target = "おまえ" if @doppel #同属仲間への二人称
+        @target = "you" #仲間への二人称
+        @target = "you" if $msg.age > 0 #年下仲間への二人称
+        @target = "Sissy" if $msg.age < 0 #年上仲間への二人称
+        @target = "you" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "にーちゃん" #主人公への二人称
+        @partner = "Big bro" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "あんた" #相方への二人称
-          @cp_leader = "おまえ" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "ねーちゃん" if $msg.age3 < 0 #年上相方への二人称
-          @cp_leader = "おまえ" if @doppel_cp #同属相方への二人称
-          @cp_leader = "ねーちゃん" if $data_SDB[$msg.coop_leader.class_id].name == "ギャングリーダー" #連携相手がギャングリーダー
+          @cp_leader = "you" #相方への二人称
+          @cp_leader = "you" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Sissy" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "you" if @doppel_cp #同属相方への二人称
+          @cp_leader = "Sissy" if $data_SDB[$msg.coop_leader.class_id].name == "ギャングリーダー" #連携相手がギャングリーダー
         end
       end
     #=====================================================================
@@ -58,15 +58,15 @@ class MsgGoblin_A < MsgBase
           if @companion_pt == true#相手の事を知っている場合の二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" #仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "#{$msg.short_name($msg.t_partner)}ねーちゃん" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
-            @partner = "#{$msg.short_name($msg.t_partner)}ねーちゃん" if $data_SDB[$msg.t_partner.class_id].name == "ギャングリーダー" #相手がギャングリーダー
+            @partner = "#{$msg.short_name($msg.t_partner)}" if $data_SDB[$msg.t_partner.class_id].name == "ギャングリーダー" #相手がギャングリーダー
           else
-            @partner = "あんた" #仲間への二人称
-            @partner = "おまえ" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "ねーちゃん" if $msg.age2 < 0 #年上仲間への二人称
-            @partner = "おまえ" if @doppel_pt #同属仲間への二人称
-            @partner = "ねーちゃん" if $data_SDB[$msg.t_partner.class_id].name == "ギャングリーダー" #相手がギャングリーダー
+            @partner = "you" #仲間への二人称
+            @partner = "you" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Sissy" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "you" if @doppel_pt #同属仲間への二人称
+            @partner = "Sissy" if $data_SDB[$msg.t_partner.class_id].name == "ギャングリーダー" #相手がギャングリーダー
           end
         end
       #▼会話対象が主人公でない場合
@@ -74,15 +74,15 @@ class MsgGoblin_A < MsgBase
         if @companion == true#相手の事を知っている場合の二人称
           @target = "#{$msg.short_name($msg.t_target)}" #仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if $msg.age > 0 #年下仲間への二人称
-          @target = "#{$msg.short_name($msg.t_target)}ねーちゃん" if $msg.age < 0 #年上仲間への二人称
+          @target = "#{$msg.short_name($msg.t_target)}" if $msg.age < 0 #年上仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}ねーちゃん" if $data_SDB[$msg.t_target.class_id].name == "ギャングリーダー" #相手がギャングリーダー
         else
-          @target = "あんた" #仲間への二人称
-          @target = "おまえ" if $msg.age > 0 #年下仲間への二人称
-          @target = "ねーちゃん" if $msg.age < 0 #年上仲間への二人称
-          @target = "おまえ" if @doppel #同属仲間への二人称
-          @target = "ねーちゃん" if $data_SDB[$msg.t_target.class_id].name == "ギャングリーダー" #相手がギャングリーダー
+          @target = "you" #仲間への二人称
+          @target = "you" if $msg.age > 0 #年下仲間への二人称
+          @target = "Sissy" if $msg.age < 0 #年上仲間への二人称
+          @target = "you" if @doppel #同属仲間への二人称
+          @target = "Sissy" if $data_SDB[$msg.t_target.class_id].name == "ギャングリーダー" #相手がギャングリーダー
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -92,15 +92,15 @@ class MsgGoblin_A < MsgBase
           if @companion_cp == true
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" #相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $msg.age3 > 0 #年下相方への二人称
-            @cp_leader = "#{$msg.short_name($msg.coop_leader)}ねーちゃん" if $msg.age3 < 0 #年上相方への二人称
+            @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
-            @cp_leader = "#{$msg.short_name($msg.coop_leader)}ねーちゃん" if $data_SDB[$msg.coop_leader.class_id].name == "ギャングリーダー" #連携相手がギャングリーダー
+            @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $data_SDB[$msg.coop_leader.class_id].name == "ギャングリーダー" #連携相手がギャングリーダー
           else
-            @cp_leader = "あんた" #相方への二人称
-            @cp_leader = "おまえ" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "ねーちゃん" if $msg.age3 < 0 #年上仲間への二人称
-            @cp_leader = "おまえ" if @doppel_cp #同属仲間への二人称
-            @cp_leader = "ねーちゃん" if $data_SDB[$msg.coop_leader.class_id].name == "ギャングリーダー" #連携相手がギャングリーダー
+            @cp_leader = "you" #相方への二人称
+            @cp_leader = "you" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Sissy" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "you" if @doppel_cp #同属仲間への二人称
+            @cp_leader = "Sissy" if $data_SDB[$msg.coop_leader.class_id].name == "ギャングリーダー" #連携相手がギャングリーダー
           end
         end
       end
