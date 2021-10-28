@@ -43,7 +43,7 @@ class MsgMimic_A < MsgBase
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "lassie" #相方への二人称
           @cp_leader = "missy" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "Big Sister" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "lassie" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "lassie" if @doppel_cp #同属相方への二人称
         end
       end
