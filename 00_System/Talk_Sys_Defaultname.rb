@@ -30,340 +30,340 @@ class Talk_Sys
     #▼レッサーサキュバス種
     when 5,6
       case battler.personality
-      when "好色" #OFE有り
-        a_name_list = ["あたし"] 
-        b_name_list = ["主人公名くん"]
-      when "陽気"
-        a_name_list = ["ボク"] 
-        b_name_list = ["主人公名くん"] 
+      when "Lusty" #OFE有り
+        a_name_list = ["I"] 
+        b_name_list = ["Player name"]
+      when "Cheerful"
+        a_name_list = ["I"] 
+        b_name_list = ["Player name"] 
       end
     #▼サキュバス種
     when 10,11
       case battler.personality
-      when "好色" #OFE有り
-        a_name_list = ["わたし"]
-        b_name_list = ["主人公名"]
-      when "陽気"
-        a_name_list = ["あたし"]
-        b_name_list = ["主人公名"]
+      when "Lusty" #OFE有り
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
+      when "Cheerful"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
       end
     #▼サキュバスロード種
     when 15,16
       case battler.personality
-      when "好色" #OFE有り
-        a_name_list = ["わたくし"]
-        b_name_list = ["坊や"]
-      when "陽気"
-        a_name_list = ["アタシ"]
-        b_name_list = ["主人公名"]
+      when "Lusty" #OFE有り
+        a_name_list = ["I"]
+        b_name_list = ["Boy"]
+      when "Cheerful"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
       end
     #--------------------------------------------------------------------------
     #▼インプ種
     when 21,22
       case battler.personality
-      when "勝ち気"
-        a_name_list = ["あたし"]
-        b_name_list = ["おにいさん"]
-      when "虚勢"
-        a_name_list = ["あたい"]
-        b_name_list = ["おにーさん"]
-      when "高慢" #OFE
-        a_name_list = ["わらわ"]
+      when "Adamant"
+        a_name_list = ["I"]
+        b_name_list = ["Big brother"]
+      when "Show-off"
+        a_name_list = ["I"]
+        b_name_list = ["Bro"]
+      when "Proud" #OFE
+        a_name_list = ["I"]
         b_name_list = []
       end
     #▼デビル種
     when 26,27
       case battler.personality
-      when "勝ち気"
-        a_name_list = ["あたい"]
-        b_name_list = ["主人公名"]
-      when "虚勢"
-        a_name_list = ["おれ"]
-        b_name_list = ["兄貴"]
-      when "高慢" #OFE
-        a_name_list = ["我"]
+      when "Adamant"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
+      when "Show-off"
+        a_name_list = ["I"]
+        b_name_list = ["Big Brother"]
+      when "Proud" #OFE
+        a_name_list = ["I"]
         b_name_list = []
       end
     #▼デーモン種
     when 31,32
       case battler.personality
-      when "勝ち気"
-        a_name_list = ["あたい"]
-        b_name_list = ["坊や"]
-      when "虚勢"
-        a_name_list = ["あたい"]
-        b_name_list = ["お前"]
-      when "高慢" #OFE
-        a_name_list = ["我"]
+      when "Adamant"
+        a_name_list = ["I"]
+        b_name_list = ["Boy"]
+      when "Show-off"
+        a_name_list = ["I"]
+        b_name_list = ["you"]
+      when "Proud" #OFE
+        a_name_list = ["I"]
         b_name_list = []
       end
     #--------------------------------------------------------------------------
     #▼プチウィッチ種
     when 37,38
       case battler.personality
-      when "上品"
-        a_name_list = ["わたし"]
-        b_name_list = ["先輩"]
-      when "淡泊"
-        a_name_list = ["ぼく"]
-        b_name_list = ["先輩"]
-      when "好色" #OFE
-        a_name_list = ["僕"]
-        b_name_list = ["主人公名君"]
+      when "Classy"
+        a_name_list = ["I"]
+        b_name_list = ["Old Timer"]
+      when "Aloof"
+        a_name_list = ["I"]
+        b_name_list = ["Old Timer"]
+      when "Lusty" #OFE
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
       end
     #▼ウィッチ種
     when 42,43
       case battler.personality
-      when "上品"
-        a_name_list = ["わたくし"]
-        b_name_list = ["主人公名君"]
-      when "淡泊"
-        a_name_list = ["自分"]
-        b_name_list = ["主人公名君"]
-      when "好色" #OFE
-        a_name_list = ["わたし"]
-        b_name_list = ["主人公名君"]
+      when "Classy"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
+      when "Aloof"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
+      when "Lusty" #OFE
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
       end
     #--------------------------------------------------------------------------
     #▼キャスト種
     when 53
       case battler.personality
-      when "内気"
-        a_name_list = ["私"]
-        b_name_list = ["主人公名さん"]
-      when "従順"
-        a_name_list = ["私"]
-        b_name_list = ["主人公名さん"]
+      when "Shy"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
+      when "Docile"
+        a_name_list = ["I"]
+        b_name_list = ["Mr. Player name"]
       end
     #--------------------------------------------------------------------------
     #▼スレイヴ種
     when 63
       case battler.personality
-      when "従順"
-        a_name_list = ["私"]
-        b_name_list = ["主人公短縮名兄様"]
+      when "Docile"
+        a_name_list = ["I"]
+        b_name_list = ["Brother Player name abbreviated"]
       when "倒錯"
-        a_name_list = ["私"]
-        b_name_list = ["主人公短縮名兄様"]
+        a_name_list = ["I"]
+        b_name_list = ["Brother Player name abbreviated"]
       end
     #--------------------------------------------------------------------------
     #▼ナイトメア種
     when 74,75
       case battler.personality
-      when "淡泊"
-        a_name_list = ["自分"]
-        b_name_list = ["主人公名くん"]
-      when "不思議"
-        a_name_list = ["うち"]
-        b_name_list = ["主人公名氏"]
-      when "天然" #OFE
-        a_name_list = ["夢魔名"]
-        b_name_list = ["主人公名ちゃん"]
+      when "Aloof"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
+      when "Odd"
+        a_name_list = ["I"]
+        b_name_list = ["Mr. Player name"]
+      when "Airheaded" #OFE
+        a_name_list = ["succubus name"]
+        b_name_list = ["Player name-boy"]
       end
     #--------------------------------------------------------------------------
     #▼スライム種
     when 80
       case battler.personality
-      when "柔和"
-        a_name_list = ["あたし"]
-        b_name_list = ["ますたー"]
-      when "天然"
-        a_name_list = ["ぼく"]
-        b_name_list = ["ますたー"]
+      when "Meek"
+        a_name_list = ["I"]
+        b_name_list = ["Master"]
+      when "Airheaded"
+        a_name_list = ["I"]
+        b_name_list = ["Master"]
       end
     #▼クイーンスライム種
     when 85
       case battler.personality
-      when "柔和"
-        a_name_list = ["くいーん"]
-        b_name_list = ["ますたーさま"]
-      when "天然"
-        a_name_list = ["くいーん"]
-        b_name_list = ["ますたー"]
+      when "Meek"
+        a_name_list = ["Queen"]
+        b_name_list = ["sir"]
+      when "Airheaded"
+        a_name_list = ["Queen"]
+        b_name_list = ["Master"]
       end
     #▼ゴールドスライム種
     when 90
       case battler.personality
-      when "上品"
-        a_name_list = ["わたくし"]
-        b_name_list = ["マスター"]
-      when "柔和"
-        a_name_list = ["わたくし"]
-        b_name_list = ["マスター"]
+      when "Classy"
+        a_name_list = ["I"]
+        b_name_list = ["Master"]
+      when "Meek"
+        a_name_list = ["I"]
+        b_name_list = ["Master"]
       end
     #--------------------------------------------------------------------------
     #▼ファミリア種
     when 96,97
       case battler.personality
-      when "淡泊"
-        a_name_list = ["夢魔名"]
-        b_name_list = ["主人公名様"]
-      when "従順"
-        a_name_list = ["夢魔名"]
-        b_name_list = ["主人公名様"]
-      when "倒錯" #OFE
-        a_name_list = ["夢魔名"]
-        b_name_list = ["主人公名様"]
+      when "Aloof"
+        a_name_list = ["succubus name"]
+        b_name_list = ["sir"]
+      when "Docile"
+        a_name_list = ["succubus name"]
+        b_name_list = ["sir"]
+      when "Perverse" #OFE
+        a_name_list = ["succubus name"]
+        b_name_list = ["sir"]
       end
     #--------------------------------------------------------------------------
     #▼ワーウルフ種
     when 100,101
       case battler.personality
-      when "虚勢"
-        a_name_list = ["おれ"]
-        b_name_list = ["ご主人"]
-      when "甘え性"
-        a_name_list = ["あたい"]
-        b_name_list = ["ご主人"]
-      when "勝ち気" #OFE
-        a_name_list = ["おれさま"]
-        b_name_list = ["主人公名"]
+      when "Show-off"
+        a_name_list = ["I"]
+        b_name_list = ["Boss"]
+      when "Coaxing"
+        a_name_list = ["I"]
+        b_name_list = ["Boss"]
+      when "Adamant" #OFE
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
       end
     #--------------------------------------------------------------------------
     #▼ワーキャット種
     when 104,105
       case battler.personality
-      when "天然"
-        a_name_list = ["あたい"]
-        b_name_list = ["ご主人"]
-      when "意地悪"
-        a_name_list = ["あたい"]
-        b_name_list = ["ご主人"]
-      when "不思議" #OFE
-        a_name_list = ["ぼく"]
-        b_name_list = ["ご主人"]
+      when "Airheaded"
+        a_name_list = ["I"]
+        b_name_list = ["Boss"]
+      when "Nasty"
+        a_name_list = ["I"]
+        b_name_list = ["Boss"]
+      when "Odd" #OFE
+        a_name_list = ["I"]
+        b_name_list = ["Boss"]
       end
     #--------------------------------------------------------------------------
     #▼ゴブリン種
     when 108
       case battler.personality
-      when "陽気"
-        a_name_list = ["ぼく"]
-        b_name_list = ["おにーちゃん"]
-      when "甘え性"
-        a_name_list = ["ぼく"]
-        b_name_list = ["おにーちゃん"]
+      when "Cheerful"
+        a_name_list = ["I"]
+        b_name_list = ["Big bro"]
+      when "Coaxing"
+        a_name_list = ["I"]
+        b_name_list = ["Big bro"]
       end
     #▼ギャングコマンダー種
     when 111
       case battler.personality
-      when "陽気"
-        a_name_list = ["あたい"]
-        b_name_list = ["お兄さま"]
-      when "甘え性"
-        a_name_list = ["わたし"]
-        b_name_list = ["お兄さま"]
+      when "Cheerful"
+        a_name_list = ["I"]
+        b_name_list = ["Brother"]
+      when "Coaxing"
+        a_name_list = ["I"]
+        b_name_list = ["Brother"]
       end
     #--------------------------------------------------------------------------
     #▼プリーステス種
     when 118
       case battler.personality
-      when "上品"
-        a_name_list = ["わたくし"]
-        b_name_list = ["貴殿"]
-      when "高慢"
-        a_name_list = ["わたくし"]
-        b_name_list = ["卿"]
+      when "Classy"
+        a_name_list = ["I"]
+        b_name_list = ["dear"]
+      when "Proud"
+        a_name_list = ["I"]
+        b_name_list = ["sir"]
       end
     #--------------------------------------------------------------------------
     #▼カースメイガス種
     when 122
       case battler.personality
-      when "好色"
-        a_name_list = ["アタイ"]
-        b_name_list = ["主人公短縮名ちゃん"]
-      when "倒錯"
-        a_name_list = ["私"]
-        b_name_list = ["主人公短縮名ちゃん"]
+      when "Lusty"
+        a_name_list = ["I"]
+        b_name_list = ["Player name abbreviated-boy"]
+      when "Perverse"
+        a_name_list = ["I"]
+        b_name_list = ["Player name abbreviated-boy"]
       end
     #--------------------------------------------------------------------------
     #▼アルラウネ種
     when 126,127
       case battler.personality
-      when "上品"
-        a_name_list = ["あたし"]
+      when "Classy"
+        a_name_list = ["I"]
         b_name_list = []
-      when "内気"
-        a_name_list = ["あたし"]
-        b_name_list = ["主人公短縮名ちゃん"]
-      when "甘え性"
-        a_name_list = ["あたし"]
-        b_name_list = ["主人公名さん"]
-      when "意地悪" #OFE
-        a_name_list = ["私"]
-        b_name_list = ["主人公短縮名ちゃん"]
+      when "Shy"
+        a_name_list = ["I"]
+        b_name_list = ["Player name abbreviated-boy"]
+      when "Coaxing"
+        a_name_list = ["I"]
+        b_name_list = ["Mr. Player name abbreviated"]
+      when "Nasty" #OFE
+        a_name_list = ["I"]
+        b_name_list = ["Player name abbreviated-boy"]
       end
     #--------------------------------------------------------------------------
     #▼マタンゴ種
     when 133
       case battler.personality
-      when "上品"
-        a_name_list = ["わたくし"]
-        b_name_list = ["主人公名くん"]
-      when "内気"
-        a_name_list = ["わたし"]
-        b_name_list = ["主人公名くん"]
+      when "Classy"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
+      when "Shy"
+        a_name_list = ["I"]
+        b_name_list = ["Player name"]
       end
     #--------------------------------------------------------------------------
     #▼ダークエンジェル種
     when 137
       case battler.personality
-      when "柔和"
-        a_name_list = ["わたし"]
-        b_name_list = ["主人公名様"]
-      when "意地悪"
-        a_name_list = ["私"]
-        b_name_list = ["主人公名様"]
+      when "Meek"
+        a_name_list = ["I"]
+        b_name_list = ["sir"]
+      when "Nasty"
+        a_name_list = ["I"]
+        b_name_list = ["sir"]
       end
     #--------------------------------------------------------------------------
     #▼ガーゴイル種
     when 141
       case battler.personality
-      when "高慢"
-        a_name_list = ["あたし"]
-        b_name_list = ["主上"]
-      when "勝ち気"
-        a_name_list = ["おれ"]
-        b_name_list = ["ご主人"]
+      when "Proud"
+        a_name_list = ["I"]
+        b_name_list = ["King"]
+      when "Adamant"
+        a_name_list = ["I"]
+        b_name_list = ["Lord"]
       end
     #--------------------------------------------------------------------------
     #▼ミミック種
     when 145,146
       case battler.personality
-      when "陽気"
-        a_name_list = ["私め"]
-        b_name_list = ["主人公名殿"]
-      when "意地悪"
-        a_name_list = ["私め"]
-        b_name_list = ["主人公名殿"]
-      when "不思議" #OFE
-        a_name_list = ["小生"]
-        b_name_list = ["旦那"]
-      when "内気" #OFE
-        a_name_list = ["小生"]
-        b_name_list = ["旦那"]
+      when "Cheerful"
+        a_name_list = ["I"]
+        b_name_list = ["Mr. Player name"]
+      when "Nasty"
+        a_name_list = ["I"]
+        b_name_list = ["Mr. Player name"]
+      when "Odd" #OFE
+        a_name_list = ["I"]
+        b_name_list = ["Sweetie"]
+      when "Shy" #OFE
+        a_name_list = ["I"]
+        b_name_list = ["Sweetie"]
       end
     #--------------------------------------------------------------------------
     #▼キツネ種
     when 152
       case battler.personality
-      when "好色"
-        a_name_list = ["わっち"]
-        b_name_list = ["あるじ様"]
-      when "高慢"
-        a_name_list = ["我"]
-        b_name_list = ["あるじ様"]
+      when "Lusty"
+        a_name_list = ["I"]
+        b_name_list = ["My Lord"]
+      when "Proud"
+        a_name_list = ["I"]
+        b_name_list = ["My Lord"]
       end
     #--------------------------------------------------------------------------
     #▼リリム種
     when 156
       case battler.personality
-      when "好色"
-        a_name_list = ["夢魔短縮名"]
-        b_name_list = ["主人公短縮名兄ちゃん"]
-      when "意地悪"
-        a_name_list = ["夢魔短縮名"]
-        b_name_list = ["主人公短縮名兄ちゃん"]
+      when "Lusty"
+        a_name_list = ["Succubus name abbreviated"]
+        b_name_list = ["Player name abbreviated-boy"]
+      when "Nasty"
+        a_name_list = ["Succubus name abbreviated"]
+        b_name_list = ["Player name abbreviated-boy"]
       end
     end
     #==========================================================================================================
