@@ -45,8 +45,8 @@ class MsgImp_B < MsgBase
           @cp_leader = "you" if $msg.age3 > 0 #年下相方への二人称
           @cp_leader = "you" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "you" if @doppel_cp #同属相方への二人称
-          @cp_leader = "bud" if $data_SDB[$msg.coop_leader.class_id].name == "デビル" #連携相手がデビル
-          @cp_leader = "bud" if $data_SDB[$msg.coop_leader.class_id].name == "デーモン" #連携相手がデーモン
+          @cp_leader = "bud" if $data_SDB[$msg.coop_leader.class_id].name == "Devil" #連携相手がデビル
+          @cp_leader = "bud" if $data_SDB[$msg.coop_leader.class_id].name == "Daemon" #連携相手がデーモン
         end
       end
     #=====================================================================
@@ -61,15 +61,15 @@ class MsgImp_B < MsgBase
             @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
-            @partner = "boss" if $data_SDB[$msg.t_partner.class_id].name == "デビル" #相手がデビル
-            @partner = "boss" if $data_SDB[$msg.t_partner.class_id].name == "デーモン" #相手がデーモン
+            @partner = "boss" if $data_SDB[$msg.t_partner.class_id].name == "Devil" #相手がデビル
+            @partner = "boss" if $data_SDB[$msg.t_partner.class_id].name == "Daemon" #相手がデーモン
           else
             @partner = "you" #仲間への二人称
             @partner = "you" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "you" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "you" if @doppel_pt #同属仲間への二人称
-            @partner = "bud" if $data_SDB[$msg.t_partner.class_id].name == "デビル" #相手がデビル
-            @partner = "bud" if $data_SDB[$msg.t_partner.class_id].name == "デーモン" #相手がデーモン
+            @partner = "bud" if $data_SDB[$msg.t_partner.class_id].name == "Devil" #相手がデビル
+            @partner = "bud" if $data_SDB[$msg.t_partner.class_id].name == "Daemon" #相手がデーモン
           end
         end
       #▼会話対象が主人公でない場合
@@ -79,15 +79,15 @@ class MsgImp_B < MsgBase
           @target = "#{$msg.short_name($msg.t_target)}" if $msg.age > 0 #年下仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if $msg.age < 0 #年上仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
-          @target = "boss" if $data_SDB[$msg.t_target.class_id].name == "デビル" #相手がデビル
-          @target = "boss" if $data_SDB[$msg.t_target.class_id].name == "デーモン" #相手がデーモン
+          @target = "boss" if $data_SDB[$msg.t_target.class_id].name == "Devil" #相手がデビル
+          @target = "boss" if $data_SDB[$msg.t_target.class_id].name == "Daemon" #相手がデーモン
         else
           @target = "you" #仲間への二人称
           @target = "you" if $msg.age > 0 #年下仲間への二人称
           @target = "you" if $msg.age < 0 #年上仲間への二人称
           @target = "you" if @doppel #同属仲間への二人称
-          @target = "bud" if $data_SDB[$msg.t_target.class_id].name == "デビル" #相手がデビル
-          @target = "bud" if $data_SDB[$msg.t_target.class_id].name == "デーモン" #相手がデーモン
+          @target = "bud" if $data_SDB[$msg.t_target.class_id].name == "Devil" #相手がデビル
+          @target = "bud" if $data_SDB[$msg.t_target.class_id].name == "Daemon" #相手がデーモン
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -99,15 +99,15 @@ class MsgImp_B < MsgBase
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $msg.age3 > 0 #年下相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
-            @cp_leader = "boss" if $data_SDB[$msg.coop_leader.class_id].name == "デビル" #相手がデビル
-            @cp_leader = "boss" if $data_SDB[$msg.coop_leader.class_id].name == "デーモン" #相手がデーモン
+            @cp_leader = "boss" if $data_SDB[$msg.coop_leader.class_id].name == "Devil" #相手がデビル
+            @cp_leader = "boss" if $data_SDB[$msg.coop_leader.class_id].name == "Daemon" #相手がデーモン
           else
             @cp_leader = "you" #相方への二人称
             @cp_leader = "you" if $msg.age3 > 0 #年下仲間への二人称
             @cp_leader = "you" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "you" if @doppel_cp #同属仲間への二人称
-            @cp_leader = "bud" if $data_SDB[$msg.coop_leader.class_id].name == "デビル" #連携相手がデビル
-            @cp_leader = "bud" if $data_SDB[$msg.coop_leader.class_id].name == "デーモン" #連携相手がデーモン
+            @cp_leader = "bud" if $data_SDB[$msg.coop_leader.class_id].name == "Devil" #連携相手がデビル
+            @cp_leader = "bud" if $data_SDB[$msg.coop_leader.class_id].name == "Daemon" #連携相手がデーモン
           end
         end
       end
