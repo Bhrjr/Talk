@@ -157,7 +157,7 @@ class Talk_Sys
         a_name_list = ["I"]
         b_name_list = ["Mr. Player name"]
       when "Airheaded" #OFE
-        a_name_list = ["succubus name"]
+        a_name_list = ["Succubus name"]
         b_name_list = ["Player name-boy"]
       end
     #--------------------------------------------------------------------------
@@ -349,10 +349,10 @@ class Talk_Sys
       case battler.personality
       when "Lusty"
         a_name_list = ["I"]
-        b_name_list = ["My Lord"]
+        b_name_list = ["My lord"]
       when "Proud"
         a_name_list = ["I"]
-        b_name_list = ["My Lord"]
+        b_name_list = ["My lord"]
       end
     #--------------------------------------------------------------------------
     #▼リリム種
