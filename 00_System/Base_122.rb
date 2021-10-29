@@ -20,7 +20,7 @@ class MsgCursemagus_A < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "boy" #主人公への二人称
+        @target = "Young man" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
           @partner = "girl" #仲間への二人称
