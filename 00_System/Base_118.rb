@@ -24,14 +24,14 @@ class MsgPriestess_A < MsgBase
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
           @partner = "Ma'am" #仲間への二人称
-          @partner = "Ma'am" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Young ma'am" if $msg.age2 > 0 #年下仲間への二人称
           @partner = "Ma'am" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "Ma'am" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "Ma'am" #仲間への二人称
-        @target = "Ma'am" if $msg.age > 0 #年下仲間への二人称
+        @target = "Young ma'am" if $msg.age > 0 #年下仲間への二人称
         @target = "Ma'am" if $msg.age < 0 #年上仲間への二人称
         @target = "Ma'am" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
@@ -42,10 +42,10 @@ class MsgPriestess_A < MsgBase
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "Ma'am" #相方への二人称
-          @cp_leader = "Ma'am" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Young ma'am" if $msg.age3 > 0 #年下相方への二人称
           @cp_leader = "Ma'am" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "Ma'am" if @doppel_cp #同属相方への二人称
-          @cp_leader = "Lady" if $data_SDB[$msg.coop_leader.class_id].name == "Dark Angel" #連携相手がダークエンジェル
+          @cp_leader = "Milady" if $data_SDB[$msg.coop_leader.class_id].name == "Dark Angel" #連携相手がダークエンジェル
         end
       end
     #=====================================================================
@@ -60,13 +60,13 @@ class MsgPriestess_A < MsgBase
             @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Ms. #{$msg.short_name($msg.t_partner)}" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Ms. #{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
-            @partner = "Master #{$msg.short_name($msg.t_partner)}" if $data_SDB[$msg.t_partner.class_id].name == "Dark Angel" #相手がダークエンジェル
+            @partner = "Lady #{$msg.short_name($msg.t_partner)}" if $data_SDB[$msg.t_partner.class_id].name == "Dark Angel" #相手がダークエンジェル
           else
             @partner = "Ma'am" #仲間への二人称
-            @partner = "Ma'am" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Young ma'am" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Ma'am" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Ma'am" if @doppel_pt #同属仲間への二人称
-            @partner = "Lady" if $data_SDB[$msg.t_partner.class_id].name == "Dark Angel" #相手がダークエンジェル
+            @partner = "Milady" if $data_SDB[$msg.t_partner.class_id].name == "Dark Angel" #相手がダークエンジェル
           end
         end
       #▼会話対象が主人公でない場合
@@ -76,13 +76,13 @@ class MsgPriestess_A < MsgBase
           @target = "#{$msg.short_name($msg.t_target)}" if $msg.age > 0 #年下仲間への二人称
           @target = "Ms. #{$msg.short_name($msg.t_target)}" if $msg.age < 0 #年上仲間への二人称
           @target = "Ms. #{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
-          @target = "Master #{$msg.short_name($msg.t_target)}" if $data_SDB[$msg.t_target.class_id].name == "Dark Angel" #相手がダークエンジェル
+          @target = "Lady #{$msg.short_name($msg.t_target)}" if $data_SDB[$msg.t_target.class_id].name == "Dark Angel" #相手がダークエンジェル
         else
           @target = "Ma'am" #仲間への二人称
-          @target = "Ma'am" if $msg.age > 0 #年下仲間への二人称
+          @target = "Young ma'am" if $msg.age > 0 #年下仲間への二人称
           @target = "Ma'am" if $msg.age < 0 #年上仲間への二人称
           @target = "Ma'am" if @doppel #同属仲間への二人称
-          @target = "Lady" if $data_SDB[$msg.t_target.class_id].name == "Dark Angel" #相手がダークエンジェル
+          @target = "Milady" if $data_SDB[$msg.t_target.class_id].name == "Dark Angel" #相手がダークエンジェル
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -94,13 +94,13 @@ class MsgPriestess_A < MsgBase
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $msg.age3 > 0 #年下相方への二人称
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
-            @cp_leader = "Master #{$msg.short_name($msg.coop_leader)}" if $data_SDB[$msg.coop_leader.class_id].name == "Dark Angel" #連携相手がダークエンジェル
+            @cp_leader = "Lady #{$msg.short_name($msg.coop_leader)}" if $data_SDB[$msg.coop_leader.class_id].name == "Dark Angel" #連携相手がダークエンジェル
           else
             @cp_leader = "Ma'am" #相方への二人称
-            @cp_leader = "Ma'am" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Young ma'am" if $msg.age3 > 0 #年下仲間への二人称
             @cp_leader = "Ma'am" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "Ma'am" if @doppel_cp #同属仲間への二人称
-            @cp_leader = "Lady" if $data_SDB[$msg.coop_leader.class_id].name == "Dark Angel" #連携相手がダークエンジェル
+            @cp_leader = "Milady" if $data_SDB[$msg.coop_leader.class_id].name == "Dark Angel" #連携相手がダークエンジェル
           end
         end
       end
