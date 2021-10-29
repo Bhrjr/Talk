@@ -23,7 +23,7 @@ class MsgDaemon_B < MsgBase
         @target = "Kid" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "you" #仲間への二人称
+          @partner = "Gal" #仲間への二人称
           @partner = "missy" if $msg.age2 > 0 #年下仲間への二人称
           @partner = "you" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "you" if @doppel_pt #同属仲間への二人称
