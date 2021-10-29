@@ -58,7 +58,7 @@ class MsgMatango_A < MsgBase
         if $msg.t_partner != nil
           if @companion_pt == true#相手の事を知っている場合の二人称
             @partner = "Ms. #{$msg.short_name($msg.t_partner)}" #仲間への二人称
-            @partner = "Ms. #{$msg.short_name($msg.t_partner)}" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "L'il ms. #{$msg.short_name($msg.t_partner)}" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Ms. #{$msg.short_name($msg.t_partner)}" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Ms. #{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
             @partner = "Lady Nei" if $data_SDB[$msg.t_partner.class_id].name == "Neigerange" #相手がネイジュレンジ
@@ -74,7 +74,7 @@ class MsgMatango_A < MsgBase
       elsif $msg.t_target != $game_actors[101]
         if @companion == true#相手の事を知っている場合の二人称
           @target = "Ms. #{$msg.short_name($msg.t_target)}" #仲間への二人称
-          @target = "Ms. #{$msg.short_name($msg.t_target)}" if $msg.age > 0 #年下仲間への二人称
+          @target = "L'il ms. #{$msg.short_name($msg.t_target)}" if $msg.age > 0 #年下仲間への二人称
           @target = "Ms. #{$msg.short_name($msg.t_target)}" if $msg.age < 0 #年上仲間への二人称
           @target = "Ms. #{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
           @target = "Lady Nei" if $data_SDB[$msg.t_target.class_id].name == "Neigerange" #相手がネイジュレンジ
@@ -92,7 +92,7 @@ class MsgMatango_A < MsgBase
         if $msg.coop_leader != $msg.t_enemy
           if @companion_cp == true
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" #相方への二人称
-            @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if $msg.age3 > 0 #年下相方への二人称
+            @cp_leader = "L'il ms. #{$msg.short_name($msg.coop_leader)}" if $msg.age3 > 0 #年下相方への二人称
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
             @cp_leader = "Lady Nei" if $data_SDB[$msg.coop_leader.class_id].name == "Neigerange" #相手がネイジュレンジ
