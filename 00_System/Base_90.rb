@@ -25,15 +25,15 @@ class MsgGoldslime_A < MsgBase
         if $msg.t_partner != nil
           @partner = "Sister" #仲間への二人称
           @partner = "Lady" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
-          @partner = "girl" if @doppel_pt #同属仲間への二人称
+          @partner = "Big sister" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Girl" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "Sister" #仲間への二人称
         @target = "Lady" if $msg.age > 0 #年下仲間への二人称
-        @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
-        @target = "girl" if @doppel #同属仲間への二人称
+        @target = "Big sister" if $msg.age < 0 #年上仲間への二人称
+        @target = "Girl" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
         @partner = "Brother" #主人公への二人称
       end
@@ -43,8 +43,8 @@ class MsgGoldslime_A < MsgBase
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "Sister" #相方への二人称
           @cp_leader = "Lady" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "Big Sister" if $msg.age3 < 0 #年上相方への二人称
-          @cp_leader = "girl" if @doppel_cp #同属相方への二人称
+          @cp_leader = "Big sister" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Girl" if @doppel_cp #同属相方への二人称
         end
       end
     #=====================================================================
@@ -62,8 +62,8 @@ class MsgGoldslime_A < MsgBase
           else
             @partner = "Sister" #仲間への二人称
             @partner = "Lady" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "Big Sister" if $msg.age2 < 0 #年上仲間への二人称
-            @partner = "girl" if @doppel_pt #同属仲間への二人称
+            @partner = "Big sister" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Girl" if @doppel_pt #同属仲間への二人称
           end
         end
       #▼会話対象が主人公でない場合
@@ -76,8 +76,8 @@ class MsgGoldslime_A < MsgBase
         else
           @target = "Sister" #仲間への二人称
           @target = "Lady" if $msg.age > 0 #年下仲間への二人称
-          @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
-          @target = "girl" if @doppel #同属仲間への二人称
+          @target = "Big sister" if $msg.age < 0 #年上仲間への二人称
+          @target = "Girl" if @doppel #同属仲間への二人称
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -92,8 +92,8 @@ class MsgGoldslime_A < MsgBase
           else
             @cp_leader = "Sister" #相方への二人称
             @cp_leader = "Lady" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "Big Sister" if $msg.age3 < 0 #年上仲間への二人称
-            @cp_leader = "girl" if @doppel_cp #同属仲間への二人称
+            @cp_leader = "Big sister" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Girl" if @doppel_cp #同属仲間への二人称
           end
         end
       end
