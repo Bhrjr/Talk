@@ -24,14 +24,14 @@ class MsgAlraune_B < MsgBase
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
           @partner = "Sister" #仲間への二人称
-          @partner = "Sister" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Little sister" if $msg.age2 > 0 #年下仲間への二人称
           @partner = "Big-sister" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "Sister" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "Sister" #仲間への二人称
-        @target = "Sister" if $msg.age > 0 #年下仲間への二人称
+        @target = "Little sister" if $msg.age > 0 #年下仲間への二人称
         @target = "Big-sister" if $msg.age < 0 #年上仲間への二人称
         @target = "Sister" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
@@ -42,7 +42,7 @@ class MsgAlraune_B < MsgBase
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "Sister" #相方への二人称
-          @cp_leader = "Sister" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Little sister" if $msg.age3 > 0 #年下相方への二人称
           @cp_leader = "Big-sister" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "Sister" if @doppel_cp #同属相方への二人称
         end
@@ -61,7 +61,7 @@ class MsgAlraune_B < MsgBase
             @partner = "#{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
           else
             @partner = "Sister" #仲間への二人称
-            @partner = "Sister" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Little sister" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Big-sister" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Sister" if @doppel_pt #同属仲間への二人称
           end
@@ -75,7 +75,7 @@ class MsgAlraune_B < MsgBase
           @target = "#{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
         else
           @target = "Sister" #仲間への二人称
-          @target = "Sister" if $msg.age > 0 #年下仲間への二人称
+          @target = "Little sister" if $msg.age > 0 #年下仲間への二人称
           @target = "Big-sister" if $msg.age < 0 #年上仲間への二人称
           @target = "Sister" if @doppel #同属仲間への二人称
         end
@@ -91,7 +91,7 @@ class MsgAlraune_B < MsgBase
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
           else
             @cp_leader = "Sister" #相方への二人称
-            @cp_leader = "Sister" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Little sister" if $msg.age3 > 0 #年下仲間への二人称
             @cp_leader = "Big-sister" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "Sister" if @doppel_cp #同属仲間への二人称
           end
