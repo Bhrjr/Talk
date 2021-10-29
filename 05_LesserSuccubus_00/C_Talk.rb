@@ -138,13 +138,13 @@ when "Initial remarks"
   case $mood.point
   # 好感度がとても高い場合
   when 50..100
-    tx["tx1"] = "「ん……嬉しい\\H」"
+    tx["tx1"] = "\"Nnn....so happy\\H\""
   # 好感度が高まっている場合
   when 21..49
-    tx["tx1"] = "「うふふっ、ありがとね\\H」"
+    tx["tx1"] = "\"Ufufu, gee, thanks\\H\""
   # 好感度が低い場合
   else
-    tx["tx1"] = "「うふふっ♪\n　いいのかな～、そんな事言っちゃって～\\H\n　本気にしちゃうよ？」"
+    tx["tx1"] = "\"Ufufu♪\n Wonder if it's alright to say that\\H\n How 'bout we get serious?\""
   end
   #格納
   ms.push(tx)
@@ -154,9 +154,9 @@ when "Initial remarks"
 
 #▼好意▼****************************************************************************************
 #会話に対して、好意的に返してくれる(選択肢なし、ムードと好感度が自動で上がるボーナス会話)
-when "好意"
-  tx["tx1"] = "「ふふっ、言葉にしてもらえるのって嬉しい\\H」"
-  tx["tx1"] = "「ね……#{target}……？\n　……ううん、なんでもない\\H」" if $mood.point > 50 #前口上が好感度高い場合
+when "Favor"
+  tx["tx1"] = "\"Nfufu, it's always nice to put it into words\\H\""
+  tx["tx1"] = "\"Hey....#{target}....?\n ....No, never mind\\H\"" if $mood.point > 50 #前口上が好感度高い場合
   #----------------------------------------------------------------------------------------------------------------------
   #格納
   ms.push(tx)
@@ -169,9 +169,9 @@ when "主人公脱衣"
   case $msg.talk_step
   when 1 #脱衣要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「ねぇ、#{target}……。\n　#{myname}、お願いがあるんだぁ\\H」"
-    tx["tx2"] = "「#{target}が脱ぐところ、見せてぇ\\H\n　ね、お願い\\H」" 
-    tx["tx2"] = "「#{target}が脱ぐところ、見せてぇ\\H\n　ね、#{myname}も裸だし、いいでしょ？\\H」"  if $msg.t_enemy.nude? #既に相手が脱いでいる
+    tx["tx1"] = "\"Hey, #{target}....\n #{myname} have a request for you\\H\""
+    tx["tx2"] = "「I want to see #{target} withouts clothes.\\H\n Pretty please? \\H」" 
+    tx["tx2"] = "「I want to see #{target} withouts clothes.\\H\n #{myname}も裸だし、いいでしょ？\\H」"  if $msg.t_enemy.nude? #既に相手が脱いでいる
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "「あぁん、いじわる～！」"
