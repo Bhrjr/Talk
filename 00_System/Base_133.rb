@@ -20,33 +20,33 @@ class MsgMatango_A < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "sir" #主人公への二人称
+        @target = "Sir" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "sweetie" #仲間への二人称
+          @partner = "Sweetie" #仲間への二人称
           @partner = "Missy" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "sweetie" if $msg.age2 < 0 #年上仲間への二人称
-          @partner = "sweetie" if @doppel_pt #同属仲間への二人称
-          @partner = "ma'am" if $data_SDB[$msg.t_partner.class_id].name == "Neigerange" #相手がネイジュレンジ
+          @partner = "Sweetie" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Sweetie" if @doppel_pt #同属仲間への二人称
+          @partner = "Ma'am" if $data_SDB[$msg.t_partner.class_id].name == "Neigerange" #相手がネイジュレンジ
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "sweetie" #仲間への二人称
+        @target = "Sweetie" #仲間への二人称
         @target = "Missy" if $msg.age > 0 #年下仲間への二人称
-        @target = "sweetie" if $msg.age < 0 #年上仲間への二人称
-        @target = "sweetie" if @doppel #同属仲間への二人称
-        @target = "ma'am" if $data_SDB[$msg.t_target.class_id].name == "Neigerange" #相手がネイジュレンジ
+        @target = "Sweetie" if $msg.age < 0 #年上仲間への二人称
+        @target = "Sweetie" if @doppel #同属仲間への二人称
+        @target = "Ma'am" if $data_SDB[$msg.t_target.class_id].name == "Neigerange" #相手がネイジュレンジ
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "sir" #主人公への二人称
+        @partner = "Sir" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "sweetie" #相方への二人称
+          @cp_leader = "Sweetie" #相方への二人称
           @cp_leader = "Missy" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "sweetie" if $msg.age3 < 0 #年上相方への二人称
-          @cp_leader = "sweetie" if @doppel_cp #同属相方への二人称
+          @cp_leader = "Sweetie" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Sweetie" if @doppel_cp #同属相方への二人称
         end
       end
     #=====================================================================
@@ -63,11 +63,11 @@ class MsgMatango_A < MsgBase
             @partner = "Ms. #{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
             @partner = "Lady Nei" if $data_SDB[$msg.t_partner.class_id].name == "Neigerange" #相手がネイジュレンジ
           else
-            @partner = "sweetie" #仲間への二人称
+            @partner = "Sweetie" #仲間への二人称
             @partner = "Missy" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "sweetie" if $msg.age2 < 0 #年上仲間への二人称
-            @partner = "sweetie" if @doppel_pt #同属仲間への二人称
-            @partner = "ma'am" if $data_SDB[$msg.t_partner.class_id].name == "Neigerange" #相手がネイジュレンジ
+            @partner = "Sweetie" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Sweetie" if @doppel_pt #同属仲間への二人称
+            @partner = "Ma'am" if $data_SDB[$msg.t_partner.class_id].name == "Neigerange" #相手がネイジュレンジ
           end
         end
       #▼会話対象が主人公でない場合
@@ -79,11 +79,11 @@ class MsgMatango_A < MsgBase
           @target = "Ms. #{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
           @target = "Lady Nei" if $data_SDB[$msg.t_target.class_id].name == "Neigerange" #相手がネイジュレンジ
         else
-          @target = "sweetie" #仲間への二人称
+          @target = "Sweetie" #仲間への二人称
           @target = "Missy" if $msg.age > 0 #年下仲間への二人称
-          @target = "sweetie" if $msg.age < 0 #年上仲間への二人称
-          @target = "sweetie" if @doppel #同属仲間への二人称
-          @target = "ma'am" if $data_SDB[$msg.t_target.class_id].name == "Neigerange" #相手がネイジュレンジ
+          @target = "Sweetie" if $msg.age < 0 #年上仲間への二人称
+          @target = "Sweetie" if @doppel #同属仲間への二人称
+          @target = "Ma'am" if $data_SDB[$msg.t_target.class_id].name == "Neigerange" #相手がネイジュレンジ
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -97,11 +97,11 @@ class MsgMatango_A < MsgBase
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
             @cp_leader = "Lady Nei" if $data_SDB[$msg.coop_leader.class_id].name == "Neigerange" #相手がネイジュレンジ
           else
-            @cp_leader = "sweetie" #相方への二人称
+            @cp_leader = "Sweetie" #相方への二人称
             @cp_leader = "Missy" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "sweetie" if $msg.age3 < 0 #年上仲間への二人称
-            @cp_leader = "sweetie" if @doppel_cp #同属仲間への二人称
-            @cp_leader = "ma'am" if $data_SDB[$msg.coop_leader.class_id].name == "Neigerange" #相手がネイジュレンジ
+            @cp_leader = "Sweetie" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Sweetie" if @doppel_cp #同属仲間への二人称
+            @cp_leader = "Ma'am" if $data_SDB[$msg.coop_leader.class_id].name == "Neigerange" #相手がネイジュレンジ
           end
         end
       end
