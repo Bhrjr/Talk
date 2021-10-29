@@ -23,24 +23,24 @@ class MsgRarmil < MsgBase
         @target = "#{$msg.t_target.name}"
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "dear" #仲間への二人称
-          @partner = "dear" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "dear" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Lady" #仲間への二人称
+          @partner = "Lady" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Lady" if $msg.age2 < 0 #年上仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "dear" #仲間への二人称
-        @target = "dear" if $msg.age > 0 #年下仲間への二人称
-        @target = "dear" if $msg.age < 0 #年上仲間への二人称
+        @target = "Lady" #仲間への二人称
+        @target = "Lady" if $msg.age > 0 #年下仲間への二人称
+        @target = "Lady" if $msg.age < 0 #年上仲間への二人称
         @partner = "#{$game_actors[101].name}"
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "dear" #相方への二人称
-          @cp_leader = "dear" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "dear" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Lady" #相方への二人称
+          @cp_leader = "Lady" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Lady" if $msg.age3 < 0 #年上相方への二人称
         end
       end
     #=====================================================================
@@ -51,25 +51,25 @@ class MsgRarmil < MsgBase
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
           if @companion_pt == true#相手の事を知っている場合の二人称
-            @partner = "dear" #仲間への二人称
-            @partner = "dear" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "dear" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Lady" #仲間への二人称
+            @partner = "Lady" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Lady" if $msg.age2 < 0 #年上仲間への二人称
           else
-            @partner = "dear" #仲間への二人称
-            @partner = "dear" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "dear" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Lady" #仲間への二人称
+            @partner = "Lady" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Lady" if $msg.age2 < 0 #年上仲間への二人称
           end
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         if @companion == true#相手の事を知っている場合の二人称
-          @target = "dear" #仲間への二人称
-          @target = "dear" if $msg.age > 0 #年下仲間への二人称
-          @target = "dear" if $msg.age < 0 #年上仲間への二人称
+          @target = "Lady" #仲間への二人称
+          @target = "Lady" if $msg.age > 0 #年下仲間への二人称
+          @target = "Lady" if $msg.age < 0 #年上仲間への二人称
         else
-          @target = "dear" #仲間への二人称
-          @target = "dear" if $msg.age > 0 #年下仲間への二人称
-          @target = "dear" if $msg.age < 0 #年上仲間への二人称
+          @target = "Lady" #仲間への二人称
+          @target = "Lady" if $msg.age > 0 #年下仲間への二人称
+          @target = "Lady" if $msg.age < 0 #年上仲間への二人称
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -77,13 +77,13 @@ class MsgRarmil < MsgBase
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
           if @companion_cp == true
-            @cp_leader = "dear" #相方への二人称
-            @cp_leader = "dear" if $msg.age3 > 0 #年下相方への二人称
-            @cp_leader = "dear" if $msg.age3 < 0 #年上相方への二人称
+            @cp_leader = "Lady" #相方への二人称
+            @cp_leader = "Lady" if $msg.age3 > 0 #年下相方への二人称
+            @cp_leader = "Lady" if $msg.age3 < 0 #年上相方への二人称
           else
-            @cp_leader = "dear" #相方への二人称
-            @cp_leader = "dear" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "dear" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Lady" #相方への二人称
+            @cp_leader = "Lady" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Lady" if $msg.age3 < 0 #年上仲間への二人称
           end
         end
       end
