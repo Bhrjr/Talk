@@ -21,29 +21,29 @@ class MsgLilim_A < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "Big Bro" #主人公への二人称
+        @target = "Big bro" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "girlie" #仲間への二人称
-          @partner = "girlie" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Girlie" #仲間への二人称
+          @partner = "Little girlie" if $msg.age2 > 0 #年下仲間への二人称
           @partner = "Sissy" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "girlie" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "girlie" #仲間への二人称
-        @target = "girlie" if $msg.age > 0 #年下仲間への二人称
+        @target = "Girlie" #仲間への二人称
+        @target = "Little girlie" if $msg.age > 0 #年下仲間への二人称
         @target = "Sissy" if $msg.age < 0 #年上仲間への二人称
-        @target = "girlie" if @doppel #同属仲間への二人称
+        @target = "Girlie" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "Big Bro" #主人公への二人称
+        @partner = "Big bro" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "Sissy" #相方への二人称
-          @cp_leader = "Sissy" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Little sissy" if $msg.age3 > 0 #年下相方への二人称
           @cp_leader = "Big sissy" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "Sissy" if @doppel_cp #同属相方への二人称
         end
@@ -58,13 +58,13 @@ class MsgLilim_A < MsgBase
           if @companion_pt == true#相手の事を知っている場合の二人称
             @partner = "Ms. #{$msg.short_name($msg.t_partner)}" #仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}-girl" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "Big Sissy" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Big sissy" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}-girl" if @doppel_pt #同属仲間への二人称
           else
-            @partner = "girlie" #仲間への二人称
-            @partner = "girlie" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Girlie" #仲間への二人称
+            @partner = "Little girlie" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Sissy" if $msg.age2 < 0 #年上仲間への二人称
-            @partner = "girlie" if @doppel_pt #同属仲間への二人称
+            @partner = "Girlie" if @doppel_pt #同属仲間への二人称
           end
         end
       #▼会話対象が主人公でない場合
@@ -72,11 +72,11 @@ class MsgLilim_A < MsgBase
         if @companion == true#相手の事を知っている場合の二人称
           @target = "Ms. #{$msg.short_name($msg.t_target)}" #仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}-girl" if $msg.age > 0 #年下仲間への二人称
-          @target = "Big Sissy" if $msg.age < 0 #年上仲間への二人称
+          @target = "Big sissy" if $msg.age < 0 #年上仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}-girl" if @doppel #同属仲間への二人称
         else
           @target = "Sissy" #仲間への二人称
-          @target = "Sissy" if $msg.age > 0 #年下仲間への二人称
+          @target = "Little sissy" if $msg.age > 0 #年下仲間への二人称
           @target = "Big sissy" if $msg.age < 0 #年上仲間への二人称
           @target = "Sissy" if @doppel #同属仲間への二人称
         end
@@ -88,7 +88,7 @@ class MsgLilim_A < MsgBase
           if @companion_cp == true
             @cp_leader = "Ms. #{$msg.short_name($msg.coop_leader)}" #相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}-girl" if $msg.age3 > 0 #年下相方への二人称
-            @cp_leader = "Big Sissy" if $msg.age3 < 0 #年上相方への二人称
+            @cp_leader = "Big sissy" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}-girl" if @doppel_cp #同属相方への二人称
           else
             @cp_leader = "Sissy" #相方への二人称
