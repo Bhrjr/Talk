@@ -24,14 +24,14 @@ class MsgMimic_B < MsgBase
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
           @partner = "Lassie" #仲間への二人称
-          @partner = "Missy" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Little missy" if $msg.age2 > 0 #年下仲間への二人称
           @partner = "Big sister" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "lassie" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "Lassie" #仲間への二人称
-        @target = "Missy" if $msg.age > 0 #年下仲間への二人称
+        @target = "Little missy" if $msg.age > 0 #年下仲間への二人称
         @target = "Big Sister" if $msg.age < 0 #年上仲間への二人称
         @target = "Lassie" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
@@ -42,7 +42,7 @@ class MsgMimic_B < MsgBase
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "Lassie" #相方への二人称
-          @cp_leader = "Missy" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Little missy" if $msg.age3 > 0 #年下相方への二人称
           @cp_leader = "Lassie" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "Lassie" if @doppel_cp #同属相方への二人称
         end
@@ -56,12 +56,12 @@ class MsgMimic_B < MsgBase
         if $msg.t_partner != nil
           if @companion_pt == true#相手の事を知っている場合の二人称
             @partner = "Lassie" #仲間への二人称
-            @partner = "Missy" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Little missy" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Big sister" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Lassie" if @doppel_pt #同属仲間への二人称
           else
             @partner = "Lassie" #仲間への二人称
-            @partner = "Missy" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Little missy" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Big sister" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Lassie" if @doppel_pt #同属仲間への二人称
           end
@@ -70,12 +70,12 @@ class MsgMimic_B < MsgBase
       elsif $msg.t_target != $game_actors[101]
         if @companion == true#相手の事を知っている場合の二人称
           @target = "Lassie" #仲間への二人称
-          @target = "Missy" if $msg.age > 0 #年下仲間への二人称
+          @target = "Little missy" if $msg.age > 0 #年下仲間への二人称
           @target = "Big sister" if $msg.age < 0 #年上仲間への二人称
           @target = "Lassie" if @doppel #同属仲間への二人称
         else
           @target = "Lassie" #仲間への二人称
-          @target = "Missy" if $msg.age > 0 #年下仲間への二人称
+          @target = "Little missy" if $msg.age > 0 #年下仲間への二人称
           @target = "Big sister" if $msg.age < 0 #年上仲間への二人称
           @target = "Lassie" if @doppel #同属仲間への二人称
         end
@@ -86,12 +86,12 @@ class MsgMimic_B < MsgBase
         if $msg.coop_leader != $msg.t_enemy
           if @companion_cp == true
             @cp_leader = "Lassie" #相方への二人称
-            @cp_leader = "Missy" if $msg.age3 > 0 #年下相方への二人称
+            @cp_leader = "Little missy" if $msg.age3 > 0 #年下相方への二人称
             @cp_leader = "Big sister" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "Lassie" if @doppel_cp #同属相方への二人称
           else
             @cp_leader = "Lassie" #相方への二人称
-            @cp_leader = "Missy" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Little missy" if $msg.age3 > 0 #年下仲間への二人称
             @cp_leader = "Big sister" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "Lassie" if @doppel_cp #同属仲間への二人称
           end
