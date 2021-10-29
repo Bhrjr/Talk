@@ -79,18 +79,18 @@ when "空腹"
   #====================================================================================================================
     case $msg.talk_step
     when 1 # 空腹１人目
-      tx["tx1"] = ""\Hey, earth to #{target}!\n Haven't you forgotten something important for a while....?\n Answer me before I count to 5♪\n \\|5....\\|4....\\|3....\\|2....\\|1...."\"
-      tx["tx2"] = ""\....Bzzt! Time's up♪\n As a punishment, you have to be my meal, #{target}\\H\n Geez...you totally forget you had a contract with me....!"\"
-      tx["tx3"] = ""\I'm gonna punish you to make sure you don't forget it ever again, #{target}\\H\n Augh! You better prepare yourself! \\H"\"
+      tx["tx1"] = "\"Hey, earth to #{target}!\n Haven't you forgotten something important for a while....?\n Answer me before I count to 5♪\n \\|5....\\|4....\\|3....\\|2....\\|1....\""
+      tx["tx2"] = "\"....Bzzt! Time's up♪\n As a punishment, you have to be my meal, #{target}\\H\n Geez...you totally forget you had a contract with me....!\""
+      tx["tx3"] = "\"I'm gonna punish you to make sure you don't forget it ever again, #{target}\\H\n Eyargh! You better prepare yourself! \\H\""
       tx["tx4"] = "#{speaker} approaches quietly!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
-      tx["tx1"] = ""\Hey, wait up! I'm not letting you get a head start!\n I said wait, #{myname}!"\"
-      tx["tx2"] = ""\Let #{myname} join in too♪\n You're gonna refuse or anything, are you, #{target}? \\H"\"
+      tx["tx1"] = "\"Hey, wait up! I'm not letting you get a head start!\n I said wait, #{myname}!\""
+      tx["tx2"] = "\"Let #{myname} join in too♪\n You're not gonna refuse or anything, are you, #{target}? \\H\""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
-      tx["tx1"] = ""\#{giggle}\n On that not, let #{myname} join in too♪"\"
-      tx["tx2"] = ""\Perfect timing!\n Why don't we all have a meal together\\H"\"
+      tx["tx1"] = "\"#{giggle}\n On that note, let #{myname} join in too♪\""
+      tx["tx2"] = "\"Perfect timing!\n Why don't we all have a meal together\\H\""
     end
 
   #====================================================================================================================
@@ -102,7 +102,7 @@ when "空腹"
       tx["tx1"] = "「は～い、ちょっといいかな#{target}？\n　さっきから、何か大切なものを忘れてない……？\n　５数えるうちに答えてね♪\n　\\|５……\\|４……\\|３……\\|２……\\|１……」"
       tx["tx2"] = "「……ぶぶ～、時間切れ～♪\n　罰として、#{target}は#{myname}のごはんになってもらいまーす\\H\n　んもう……すっかり契約のこと忘れてるんだからぁっ……！」"
       tx["tx3"] = "「もう忘れたりしないように、#{target}にはおしおきだね\\H\n　え～い、覚悟しろぉ～っ！\\H」"
-      tx["tx4"] = "#{speaker}の瞳が怪しい光を帯びる！\n#{master}に逃げ場は無い……！" + "TALKTEXT"
+      tx["tx4"] = "#{speaker}'s eyes have an eerie shine to them!\n#{master}に逃げ場は無い……！" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
       tx["tx1"] = "「あ、待って待って！抜け駆けは許さないからね？\n　#{myname}だって待ってたんだから！」"
@@ -122,7 +122,7 @@ when "空腹"
       tx["tx1"] = "「は～い、ちょっといいかな#{target}？\n　さっきから、何か大切なものを忘れてない……？\n　５数えるうちに答えてね♪\n　\\|５……\\|４……\\|３……\\|２……\\|１……」"
       tx["tx2"] = "「……ぶぶ～、時間切れ～♪\n　罰として、#{target}は#{myname}のごはんになってもらいまーす\\H\n　んもう……すっかり契約のこと忘れてるんだからぁっ……！」"
       tx["tx3"] = "「もう忘れたりしないように、#{target}にはおしおきだね\\H\n　え～い、覚悟しろぉ～っ！\\H」"
-      tx["tx4"] = "#{speaker}は空腹で我を忘れている！\n#{master}に逃げ場は無い……！" + "TALKTEXT"
+      tx["tx4"] = "#{speaker} is going mad from the hunger!\n#{master}に逃げ場は無い……！" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
       tx["tx1"] = "「あ、待って待って！抜け駆けは許さないからね？\n　#{myname}だって待ってたんだから！」"
@@ -140,13 +140,13 @@ when "空腹"
 
 #=======================================================================================================================
 #★調理技能-----------------------------------------------------------------------------------------------------------#
-when "調理"
+when "Cook"
   case $msg.at_type
-  when "意気込み"
+  when "Put on Steam"
     #==================================================================================================================
     #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
     #==================================================================================================================
-    tx["tx1"] = "「精のつくもの、作ってあげる\\H」"
+    tx["tx1"] = "「I'll make something that'll pump you up\\H」"
     #格納
     ms.push(tx)
     #==================================================================================================================
@@ -157,7 +157,7 @@ when "調理"
     case $msg.t_enemy.cook_dex
     #消し炭orどろどろ
     when 0..49
-      tx["tx1"] = "「精のつくもの、作ってあげる\\H\n　……これってどうやって使うの？」"
+      tx["tx1"] = "「I'll make something that'll pump you up\\H\n ....How do you use this?」"
     #サラダやサンドイッチが作れるレベル
     when 50..149
       tx["tx1"] = "「精のつくもの、作ってあげる\\H」"
@@ -176,16 +176,16 @@ when "調理"
 
 #=======================================================================================================================
 #★ランクアップ(対応しない夢魔は項目ごと消去推奨----------------------------------------------------------------------#
-when "ランクアップ"
+when "Rank Up"
   case $msg.talk_step
   when 1 #ランクアップ前口上
-    tx["tx1"] = "「#{giggle}\n　オトナな#{myname}、見てみたい？\n　今ならなれそうな気がするの\\H」"
+    tx["tx1"] = "「#{giggle}\n You wanna see me all grown-up?\n I think that's doable by now\\H」"
   when 2 #ランクアップ開始
-    tx["tx1"] = "「それじゃ見ててね……\\H\n　ん……ぁ……あぁ……っ\\H」"
+    tx["tx1"] = "「Then have a look....\\H\n Nnn....aah....aaah....\\H」"
   when 3 #ランクアップ終了
     tx["tx1"] = "「#{giggle}」" #ここは表示されない。ランクアップ後の姿で設定する。
   when 4 #ランクアップしない
-    tx["tx1"] = "「今のままでいいの？\n　ふふっ、#{target}が言うならそうする♪」"
+    tx["tx1"] = "「You're fine with how I am now?\n Nfufu, if you say so, #{target}♪」"
   end
   #格納
   ms.push(tx)
