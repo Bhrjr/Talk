@@ -24,14 +24,14 @@ class MsgCursemagus_A < MsgBase
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
           @partner = "Girl" #仲間への二人称
-          @partner = "Girl" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Little girl" if $msg.age2 > 0 #年下仲間への二人称
           @partner = "Girl" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "Girl" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "Girl" #仲間への二人称
-        @target = "Girl" if $msg.age > 0 #年下仲間への二人称
+        @target = "Little girl" if $msg.age > 0 #年下仲間への二人称
         @target = "Girl" if $msg.age < 0 #年上仲間への二人称
         @target = "Girl" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
@@ -42,7 +42,7 @@ class MsgCursemagus_A < MsgBase
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "Girl" #相方への二人称
-          @cp_leader = "Girl" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Little girl" if $msg.age3 > 0 #年下相方への二人称
           @cp_leader = "Girl" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "Girl" if @doppel_cp #同属相方への二人称
         end
@@ -61,7 +61,7 @@ class MsgCursemagus_A < MsgBase
             @partner = "#{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
           else
             @partner = "Girl" #仲間への二人称
-            @partner = "Girl" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Little girl" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Girl" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Girl" if @doppel_pt #同属仲間への二人称
           end
@@ -75,7 +75,7 @@ class MsgCursemagus_A < MsgBase
           @target = "#{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
         else
           @target = "Girl" #仲間への二人称
-          @target = "Girl" if $msg.age > 0 #年下仲間への二人称
+          @target = "Little girl" if $msg.age > 0 #年下仲間への二人称
           @target = "Girl" if $msg.age < 0 #年上仲間への二人称
           @target = "Girl" if @doppel #同属仲間への二人称
         end
@@ -91,7 +91,7 @@ class MsgCursemagus_A < MsgBase
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
           else
             @cp_leader = "Girl" #相方への二人称
-            @cp_leader = "Girl" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Little girl" if $msg.age3 > 0 #年下仲間への二人称
             @cp_leader = "Girl" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "Girl" if @doppel_cp #同属仲間への二人称
           end
