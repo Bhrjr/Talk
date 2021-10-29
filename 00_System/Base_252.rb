@@ -20,28 +20,28 @@ class MsgRejeo < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "bud" #主人公への二人称
+        @target = "Bud" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "bud" #仲間への二人称
-          @partner = "bud" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "bud" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Bud" #仲間への二人称
+          @partner = "Bud" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Bud" if $msg.age2 < 0 #年上仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "bud" #仲間への二人称
-        @target = "bud" if $msg.age > 0 #年下仲間への二人称
-        @target = "bud" if $msg.age < 0 #年上仲間への二人称
+        @target = "Bud" #仲間への二人称
+        @target = "Bud" if $msg.age > 0 #年下仲間への二人称
+        @target = "Bud" if $msg.age < 0 #年上仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "bud" #主人公への二人称
+        @partner = "Bud" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "bud" #相方への二人称
-          @cp_leader = "bud" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "bud" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Bud" #相方への二人称
+          @cp_leader = "Bud" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Bud" if $msg.age3 < 0 #年上相方への二人称
         end
       end
     #=====================================================================
@@ -56,9 +56,9 @@ class MsgRejeo < MsgBase
             @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 < 0 #年上仲間への二人称
           else
-            @partner = "bud" #仲間への二人称
-            @partner = "bud" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "bud" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Bud" #仲間への二人称
+            @partner = "Bud" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Bud" if $msg.age2 < 0 #年上仲間への二人称
           end
         end
       #▼会話対象が主人公でない場合
@@ -68,9 +68,9 @@ class MsgRejeo < MsgBase
           @target = "#{$msg.short_name($msg.t_target)}" if $msg.age > 0 #年下仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if $msg.age < 0 #年上仲間への二人称
         else
-          @target = "bud" #仲間への二人称
-          @target = "bud" if $msg.age > 0 #年下仲間への二人称
-          @target = "bud" if $msg.age < 0 #年上仲間への二人称
+          @target = "Bud" #仲間への二人称
+          @target = "Bud" if $msg.age > 0 #年下仲間への二人称
+          @target = "Bud" if $msg.age < 0 #年上仲間への二人称
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
