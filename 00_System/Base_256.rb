@@ -23,16 +23,16 @@ class MsgShilphe < MsgBase
         @target = "#{$msg.t_target.name}様"
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "ma'am" #仲間への二人称
-          @partner = "ma'am" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "ma'am" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Ma'am" #仲間への二人称
+          @partner = "Ma'am" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Ma'am" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "Master #{$msg.t_partner.name}" if $msg.t_partner.boss_graphic? #相手がユニークキャラクター
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "ma'am" #仲間への二人称
-        @target = "ma'am" if $msg.age > 0 #年下仲間への二人称
-        @target = "ma'am" if $msg.age < 0 #年上仲間への二人称
+        @target = "Ma'am" #仲間への二人称
+        @target = "Ma'am" if $msg.age > 0 #年下仲間への二人称
+        @target = "Ma'am" if $msg.age < 0 #年上仲間への二人称
         @target = "Master #{$msg.t_target.name}" if $msg.t_target.boss_graphic? #相手がユニークキャラクター
         @partner = "Master #{$msg.t_partner.name}"
       end
@@ -40,9 +40,9 @@ class MsgShilphe < MsgBase
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "ma'am" #相方への二人称
-          @cp_leader = "ma'am" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "ma'am" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Ma'am" #相方への二人称
+          @cp_leader = "Ma'am" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Ma'am" if $msg.age3 < 0 #年上相方への二人称
         end
       end
     #=====================================================================
@@ -57,9 +57,9 @@ class MsgShilphe < MsgBase
             @partner = "Master #{$msg.t_partner.name}" if $msg.age2 > 0 #年下仲間への二人称
             @partner = "Master #{$msg.t_partner.name}" if $msg.age2 < 0 #年上仲間への二人称
           else
-            @partner = "ma'am" #仲間への二人称
-            @partner = "ma'am" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "ma'am" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Ma'am" #仲間への二人称
+            @partner = "Ma'am" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Ma'am" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Master #{$msg.t_partner.name}" if $msg.t_partner.boss_graphic? #相手がユニークキャラクター
           end
         end
@@ -70,9 +70,9 @@ class MsgShilphe < MsgBase
           @target = "Master #{$msg.t_target.name}" if $msg.age > 0 #年下仲間への二人称
           @target = "Master #{$msg.t_target.name}" if $msg.age < 0 #年上仲間への二人称
         else
-          @target = "ma'am" #仲間への二人称
-          @target = "ma'am" if $msg.age > 0 #年下仲間への二人称
-          @target = "ma'am" if $msg.age < 0 #年上仲間への二人称
+          @target = "Ma'am" #仲間への二人称
+          @target = "Ma'am" if $msg.age > 0 #年下仲間への二人称
+          @target = "Ma'am" if $msg.age < 0 #年上仲間への二人称
           @target = "Master #{$msg.t_target.name}" if $msg.t_target.boss_graphic? #相手がユニークキャラクター
         end
       end
@@ -85,9 +85,9 @@ class MsgShilphe < MsgBase
             @cp_leader = "Master #{$msg.coop_leader.name}" if $msg.age3 > 0 #年下相方への二人称
             @cp_leader = "Master #{$msg.coop_leader.name}" if $msg.age3 < 0 #年上相方への二人称
           else
-            @cp_leader = "ma'am" #相方への二人称
-            @cp_leader = "ma'am" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "ma'am" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Ma'am" #相方への二人称
+            @cp_leader = "Ma'am" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Ma'am" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "Master #{$msg.coop_leader.name}" if $msg.coop_leader.boss_graphic? #連携相手がユニークキャラクター
           end
         end
