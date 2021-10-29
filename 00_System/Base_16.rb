@@ -20,31 +20,31 @@ class MsgSuccubuslord_B < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "son" #主人公への二人称
+        @target = "My boy" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
-          @partner = "lass" #仲間への二人称
-          @partner = "lass" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "lass" if $msg.age2 < 0 #年上仲間への二人称
-          @partner = "lass" if @doppel_pt #同属仲間への二人称
+          @partner = "Lass" #仲間への二人称
+          @partner = "Young lass" if $msg.age2 > 0 #年下仲間への二人称
+          @partner = "Cutie" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Lass" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
-        @target = "girl" #仲間への二人称
-        @target = "missie" if $msg.age > 0 #年下仲間への二人称
-        @target = "girl" if $msg.age < 0 #年上仲間への二人称
-        @target = "girl" if @doppel #同属仲間への二人称
+        @target = "Girl" #仲間への二人称
+        @target = "Little missy" if $msg.age > 0 #年下仲間への二人称
+        @target = "Big girl" if $msg.age < 0 #年上仲間への二人称
+        @target = "Girl" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "boy" #主人公への二人称
+        @partner = "My boy" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
         #会話の仕掛け手が自分で無い場合、呼称を設定する
         if $msg.coop_leader != $msg.t_enemy
-          @cp_leader = "girl" #相方への二人称
-          @cp_leader = "missie" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "girl" if $msg.age3 < 0 #年上相方への二人称
-          @cp_leader = "girl" if @doppel_cp #同属相方への二人称
+          @cp_leader = "Girl" #相方への二人称
+          @cp_leader = "Little missy" if $msg.age3 > 0 #年下相方への二人称
+          @cp_leader = "Big girl" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Girl" if @doppel_cp #同属相方への二人称
         end
       end
     #=====================================================================
@@ -60,10 +60,10 @@ class MsgSuccubuslord_B < MsgBase
             @partner = "#{$msg.short_name($msg.t_partner)}" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "#{$msg.short_name($msg.t_partner)}" if @doppel_pt #同属仲間への二人称
           else
-            @partner = "girl" #仲間への二人称
-            @partner = "girl" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "girl" if $msg.age2 < 0 #年上仲間への二人称
-            @partner = "girl" if @doppel_pt #同属仲間への二人称
+            @partner = "Girl" #仲間への二人称
+            @partner = "Little girl" if $msg.age2 > 0 #年下仲間への二人称
+            @partner = "Girl" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Girl" if @doppel_pt #同属仲間への二人称
           end
         end
       #▼会話対象が主人公でない場合
@@ -74,10 +74,10 @@ class MsgSuccubuslord_B < MsgBase
           @target = "#{$msg.short_name($msg.t_target)}" if $msg.age < 0 #年上仲間への二人称
           @target = "#{$msg.short_name($msg.t_target)}" if @doppel #同属仲間への二人称
         else
-          @target = "girl" #仲間への二人称
-          @target = "missie" if $msg.age > 0 #年下仲間への二人称
-          @target = "girl" if $msg.age < 0 #年上仲間への二人称
-          @target = "girl" if @doppel #同属仲間への二人称
+          @target = "Girl" #仲間への二人称
+          @target = "Little missy" if $msg.age > 0 #年下仲間への二人称
+          @target = "Girl" if $msg.age < 0 #年上仲間への二人称
+          @target = "Girl" if @doppel #同属仲間への二人称
         end
       end
       #▼連携が発生している場合、別途呼称を設定する
@@ -90,10 +90,10 @@ class MsgSuccubuslord_B < MsgBase
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if $msg.age3 < 0 #年上相方への二人称
             @cp_leader = "#{$msg.short_name($msg.coop_leader)}" if @doppel_cp #同属相方への二人称
           else
-            @cp_leader = "girl" #相方への二人称
-            @cp_leader = "missie" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "girl" if $msg.age3 < 0 #年上仲間への二人称
-            @cp_leader = "girl" if @doppel_cp #同属仲間への二人称
+            @cp_leader = "Girl" #相方への二人称
+            @cp_leader = "Little missy" if $msg.age3 > 0 #年下仲間への二人称
+            @cp_leader = "Girl" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Girl" if @doppel_cp #同属仲間への二人称
           end
         end
       end
