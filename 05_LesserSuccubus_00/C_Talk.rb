@@ -22,19 +22,19 @@ class MsgLessersuccubus_A < MsgBase
                           case $msg.talk_step
                           when 0
                             tx["md"] = "22"
-                            tx["md"] = "0" if $msg.tag == "不成立"
+                            tx["md"] = "0" if $msg.tag == "Rejected"
                           when 1
                             tx["md"] = "0"
-                            tx["md"] = "27" if $msg.tag == "好意"
+                            tx["md"] = "27" if $msg.tag == "Favor"
                           when 2..76
                             case $msg.tag
-                            when "愛撫・通常","愛撫・性交","視姦","奉仕"
+                            when "Caress - normal","Caress - intercourse","Leer","Show Love"
                               tx["md"] = "24"
-                            when "主人公脱衣","夢魔脱衣"
+                            when "Player Stripped","Succubus Stripped"
                               tx["md"] = "23"
-                            when "吸精・口","吸精・性器"
+                            when "Energy-suck - mouth","Energy-suck - genitals"
                               tx["md"] = "25"
-                            when "交合"
+                            when "Mingle"
                               tx["md"] = "26"
                             end
                           when 77
@@ -61,19 +61,19 @@ class MsgLessersuccubus_A < MsgBase
                           case $msg.talk_step
                           when 0
                             tx["md"] = "22"
-                            tx["md"] = "0" if $msg.tag == "不成立"
+                            tx["md"] = "0" if $msg.tag == "Rejected"
                           when 1
                             tx["md"] = "0"
-                            tx["md"] = "27" if $msg.tag == "好意"
+                            tx["md"] = "27" if $msg.tag == "Favor"
                           when 2..76
                             case $msg.tag
-                            when "愛撫・通常","愛撫・性交","視姦","奉仕"
+                            when "Caress - normal","Caress - intercourse","Leer","Show love"
                               tx["md"] = "24"
-                            when "主人公脱衣","夢魔脱衣"
+                            when "Player stripped","Succubus stripped"
                               tx["md"] = "23"
-                            when "吸精・口","吸精・性器"
+                            when "Energy-suck - mouth","Energy-suck - genitals"
                               tx["md"] = "25"
-                            when "交合"
+                            when "Mingle"
                               tx["md"] = "26"
                             end
                           when 77
@@ -91,36 +91,36 @@ case $msg.tag
 #・エネミークライシス（非ホールド状態）
 #・絶頂中
 #・会話回数が３回を越えた（非ベッドイン中）
-when "不成立"
+when "Rejected"
   case $msg.at_type
-  when "夢魔絶頂中"
+  when "Succubus orgasming"
     # エネミーが絶頂直後の衰弱中
-    tx["tx1"] = "「あぁ……ん……\\H」"
+    tx["tx1"] = "\"Aaah....nnn....\\H\""
     #----------------------------
     tx["md"] = "28"
-  when "主人公クライシス"
+  when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "「くすくす……♪\n　待ちきれないのかな？」"
+    tx["tx1"] = "\"*Giggle....♪\n Guess you can't wait?\""
     #----------------------------
     tx["md"] = "29"
-  when "夢魔クライシス"
+  when "Succubus CRISIS"
     # 夢魔がクライシス中に話しかけた場合
-    tx["tx1"] = "「あはぁ……\\H\n　ねぇ……焦らさないでぇ……\\H」"
+    tx["tx1"] = "\"Ahaa....\\H\n Hey....don't tease me like that....\\H\""
     #----------------------------
     tx["md"] = "29"
-  when "夢魔恍惚中"
+  when "Succubus in ecstasy"
     # 夢魔が恍惚中の場合
-    tx["tx1"] = "「あぁ……ん……\\H」"
+    tx["tx1"] = "\"Aaah....nnn....\\H\""
     #----------------------------
     tx["md"] = "30"
-  when "夢魔暴走中"
+  when "Succubus running berserk"
     # 夢魔が暴走中の場合
-    tx["tx1"] = "「うふふっ……。\n　逃げちゃだめだからね……\\H」"
+    tx["tx1"] = "\"Ufufu....\n No running away....\\H\""
     #----------------------------
     tx["md"] = "30"
-  when "試行過多"
+  when "Excess moves"
     # ベッドイン中でない時に、同じ夢魔に同一戦闘で３回を越えて話しかけた場合
-    tx["tx1"] = "「ねぇ……？\n　おしゃべりはこれくらいにしない？\n　後は……ね\\H」"
+    tx["tx1"] = "\"Hey....\n Can't you save the talking\n for....later? \\H\""
     #----------------------------
   end
   #格納
@@ -133,7 +133,7 @@ when "不成立"
 #トークを仕掛けた場合、必ずムードと好感度が上がる。その部分の会話。
 #これが表示された後、ランダムで要求その他の分岐に入る(入らない場合もある)
 #会話に対して、好意的に返してくれる
-when "前口上"
+when "Initial remarks"
 #==================================================================================================================
   case $mood.point
   # 好感度がとても高い場合
