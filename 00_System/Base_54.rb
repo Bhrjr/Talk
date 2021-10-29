@@ -26,14 +26,14 @@ class MsgCast_B < MsgBase
         if $msg.t_partner != nil
           @partner = "Sis" #仲間への二人称
           @partner = "Sis" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "Big Sis" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Big sis" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "Sis" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "Sis" #仲間への二人称
         @target = "Sis" if $msg.age > 0 #年下仲間への二人称
-        @target = "Big Sis" if $msg.age < 0 #年上仲間への二人称
+        @target = "Big sis" if $msg.age < 0 #年上仲間への二人称
         @target = "Sis" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
         @partner = "#{$msg.t_partner.name}"
@@ -44,7 +44,7 @@ class MsgCast_B < MsgBase
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "Sis" #相方への二人称
           @cp_leader = "Sis" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "Big Sis" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Big sis" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "Sis" if @doppel_cp #同属相方への二人称
 #          @cp_leader = "Sis" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
         end
@@ -66,7 +66,7 @@ class MsgCast_B < MsgBase
           else
             @partner = "Sis" #仲間への二人称
             @partner = "Sis" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "Big Sis" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Big sis" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Sis" if @doppel_pt #同属仲間への二人称
 #            @partner = "Sis" if $data_SDB[$msg.t_partner.class_id].name == "夢魔" #相手が夢魔
           end
@@ -82,7 +82,7 @@ class MsgCast_B < MsgBase
         else
           @target = "Sis" #仲間への二人称
           @target = "Sis" if $msg.age > 0 #年下仲間への二人称
-          @target = "Big Sis" if $msg.age < 0 #年上仲間への二人称
+          @target = "Big sis" if $msg.age < 0 #年上仲間への二人称
           @target = "Sis" if @doppel #同属仲間への二人称
 #          @target = "Sis" if $data_SDB[$msg.t_target.class_id].name == "夢魔" #相手が夢魔
         end
@@ -101,7 +101,7 @@ class MsgCast_B < MsgBase
           else
             @cp_leader = "Sis" #相方への二人称
             @cp_leader = "Sis" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "Big Sis" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Big sis" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "Sis" if @doppel_cp #同属仲間への二人称
 #            @cp_leader = "Sis" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
           end
