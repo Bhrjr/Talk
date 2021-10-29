@@ -25,17 +25,17 @@ class MsgWerecat_A < MsgBase
         if $msg.t_partner != nil
           @partner = "Sis" #仲間への二人称
           @partner = "Missy" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "Big Sis" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Big sis" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "Chap" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "Sis" #仲間への二人称
         @target = "Missy" if $msg.age > 0 #年下仲間への二人称
-        @target = "Big Sis" if $msg.age < 0 #年上仲間への二人称
-        @target = "You" if @doppel #同属仲間への二人称
+        @target = "Big sis" if $msg.age < 0 #年上仲間への二人称
+        @target = "Chap" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "Chap" #主人公への二人称
+        @partner = "Bro" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
@@ -62,7 +62,7 @@ class MsgWerecat_A < MsgBase
           else
             @partner = "Sis" #仲間への二人称
             @partner = "Missy" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "Big Sis" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Big sis" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Chap" if @doppel_pt #同属仲間への二人称
           end
         end
@@ -76,7 +76,7 @@ class MsgWerecat_A < MsgBase
         else
           @target = "Sis" #仲間への二人称
           @target = "Missy" if $msg.age > 0 #年下仲間への二人称
-          @target = "Big Sis" if $msg.age < 0 #年上仲間への二人称
+          @target = "Big sis" if $msg.age < 0 #年上仲間への二人称
           @target = "Chap" if @doppel #同属仲間への二人称
         end
       end
@@ -92,7 +92,7 @@ class MsgWerecat_A < MsgBase
           else
             @cp_leader = "Sis" #相方への二人称
             @cp_leader = "Missy" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "Big Sis" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Big sis" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "Chap" if @doppel_cp #同属仲間への二人称
           end
         end
