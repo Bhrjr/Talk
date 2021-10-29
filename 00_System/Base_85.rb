@@ -25,14 +25,14 @@ class MsgQueenslime_A < MsgBase
         if $msg.t_partner != nil
           @partner = "Sissy" #仲間への二人称
           @partner = "Kid" if $msg.age2 > 0 #年下仲間への二人称
-          @partner = "Big Sissy" if $msg.age2 < 0 #年上仲間への二人称
+          @partner = "Big sissy" if $msg.age2 < 0 #年上仲間への二人称
           @partner = "Lassie" if @doppel_pt #同属仲間への二人称
         end
       #▼会話対象が主人公でない場合
       elsif $msg.t_target != $game_actors[101]
         @target = "Sissy" #仲間への二人称
         @target = "Kid" if $msg.age > 0 #年下仲間への二人称
-        @target = "Big Sissy" if $msg.age < 0 #年上仲間への二人称
+        @target = "Big sissy" if $msg.age < 0 #年上仲間への二人称
         @target = "Lassie" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
         @partner = "Bro" #主人公への二人称
@@ -43,7 +43,7 @@ class MsgQueenslime_A < MsgBase
         if $msg.coop_leader != $msg.t_enemy
           @cp_leader = "Sissy" #相方への二人称
           @cp_leader = "Kid" if $msg.age3 > 0 #年下相方への二人称
-          @cp_leader = "Big Sissy" if $msg.age3 < 0 #年上相方への二人称
+          @cp_leader = "Big sissy" if $msg.age3 < 0 #年上相方への二人称
           @cp_leader = "Lassie" if @doppel_cp #同属相方への二人称
 #          @cp_leader = "Lassie" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
         end
@@ -64,7 +64,7 @@ class MsgQueenslime_A < MsgBase
           else
             @partner = "Sissy" #仲間への二人称
             @partner = "Kid" if $msg.age2 > 0 #年下仲間への二人称
-            @partner = "Big Sissy" if $msg.age2 < 0 #年上仲間への二人称
+            @partner = "Big sissy" if $msg.age2 < 0 #年上仲間への二人称
             @partner = "Lassie" if @doppel_pt #同属仲間への二人称
 #            @partner = "Lassie" if $data_SDB[$msg.t_partner.class_id].name == "夢魔" #相手が夢魔
           end
@@ -80,7 +80,7 @@ class MsgQueenslime_A < MsgBase
         else
           @target = "Sissy" #仲間への二人称
           @target = "Kid" if $msg.age > 0 #年下仲間への二人称
-          @target = "Big Sissy" if $msg.age < 0 #年上仲間への二人称
+          @target = "Big sissy" if $msg.age < 0 #年上仲間への二人称
           @target = "Lassie" if @doppel #同属仲間への二人称
 #          @target = "Lassie" if $data_SDB[$msg.t_target.class_id].name == "夢魔" #相手が夢魔
         end
@@ -98,7 +98,7 @@ class MsgQueenslime_A < MsgBase
           else
             @cp_leader = "Sissy" #相方への二人称
             @cp_leader = "Kid" if $msg.age3 > 0 #年下仲間への二人称
-            @cp_leader = "Big Sissy" if $msg.age3 < 0 #年上仲間への二人称
+            @cp_leader = "Big sissy" if $msg.age3 < 0 #年上仲間への二人称
             @cp_leader = "Lassie" if @doppel_cp #同属仲間への二人称
 #            @cp_leader = "Lassie" if $data_SDB[$msg.coop_leader.class_id].name == "夢魔" #連携相手が夢魔
           end
