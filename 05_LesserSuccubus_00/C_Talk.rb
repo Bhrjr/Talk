@@ -239,7 +239,7 @@ when "Caress - normal"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
     tx["tx2"] = "\"I'll make you feel like you're in heaven....\\H\"" 
-    tx["tx2"] = "\"You can't take it anymore either, right, #{target}?\n Let me make you feel real good....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
+    tx["tx2"] = "\"You can't take it anymore either, right, #{target}?\n Lemme make you feel real good....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -289,7 +289,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
-    tx["tx2"] = "\"Let me make you feel good\n with my body....\\H\"" 
+    tx["tx2"] = "\"Lemme make you feel good\n with my body....\\H\"" 
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -427,7 +427,7 @@ when "Mingle"
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Hey, #{target}....\\H\n You like blowjobs? \\H\""
-      tx["tx2"] = "\"Let me give you a good sucking\\H\n Ahhh~\\H\"" 
+      tx["tx2"] = "\"Lemme give you a good sucking\\H\n Ahhh~\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Oh come on....\n You don't like it?\""
@@ -715,7 +715,7 @@ when "Caress - normal"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
     tx["tx2"] = "\"I'll make you feel like you're in heaven....\\H\"" 
-    tx["tx2"] = "\"You can't take it anymore either, right, #{target}?\n Let me make you feel real good....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
+    tx["tx2"] = "\"You can't take it anymore either, right, #{target}?\n Lemme make you feel real good....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -765,7 +765,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
-    tx["tx2"] = "\"Let me make you feel good\n with my body....\\H\"" 
+    tx["tx2"] = "\"Lemme make you feel good\n with my body....\\H\"" 
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -903,7 +903,7 @@ when "Mingle"
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Hey, #{target}....\\H\n You like blowjobs? \\H\""
-      tx["tx2"] = "\"Let me give you a good sucking\\H\n Ahhh~\\H\"" 
+      tx["tx2"] = "\"Lemme give you a good sucking\\H\n Ahhh~\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Oh come on....\n You don't like it?\""
@@ -1117,7 +1117,7 @@ when "Caress - normal"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
     tx["tx2"] = "\"I'll make you feel like you're in heaven....\\H\"" 
-    tx["tx2"] = "\"You can't take it anymore either, right, #{target}?\n Let me make you feel real good....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
+    tx["tx2"] = "\"You can't take it anymore either, right, #{target}?\n Lemme make you feel real good....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -1167,7 +1167,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
-    tx["tx2"] = "\"Let me make you feel good\n with my body....\\H\"" 
+    tx["tx2"] = "\"Lemme make you feel good\n with my body....\\H\"" 
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -1305,7 +1305,7 @@ when "Mingle"
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Hey, #{target}....\\H\n You like blowjobs? \\H\""
-      tx["tx2"] = "\"Let me give you a good sucking\\H\n Ahhh~\\H\"" 
+      tx["tx2"] = "\"Lemme give you a good sucking\\H\n Ahhh~\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Oh come on....\n You don't like it?\""
@@ -1518,7 +1518,7 @@ when "Caress - normal"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
     tx["tx2"] = "\"I'll make you feel like you're in heaven....\\H\"" 
-    tx["tx2"] = "\"You can't take it anymore either, right, #{target}?\n Let me make you feel real good....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
+    tx["tx2"] = "\"You can't take it anymore either, right, #{target}?\n Lemme make you feel real good....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -1568,7 +1568,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
-    tx["tx2"] = "\"Let me make you feel good\n with my body....\\H\"" 
+    tx["tx2"] = "\"Lemme make you feel good\n with my body....\\H\"" 
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -1673,10 +1673,10 @@ when "Leer"
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「……えへっ、ドキドキしてくれた？」"
+    tx["tx1"] = "\"....Ehe, did it make your heart race?\""
   when 79 #レジスト成功(視姦しすぎて恍惚となった場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「……えへへっ、興奮しちゃった？\n　#{target}、目がえっちだよぉ\\H」"
+    tx["tx1"] = "\"....Ehehe, did that make you excited?\n You're looking at me like a perv, #{target}\\H\""
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -1685,60 +1685,60 @@ when "Leer"
 
 #▼交合▼****************************************************************************************
 #自分にホールドを行うように要求する
-when "交合"
+when "Mingle"
   case $msg.at_parts
-  when "♀挿入"
+  when "Inserted"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「ねぇ、#{target}……。\n　#{myname}、もうがまんできない……\\H」"
-      tx["tx2"] = "「#{target}の熱いので……。\n　#{myname}を犯してぇ……\\H」"  #正常位トラップ
-      tx["tx2"] = "「#{target}の熱いので……。\n　#{myname}を後ろから犯してぇ……\\H」"  if $game_variables[17] > 50 #後背位トラップ
+      tx["tx1"] = "\"Hey, #{target}....\n #{myname} can't bear it anymore....\\H\""
+      tx["tx2"] = "\"Please fuck me....\n with #{target}'s hot dick....\\H\""  #正常位トラップ
+      tx["tx2"] = "\"Please fuck me....\n with #{target}'s hot dick from behind....\\H\""  if $game_variables[17] > 50 #後背位トラップ
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁん……。\n　#{target}の意気地なしぃ……！」"
+      tx["tx1"] = "\"Oh come on....\n You're a sissy, #{target}....\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁんっ！\\H\n　#{target}、凄いよぉ……っ\\H」"
+      tx["tx1"] = "\"Aaaah! \\H\n You're amazing, #{target}....\\H\""
     end
-  when "口挿入"
+  when "Fellatio"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「ねぇ、#{target}……\\H\n　お口でされるのは、好き？\\H」"
-      tx["tx2"] = "「#{myname}がおしゃぶりしてあげる\\H\n　はい、あ～ん\\H」" 
+      tx["tx1"] = "\"Hey, #{target}....\\H\n You like blowjobs? \\H\""
+      tx["tx2"] = "\"Lemme give you a good sucking\\H\n Ahhh~\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁん……。\n　好きじゃないのぉ？」"
+      tx["tx1"] = "\"Oh come on....\n You don't like it?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「はむっ……\\H\n　んふふっ……\\H」"
+      tx["tx1"] = "\"Mmph....\\H\n Nfufu....\\H\""
     end
-  when "パイズリ"
+  when "Paizuri"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「ねぇ、#{target}……\\H\n　#{myname}、おっぱいには自信あるんだぁ\\H」"
-      tx["tx2"] = "「#{myname}の胸で、シてみたい？\n　……はい、どうぞ\\H」" 
+      tx["tx1"] = "\"Hey, #{target}....\\H\n I'm pretty confindent in my boobs\\H\""
+      tx["tx2"] = "\"Wanna try fucking my boobs?\n Here you go\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁん……。\n　好きじゃないのぉ？」"
+      tx["tx1"] = "\"Oh come on....\n You don't like it?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「#{pleasure_s}\n　#{target}のがおっぱいに埋まっちゃった\\H」"
+      tx["tx1"] = "\"#{pleasure_s}\n #{target}'s dick's buried in my boobies\\H\""
     end
-  when "顔面騎乗"
+  when "Facesitted"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「ねぇ、#{target}……\\H\n　お願いがあるんだぁ……\\H」"
-      tx["tx2"] = "「#{myname}のココ、舐めて……\\H\n　ね、いいでしょう……？\\H」" 
+      tx["tx1"] = "\"Hey, #{target}....\\H\n #{myname} have a request for you....\\H\""
+      tx["tx2"] = "\"Lick my pussy for me....\\H\n You can do that, right....? \\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁん、意地悪……」"
+      tx["tx1"] = "\"Oh, you big meanie....\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「#{pleasure_s}\n　#{target}の舌が入ってきたぁ……っ\\H」"
+      tx["tx1"] = "\"#{pleasure_s}\n #{target}'s tongue went right inside....\\H\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
