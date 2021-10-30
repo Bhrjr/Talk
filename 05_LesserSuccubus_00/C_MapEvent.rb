@@ -86,7 +86,7 @@ when "空腹"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
       tx["tx1"] = "\"Hey, wait up! I'm not letting you get a head start!\n I said wait, #{myname}!\""
-      tx["tx2"] = "\"Let me join in too♪\n You're not gonna refuse or anything, are you, #{target}? \\H\""
+      tx["tx2"] = "\"Lemme join in too♪\n You're not gonna refuse or anything, are you, #{target}? \\H\""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
       tx["tx1"] = "\"#{giggle}\n On that note, I'm gonna join in too♪\""
@@ -106,7 +106,7 @@ when "空腹"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
       tx["tx1"] = "\"Hey, wait up! I'm not letting you get a head start!\n I said wait, #{myname}!\""
-      tx["tx2"] = "\"Let me join in too♪\n You're not gonna refuse or anything, are you, #{target}? \\H\""
+      tx["tx2"] = "\"Lemme join in too♪\n You're not gonna refuse or anything, are you, #{target}? \\H\""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
       tx["tx1"] = "\"#{giggle}\n On that note, I'm gonna join in too♪\""
@@ -126,7 +126,7 @@ when "空腹"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
       tx["tx1"] = "\"Hey, wait up! I'm not letting you get a head start!\n I said wait, #{myname}!\""
-      tx["tx2"] = "\"Let me join in too♪\n You're not gonna refuse or anything, are you, #{target}? \\H\""
+      tx["tx2"] = "\"Lemme join in too♪\n You're not gonna refuse or anything, are you, #{target}? \\H\""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
       tx["tx1"] = "\"#{giggle}\n On that note, I'm gonna join in too♪\""
