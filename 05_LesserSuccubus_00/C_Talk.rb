@@ -383,13 +383,13 @@ when "Leer"
       tx["tx1"] = "\"#{pleasure_l}\n #{target}....are you watching me....? \\H\"" 
       tx["tx1"] = "\"#{pleasure_l}\n Do you like to touch yourself like this, #{myname}....? \\H\n ....#{pleasure_s}\""  if $game_variables[17] > 50
     #▼アソコを弄る
-    when "Target: Pussy","対象：尻"
+    when "Target: Pussy","Target: Ass"
       tx["tx1"] = "\"#{pleasure_l}\n #{target}....are you watching me....? \\H\"" 
       tx["tx1"] = "\"#{pleasure_l}\n My pussy's getting all sticky....\\H\n ....#{pleasure_s}\""  if $game_variables[17] > 50
     #▼陰核を弄る
-    when "対象：陰核","対象：アナル"
+    when "Target: Clitoris","Target: Anus"
       tx["tx1"] = "\"#{pleasure_l}\n #{target}....are you watching me....? \\H\"" 
-      tx["tx1"] = "\"#{pleasure_l}\n ....You can only look, you know? No touching allowed....\\H\n ....#{pleasure_s}\""  if $game_variables[17] > 50
+      tx["tx1"] = "\"#{pleasure_l}\n ....You can look only, you know? No touching allowed....\\H\n ....#{pleasure_s}\""  if $game_variables[17] > 50
     end
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
@@ -406,60 +406,60 @@ when "Leer"
 
 #▼交合▼****************************************************************************************
 #自分にホールドを行うように要求する
-when "交合"
+when "Mingle"
   case $msg.at_parts
-  when "♀挿入"
+  when "Inserted"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「ねぇ、#{target}……。\n　#{myname}、もうがまんできない……\\H」"
-      tx["tx2"] = "「#{target}の熱いので……。\n　#{myname}を犯してぇ……\\H」"  #正常位トラップ
-      tx["tx2"] = "「#{target}の熱いので……。\n　#{myname}を後ろから犯してぇ……\\H」"  if $game_variables[17] > 50 #後背位トラップ
+      tx["tx1"] = "\"Hey, #{target}....\n #{myname} can't bear it anymore....\\H\""
+      tx["tx2"] = "\"Please fuck me....\n with #{target}'s hot dick....\\H\""  #正常位トラップ
+      tx["tx2"] = "\"Please fuck me....\n with #{target}'s hot dick from behind....\\H\""  if $game_variables[17] > 50 #後背位トラップ
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁん……。\n　#{target}の意気地なしぃ……！」"
+      tx["tx1"] = "\"Oh come on....\n You're a sissy, #{target}....\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁんっ！\\H\n　#{target}、凄いよぉ……っ\\H」"
+      tx["tx1"] = "\"Aaaah! \\H\n You're amazing, #{target}....\\H\""
     end
-  when "口挿入"
+  when "Fellatio"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「ねぇ、#{target}……\\H\n　お口でされるのは、好き？\\H」"
-      tx["tx2"] = "「#{myname}がおしゃぶりしてあげる\\H\n　はい、あ～ん\\H」" 
+      tx["tx1"] = "\"Hey, #{target}....\\H\n You like blowjobs? \\H」"
+      tx["tx2"] = "「Let me give you a good sucking\\H\n Ahhh~\\H」" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁん……。\n　好きじゃないのぉ？」"
+      tx["tx1"] = "\"Oh come on....\n You don't like it?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「はむっ……\\H\n　んふふっ……\\H」"
+      tx["tx1"] = "「Mmph....\\H\n Nfufu....\\H」"
     end
-  when "パイズリ"
+  when "Paizuri"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「ねぇ、#{target}……\\H\n　#{myname}、おっぱいには自信あるんだぁ\\H」"
-      tx["tx2"] = "「#{myname}の胸で、シてみたい？\n　……はい、どうぞ\\H」" 
+      tx["tx1"] = "\"Hey, #{target}....\\H\n I'm pretty confindent in my boobs\\H」"
+      tx["tx2"] = "「Wanna try fucking my boobs?\n Here you go\\H」"
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁん……。\n　好きじゃないのぉ？」"
+      tx["tx1"] = "\"Oh come on....\n You don't like it?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「#{pleasure_s}\n　#{target}のがおっぱいに埋まっちゃった\\H」"
+      tx["tx1"] = "「#{pleasure_s}\n #{target}'s dick is buried in my boobies\\H」"
     end
-  when "顔面騎乗"
+  when "Facesitted"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「ねぇ、#{target}……\\H\n　お願いがあるんだぁ……\\H」"
-      tx["tx2"] = "「#{myname}のココ、舐めて……\\H\n　ね、いいでしょう……？\\H」" 
+      tx["tx1"] = "\"Hey, #{target}....\\H\n #{myname} have a request for you....\\H\""
+      tx["tx2"] = "\"Lick my pussy for me....\\H\n You can do that, right....? \\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「あぁん、意地悪……」"
+      tx["tx1"] = "\"Oh, you big meanie....\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "「#{pleasure_s}\n　#{target}の舌が入ってきたぁ……っ\\H」"
+      tx["tx1"] = "\"#{pleasure_s}\n #{target}'s tongue went right inside....\\H\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
