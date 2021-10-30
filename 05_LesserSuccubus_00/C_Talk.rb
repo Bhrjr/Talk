@@ -28,9 +28,9 @@ class MsgLessersuccubus_A < MsgBase
                             tx["md"] = "27" if $msg.tag == "Favor"
                           when 2..76
                             case $msg.tag
-                            when "Caress - normal","Caress - intercourse","Leer","Show Love"
+                            when "Caress - normal","Caress - intercourse","Leer","Show love"
                               tx["md"] = "24"
-                            when "Player Stripped","Succubus Stripped"
+                            when "Player stripped","Succubus stripped"
                               tx["md"] = "23"
                             when "Energy-suck - mouth","Energy-suck - genitals"
                               tx["md"] = "25"
@@ -165,7 +165,7 @@ when "Favor"
 
 #▼主人公脱衣▼****************************************************************************************
 #主人公が自ら脱ぐよう要求される
-when "主人公脱衣"
+when "Player stripped"
   case $msg.talk_step
   when 1 #脱衣要求
     #----------------------------------------------------------------------------------------------------------------------
@@ -486,15 +486,15 @@ class MsgLessersuccubus_A < MsgBase
                           case $msg.talk_step
                           when 0
                             tx["md"] = "22"
-                            tx["md"] = "0" if $msg.tag == "不成立"
+                            tx["md"] = "0" if $msg.tag == "Rejected"
                           when 1
                             tx["md"] = "0"
-                            tx["md"] = "27" if $msg.tag == "好意"
+                            tx["md"] = "27" if $msg.tag == "Favor"
                           when 2..76
                             case $msg.tag
-                            when "愛撫・通常","愛撫・性交","視姦","奉仕"
+                            when "Caress - normal","Caress - intercourse","Leer","Show love"
                               tx["md"] = "24"
-                            when "主人公脱衣","夢魔脱衣"
+                            when "Player stripped","Succubus stripped"
                               tx["md"] = "23"
                             when "吸精・口","吸精・性器"
                               tx["md"] = "25"
