@@ -20,7 +20,7 @@ class MsgLessersuccubus_A < MsgBase
     unless $game_party.in_partybattle? or $msg.t_enemy.love > 0
       #▼会話対象が主人公の場合
       if $msg.t_target == $game_actors[101]
-        @target = "Bro" #主人公への二人称
+        @target = "Big bro" #主人公への二人称
         #パートナーが存在する場合別途設定
         if $msg.t_partner != nil
           @partner = "Sis" #仲間への二人称
@@ -35,7 +35,7 @@ class MsgLessersuccubus_A < MsgBase
         @target = "Big-sis" if $msg.age < 0 #年上仲間への二人称
         @target = "Sis" if @doppel #同属仲間への二人称
         #会話対象がパートナーなので、相方は自動的に主人公となる
-        @partner = "Bro" #主人公への二人称
+        @partner = "Big bro" #主人公への二人称
       end
       #▼連携が発生している場合、別途呼称を設定する
       if $game_switches[97] == true
