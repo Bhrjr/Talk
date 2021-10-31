@@ -68,12 +68,12 @@ when "Enemy rebound harm"
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
 when "Enemy onanism"
-  tx["tx1"] = "\"#{pleasure_s}\n Hey....#{target}....\\H\n Keep looking at me #{myname}...\""
+  tx["tx1"] = "\"#{pleasure_s}\n Hey....#{target}....\\H\n Keep looking at me #{myname}....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
 when "Enemy friendly fire"
-  tx["tx1"] = "\"ちょ……ちょっと待ってよっ……！\n　なんで#{myname}……#{pleasure_s}\""
+  tx["tx1"] = "\"H....Hang on a sec....!\n Why me.... #{pleasure_s}\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
