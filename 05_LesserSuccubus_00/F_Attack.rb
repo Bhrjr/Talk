@@ -171,7 +171,7 @@ case $msg.at_parts
 when "Tribadism"
   tx["tx1"] = "\"#{pleasure_l}\n Doesn't rubbing our pussies together feel nice? \\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "\"#{pleasure_l}\n Coming already?\n In that case, go a bit harder\\H\"" if $msg.t_target.crisis? #対象がクライシス
+  tx["tx1"] = "\"#{pleasure_l}\n Coming already?\n In that case, go a bit harder, please\\H\"" if $msg.t_target.crisis? #対象がクライシス
   tx["tx1"] = "\"#{giggle}\n I'm not letting you fall asleep\\H\n Let's keep up the fun\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
   #格納
