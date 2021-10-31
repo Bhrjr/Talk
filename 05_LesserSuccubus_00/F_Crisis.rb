@@ -194,7 +194,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n Take a closer look #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle}\n Take a closer look,#{target}....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -252,18 +252,18 @@ when "User solo"
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
-when "アクター両者"
-  tx["tx1"] = "「ねぇ……#{target}もイきそうなんでしょ？\n　一緒にイこうよぉ……\\H」"
+when "Both users"
+  tx["tx1"] = "\"Hey....you're about to cum too, right?\n Let's cum together....\\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
-when "アクターリバウンド自爆"
-  tx["tx1"] = "「あ、もうそろそろ限界？\n　もう少し頑張れる？#{giggle}」"
+when "User rebound harm"
+  tx["tx1"] = "\"Oh, reaching your limits already?\n Can't you hang on a bit more? #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
-when "アクター自慰"
-  tx["tx1"] = "「#{giggle}\n　#{target}、もっとよく見せてぇ……\\H」"
+when "User onanism"
+  tx["tx1"] = "\"#{giggle}\n Take a closer look, #{target}....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
