@@ -156,7 +156,7 @@ class MsgLessersuccubus_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"It's fine to push me away, you know?\n Or maybe....\n you prefer it this way? \\H\""
+  tx["tx1"] = "\"You can always push me away, you know?\n Or maybe....\n you prefer it this way? \\H\""
   tx["tx1"] = "\"Ahaha, coming already?\n Then I better take some requests♪\"" if $msg.t_target.crisis? #対象がクライシス
   tx["tx1"] = "\"#{giggle}\n No sleeping on my watch\\H\n I'm not letting you fall asleep yet....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
