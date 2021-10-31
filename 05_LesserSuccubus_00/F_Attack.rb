@@ -178,8 +178,8 @@ when "Tribadism"
   ms.push(tx)
 #▼顔面騎乗▼****************************************************************************************
 when "Pussy on top"
-  tx["tx1"] = "\"#{giggle}\n This makes you excited, right?\\H\n Hey, lick it some more\\H\""
-  tx["tx1"] = "\"#{pleasure_l}\n Hey, lick it some more....\\H\n #{pleasure_s}\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"#{giggle}\n This makes you excited, right?\\H\n Hey, keep licking it\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n Hey, keep licking it....\\H\n #{pleasure_s}\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
