@@ -213,7 +213,7 @@ when "ディルド♀挿入","ディルド口挿入","ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
+when "Kiss"
   tx["tx1"] = "\"#{kiss_l}\n Ehehe, guess it doesn't hurt to do it with a girl\\H\""
   tx["tx1"] = "\"#{kiss_l}\n #{target} likes kissing too?\n Your face tells me you're fallen for me....\\H\"" if $game_variables[17] > 35 #パターンB
   tx["tx1"] = "\"#{kiss_l}\n Make sure you get a good taste of me....\\H\"" if $game_variables[17] > 70 #パターンC
