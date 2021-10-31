@@ -158,7 +158,7 @@ class MsgLessersuccubus_A < MsgBase
   #==================================================================================================================
   tx["tx1"] = "\"You can always push me away, you know?\n Or maybe....\n you prefer it this way? \\H\""
   tx["tx1"] = "\"Ahaha, coming already?\n Then I better take some requests♪\"" if $msg.t_target.crisis? #対象がクライシス
-  tx["tx1"] = "\"#{giggle}\n No sleeping on my watch\\H\n I'm not letting you fall asleep yet....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
+  tx["tx1"] = "\"#{giggle}\n No sleeping on my watch\\H\n I'm not letting you fall asleep just yet....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   #格納
   ms.push(tx)
