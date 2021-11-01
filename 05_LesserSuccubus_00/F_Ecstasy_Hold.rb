@@ -503,7 +503,7 @@ when 1 #初撃
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n You don't mind getting attacked in a row, do you?\n Then how'd you like this?\""
-  tx["tx1"] = "\"Augh, but I was just at the best part!\n No butting in!\"" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"Augh, but I was just at the best part!\n No butting in!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼シェルマッチ
