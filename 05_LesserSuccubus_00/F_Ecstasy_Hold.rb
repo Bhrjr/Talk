@@ -502,8 +502,8 @@ when 1 #初撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "「#{giggle}\n　複数から同時に攻められるのもいいでしょ？\n　それじゃ、こんなのはどうかな～？」"
-  tx["tx1"] = "「あぁん、今いい所なのにぃ！\n　横取りしないでよ～！」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle}\n You don't mind getting attacked in a row, do you?\n Then how'd you like this?\""
+  tx["tx1"] = "\"Augh, but I was just at the best part!\n No butting in!\"" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼シェルマッチ
@@ -512,15 +512,15 @@ when 2..4 #連携追撃
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
-    tx["tx1"] = "「#{giggle}\n　ちゃんとイくまでどいてあげないからね\\H」"
+    tx["tx1"] = "\"#{giggle}\n I'm not backing off until I see you cumming\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エンブレイス
   elsif $msg.t_enemy.tops_binder?
-    tx["tx1"] = "「#{giggle}\n　ちゃんとイくまで離さないからね\\H」"
-    tx["tx1"] = "「あぁん、今いい所なのにぃ！\n　もう少しゆっくりさせてよぉ……」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+    tx["tx1"] = "\"#{giggle}\n I'm not letting you go until I see you cumming\\H\""
+    tx["tx1"] = "\"Augh, but I was just at the best part!\n Lemme take my time a little....!\"" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
-    tx["tx1"] = "「#{giggle}\n　ちゃんとイくまで離さないからね\\H」"
+    tx["tx1"] = "\"#{giggle}\n I'm not letting you go until I see you cumming\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼フラッタナイズ
   elsif $msg.t_enemy.deepkiss?
