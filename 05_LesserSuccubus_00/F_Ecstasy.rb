@@ -87,7 +87,7 @@ when 9 #とどめ
 when 10 #余韻
   tx["tx1"] = "\"Aha, you came again, huh♪\n But you sure you're satisfied yet?\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "\"Aha, you came again, huh♪\n What'd you think? I'd say I'm pretty good\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"Aha, you came, huh♪\n What'd you think? I'd say I'm pretty good\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
   tx["tx1"] = "\"Aha, you came again?\n Then this time, you make me feel good\\H\""
