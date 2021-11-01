@@ -517,7 +517,7 @@ when 2..4 #連携追撃
   #▼エンブレイス
   elsif $msg.t_enemy.tops_binder?
     tx["tx1"] = "\"#{giggle}\n I'm not letting you go until I see you cumming\\H\""
-    tx["tx1"] = "\"Augh, but I was just at the best part!\n Lemme take my time a little....!\"" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+    tx["tx1"] = "\"Augh, but I was just at the best part!\n Lemme take my time a little....!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
     tx["tx1"] = "\"#{giggle}\n I'm not letting you go until I see you cumming\\H\""
