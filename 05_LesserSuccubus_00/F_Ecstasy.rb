@@ -90,7 +90,7 @@ when 10 #余韻
   tx["tx1"] = "\"Aha, you came, huh♪\n What'd you think? I'd say I'm pretty good\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"Aha, you came again?\n Then this time, you make me feel good\\H\""
+  tx["tx1"] = "\"Aha, you came, huh?\n Then this time, you make me feel good\\H\""
   tx["tx1"] = "\"Augh, you came, #{target}....\n But I wanted to bully you some more....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
