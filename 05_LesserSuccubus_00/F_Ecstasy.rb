@@ -81,7 +81,7 @@ when 2..4 #連携追撃
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
   tx["tx1"] = "\"Hey now. Can't hold it back anymore, can you?\n Just let it all out\\H\""
-  tx["tx1"] = "\"#{giggle}\n No holding back on my watch♪\n Just sit back and cum like a good girl\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n No holding back on my watch♪\n Just sit back and let it out like a good girl\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Nfufu, don't even think of holding it in\\H\n Just let it all out\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
