@@ -124,7 +124,7 @@ when 2..4 #連携追撃
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
   tx["tx1"] = "\"Hang on there♪\n But wonder how long you can hold out for?\""
-  tx["tx1"] = "\"Why don't I tease you just a tiny bit?\n #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Why don't I tease you a tiny bit?\n #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -545,8 +545,8 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
-  tx["tx1"] = "「頑張るね～♪\n　でもいつまで持つかな～？」"
-  tx["tx1"] = "「少しくらい焦らしちゃおうっかなぁ？\n　#{giggle}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"Hang on there♪\n But wonder how long you can hold out for?\""
+  tx["tx1"] = "\"Why don't I tease you a tiny bit?\n #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
