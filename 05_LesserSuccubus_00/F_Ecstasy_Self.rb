@@ -37,18 +37,18 @@ class MsgLessersuccubus_A < MsgBase
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「や、やだぁ……っ\\H\n　イっちゃいそう……っ！\\H」"
-  tx["tx1"] = "「#{pleasure_l}\n　気持ちいい、気持ちいいよぉ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-Nooo....\\H\n I'm 'bout to cum....!\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n　気持ちいい、気持ちいいよぉ……\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「も、もうダメ、ダメぇっ……！\n　イっちゃう……っ！\\H」"
-  tx["tx1"] = "「ああっ、来る、来るっ、来ちゃうっ\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"も、もうダメ、ダメぇっ……！\n　イっちゃう……っ！\\H\""
+  tx["tx1"] = "\"ああっ、来る、来るっ、来ちゃうっ\\H\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ、はぁ……\\H\n　イかされちゃった～……\\H」"
-  tx["tx1"] = "「あふぅ……\\H\n　気持ちよかったぁ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「はぁ……っ、はぁ……っ……\\H\n　す、少しだけ休ませてぇ……\\H」" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "「次は、#{myname}がする番だからね……\\H」"
+  tx["tx1"] = "\"はぁ、はぁ……\\H\n　イかされちゃった～……\\H\""
+  tx["tx1"] = "\"あふぅ……\\H\n　気持ちよかったぁ……\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"はぁ……っ、はぁ……っ……\\H\n　す、少しだけ休ませてぇ……\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
+  tx["tx2"] = "\"It's my turnだからね……\\H\""
 end
 #格納
 ms.push(tx)
