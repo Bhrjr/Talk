@@ -115,7 +115,7 @@ when 2..4 #連携追撃
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
   tx["tx1"] = "「ほらほら、我慢しなくていいから♪\n　いっぱい出してぇ\\H」"
-  tx["tx1"] = "「我慢なんかしなくていいのに♪\n　往生際の悪い#{target}は……こうよっ\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"But there's no need to hold it all in♪\n For a #{target} that doesn't know when to give up....here's this\\H」" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -153,7 +153,7 @@ when 7 #本人追撃(一部のみ)
 when 9 #とどめ
   tx["tx1"] = "「#{giggle}\n　このまま大人しくイっちゃいなさ～い\\H」"
   tx["tx1"] = "「結構頑張るね、#{target}\\H\n　でも、いつまで我慢できるかな～？\n　……えいっ♪」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{target}はもう限界っぽいかな？\n　イかせちゃうけど、みんないいよね～？\n　……えいっ♪」" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "「Are you near your limits, #{target}?\n Mind if I make you cum?\n ....Hup♪」" if $game_switches[97] == true #連携が発生していた場合
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -306,7 +306,7 @@ when 20 #続行(ホールド解除)
 when 21 #続行(ホールド継続)
   tx["tx1"] = "「……あれ、まだ硬いままだねぇ。\n　……やり足りなかったかな？\\H\n　ふふ、それじゃ、このまま続けちゃう？」"
   tx["tx1"] = "「#{giggle}\n　まさかこれで終わりと思ってないよね？\n　このままも～っと気持ちよくしてあげる\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx2"] = "「ね、#{target}……。\n　何回くらいイってみたい？\\H」"
+  tx["tx2"] = "\"Say, #{target}....\n How many time you think you came? \\H\""
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
