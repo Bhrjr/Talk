@@ -71,7 +71,7 @@ when "Partner strips the succubus."
     tx["tx1"] = "\"No helping it then...will this do it? \\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
-    tx["tx1"] = "\"Mmm, Really think you should wait a bit more\\H\""
+    tx["tx1"] = "\"Mmm, really think you should wait a bit more\\H\""
     #途中で行動をキャンセルした場合
     tx["tx1"] = "\"Mmm, don't keep me in suspense like that\\H\"" if $game_switches[89] == true
     tx["md"] = "11"
@@ -180,13 +180,13 @@ when "Partner strips the succubus."
     tx["tx1"] = "\"#{giggle}\n You don't wanna be the only one naked?\n Dunno if I should though\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
-    tx["tx1"] = "「仕方ないなぁ…これでいい？\\H」"
-    tx["tx1"] = "「仕方ないなぁ…これでいい？\\H」" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"No helping it then...will this do it? \\H\""
+    tx["tx1"] = "\"No helping it then...will this do it? \\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
-    tx["tx1"] = "「ん～、やっぱりもう少し待って\\H」"
+    tx["tx1"] = "\"Mmm, really think you should wait a bit more\\H\""
     #途中で行動をキャンセルした場合
-    tx["tx1"] = "「ん～、焦らさないでよぉ\\H」" if $game_switches[89] == true
+    tx["tx1"] = "\"Mmm, don't keep me in suspense like that\\H\"" if $game_switches[89] == true
     tx["md"] = "11"
   #---------------------------------------------------
   end
