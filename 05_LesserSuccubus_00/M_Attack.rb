@@ -43,7 +43,7 @@ class MsgLessersuccubus_A < MsgBase
 case $msg.at_type
 #▼キス▼****************************************************************************************
 when "Kiss"
-  tx["tx1"] = "\"Mmm....smooch....\\H\n Ufuf, let's keep making out....\\H\""
+  tx["tx1"] = "\"Mmm....smooch....\\H\n Ufufu, let's keep making out....\\H\""
   tx["tx1"] = "\"Smooch....mmm.......\\H\n Ufu, guess you like to make out too, #{target}.\n Your face tells me you're fallen for me....\\H\"" if $game_variables[17] > 35 #パターンB
   tx["tx1"] = "\"Mmm....smoooch....*kiss....\\H\n Ufu, make sure you get a good taste of me....\\H\"" if $game_variables[17] > 70 #パターンC
   tx["tx1"] = "\"Mmm....fuah....\\H\n Hey, #{target}, let's keep making out....\\H\"" if $msg.t_enemy.crisis?
