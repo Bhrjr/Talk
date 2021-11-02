@@ -289,7 +289,7 @@ when "Crotch"
   if $msg.t_enemy.nude?
     tx["tx1"] = "\"Aaah....\\H\n If you mess around that...deep....\\H\""
     tx["tx1"] = "\"N-No...oo....\\H\n I feel like I'm in heaven....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
-    tx["tx1"] = "\"Aaahh...ah....\\H\n G-Go easy on me already.......\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
+    tx["tx1"] = "\"Aaahh...ah....\\H\n G-Give me a break already.......\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
   else
     tx["tx1"] = "\"Nooo....\\H\n I'm getting stained....\\H\"" # 対象が着衣状態の時
     tx["tx1"] = "\"Aha...\\H\n E-Enough with that spot...! Nnguh....!\\H\"" if $msg.t_enemy.crisis? #自分がクライシス 対象が着衣状態の時
