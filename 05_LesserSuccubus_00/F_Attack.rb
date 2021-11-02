@@ -269,7 +269,7 @@ when "Kiss"
 #▼バスト▼****************************************************************************************
 when "Chest"
   tx["tx1"] = "\"#{pleasure_l}\n You can't play with my boobs like that....\\H\""
-  tx["tx1"] = "\"No, no....!\n My boobies are getting turned on....!\\H\"" if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"No, no....!\n My boobies are getting turned on....! \\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Pant....pant....\\H\n P-Please forget about my boobs already....\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
