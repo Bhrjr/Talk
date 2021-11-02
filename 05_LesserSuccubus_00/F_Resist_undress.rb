@@ -39,7 +39,7 @@ case $msg.tag
 when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"Hey, lemme get you naked!\n Just hold still for a while♪\""
+    tx["tx1"] = "\"Hey, lemme get you naked!\n Hold still for a while♪\""
     tx["tx1"] = "\"Hey, you should get naked too, #{target}\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
@@ -143,16 +143,16 @@ class MsgLessersuccubus_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 case $msg.tag
 #====================================================================================================================
 #■夢魔がパートナーを脱衣させる
 #====================================================================================================================
-when "夢魔がパートナーを脱衣"
+when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "「ね、#{myname}が脱がせてあげる！\n　ちょっとだけじっとしててね～♪」"
+    tx["tx1"] = "\"Hey, lemme get you naked!\n Hold still for a while♪\""
     tx["tx1"] = "「ね、#{target}も脱いじゃおうよ\\H」" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
