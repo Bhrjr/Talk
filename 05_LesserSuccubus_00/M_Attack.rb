@@ -174,7 +174,7 @@ when "♀ rubbing"
   tx["tx1"] = "\"Shake your hips and thrust it against me, #{myname}\\H\n If not, I can do the moving myself\\H\"" if $msg.t_target.crisis? and $game_variables[17] > 50 #対象がクライシス
   tx["tx1"] = "\"Nfufu, did you lose your marbles?\n But I'm not stopping♪\"" if $msg.t_target.crisis? and $game_variables[17] > 35 #対象がクライシスパターンB
   tx["tx1"] = "\"Aha....this is getting fun now♪\n Keep thrusting your hips\\H\"" if $msg.t_target.crisis? and $game_variables[17] > 70 #対象がクライシスパターンB
-  tx["tx1"] = "\"Aha...you just came,\n but you're dick's rock hard....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
+  tx["tx1"] = "\"Aha...you just came,\n but your dick's rock hard....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
   #格納
   ms.push(tx)
