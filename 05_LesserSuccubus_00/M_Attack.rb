@@ -261,7 +261,7 @@ class MsgLessersuccubus_A < MsgBase
 case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
-  tx["tx1"] = "\"Ahaa....nn....*kiss....\\H\n You're too good at kissing, #{target}....\\H\n Mmph...?! ....Fuah.......\\H」"
+  tx["tx1"] = "\"Ahaa....nn....*kiss....\\H\n You're too good at kissing, #{target}....\\H\n Mmph...?! ....Fuah.......\\H\""
   tx["tx1"] = "\"Ah....aha....\\H\n More....keep kissing me....\\H\n Nfu.......*kiss....nnn....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
