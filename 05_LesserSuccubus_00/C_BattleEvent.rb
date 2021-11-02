@@ -16,7 +16,7 @@ class MsgLessersuccubus_A < MsgBase
                             #空ハッシュ挿入
                             tx={}
 #----------------------------------------------------------------------------------------------------------------------
-if $msg.tag == "戦闘開始"
+if $msg.tag == "Start the Battle"
                             #ムード格納(個別変更の場合は口上単位で修正する)
                             if $game_switches[85] == true
                               tx["md"] = "12" if $msg.talk_step == 1
