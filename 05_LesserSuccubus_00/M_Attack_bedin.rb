@@ -230,7 +230,7 @@ when "breasts"
 #  tx["tx1"] = "" unless $msg.t_target.nude? # 対象が着衣状態の時
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Aha, don't even think of holding it in, #{target}.\n I know all of your weak spots by now\\H\"" if $msg.t_target.crisis? #対象がクライシス
-  tx["tx1"] = "「ふふっ、我慢してる#{target}も可愛い\\H\n　もっといじめたくなっちゃうなぁ～♪」" if $msg.t_target.crisis? and $game_variables[17] > 50 #対象がクライシス パターンB
+  tx["tx1"] = "\"Nfufu, you look cute when trying to hold it in, #{target}\\H\n Makes me wanna bully you some more♪\"" if $msg.t_target.crisis? and $game_variables[17] > 50 #対象がクライシス パターンB
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
   when "対象：口" #ぱふぱふ
  #  tx["tx1"] = ""
