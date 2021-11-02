@@ -40,7 +40,7 @@ case $msg.at_type
 #▼キス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"#{kiss_l}\n Ehehe, guess it won't hurt to do it with a girl\\H\""
-  tx["tx1"] = "\"#{kiss_l}\n Guess you like to make out too, #{target}\n Your face tells me you're fallen for me....\\H\"" if $game_variables[17] > 35 #パターンB
+  tx["tx1"] = "\"#{kiss_l}\n Guess you like to make out too, #{target}.\n Your face tells me you're fallen for me....\\H\"" if $game_variables[17] > 35 #パターンB
   tx["tx1"] = "\"#{kiss_l}\n Make sure you get a good taste of me....\\H\"" if $game_variables[17] > 70 #パターンC
   #-----------------------------------------------------
   #格納
@@ -215,7 +215,7 @@ when "ディルド♀挿入","ディルド口挿入","ディルド尻挿入"
 #▼キッス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"#{kiss_l}\n Ehehe, guess it won't hurt to do it with a girl\\H\""
-  tx["tx1"] = "\"#{kiss_l}\n Guess you like to make out too, #{target}\n Your face tells me you're fallen for me....\\H\"" if $game_variables[17] > 35 #パターンB
+  tx["tx1"] = "\"#{kiss_l}\n Guess you like to make out too, #{target}.\n Your face tells me you're fallen for me....\\H\"" if $game_variables[17] > 35 #パターンB
   tx["tx1"] = "\"#{kiss_l}\n Make sure you get a good taste of me....\\H\"" if $game_variables[17] > 70 #パターンC
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   #-----------------------------------------------------
