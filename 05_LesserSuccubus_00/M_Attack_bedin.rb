@@ -84,7 +84,7 @@ when "Mouth"
 #  tx["tx1"] = "" unless $msg.t_target.nude? # 対象が着衣状態の時
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Aha, don't even think of holding it in, #{target}.\n I know all of your weak spots by now\\H\"" if $msg.t_target.crisis? #対象がクライシス
-  tx["tx1"] =  "\"Nfufu, you look cute when trying to hold it in, #{target}\\H\n Makes me wanna bully you some more♪\"" if $msg.t_target.crisis? and $game_variables[17] > 50 #対象がクライシス パターンB
+  tx["tx1"] = "\"Nfufu, you look cute when trying to hold it in, #{target}\\H\n Makes me wanna bully you some more♪\"" if $msg.t_target.crisis? and $game_variables[17] > 50 #対象がクライシス パターンB
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
 #  tx["tx1"] = "" if $msg.tag == "対象：睾丸" #袋攻め
   #-----------------------------------------------------
