@@ -64,7 +64,7 @@ when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"Ah, you'll take it off for me?\""
-    tx["tx1"] = "\"#{giggle}\n You don't wanna be the only one naked?\n Dunno if I should though\\H」" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"#{giggle}\n You don't wanna be the only one naked?\n Dunno if I should though\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"No helping it then...will this do it? \\H\""
@@ -153,19 +153,19 @@ when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"Hey, lemme get you naked!\n Hold still for a while♪\""
-    tx["tx1"] = "「ね、#{target}も脱いじゃおうよ\\H」" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+    tx["tx1"] = "\"Hey, you should get naked too, #{target}\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
-    tx["tx1"] = "「え～？\n　いいじゃない、女同士なんだし♪」"
-    tx["tx1"] = "「え～？\n　いいじゃない、女同士なんだし♪」" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+    tx["tx1"] = "\"Huh???\n Does it matter? We're both girls anyway♪\""
+    tx["tx1"] = "\"Huh???\n Does it matter? We're both girls anyway♪\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
     tx["md"]  = "11"
   #---------------------------------------------------
   when 3 #パートナーが脱衣した
-    tx["tx1"] = "「あ、この下着かわいい\\H\n　もらっちゃおうかな～……。\n　って冗談、冗談だって♪」"
+    tx["tx1"] = "\"Ah, this underwear's cute\\H\n Maybe I should take it for myself....\ Kidding, I'm just kidding♪\""
     #▼自ら受け入れた場合
-    tx["tx1"] = "「#{giggle}\n　実は結構#{target}も乗り気？\\H」" if $msg.t_target.tribe_slime? #スライムには下着が無い
-    tx["tx1"] = "「#{giggle}\n　実は結構#{target}も乗り気？\\H」" if $msg.t_target.tribe_gargoyle? #ガーゴイルには下着が無い
-    tx["tx1"] = "「#{giggle}\n　実は結構#{target}も乗り気？\\H」" if $game_switches[89] == true
+    tx["tx1"] = "\"#{giggle}\n Didn't know you were that eager, #{target}\\H\"" if $msg.t_target.tribe_slime? #スライムには下着が無い
+    tx["tx1"] = "\"#{giggle}\n Didn't know you were that eager, #{target}\\H\"" if $msg.t_target.tribe_gargoyle? #ガーゴイルには下着が無い
+    tx["tx1"] = "\"#{giggle}\n Didn't know you were that eager, #{target}\\H\"" if $game_switches[89] == true
   #---------------------------------------------------
   end
   #格納
@@ -173,11 +173,11 @@ when "Succubus strips the partner."
 #====================================================================================================================
 #■パートナーが夢魔を脱衣させる
 #====================================================================================================================
-when "パートナーが夢魔を脱衣"
+when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "「あ、脱がせてくれるの？」"
-    tx["tx1"] = "「#{giggle}\n　#{myname}も脱げ、って？\n　どうしよっかなあ～\\H」" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"Ah, you'll take it off for me?\""
+    tx["tx1"] = "\"#{giggle}\n You don't wanna be the only one naked?\n Dunno if I should though\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "「仕方ないなぁ…これでいい？\\H」"
