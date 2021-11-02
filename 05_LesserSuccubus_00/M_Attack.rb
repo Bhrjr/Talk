@@ -67,7 +67,7 @@ when "Hands"
   ms.push(tx)
 #▼口攻め▼****************************************************************************************
 when "Mouth"
-  tx["tx1"] = "\"Aha, you twitched just now\\H\n Is this your weak spot? \\H」"
+  tx["tx1"] = "\"Aha, you twitched just now\\H\n Is this your weak spot? \\H\""
   tx["tx1"] = "\"Ufufu, found #{target}'s weak spot♪\n Wonder how long you can hold out for?\"" if $game_variables[17] > 35 #パターンB
   tx["tx1"] = "\"Ufu, make sure you get a good taste of me....\\H\"" if $game_variables[17] > 70 #パターンC
 #  tx["tx1"] = "" unless $msg.t_target.nude? # 対象が着衣状態の時
@@ -83,7 +83,7 @@ when "Mouth"
 when "breasts"
   case $msg.at_parts
   when "Target: Penis" #パイズリ
-  tx["tx1"] = "\"Aha, you twitched just now\\H\n Is this your weak spot? \\H」"
+  tx["tx1"] = "\"Aha, you twitched just now\\H\n Is this your weak spot? \\H\""
   tx["tx1"] = "\"Ufufu, found #{target}'s weak spot♪\n Wonder how long you can hold out for?\"" if $game_variables[17] > 35 #パターンB
   tx["tx1"] = "\"Ufu, make sure you get a good taste of me....\\H\"" if $game_variables[17] > 70 #パターンC
 #  tx["tx1"] = "" unless $msg.t_target.nude? # 対象が着衣状態の時
