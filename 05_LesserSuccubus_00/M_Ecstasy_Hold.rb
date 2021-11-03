@@ -152,7 +152,7 @@ when 7 #本人追撃(一部のみ)
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
   tx["tx1"] = "\"#{giggle}\n Just stay still and behave like a good boy\\H\""
-  tx["tx1"] =  "\"You're hanging in there alright, #{target}\\H\n But for how long, I wonder?\n ....Hup♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"You're hanging in there alright, #{target}\\H\n But for how long, I wonder?\n ....Hup♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Are you near your limits, #{target}?\n Mind if I make you cum?\n ....Hup♪\"" if $game_switches[97] == true #連携が発生していた場合
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -267,7 +267,7 @@ when 11..14 #連携余韻
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
-  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you feel even better\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -418,7 +418,7 @@ class MsgLessersuccubus_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 case $msg.talk_step
 #★専用★==============================================================================================================
@@ -538,8 +538,8 @@ when 7 #本人追撃(一部のみ)
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
   tx["tx1"] = "\"#{giggle}\n Just stay still and behave like a good boy\\H\""
-  tx["tx1"] = "「結構頑張るね、#{target}\\H\n　でも、いつまで我慢できるかな～？\n　……えいっ♪」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{target}はもう限界っぽいかな？\n　イかせちゃうけど、みんないいよね～？\n　……えいっ♪」" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"You're hanging in there alright, #{target}\\H\n But for how long, I wonder?\n ....Hup♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Are you near your limits, #{target}?\n Mind if I make you cum?\n ....Hup♪\"" if $game_switches[97] == true #連携が発生していた場合
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -575,12 +575,12 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "「わぁお、まだまだ出てる……\\H\n　どれだけ溜め込んでたの？\n　えっちな#{target}♪」"
-  tx["tx1"] = "「わぁお、すっごい量……\\H\n　どれだけ溜め込んでたの？\n　えっちな#{target}♪」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「あはぁ、すっごい量……\\H\n　溜まってたのかな？\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Oh wow, it's still coming out....\\H\n How much were you saving up?\n Pervy #{target}♪\""
+  tx["tx1"] = "\"Oh wow, there's so much....\\H\n How much were you saving up?\n Pervy #{target}♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Aha, there's so much....\\H\n Were you saving it up? \\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "「#{giggle}\n　熱いのがいっぱい出たね\\H\n　多すぎて溢れてきちゃいそう……\\H」"
+    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's too much for me to hold it in……\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
@@ -613,13 +613,13 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "「あはっ、気持ちよかったぁ？\n　代わる代わるされるのもいいでしょ\\H」"
-  tx["tx1"] = "「あぁん、終わっちゃった……。\n　も～、これじゃ欲求不満になっちゃうよぉ」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"Aha, did it feel nice?\n We can always take turns\\H\""
+  tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "「#{giggle}\n　熱いのがいっぱい出たね\\H\n　多すぎて溢れてきちゃいそう……\\H」"
+    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's too much for me to hold it in....\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
@@ -652,8 +652,8 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "「……あれ、まだ硬いままだねぇ。\n　……やり足りなかったかな？\\H\n　ふふ、少し休んでからね？」"
-  tx["tx1"] = "「#{giggle}\n　まさかこれで終わりと思ってないよね？\n　もっと気持ちよくしてあげるんだから\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you feel even better\\H\"" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "「ね、#{target}……。\n　次はどんな事してほしい？\\H」"
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
