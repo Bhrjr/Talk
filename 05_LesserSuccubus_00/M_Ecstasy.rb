@@ -45,7 +45,7 @@ when 2..4 #連携追撃
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
-    tx["tx1"] = "\"Augh, but I was just at the best part!\n I'm gonna make him cum!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"Augh, but I was just at the best part!\n I'm the one that's gonna make you cum!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
     tx["tx1"] = "\"#{giggle}\n You know you're breathing heavily?\n It's not 'cause you're in pain or anything, is it?\""
@@ -366,7 +366,7 @@ when 2..4 #連携追撃
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
-    tx["tx1"] = "\"Augh, but I was just at the best part!\n I'm gonna make him cum!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"Augh, but I was just at the best part!\n I'm the one that's gonna make you cum!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
     tx["tx1"] = "\"#{giggle}\n You know you're breathing heavily?\n It's not 'cause you're in pain or anything, is it?\""
@@ -517,7 +517,7 @@ when 2..4 #連携追撃
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
-    tx["tx1"] = "\"Augh, but I was just at the best part!\n I'm gonna make him cum!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"Augh, but I was just at the best part!\n I'm the one that's gonna make you cum!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
     tx["tx1"] = "\"#{giggle}\n You know you're breathing heavily?\n It's not 'cause you're in pain or anything, is it?\""
@@ -667,7 +667,7 @@ when 2..4 #連携追撃
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
-    tx["tx1"] = "\"Augh, but I was just at the best part!\n I'm gonna make him cum!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"Augh, but I was just at the best part!\n I'm the one that's gonna make you cum!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
     tx["tx1"] = "\"#{giggle}\n You know you're breathing heavily?\n It's not 'cause you're in pain or anything, is it?\""
