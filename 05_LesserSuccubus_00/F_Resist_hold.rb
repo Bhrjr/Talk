@@ -257,7 +257,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n I'm pretty confident in my boobs #{myname}♪\n ....Can you see for yourself? \\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Whaaa?\n You're not gonna?\""
+      tx["tx1"] = "\"Whaaa??\n You're not gonna?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n See how soft it is? \\H\""
       #自ら受け入れた場合
@@ -601,7 +601,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n I'm pretty confident in my boobs #{myname}♪\n ....Can you see for yourself? \\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Whaaa?\n You're not gonna?\""
+      tx["tx1"] = "\"Whaaa??\n You're not gonna?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n See how soft it is? \\H\""
       #自ら受け入れた場合
@@ -924,7 +924,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n I'm pretty confident in my boobs #{myname}♪\n ....Can you see for yourself? \\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Whaaa?\n You're not gonna?\""
+      tx["tx1"] = "\"Whaaa??\n You're not gonna?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n See how soft it is? \\H\""
       #自ら受け入れた場合
@@ -1246,7 +1246,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n I'm pretty confident in my boobs #{myname}♪\n ....Can you see for yourself? \\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Whaaa?\n You're not gonna?\""
+      tx["tx1"] = "\"Whaaa??\n You're not gonna?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n See how soft it is? \\H\""
       #自ら受け入れた場合
