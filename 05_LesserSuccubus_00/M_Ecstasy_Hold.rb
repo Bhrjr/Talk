@@ -267,7 +267,7 @@ when 11..14 #連携余韻
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -305,7 +305,7 @@ when 20 #続行(ホールド解除)
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
   tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, then what say we keep going?\""
-  tx["tx1"] = "「#{giggle}\n　まさかこれで終わりと思ってないよね？\n　このままも～っと気持ちよくしてあげる\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you feel even better while holding you just like this\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx2"] = "\"Say, #{target}....\n How many time you think you came? \\H\""
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -342,9 +342,9 @@ when 21 #続行(ホールド継続)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "「#{giggle}\n　#{target}は今度こそ限界かな？\n　でもね、#{myname}は満足してないんだぁ」"
-  tx["tx1"] = "「#{giggle}\n　#{target}はもう限界かな？\n　でもね、#{myname}は満足してないんだぁ」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
-  tx["tx2"] = "「今度は#{myname}が満足する番ね\\H\n　あははははっ……\\H」"
+  tx["tx1"] = "\"#{giggle}\n You really at your limits now, #{target}?\n But I'm still not satisfied.\""
+  tx["tx1"] = "\"#{giggle}\n Nearing  your limits, #{target}?\n But I'm still not satisfied.\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx2"] = "\"And now it's my turn to be satisfied\\H\n Ahahahaha....\\H\""
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -401,7 +401,7 @@ class MsgLessersuccubus_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
