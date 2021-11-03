@@ -291,7 +291,7 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Oh well, I'll let you rest a little♪\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'dlike this.\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
   #▼シェルマッチ
