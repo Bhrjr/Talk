@@ -293,7 +293,7 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
+  tx["tx2"] = "\"Say....\n What'd you wanna do next? \\H\""
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -715,7 +715,7 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
+  tx["tx2"] = "\"Say....\n What'd you wanna do next? \\H\""
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1118,7 +1118,7 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
+  tx["tx2"] = "\"Say....\n What'd you wanna do next? \\H\""
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1520,7 +1520,7 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
+  tx["tx2"] = "\"Say....\n What'd you wanna do next? \\H\""
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
