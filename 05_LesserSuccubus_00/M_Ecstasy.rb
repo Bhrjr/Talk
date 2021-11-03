@@ -107,7 +107,7 @@ when 11..14 #連携余韻
   tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's so much that it's about to leak……\\H\""
+    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's too much for me to hold it in....\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
@@ -428,7 +428,7 @@ when 11..14 #連携余韻
   tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's so much that it's about to leak……\\H\""
+    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's too much for me to hold it in....\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
@@ -579,7 +579,7 @@ when 11..14 #連携余韻
   tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's so much that it's about to leak……\\H\""
+    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's too much for me to hold it in....\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
@@ -729,7 +729,7 @@ when 11..14 #連携余韻
   tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's so much that it's about to leak……\\H\""
+    tx["tx1"] = "\"#{giggle}\n You let out so much of your hot stuff\\H\n There's too much for me to hold it in....\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
