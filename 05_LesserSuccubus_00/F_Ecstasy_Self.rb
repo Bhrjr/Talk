@@ -41,7 +41,7 @@ when 1 #初撃
   tx["tx1"] = "\"#{pleasure_l}\n That feels good, so good....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "\"N-No....!\n I'm gonna cum....!\\H\""
+  tx["tx1"] = "\"N-No, no more....!\n I'm gonna cum....!\\H\""
   tx["tx1"] = "\"Aaah, cumming, I'm cumming\\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
@@ -158,7 +158,7 @@ when 1 #初撃
   tx["tx1"] = "\"#{pleasure_l}\n That feels good, so good....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "\"N-No....!\n I'm gonna cum....!\\H\""
+  tx["tx1"] = "\"N-No, no more....!\n I'm gonna cum....!\\H\""
   tx["tx1"] = "\"Aaah, cumming, I'm cumming\\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
@@ -246,7 +246,7 @@ when 1 #初撃
   tx["tx1"] = "\"#{pleasure_l}\n That feels good, so good....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "\"N-No....!\n I'm gonna cum....!\\H\""
+  tx["tx1"] = "\"N-No, no more....!\n I'm gonna cum....!\\H\""
   tx["tx1"] = "\"Aaah, cumming, I'm cumming\\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
@@ -333,7 +333,7 @@ when 1 #初撃
   tx["tx1"] = "\"#{pleasure_l}\n That feels good, so good....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "\"N-No....!\n I'm gonna cum....!\\H\""
+  tx["tx1"] = "\"N-No, no more....!\n I'm gonna cum....!\\H\""
   tx["tx1"] = "\"Aaah, cumming, I'm cumming\\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
