@@ -103,7 +103,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"Aha, did it feel nice?\n You can always pay me back\\H\""
+  tx["tx1"] = "\"Aha, did it feel nice?\n We can always take turns\\H\""
   tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -424,7 +424,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"Aha, did it feel nice?\n You can always pay me back\\H\""
+  tx["tx1"] = "\"Aha, did it feel nice?\n We can always take turns\\H\""
   tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -575,7 +575,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"Aha, did it feel nice?\n You can always pay me back\\H\""
+  tx["tx1"] = "\"Aha, did it feel nice?\n We can always take turns\\H\""
   tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -725,7 +725,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"Aha, did it feel nice?\n You can always pay me back\\H\""
+  tx["tx1"] = "\"Aha, did it feel nice?\n We can always take turns\\H\""
   tx["tx1"] = "\"Augh, it ended....\n Gee, I'm gonna have frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
