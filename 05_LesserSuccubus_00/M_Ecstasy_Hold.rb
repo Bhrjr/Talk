@@ -151,7 +151,7 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "\"#{giggle}\n Just stay still like a good boy\\H\""
+  tx["tx1"] = "\"#{giggle}\n Just stay still and behave like a good boy\\H\""
   tx["tx1"] =  "\"You're hanging in there alright, #{target}\\H\n But for how long, I wonder?\n ....Hup♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Are you near your limits, #{target}?\n Mind if I make you cum?\n ....Hup♪\"" if $game_switches[97] == true #連携が発生していた場合
   #▼アクセプト
@@ -537,7 +537,7 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "「#{giggle}\n　このまま大人しくイっちゃいなさ～い\\H」"
+  tx["tx1"] = "\"#{giggle}\n Just stay still and behave like a good boy\\H\""
   tx["tx1"] = "「結構頑張るね、#{target}\\H\n　でも、いつまで我慢できるかな～？\n　……えいっ♪」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "「#{target}はもう限界っぽいかな？\n　イかせちゃうけど、みんないいよね～？\n　……えいっ♪」" if $game_switches[97] == true #連携が発生していた場合
   #▼アクセプト
