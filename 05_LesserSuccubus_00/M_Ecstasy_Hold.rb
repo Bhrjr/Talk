@@ -268,7 +268,7 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
   tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you feel even better\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
+  tx["tx2"] = "\"Say, #{target}....\n What'd you wanna do next? \\H\""
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -654,7 +654,7 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
   tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you feel even better\\H\"" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx2"] = "「ね、#{target}……。\n　次はどんな事してほしい？\\H」"
+  tx["tx2"] = "\"Say, #{target}....\n What'd you wanna do next? \\H\""
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
