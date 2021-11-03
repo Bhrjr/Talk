@@ -291,7 +291,7 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"#{giggle}\n You didn't think I'dlike this.\n Oh well, I'll let you rest a little♪\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
   #▼シェルマッチ
@@ -333,7 +333,7 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n I'll make you moan while holding you just like this\\H\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you moan while holding you just like this\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n How many time you think you came? \\H\""
   #▼シェルマッチ
@@ -713,7 +713,7 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Oh well, I'll let you rest a little♪\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
   #▼シェルマッチ
@@ -755,7 +755,7 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n I'll make you moan while holding you just like this\\H\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you moan while holding you just like this\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n How many time you think you came? \\H\""
   #▼シェルマッチ
@@ -1116,7 +1116,7 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Oh well, I'll let you rest a little♪\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
   #▼シェルマッチ
@@ -1158,7 +1158,7 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n I'll make you moan while holding you just like this\\H\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you moan while holding you just like this\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n How many time you think you came? \\H\""
   #▼シェルマッチ
@@ -1518,7 +1518,7 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Oh well, I'll let you rest a little♪\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Oh well, I'll let you rest a little♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n What'd you want me to do next? \\H\""
   #▼シェルマッチ
@@ -1560,7 +1560,7 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n I'll make you moan while holding you just like this\\H\""
+  tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'll make you moan while holding you just like this\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx2"] = "\"Say....\n How many time you think you came? \\H\""
   #▼シェルマッチ
