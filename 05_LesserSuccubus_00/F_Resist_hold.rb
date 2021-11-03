@@ -289,7 +289,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"#{giggle}\n Lemme give #{myname}'s cock a good licking\\H\""
+      tx["tx1"] = "\"#{giggle}\n Lemme give #{myname}'s puss a good licking\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Oh come on,\n no running away!\""
     when 3 #ホールドレジスト失敗
@@ -633,7 +633,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"#{giggle}\n Lemme give #{myname}'s cock a good licking"\"
+      tx["tx1"] = "\"#{giggle}\n Lemme give #{myname}'s puss a good licking"\"
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Oh come on,\n no running away!\""
     when 3 #ホールドレジスト失敗
@@ -956,7 +956,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"#{giggle}\n Lemme give #{myname}'s cock a good licking\\H\""
+      tx["tx1"] = "\"#{giggle}\n Lemme give #{myname}'s puss a good licking\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Oh come on,\n no running away!\""
     when 3 #ホールドレジスト失敗
@@ -1278,7 +1278,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"#{giggle}\n Lemme give #{myname}'s cock a good licking\""
+      tx["tx1"] = "\"#{giggle}\n Lemme give #{myname}'s puss a good licking\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Oh come on,\n no running away!\""
     when 3 #ホールドレジスト失敗
