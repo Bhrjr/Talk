@@ -238,7 +238,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"C'mere♪\n I'm gonna cling to you\\H\""
+      tx["tx1"] = "\"Here I come♪\n I'm gonna cling to you\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Geez, don't run away....\""
     when 3 #ホールドレジスト失敗
@@ -582,7 +582,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"C'mere♪\n I'm gonna cling to you\\H\""
+      tx["tx1"] = "\"Here I come♪\n I'm gonna cling to you\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Geez, don't run away....\""
     when 3 #ホールドレジスト失敗
@@ -905,7 +905,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"C'mere♪\n I'm gonna cling to you\\H\""
+      tx["tx1"] = "\"Here I come♪\n I'm gonna cling to you\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Geez, don't run away....\""
     when 3 #ホールドレジスト失敗
@@ -1227,7 +1227,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"C'mere♪\n I'm gonna cling to you\\H\""
+      tx["tx1"] = "\"Here I come♪\n I'm gonna cling to you\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Geez, don't run away....\""
     when 3 #ホールドレジスト失敗
