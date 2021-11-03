@@ -142,13 +142,13 @@ when 11..14 #連携余韻
 when 20 #続行(非ホールド時はホールド解除と同じstep)
   if $game_switches[97] == true #連携が発生していた場合
     tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Then what say I make the requests next♪\""
-    tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
     tx["tx1"] = "\"Ufufu……my turn next.\n C'mon, let's switch\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
     tx["tx "] = "\"I bet it wasn't too satisfying to do it with undies.\n So next time...let's do it naked\\H\"" unless $msg.t_target.nude? #対象が着衣状態
     tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
   else
     tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
-    tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n I'm not done making you moan yet\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'm not done making you moan yet\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
     tx["tx1"] = "\"I bet it wasn't too satisfying to do it with undies.\n So next time...let's do it while both naked\\H\"" unless $msg.t_target.nude? #対象が着衣状態
     tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
 #    tx["tx1"] = "「」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
@@ -463,13 +463,13 @@ when 11..14 #連携余韻
 when 20 #続行(非ホールド時はホールド解除と同じstep)
   if $game_switches[97] == true #連携が発生していた場合
     tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Then what say I make the requests next♪\""
-    tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
     tx["tx1"] = "\"Ufufu……my turn next.\n C'mon, let's switch\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
     tx["tx1"] = "\"I bet it wasn't too satisfying to do it with undies.\n So next time...let's do it naked\\H\"" unless $msg.t_target.nude? #対象が着衣状態
     tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
   else
     tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
-    tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n I'm not done making you moan yet\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'm not done making you moan yet\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
     tx["tx1"] = "\"I bet it wasn't too satisfying to do it with undies.\n So next time...let's do it while both naked\\H\"" unless $msg.t_target.nude? #対象が着衣状態
     tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
 #    tx["tx1"] = "「」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
@@ -614,13 +614,13 @@ when 11..14 #連携余韻
 when 20 #続行(非ホールド時はホールド解除と同じstep)
   if $game_switches[97] == true #連携が発生していた場合
     tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Then what say I make the requests next♪\""
-    tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
     tx["tx1"] = "\"Ufufu……my turn next.\n C'mon, let's switch\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
     tx["tx1"] = "\"I bet it wasn't too satisfying to do it with undies.\n So next time...let's do it naked\\H\"" unless $msg.t_target.nude? #対象が着衣状態
     tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
   else
     tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
-    tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n I'm not done making you moan yet\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'm not done making you moan yet\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
     tx["tx1"] = "\"I bet it wasn't too satisfying to do it with undies.\n So next time...let's do it while both naked\\H\"" unless $msg.t_target.nude? #対象が着衣状態
     tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
 #    tx["tx1"] = "「」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
@@ -764,13 +764,13 @@ when 11..14 #連携余韻
 when 20 #続行(非ホールド時はホールド解除と同じstep)
   if $game_switches[97] == true #連携が発生していた場合
     tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Then what say I make the requests next♪\""
-    tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n Next time, you make me squeal\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
     tx["tx1"] = "\"Ufufu……my turn next.\n C'mon, let's switch\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
     tx["tx1"] = "\"I bet it wasn't too satisfying to do it with undies.\n So next time...let's do it naked\\H\"" unless $msg.t_target.nude? #対象が着衣状態
     tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
   else
     tx["tx1"] = "\"....Oh wow, it's still rock solid.\n Maybe you hadn't had enough?\\H\n Nfufu, but after we take a break.\""
-    tx["tx1"] = "\"#{giggle}\n Didn't think it'd end like this.\n I'm not done making you moan yet\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"#{giggle}\n You didn't think I'd be done with this, did you?\n I'm not done making you moan yet\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
     tx["tx1"] = "\"I bet it wasn't too satisfying to do it with undies.\n So next time...let's do it while both naked\\H\"" unless $msg.t_target.nude? #対象が着衣状態
     tx["tx2"] = "\"Say, #{target}....\n What'd you want me to do next?\\H\""
 #    tx["tx1"] = "「」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
