@@ -47,7 +47,7 @@ if $msg.tag == "Start the Battle"
     when 2 #３番目
       tx["tx1"] = "\"#{giggle}\n I'll make you feel real good\\H\""
       #▼初ベッドイン
-      tx["tx1"] = "\"#{giggle}\n I dunno if it's 'cause of where we're at,\n but I feel sorta embarrassed……\\H\"" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n Dunno if it's 'cause of where we're at,\n but I feel sorta embarrassed……\\H\"" if $msg.t_enemy.bedin_count == 0
     end
   #●空腹戦闘中
   elsif $game_switches[86] == true
