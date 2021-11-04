@@ -117,7 +117,7 @@ elsif $msg.tag == "Contract"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Huh....? Really?!\n Can I? Can I really gonna tag after you?!\n ....Yay, so happy♪\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "\"Ah, but you've got way too many friends.\n How about I head to your home, #{target}?\n You better hurry up and come back; I'll be waiting♪\""
+    tx["tx2"] = "\"Ah, but you've got way too many friends.\n Then how about I head to your home, #{target}?\n You better hurry up and come back; I'll be waiting♪\""
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約を行わない
   when 4
