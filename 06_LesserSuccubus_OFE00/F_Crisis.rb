@@ -66,7 +66,7 @@ when "Enemy rebound harm"
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
+when "Enemy onanism"
   tx["tx1"] = "\"#{pleasure_l}\n Hey, #{target}....you sure your eyes are on me....? \\H\""
   #格納
   ms.push(tx)
@@ -214,7 +214,7 @@ when "Enemy rebound harm"
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
+when "Enemy onanism"
   tx["tx1"] = "\"#{pleasure_l}\n Hey, #{target}....you sure your eyes are on me....? \\H\""
   #格納
   ms.push(tx)
@@ -283,7 +283,7 @@ when "Enemy rebound harm"
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
+when "Enemy onanism"
   tx["tx1"] = "\"#{pleasure_l}\n Hey, #{target}....you sure your eyes are on me....? \\H\""
   #格納
   ms.push(tx)
