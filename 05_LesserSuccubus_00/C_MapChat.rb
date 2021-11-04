@@ -102,7 +102,7 @@ else
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Hum-dee-hum....hum-hum♪\n Huh? Was I singing something?\n Ehehe, that's a secret\\H\""
+    tx["tx1"] = "\"Hum-dee-hum....hum-hum♪\n Huh? What was I singing?\n Ehehe, that's a secret\\H\""
     tx["tx4"] = "#{speaker} seems to be in a good mood...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -146,7 +146,7 @@ else
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Hum-dee-hum....hum-hum♪\n Huh? Was I singing something?\n Ehehe, that's a secret\\H\""
+    tx["tx1"] = "\"Hum-dee-hum....hum-hum♪\n Huh? What was I singing?\n Ehehe, that's a secret\\H\""
     tx["tx4"] = "#{speaker} seems to be in a good mood...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -190,7 +190,7 @@ else
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Hum-dee-hum....hum-hum♪\n Huh? Was I singing something?\n Ehehe, that's a secret\\H\""
+    tx["tx1"] = "\"Hum-dee-hum....hum-hum♪\n Huh? What was I singing?\n Ehehe, that's a secret\\H\""
     tx["tx4"] = "#{speaker} seems to be in a good mood...." + "TALKTEXT"
     #格納
     ms.push(tx)
