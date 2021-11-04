@@ -48,7 +48,7 @@ when 10 #余韻
   tx["tx1"] = "\"Pant, pant....\\H\n You made me came....\\H\""
   tx["tx1"] = "\"Phew....\\H\n That was so nice....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Pant....pant.......\\H\n L-Lemme rest a little....\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "\"It's my turn to do it next....\\H\""
+  tx["tx2"] = "\"My turn next....\\H\""
 end
 #格納
 ms.push(tx)
@@ -165,7 +165,7 @@ when 10 #余韻
   tx["tx1"] = "\"Pant, pant....\\H\n You made me came....\\H\""
   tx["tx1"] = "\"Phew....\\H\n That was so nice....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Pant....pant.......\\H\n L-Lemme rest a little....\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "\"It's my turn to do it next....\\H\""
+  tx["tx2"] = "\"My turn next....\\H\""
 end
 #格納
 ms.push(tx)
@@ -253,7 +253,7 @@ when 10 #余韻
   tx["tx1"] = "\"Pant, pant....\\H\n You made me came....\\H\""
   tx["tx1"] = "\"Phew....\\H\n That was so nice....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Pant....pant.......\\H\n L-Lemme rest a little....\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "\"It's my turn to do it next....\\H\""
+  tx["tx2"] = "\"My turn next....\\H\""
 end
 #格納
 ms.push(tx)
@@ -340,7 +340,7 @@ when 10 #余韻
   tx["tx1"] = "\"Pant, pant....\\H\n You made me came....\\H\""
   tx["tx1"] = "\"Phew....\\H\n That was so nice....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Pant....pant.......\\H\n L-Lemme rest a little....\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "\"It's my turn to do it next....\\H\""
+  tx["tx2"] = "\"My turn next....\\H\""
 end
 #格納
 ms.push(tx)
