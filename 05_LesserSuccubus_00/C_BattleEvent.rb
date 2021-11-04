@@ -112,7 +112,7 @@ elsif $msg.tag == "Contract"
   #▼契約締結(ホームに送る)
   when 3
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Whoopee、then it's settled\\H\n I'll be on my way to your home. You better hurry up and come back♪\""
+    tx["tx1"] = "\"Whoopee、then it's settled\\H\n I'll be heading to your home. You better hurry up and come back♪\""
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約を行わない
   when 4
