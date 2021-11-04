@@ -81,7 +81,7 @@ when "Hungry"
     when 1 # 空腹１人目
       tx["tx1"] = "\"Hey, earth to #{target}!\n Haven't you forgotten something important for a while....?\n Answer me before I count to 5♪\n \\|5....\\|4....\\|3....\\|2....\\|1....\""
       tx["tx2"] = "\"....Bzzt! Time's up♪\n As a punishment, you have to be my meal, #{target}\\H\n Geez...you totally forget you had a contract with me....!\""
-      tx["tx3"] = "\"I'm gonna punish you to make sure you don't forget it ever again, #{target}\\H\n Eyargh! You better prepare yourself! \\H\""
+      tx["tx3"] = "\"I'm gonna punish you to make sure you don't forget it ever again, #{target}\\H\n Haaaa! You better prepare yourself! \\H\""
       tx["tx4"] = "#{speaker} approaches quietly!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
@@ -101,7 +101,7 @@ when "Hungry"
     when 1 # 空腹１人目
       tx["tx1"] = "\"Hey, earth to #{target}!\n Haven't you forgotten something important for a while....?\n Answer me before I count to 5♪\n \\|5....\\|4....\\|3....\\|2....\\|1....\""
       tx["tx2"] = "\"....Bzzt! Time's up♪\n As a punishment, you have to be my meal, #{target}\\H\n Geez...you totally forget you had a contract with me....!\""
-      tx["tx3"] = "\"I'm gonna punish you to make sure you don't forget it ever again, #{target}\\H\n Eyargh! You better prepare yourself! \\H\""
+      tx["tx3"] = "\"I'm gonna punish you to make sure you don't forget it ever again, #{target}\\H\n Haaaa! You better prepare yourself! \\H\""
       tx["tx4"] = "#{speaker}'s eyes have an eerie shine to them!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
@@ -121,7 +121,7 @@ when "Hungry"
     when 1 # 空腹１人目
       tx["tx1"] = "\"Hey, earth to #{target}!\n Haven't you forgotten something important for a while....?\n Answer me before I count to 5♪\n \\|5....\\|4....\\|3....\\|2....\\|1....\""
       tx["tx2"] = "\"....Bzzt! Time's up♪\n As a punishment, you have to be my meal, #{target}\\H\n Geez...you totally forget you had a contract with me....!\""
-      tx["tx3"] = "\"I'm gonna punish you to make sure you don't forget it ever again, #{target}\\H\n Eyargh! You better prepare yourself! \\H\""
+      tx["tx3"] = "\"I'm gonna punish you to make sure you don't forget it ever again, #{target}\\H\n Haaaa! You better prepare yourself! \\H\""
       tx["tx4"] = "#{speaker} is going mad from the hunger!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
