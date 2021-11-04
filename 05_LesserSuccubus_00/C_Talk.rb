@@ -177,7 +177,7 @@ when "Player stripped"
     tx["tx1"] = "\"Oh, you big meanie!\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Aha, now that I'm looking at it up-close,\n it makes my heart pound\\H\""
+    tx["tx1"] = "\"Aha, looking at it up-close,\n it makes my heart pound\\H\""
     tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -653,7 +653,7 @@ when "Player stripped"
     tx["tx1"] = "\"Oh, you big meanie!\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Aha, now that I'm looking at it up-close,\n it makes my heart pound\\H\""
+    tx["tx1"] = "\"Aha, looking at it up-close,\n it makes my heart pound\\H\""
     tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -1055,7 +1055,7 @@ when "Player stripped"
     tx["tx1"] = "\"Oh, you big meanie!\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Aha, now that I'm looking at it up-close,\n it makes my heart pound\\H\""
+    tx["tx1"] = "\"Aha, looking at it up-close,\n it makes my heart pound\\H\""
     tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -1456,7 +1456,7 @@ when "Player stripped"
     tx["tx1"] = "\"Oh, you big meanie!\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Aha, now that I'm looking at it up-close,\n it makes my heart pound\\H\""
+    tx["tx1"] = "\"Aha, looking at it up-close,\n it makes my heart pound\\H\""
     tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
