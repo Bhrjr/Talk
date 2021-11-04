@@ -1,7 +1,7 @@
 =begin
 #######################################################################################################################
  ●『レッサーサキュバス（橙）』夢魔絶頂口上（対パートナー）
- ●性格：陽気
+ ●性格：好色
  version 1.0.0
 #######################################################################################################################
  ◆更新履歴
@@ -18,7 +18,7 @@
 ####################################★絶頂：パートナーに絶頂させられた場合の口上群#####################################
 #######################################################################################################################
 class MsgLessersuccubus_A < MsgBase
- def msg_female_ecstasy_self_07
+ def msg_female_ecstasy_self_00
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -26,7 +26,7 @@ class MsgLessersuccubus_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{pleasure_l}\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"#{pleasure_l}\n #{pleasure_cr}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -37,18 +37,18 @@ class MsgLessersuccubus_A < MsgBase
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「や、やだぁ……っ\\H\n　イっちゃいそう……っ！\\H」"
-  tx["tx1"] = "「#{pleasure_l}\n　気持ちいい、気持ちいいよぉ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-Nooo....\\H\n I'm 'bout to cum....!\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That feels good, so good....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「も、もうダメ、ダメぇっ……！\n　イっちゃう……っ！\\H」"
-  tx["tx1"] = "「ああっ、来る、来るっ、来ちゃうっ\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-No, no more....!\n I'm gonna cum....!\\H\""
+  tx["tx1"] = "\"Aaah, cumming, cumming! I'm cumming\\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ、はぁ……\\H\n　イかされちゃった～……\\H」"
-  tx["tx1"] = "「あふぅ……\\H\n　気持ちよかったぁ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「はぁ……っ、はぁ……っ……\\H\n　す、少しだけ休ませてぇ……\\H」" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "「次は、#{myname}がする番だからね……\\H」"
+  tx["tx1"] = "\"Pant, pant....\\H\n You made me came....\\H\""
+  tx["tx1"] = "\"Phew....\\H\n That was so nice....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Pant....pant.......\\H\n L-Lemme rest a little....\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
+  tx["tx2"] = "\"It's my turn to do it next....\\H\""
 end
 #格納
 ms.push(tx)
@@ -124,7 +124,7 @@ end #class
 ####################################★絶頂：パートナーに絶頂させられた場合の口上群#####################################
 #######################################################################################################################
 class MsgLessersuccubus_A < MsgBase
- def msg_female_bedin_ecstasy_self_07
+ def msg_female_bedin_ecstasy_self_00
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -132,7 +132,7 @@ class MsgLessersuccubus_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{pleasure_l}\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"#{pleasure_l}\n #{pleasure_cr}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -149,23 +149,23 @@ class MsgLessersuccubus_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「や、やだぁ……っ\\H\n　イっちゃいそう……っ！\\H」"
-  tx["tx1"] = "「#{pleasure_l}\n　気持ちいい、気持ちいいよぉ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-Nooo....\\H\n I'm 'bout to cum....!\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That feels good, so good....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「も、もうダメ、ダメぇっ……！\n　イっちゃう……っ！\\H」"
-  tx["tx1"] = "「ああっ、来る、来るっ、来ちゃうっ\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-No, no more....!\n I'm gonna cum....!\\H\""
+  tx["tx1"] = "\"Aaah, cumming, cumming! I'm cumming\\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ、はぁ……\\H\n　イかされちゃった～……\\H」"
-  tx["tx1"] = "「あふぅ……\\H\n　気持ちよかったぁ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「はぁ……っ、はぁ……っ……\\H\n　す、少しだけ休ませてぇ……\\H」" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "「次は、#{myname}がする番だからね……\\H」"
+  tx["tx1"] = "\"Pant, pant....\\H\n You made me came....\\H\""
+  tx["tx1"] = "\"Phew....\\H\n That was so nice....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Pant....pant.......\\H\n L-Lemme rest a little....\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
+  tx["tx2"] = "\"It's my turn to do it next....\\H\""
 end
 #格納
 ms.push(tx)
@@ -237,23 +237,23 @@ ms.push(tx)
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「や、やだぁ……っ\\H\n　イっちゃいそう……っ！\\H」"
-  tx["tx1"] = "「#{pleasure_l}\n　気持ちいい、気持ちいいよぉ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-Nooo....\\H\n I'm 'bout to cum....!\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That feels good, so good....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「も、もうダメ、ダメぇっ……！\n　イっちゃう……っ！\\H」"
-  tx["tx1"] = "「ああっ、来る、来るっ、来ちゃうっ\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-No, no more....!\n I'm gonna cum....!\\H\""
+  tx["tx1"] = "\"Aaah, cumming, cumming! I'm cumming\\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ、はぁ……\\H\n　イかされちゃった～……\\H」"
-  tx["tx1"] = "「あふぅ……\\H\n　気持ちよかったぁ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「はぁ……っ、はぁ……っ……\\H\n　す、少しだけ休ませてぇ……\\H」" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "「次は、#{myname}がする番だからね……\\H」"
+  tx["tx1"] = "\"Pant, pant....\\H\n You made me came....\\H\""
+  tx["tx1"] = "\"Phew....\\H\n That was so nice....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Pant....pant.......\\H\n L-Lemme rest a little....\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
+  tx["tx2"] = "\"It's my turn to do it next....\\H\""
 end
 #格納
 ms.push(tx)
@@ -329,18 +329,18 @@ else
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「や、やだぁ……っ\\H\n　イっちゃいそう……っ！\\H」"
-  tx["tx1"] = "「#{pleasure_l}\n　気持ちいい、気持ちいいよぉ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-Nooo....\\H\n I'm 'bout to cum....!\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That feels good, so good....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「も、もうダメ、ダメぇっ……！\n　イっちゃう……っ！\\H」"
-  tx["tx1"] = "「ああっ、来る、来るっ、来ちゃうっ\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"N-No, no more....!\n I'm gonna cum....!\\H\""
+  tx["tx1"] = "\"Aaah, cumming, cumming! I'm cumming\\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ、はぁ……\\H\n　イかされちゃった～……\\H」"
-  tx["tx1"] = "「あふぅ……\\H\n　気持ちよかったぁ……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「はぁ……っ、はぁ……っ……\\H\n　す、少しだけ休ませてぇ……\\H」" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
-  tx["tx2"] = "「次は、#{myname}がする番だからね……\\H」"
+  tx["tx1"] = "\"Pant, pant....\\H\n You made me came....\\H\""
+  tx["tx1"] = "\"Phew....\\H\n That was so nice....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Pant....pant.......\\H\n L-Lemme rest a little....\\H\"" if $msg.t_enemy.ecstasy_count.size >= 2 #絶頂二回目以降
+  tx["tx2"] = "\"It's my turn to do it next....\\H\""
 end
 #格納
 ms.push(tx)
