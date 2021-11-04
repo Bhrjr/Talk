@@ -406,7 +406,7 @@ if $msg.tag == "Player binds the succubus."
     when 3 #ホールド失敗
       tx["tx1"] = "\"No-can-do♪\n I'm not letting you go\\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = ""\"No-can-do♪\n I'm not letting you go\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"No-can-do♪\n I'm not letting you go\\H\"" if $game_switches[89] == true
       tx["md"]  = "12"
     end
     #格納
@@ -685,25 +685,25 @@ if $msg.tag == "Player binds the succubus."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「あぁん、どうしたのぉ？」"
+      tx["tx1"] = "\"Augh, what's wrong？\""
     when 2 #ホールド成功
-      tx["tx1"] = "「も～、\n　気持ちよくなりたくないのぉ？」"
+      tx["tx1"] = "\"Oh geez,\n you don't want me to please you?\""
       tx["md"]  = "2"
     when 3 #ホールド失敗
-      tx["tx1"] = "「だ～め♪\n　離してあげないもんね\\H」"
+      tx["tx1"] = "\"No-can-do♪\n I'm not letting you go\\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "「だ～め♪\n　離してあげないもんね\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"No-can-do♪\n I'm not letting you go\\H\"" if $game_switches[89] == true
       tx["md"]  = "12"
     end
     #格納
     ms.push(tx)
   #▼インタラプト(仲間のホールド解除)▼*********************************************************************************
   #====================================================================================================================
-  when "仲間ホールド解除"
+  when "Undo Hold on the ally."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「あぁん、どうしたのぉ？」"
+      tx["tx1"] = "\"Augh, what's wrong？\""
     when 2 #ホールド成功
       tx["tx1"] = "「仕方が無いなあ……\\H\n　じゃ、次は#{target}を攻めてあげる\\H」"
       tx["md"]  = "12"
