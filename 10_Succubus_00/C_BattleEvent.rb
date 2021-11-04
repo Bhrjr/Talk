@@ -45,29 +45,29 @@ if $msg.tag == "Start the Battle"
       #▼初ベッドイン
       tx["tx1"] = "\"#{giggle}\n Well, you nervous?\n Don't worry, since #{myname}'ll be taking the lead\\H\"" if $msg.t_enemy.bedin_count == 0
     when 2 #３番目
-      tx["tx1"] = "\"#{giggle}\n　３人相手は大変だろうけど、頑張ってね？\\H\""
+      tx["tx1"] = "\"#{giggle}\n I know it won't be easy to take on 3 people at once, but good luck anyway\\H\""
       #▼初ベッドイン
-      tx["tx1"] = "\"#{giggle}\n　契約の時のお礼をたっぷりしてあげる……\\H\n　もちろん、いいわよね？\\H\"" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n Lemme give you a full repayment for forming a contract with me....\\H\n You're fine that, right? \\H\"" if $msg.t_enemy.bedin_count == 0
     end
   #●空腹戦闘中
   elsif $game_switches[86] == true
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "\"#{giggle}\n　さて、どのお口で食べられるのがお好み？\n　リクエストは聞いてあげるわよ？\\H\""
+      tx["tx1"] = "\"#{giggle}\n Now then, which mouth should I eat you with?\n I'm open to requests\\H\""
     when 1 #２番目
-      tx["tx1"] = "\"早い者勝ちは無しにしましょうね？\n　美味しいものは皆で分けないと……\\H\""
+      tx["tx1"] = "\"Can we forget about the first come, first served thing?\n Something that's tasty should be shared with everybody....\\H\""
     when 2 #３番目
-      tx["tx1"] = "\"枯れなきゃいいけどね……\\H\n　ま、#{myname}たちを放置した自業自得ってことで\""
+      tx["tx1"] = "\"I'd rather that you don't get dried up....\\H\n Well, it's what you get for for neglecting us.\""
     end
   #●レア戦闘中(OFEの場合は[$game_switches[92] == true]、BOSSの場合は[$game_switches[91] == true]をそれぞれelsifでつけること)
   else
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "\"あら可愛い……\\H\n　こっちにいらっしゃい？\n　お姉さんがいいコトしてあげる\\H\""
+      tx["tx1"] = "\"How cute....\\H\n C'mere, will you?\n We'll show you lots of fun stuffs\\H\""
     when 1 #２番目
-      tx["tx1"] = "\"#{giggle}\n　つまみ食いはダメよ？\n　ちゃんと皆で分けましょうね\\H\""
+      tx["tx1"] = "\"#{giggle}\n Nobody snatch him, you hear?\n Let's all share it with everybody\\H\""
     when 2 #３番目
-      tx["tx1"] = "\"大丈夫よ、怖くないから\\H\n　少しの間、気持ちいい夢を見られるだけ……\\H\""
+      tx["tx1"] = "\"Don't worry, it's not scary at all\\H\n You'll just get to have a nice dream for a little while....\\H\""
     end
   end
   #格納
@@ -79,8 +79,8 @@ if $msg.tag == "Start the Battle"
 
 #----------------------------------------------------------------------------------------------------------------------
 #■逃走失敗口上
-elsif $msg.tag == "逃走失敗"
-  tx["tx1"] = "\"あら、逃げちゃダメよ\\H\n　イイことしてあげるから……ね？\\H\""
+elsif $msg.tag == "Escape fail"
+  tx["tx1"] = "\"Hey, no running away on my watch\\H\n After all....we're supposed to have some fun\\H\""
   #----------------------------------------------------------------------------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -92,7 +92,7 @@ elsif $msg.tag == "逃走失敗"
 
 #----------------------------------------------------------------------------------------------------------------------
 #■契約口上
-elsif $msg.tag == "契約"
+elsif $msg.tag == "Contract"
   #----------------------#
   #▼ステップで状況判断  #
   #----------------------#
@@ -100,7 +100,7 @@ elsif $msg.tag == "契約"
   #▼契約開始
   when 1 
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"ねぇ……ちょっといいかしら？\n　#{target}、#{myname}と契約……してみない？\""
+    tx["tx1"] = "\"Say....got a sec?\n#{target}、#{myname}と契約……してみない？\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
     tx["tx2"] = "\"こんなに燃えたのは久しぶりなの\\H\n　ここだけの関係で終わらせるの、勿体無くない？\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
