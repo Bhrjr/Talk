@@ -58,12 +58,12 @@ when "Enemy solo"
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"#{pleasure_s}H\n I'm 'bout to come too....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
 when "Enemy rebound harm"
-  tx["tx1"] = "\"#{pleasure_s}H\n I'm 'bout to come too....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
@@ -141,12 +141,12 @@ when "Both foes"
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
 when "Enemy rebound harm"
-  tx["tx1"] = "\"#{pleasure_s}H\n I'm 'bout to come too....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
 when "Enemy onanism"
-  tx["tx1"] = "\"#{pleasure_l}\n Aha....I can't stop anymore....\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\\H\n Aha....I can't stop anymore....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
@@ -206,12 +206,12 @@ when "Enemy solo"
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"#{pleasure_s}H\n I'm 'bout to come too....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
 when "Enemy rebound harm"
-  tx["tx1"] = "\"#{pleasure_s}H\n I'm 'bout to come too....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
@@ -275,12 +275,12 @@ when "Enemy solo"
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"#{pleasure_s}H\n I'm 'bout to come too....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
 when "Enemy rebound harm"
-  tx["tx1"] = "\"#{pleasure_s}H\n I'm 'bout to come too....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
