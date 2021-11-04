@@ -269,7 +269,7 @@ when "Caress - normal"
       else
         tx["tx1"] = "\"Hey....what'd you think?\n Does it make you squeal....? \\H\"" 
         tx["tx1"] = "\"#{giggle}\n Tell me if there's somewhere that feels good\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"Nfu....what'd you think?\n I can keep going if you don't mind it\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Nfu....what'd you think?\n I can keep going if you don't mind\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
   when 78 #レジスト成功(愛撫を中断した場合)
@@ -745,7 +745,7 @@ when "Caress - normal"
       else
         tx["tx1"] = "\"Hey....what'd you think?\n Does it make you squeal....? \\H\"" 
         tx["tx1"] = "\"#{giggle}\n Tell me if there's somewhere that feels good\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"Nfu....what'd you think?\n I can keep going if you don't mind it\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Nfu....what'd you think?\n I can keep going if you don't mind\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
   when 78 #レジスト成功(愛撫を中断した場合)
@@ -1147,7 +1147,7 @@ when "Caress - normal"
       else
         tx["tx1"] = "\"Hey....what'd you think?\n Does it make you squeal....? \\H\"" 
         tx["tx1"] = "\"#{giggle}\n Tell me if there's somewhere that feels good\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"Nfu....what'd you think?\n I can keep going if you don't mind it\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Nfu....what'd you think?\n I can keep going if you don't mind\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
   when 78 #レジスト成功(愛撫を中断した場合)
@@ -1548,7 +1548,7 @@ when "Caress - normal"
       else
         tx["tx1"] = "\"Hey....what'd you think?\n Does it make you squeal....? \\H\"" 
         tx["tx1"] = "\"#{giggle}\n Tell me if there's somewhere that feels good\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"Nfu....what'd you think?\n I can keep going if you don't mind it\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Nfu....what'd you think?\n I can keep going if you don't mind\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
   when 78 #レジスト成功(愛撫を中断した場合)
