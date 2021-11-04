@@ -36,7 +36,7 @@ when "User solo"
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
 when "Both users"
-  tx["tx1"] = "\"Hey....you're about to cum too, right?\n Let's cum together....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n About to cum too, #{target}....?\n That's okay, let's cum together....\\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
@@ -114,7 +114,7 @@ when "User solo"
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
 when "Both users"
-  tx["tx1"] = "\"Hey....you're about to cum too, right?\n Let's cum together....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n About to cum too, #{target}....?\n That's okay, let's cum together....\\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
@@ -184,7 +184,7 @@ when "User solo"
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
 when "Both users"
-  tx["tx1"] = "\"Hey....you're about to cum too, right?\n Let's cum together....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n About to cum too, #{target}....?\n That's okay, let's cum together....\\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
@@ -253,7 +253,7 @@ when "User solo"
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
 when "Both users"
-  tx["tx1"] = "\"Hey....you're about to cum too, right?\n Let's cum together....\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n About to cum too, #{target}....?\n That's okay, let's cum together....\\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
