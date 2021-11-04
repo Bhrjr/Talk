@@ -1,4 +1,4 @@
-=begin 
+=begin
 #######################################################################################################################
  ●『レッサーサキュバス（橙）』クライシス口上
  ●性格：陽気
@@ -29,50 +29,50 @@ class MsgLessersuccubus_A < MsgBase
 #■主人公がクライシス状態になる
 case $msg.tag
 #夢魔の攻めで主人公がクライシス
-when "アクター単独"
-  tx["tx1"] = "「あれ、もうそろそろ限界かな？\n　それじゃ、気持ちよくイかせてあげる\\H」"
+when "User solo"
+  tx["tx1"] = "\"Oh, reaching your limits already?\n Then I'm gonna make you moan\\H\""
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
-when "アクター両者"
-  tx["tx1"] = "「#{pleasure_s}\n　#{target}もイっちゃいそう……？\n　いいよ、一緒にイこっ……\\H」"
+when "Both users"
+  tx["tx1"] = "\"#{pleasure_s}\n About to cum too, #{target}....?\n That's okay, let's cum together....\\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
-when "アクターリバウンド自爆"
-  tx["tx1"] = "「あ、もうそろそろイきそう？\n　もう少し頑張れるかな？#{giggle}」"
+when "User rebound harm"
+  tx["tx1"] = "\"Oh, are you close to cumming?\n Can't you hang on a bit more? #{giggle}\""
   #格納
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
-when "アクター自慰"
-  tx["tx1"] = "「わぁ……\\H\n　#{target}……見てて欲しいの……？\\H」"
+when "User onanism"
+  tx["tx1"] = "\"Whoa....\\H\n Wanna have a look....? \\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔がクライシス状態になる
 #主人公の攻めで夢魔がクライシス
-when "エネミー単独"
-  tx["tx1"] = "「あぁん……#{target}上手……\\H\n　#{myname}、もうイっちゃいそうっ……！\\H」"
+when "Enemy solo"
+  tx["tx1"] = "\"Aaaah....you're good, #{target}....\\H\n #{myname}'m gonna cum....!\\H\""
   #格納
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
-when "エネミー両者"
-  tx["tx1"] = "「#{pleasure_s}\n　#{myname}もイきそうになっちゃった……\\H」"
+when "Both foes"
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
-when "エネミーリバウンド自爆"
-  tx["tx1"] = "「#{pleasure_s}\n　#{myname}もイきそうになっちゃった……\\H」"
+when "Enemy rebound harm"
+  tx["tx1"] = "\"#{pleasure_s}\\H\n I'm 'bout to come too....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
-  tx["tx1"] = "「#{pleasure_l}\n　ねぇ……もっと#{myname}も構ってぇ……\\H」"
+when "Enemy onanism"
+  tx["tx1"] = "\"#{pleasure_l}\n Hey....keep your eyes on me....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
-when "エネミー仲間攻め"
-  tx["tx1"] = "「#{pleasure_s}\n　もぉ……そんなイタズラしちゃダメっ……！\\H」"
+when "Enemy friendly fire"
+  tx["tx1"] = "\"#{pleasure_s}\n Gee....you shouldn't pull pranks like that....! \\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
