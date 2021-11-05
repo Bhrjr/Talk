@@ -166,7 +166,7 @@ when "Cook"
       tx["tx1"] = "\"Can't help it then.\n Just wait a bit, I'll get it ready right now\""
     #メインディッシュが作れるレベル
     when 350..999
-      tx["tx1"] = "\"ふふ、任せなさい♪\n　腕によりをかけてあげるわ\\H\""
+      tx["tx1"] = "\"Nfufu, leave it to me♪\n I'll give it my best shot\\H\""
     end
     #格納
     ms.push(tx)
@@ -177,19 +177,19 @@ when "Cook"
 
 #=======================================================================================================================
 #★ランクアップ(対応しない夢魔は項目ごと消去推奨----------------------------------------------------------------------#
-when "ランクアップ"
+when "Rank Up"
   case $msg.talk_step
   when 1 #ランクアップ前口上
-    tx["tx1"] = "「#{giggle}\n　そろそろ#{myname}も新しい姿になろうかしら。\n　もっとも、#{target}が望めば、だけどね」"
-    tx["tx1"] = "「ねぇ、#{target}……？\n　#{myname}、今ならもっと変われそうな気がする。\n　どうしよう……#{target}、決めて？」" if $msg.t_enemy.rankup_flag == true #レッサキュからランクアップしている場合
+    tx["tx1"] = "\"#{giggle}\n I think it's time #{myname} take on a new look.\n Only if #{target} wants to though.\""
+    tx["tx1"] = "\"Hey, #{target}....?\n #{myname} feel like I'm gonna transform again now.\n What should I do....? Can you decide for me, #{target}?\"" if $msg.t_enemy.rankup_flag == true #レッサキュからランクアップしている場合
   when 2 #ランクアップ開始
-    tx["tx1"] = "「じゃ、始めるわね。\n　#{target}はそこで見ていて……\\H」"
-    tx["tx1"] = "「じゃ、始めるよ？\n　……大丈夫、どんな姿になっても、\n　#{myname}は#{target}のものだから……\\H」" if $msg.t_enemy.rankup_flag == true #レッサキュからランクアップしている場合
+    tx["tx1"] = "\"Then here goes.\n You just watch from there, #{target}....\\H\""
+    tx["tx1"] = "\"Then here goes, okay?\n ....Don't worry, no matter how I look,\n #{myname}'ll still belong to you, #{target}....\\H\"" if $msg.t_enemy.rankup_flag == true #レッサキュからランクアップしている場合
   when 3 #ランクアップ終了（レッサーサキュバスからランクアップした後の口上）
-    tx["tx1"] = "「#{giggle}\n　どうかしら……変じゃない？\n　じゃ、今後ともよろしくね、#{target}\\H」"
+    tx["tx1"] = "\"#{giggle}\n How is it....? Isn't it weird?\n Then let's keep up our relationship like always, #{target}\\H\""
   when 4 #ランクアップしない
-    tx["tx1"] = "「ふふ、そう？\n　#{target}がそこまで言うなら、\n　暫くはこのままでいてあげる\\H」"
-    tx["tx1"] = "「ふふっ、そう？\n　#{target}がそこまで言うなら、\n　暫くはこのままでいてあげる\\H」" if $msg.t_enemy.rankup_flag == true #レッサキュからランクアップしている場合
+    tx["tx1"] = "\"Nfufu, really?\n Whatever you say, #{target}.\n I'll stay like this for now\\H\""
+    tx["tx1"] = "\"Ufufu, really?\n Whatever you say, #{target}.\n I'll stay like this for now\\H\"" if $msg.t_enemy.rankup_flag == true #レッサキュからランクアップしている場合
   end
   #格納
   ms.push(tx)
