@@ -138,7 +138,7 @@ when "Initial remarks"
   case $mood.point
   # 好感度がとても高い場合
   when 50..100
-    tx["tx1"] = "\"Nnn....so happy\\H\""
+    tx["tx1"] = "\"Nnn....that makes me happy\\H\""
   # 好感度が高まっている場合
   when 21..49
     tx["tx1"] = "\"Ufufu, gee, thanks\\H\""
@@ -614,7 +614,7 @@ when "Initial remarks"
   case $mood.point
   # 好感度がとても高い場合
   when 50..100
-    tx["tx1"] = "\"Nnn....so happy\\H\""
+    tx["tx1"] = "\"Nnn....that makes me happy\\H\""
   # 好感度が高まっている場合
   when 21..49
     tx["tx1"] = "\"Ufufu, gee, thanks\\H\""
@@ -1016,7 +1016,7 @@ when "Initial remarks"
   case $mood.point
   # 好感度がとても高い場合
   when 50..100
-    tx["tx1"] = "\"Nnn....so happy\\H\""
+    tx["tx1"] = "\"Nnn....that makes me happy\\H\""
   # 好感度が高まっている場合
   when 21..49
     tx["tx1"] = "\"Ufufu, gee, thanks\\H\""
@@ -1417,7 +1417,7 @@ when "Initial remarks"
   case $mood.point
   # 好感度がとても高い場合
   when 50..100
-    tx["tx1"] = "\"Nnn....so happy\\H\""
+    tx["tx1"] = "\"Nnn....that makes me happy\\H\""
   # 好感度が高まっている場合
   when 21..49
     tx["tx1"] = "\"Ufufu, gee, thanks\\H\""
