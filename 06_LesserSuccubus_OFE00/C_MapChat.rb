@@ -29,21 +29,21 @@ if $msg.t_enemy.fed <= 20
   if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
     tx["tx1"] = "\"#{target}, #{myname} can't take it anymore....\n I want your cum, please....\\H\""
-    tx["tx4"] = "#{speaker} is\nlooking at passionately at #{master}'s lower half....!" + "TALKTEXT"
+    tx["tx4"] = "#{speaker} is\nlooking passionately at #{master}'s lower half....!" + "TALKTEXT"
 
   #====================================================================================================================
   #◆【寵愛】状態◆
   elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
     tx["tx1"] = "\"#{target}, #{myname} can't take it anymore....\n I want your cum, please....\\H\""
-    tx["tx4"] = "#{speaker} is\nlooking at passionately at #{master}'s lower half....!" + "TALKTEXT"
+    tx["tx4"] = "#{speaker} is\nlooking passionately at #{master}'s lower half....!" + "TALKTEXT"
 
   #====================================================================================================================
   #◆通常状態(【寵愛】【大切な人】どちらも持っていない場合)◆
   else
   #====================================================================================================================
     tx["tx1"] = "\#{target}, #{myname} can't take it anymore....\n I want your cum, please....\\H\""
-    tx["tx4"] = "#{speaker} is\nlooking at passionately at #{master}'s lower half....!" + "TALKTEXT"
+    tx["tx4"] = "#{speaker} is\nlooking passionately at #{master}'s lower half....!" + "TALKTEXT"
 
   end
   #格納
