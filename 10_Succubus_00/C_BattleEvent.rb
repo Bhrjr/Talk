@@ -125,7 +125,7 @@ elsif $msg.tag == "Contract"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh....what a shame.\n Oh well, not like I can force you to do this.\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "\"Then let's hope we meet again somewhere.\n Next time, I'll show you stuffs that\H\""
+    tx["tx2"] = "\"Then let's hope we meet again somewhere.\n Next time, I'll show you stuffs that are even better....\\H\""
     #----------------------------------------------------------------------------------------------------------------------
   end
   #格納
