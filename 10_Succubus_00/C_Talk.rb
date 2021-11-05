@@ -647,7 +647,7 @@ when "Player stripped"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Say,\n could you hear my request for me?\""
     tx["tx2"] = "\"#{giggle}\n I wanna see #{target} without any clothes\\H\n I know you can do it.\"" 
-    tx["tx2"] = "\"#{giggle}\n Can you also take your clothes off, #{target}?\n Not like I'm wearing clothes either, you see\\H\""  if $msg.t_enemy.nude? #既に相手が脱いでいる
+    tx["tx2"] = "\"#{giggle}\n Can you also take your clothes off, #{target}?\n Not like I'm wearing any clothes either, you see\\H\""  if $msg.t_enemy.nude? #既に相手が脱いでいる
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Man, what a shame....\""
@@ -1033,9 +1033,9 @@ when "Initial remarks"
 
 #▼好意▼****************************************************************************************
 #会話に対して、好意的に返してくれる(選択肢なし、ムードと好感度が自動で上がるボーナス会話)
-when "好意"
-  tx["tx1"] = "「今夜は寝かせてあげないわよ……？\n　覚悟してね……\\H」"
-  tx["tx1"] = "「#{giggle}\n　素敵よ、#{target}\\H」" if $mood.point > 50 #前口上が好感度高い場合
+when "Favor"
+  tx["tx1"] = "\"I'm not letting you sleep tonight, you hear....?\n Hope you're ready for it....\\H\""
+  tx["tx1"] = "\"#{giggle}\n That's fantastic, #{target}\\H\"" if $mood.point > 50 #前口上が好感度高い場合
   #----------------------------------------------------------------------------------------------------------------------
   #格納
   ms.push(tx)
@@ -1044,20 +1044,20 @@ when "好意"
 
 #▼主人公脱衣▼****************************************************************************************
 #主人公が自ら脱ぐよう要求される
-when "主人公脱衣"
+when "Player stripped"
   case $msg.talk_step
   when 1 #脱衣要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「ねぇ、\n　#{myname}のお願い、聞いてくれるかしら？」"
-    tx["tx2"] = "「#{giggle}\n　#{target}の脱ぐところが見たいの\\H\n　いいでしょう？」" 
-    tx["tx2"] = "「#{giggle}\n　#{target}も服を脱いでもらえる？\n　#{myname}も裸なんだし、ね\\H」"  if $msg.t_enemy.nude? #既に相手が脱いでいる
+    tx["tx1"] = "\"Say,\n could you hear my request for me?\""
+    tx["tx2"] = "\"#{giggle}\n I wanna see #{target} without any clothes\\H\n I know you can do it.\"" 
+    tx["tx2"] = "\"#{giggle}\n Can you also take your clothes off, #{target}?\n Not like I'm wearing any clothes either, you see\\H\""  if $msg.t_enemy.nude? #既に相手が脱いでいる
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「あら、残念……」"
+    tx["tx1"] = "\"Man, what a shame....\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{giggle}\n　いつ見ても素敵よ……\\H」"
-    tx["tx1"] = "「#{giggle}\n　とっても美味しそう……\\H」" if $msg.t_enemy.state?(32) #夢魔がドキっとした
+    tx["tx1"] = "\"#{giggle}\n You always look so wonderful....\\H\""
+    tx["tx1"] = "\"#{giggle}\n You look so tasty....\\H\"" if $msg.t_enemy.state?(32) #夢魔がドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
