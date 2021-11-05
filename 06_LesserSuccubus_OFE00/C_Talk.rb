@@ -215,7 +215,7 @@ when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Hey, #{target}....\n I'm feeling hungry....\\H\""
+    tx["tx1"] = "\"Hey, #{target}....\n I'm feeling hungry here....\\H\""
     tx["tx2"] = "\"Can you give me some of #{target}'s energy?\"" 
     tx["tx2"] = "\"Can you give me some of #{target}'s energy?\n In exchange, I'll make you feel real good....\\H\""  if $msg.tag == "Energy-suck - genitals"
   when 77 #レジスト成功(脱衣を拒んだ場合)
@@ -691,7 +691,7 @@ when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Hey, #{target}....\n I'm feeling hungry....\\H\""
+    tx["tx1"] = "\"Hey, #{target}....\n I'm feeling hungry here....\\H\""
     tx["tx2"] = "\"Can you give me some of #{target}'s energy?\"" 
     tx["tx2"] = "\"Can you give me some of #{target}'s energy?\n In exchange, I'll make you feel real good....\\H\""  if $msg.tag == "Energy-suck - genitals"
   when 77 #レジスト成功(脱衣を拒んだ場合)
@@ -1093,7 +1093,7 @@ when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Hey, #{target}....\n I'm feeling hungry....\\H\""
+    tx["tx1"] = "\"Hey, #{target}....\n I'm feeling hungry here....\\H\""
     tx["tx2"] = "\"Can you give me some of #{target}'s energy?\"" 
     tx["tx2"] = "\"Can you give me some of #{target}'s energy?\n In exchange, I'll make you feel real good....\\H\""  if $msg.tag == "Energy-suck - genitals"
   when 77 #レジスト成功(脱衣を拒んだ場合)
@@ -1494,7 +1494,7 @@ when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Hey, #{target}....\n I'm feeling hungry....\\H\""
+    tx["tx1"] = "\"Hey, #{target}....\n I'm feeling hungry here....\\H\""
     tx["tx2"] = "\"Can you give me some of #{target}'s energy?\"" 
     tx["tx2"] = "\"Can you give me some of #{target}'s energy?\n In exchange, I'll make you feel real good....\\H\""  if $msg.tag == "Energy-suck - genitals"
   when 77 #レジスト成功(脱衣を拒んだ場合)
