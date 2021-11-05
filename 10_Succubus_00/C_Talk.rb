@@ -309,7 +309,7 @@ when "Caress - intercourse"
       tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}....#{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
     #▼Lv1
     when 1
-      tx["tx1"] = "\"#{giggle}\n You like this position?n I can get a full view of your cute face, #{target}....\\H\"" 
+      tx["tx1"] = "\"#{giggle}\n I like this position.\n After all, I can get a full view of your cute face, #{target}....\\H\"" 
       tx["tx1"] = "\"#{giggle}\n Feel free to cum whenever you feel like it\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Ufufu, this is where we get serious\\H\n I'll make sure you get a good taste taste of me....\\H\""  if $game_actors[101].critical == true #攻守交替
     #▼Deffence
