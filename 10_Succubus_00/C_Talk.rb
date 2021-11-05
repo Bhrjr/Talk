@@ -119,7 +119,7 @@ when "Rejected"
     tx["md"] = "30"
   when "Excess moves"
     # ベッドイン中でない時に、同じ夢魔に同一戦闘で３回を越えて話しかけた場合
-    tx["tx1"] = "\"#{giggle}\n There's no need for words anymore.\n As for everything else....your attitude will tell me\\H\""
+    tx["tx1"] = "\"#{giggle}\n No need for words anymore.\n As for everything else....your attitude will tell me\\H\""
     #----------------------------
   end
   #格納
@@ -487,19 +487,19 @@ class MsgSuccubus_A < MsgBase
                           case $msg.talk_step
                           when 0
                             tx["md"] = "22"
-                            tx["md"] = "0" if $msg.tag == "不成立"
+                            tx["md"] = "0" if $msg.tag == "Rejected"
                           when 1
                             tx["md"] = "0"
-                            tx["md"] = "27" if $msg.tag == "好意"
+                            tx["md"] = "27" if $msg.tag == "Favor"
                           when 2..76
                             case $msg.tag
-                            when "愛撫・通常","愛撫・性交","視姦","奉仕"
+                            when "Caress - normal","Caress - intercourse","Leer","Show love"
                               tx["md"] = "24"
-                            when "主人公脱衣","夢魔脱衣"
+                            when "Player stripped","Succubus stripped"
                               tx["md"] = "23"
-                            when "吸精・口","吸精・性器"
+                            when "Energy-suck - mouth","Energy-suck - genitals"
                               tx["md"] = "25"
-                            when "交合"
+                            when "Mingle"
                               tx["md"] = "26"
                             end
                           when 77
@@ -514,7 +514,7 @@ class MsgSuccubus_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -525,19 +525,19 @@ class MsgSuccubus_A < MsgBase
                           case $msg.talk_step
                           when 0
                             tx["md"] = "22"
-                            tx["md"] = "0" if $msg.tag == "不成立"
+                            tx["md"] = "0" if $msg.tag == "Rejected"
                           when 1
                             tx["md"] = "0"
-                            tx["md"] = "27" if $msg.tag == "好意"
+                            tx["md"] = "27" if $msg.tag == "Favor"
                           when 2..76
                             case $msg.tag
-                            when "愛撫・通常","愛撫・性交","視姦","奉仕"
+                            when "Caress - normal","Caress - intercourse","Leer","Show love"
                               tx["md"] = "24"
-                            when "主人公脱衣","夢魔脱衣"
+                            when "Player stripped","Succubus stripped"
                               tx["md"] = "23"
-                            when "吸精・口","吸精・性器"
+                            when "Energy-suck - mouth","Energy-suck - genitals"
                               tx["md"] = "25"
-                            when "交合"
+                            when "Mingle"
                               tx["md"] = "26"
                             end
                           when 77
@@ -559,7 +559,7 @@ class MsgSuccubus_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 case $msg.tag
 #▼会話不成立時▼****************************************************************************************
@@ -567,26 +567,26 @@ case $msg.tag
 #・エネミークライシス（非ホールド状態）
 #・絶頂中
 #・会話回数が３回を越えた（非ベッドイン中）
-when "不成立"
+when "Rejected"
   case $msg.at_type
-  when "夢魔絶頂中"
+  when "Succubus orgasming"
     # エネミーが絶頂直後の衰弱中
-    tx["tx1"] = "「あぁ……ん……っ……\\H\n　素敵だったわ、#{target}……\\H」"
+    tx["tx1"] = "\"Aaah....nnn....nn....\\H\n That was fantastic, #{target}....\\H\""
     #----------------------------
     tx["md"] = "28"
-  when "主人公クライシス"
+  when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "「あら……待ちきれないの？\n　くすくす……どうしちゃおうかしら\\H」"
+    tx["tx1"] = "\"Oh my....you can't wait for it?\n *Giggle....dunno what to do about that\\H\""
     #----------------------------
     tx["md"] = "29"
-  when "夢魔クライシス"
+  when "Succubus CRISIS"
     # 夢魔がクライシス中に話しかけた場合
-    tx["tx1"] = "「あ……はぁ……っ……\\H\n　ねぇ……焦らさないで、早く……\\H」"
+    tx["tx1"] = "\"Ah....ha....a....\\H\n Hey....stop teasing me and hurry....\\H\""
     #----------------------------
     tx["md"] = "29"
-  when "夢魔恍惚中"
+  when "Succubus in ecstasy"
     # 夢魔が恍惚中の場合
-    tx["tx1"] = "「ん……ふ……\\H」"
+    tx["tx1"] = "\"Nnn....fu....\\H\""
     #----------------------------
     tx["md"] = "30"
   when "夢魔暴走中"
@@ -962,7 +962,7 @@ end #msg.tag
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 case $msg.tag
 #▼会話不成立時▼****************************************************************************************
