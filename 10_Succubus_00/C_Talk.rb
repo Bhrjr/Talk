@@ -617,7 +617,7 @@ when "Initial remarks"
     tx["tx1"] = "\"Nnn....that makes me happy\\H\""
   # 好感度が高まっている場合
   when 21..49
-    tx["tx1"] = "\"Ufufu....\n Could you tell me more of it? \\H\""
+    tx["tx1"] = "\"Ufufu....\n Could you tell me more of that? \\H\""
   # 好感度が低い場合
   else
     tx["tx1"] = "\"#{giggle}\n As sincere as ever, #{target}\\H\""
@@ -970,36 +970,36 @@ case $msg.tag
 #・エネミークライシス（非ホールド状態）
 #・絶頂中
 #・会話回数が３回を越えた（非ベッドイン中）
-when "不成立"
+when "Rejected"
   case $msg.at_type
-  when "夢魔絶頂中"
+  when "Succubus orgasming"
     # エネミーが絶頂直後の衰弱中
-    tx["tx1"] = "「あぁ……ん……っ……\\H\n　素敵だったわ、#{target}……\\H」"
+    tx["tx1"] = "\"Aaah....nnn....nn....\\H\n That was fantastic, #{target}....\\H\""
     #----------------------------
     tx["md"] = "28"
-  when "主人公クライシス"
+  when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "「あら……待ちきれないの？\n　くすくす……どうしちゃおうかしら\\H」"
+    tx["tx1"] = "\"Oh my....you can't wait for it?\n *Giggle....dunno what to do about that\\H\""
     #----------------------------
     tx["md"] = "29"
-  when "夢魔クライシス"
+  when "Succubus CRISIS"
     # 夢魔がクライシス中に話しかけた場合
-    tx["tx1"] = "「あ……はぁ……っ……\\H\n　ねぇ……焦らさないで、早く……\\H」"
+    tx["tx1"] = "\"Ah....ha....a....\\H\n Hey....stop teasing me and hurry....\\H\""
     #----------------------------
     tx["md"] = "29"
-  when "夢魔恍惚中"
+  when "Succubus in ecstasy"
     # 夢魔が恍惚中の場合
-    tx["tx1"] = "「ん……ふ……\\H」"
+    tx["tx1"] = "\"Nnn....fu....\\H\""
     #----------------------------
     tx["md"] = "30"
-  when "夢魔暴走中"
+  when "Succubus running berserk"
     # 夢魔が暴走中の場合
-    tx["tx1"] = "「#{target}は何もしなくていいわよ……。\n　#{myname}が全部してあげるから……#{giggle}」"
+    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything....#{giggle}\""
     #----------------------------
     tx["md"] = "30"
-  when "試行過多"
+  when "Excess moves"
     # ベッドイン中でない時に、同じ夢魔に同一戦闘で３回を越えて話しかけた場合
-    tx["tx1"] = "「#{giggle}\n　言葉はもう要らないわ。\n　後は態度で示して……ね\\H」"
+    tx["tx1"] = "\"#{giggle}\n No need for words anymore.\n As for everything else....your attitude will tell me\\H\""
     #----------------------------
   end
   #格納
@@ -1012,18 +1012,18 @@ when "不成立"
 #トークを仕掛けた場合、必ずムードと好感度が上がる。その部分の会話。
 #これが表示された後、ランダムで要求その他の分岐に入る(入らない場合もある)
 #会話に対して、好意的に返してくれる
-when "前口上"
+when "Initial remarks"
 #==================================================================================================================
   case $mood.point
   # 好感度がとても高い場合
   when 50..100
-    tx["tx1"] = "「ん……嬉しいわ\\H」"
+    tx["tx1"] = "\"Nnn....that makes me happy\\H\""
   # 好感度が高まっている場合
   when 21..49
-    tx["tx1"] = "「ふふっ……、\n　もっと言ってもらえるかしら\\H」"
+    tx["tx1"] = "\"Ufufu....\n Could you tell me more of that? \\H\""
   # 好感度が低い場合
   else
-    tx["tx1"] = "「#{giggle}\n　相変わらずマメなのね、#{target}\\H」"
+    tx["tx1"] = "\"#{giggle}\n As sincere as ever, #{target}\\H\""
   end
   #格納
   ms.push(tx)
