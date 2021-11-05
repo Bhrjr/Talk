@@ -219,7 +219,7 @@ when "Energy-suck - mouth","Energy-suck - genitals"
     tx["tx2"] = "\"Can I have some of #{target}'s energy?\\H\n It's fine, leave everything to me....\n I'll leave you moaning....\\H\""  if $msg.tag == "Energy-suck - genitals"
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Augh, it's not anything to be scared about, you know?\""
+    tx["tx1"] = "\"Augh, there's nothing to be scared about, you know?\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Ufufu....I figured....♪\n Your taste is my favorite....\\H\""
@@ -676,8 +676,8 @@ when "Succubus stripped"
     tx["tx1"] = "\"Oh my, not a fan of that stuff?\""
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{giggle}\n　どうだったかしら？\n　こういうのも悪くないでしょう？\\H」"
-    tx["tx1"] = "「#{giggle}\n　興奮してくれたかしら？\n　いいのよ、前を隠さなくても\\H」" if $game_actors[101].state?(32) #主人公がドキっとした
+    tx["tx1"] = "\"#{giggle}\n How was it?\n This isn't too bad either, right?\\H\""
+    tx["tx1"] = "\"#{giggle}\n Did that excite you?\n No need to hide your crotch\\H\"" if $game_actors[101].state?(32) #主人公がドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -687,13 +687,13 @@ when "Succubus stripped"
 
 #▼吸精▼****************************************************************************************
 #精気を吸わせるよう要求される
-when "吸精・口","吸精・性器"
+when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「ふふっ、言葉が偽りでないなら、\n　#{myname}のお願い、聞いてくれるわよね？」"
-    tx["tx2"] = "「#{target}の精気、少し頂けるかしら？\\H\n　大丈夫、#{myname}に任せて……\\H」" 
-    tx["tx2"] = "「#{target}の精気、少し頂けるかしら？\\H\n　大丈夫、#{myname}に任せて……。\n　気持ちよくしてあげる……\\H」"  if $msg.tag == "吸精・性器"
+    tx["tx1"] = "\"Ufufu, if what you're saying's not a lie,\n you'll hear my request, right?\""
+    tx["tx2"] = "\"Can I have some of #{target}'s energy?\\H\n It's fine, leave everything to me....\\H\"" 
+    tx["tx2"] = "\"Can I have some of #{target}'s energy?\\H\n It's fine, leave everything to me....\n I'll leave you moaning....\\H\""  if $msg.tag == "Energy-suck - genitals"
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "「あぁん、別に怖くないわよ？」"
