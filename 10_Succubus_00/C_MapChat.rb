@@ -118,7 +118,7 @@ else
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"#{myname}'m with a human, huh.\n Wonder what I should tell to my buddies?\n　#{giggle}\""
+    tx["tx1"] = "\"#{myname}'m with a human, huh.\n Wonder what I should say to my buddies?\n　#{giggle}\""
     tx["tx4"] = "#{speaker} giggles gleefully,\n remembering something...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -161,7 +161,7 @@ else
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"#{myname}'m with a human, huh.\n Wonder what I should tell to my buddies?\n　#{giggle}\""
+    tx["tx1"] = "\"#{myname}'m with a human, huh.\n Wonder what I should say to my buddies?\n　#{giggle}\""
     tx["tx4"] = "#{speaker} giggles gleefully,\n remembering something...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -204,7 +204,7 @@ else
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"#{myname}'m with a human, huh.\n Wonder what I should tell to my buddies?\n　#{giggle}\""
+    tx["tx1"] = "\"#{myname}'m with a human, huh.\n Wonder what I should say to my buddies?\n　#{giggle}\""
     tx["tx4"] = "#{speaker} giggles gleefully,\n remembering something...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -486,8 +486,8 @@ else
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"There's so many people暇人が多いのねえ……。\n　こんなに本ばかり集めてどうするのかしら？\""
-    tx["tx4"] = "#{speaker}は本にはあまり興味が無いようだ……。" + "TALKTEXT"
+    tx["tx1"] = "\"I think the people here have too much time on their hands....\n What are they gonna do by gathering all these books?\""
+    tx["tx4"] = "#{speaker} doesn't seem very interested in the books...." + "TALKTEXT"
     #格納
     ms.push(tx)
   #================================#
@@ -497,7 +497,7 @@ else
     #▼パターン１
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"んん～っ♪\n　いいわね、この空気。\n　上の堅苦しい感じとは大違いよ\\H\""
+    tx["tx1"] = "\"Mmmm♪\n The air feels nice.\n Totally different from the strictness above\\H\""
     #  tx["tx4"] = "" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -505,14 +505,14 @@ else
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"ここは#{myname}の仲間も結構いるけど……\n　露出の高い奴には気をつけなさいね。\n　過激なおもてなしをされちゃうわよ？\\H\""
-    tx["tx4"] = "今のは忠告なのか興味本位の発言なのか、\n#{speaker}の表情からはよく判らない……。" + "TALKTEXT"
+    tx["tx1"] = "\"You can fine plenty of my buddies here....\n　But remember to watch out for gals exposing too much of their skin.\n They might be too friendly for you\\H\""
+    tx["tx4"] = "Based on #{speaker}'s expression,\n I can't tell whether what she said now was a warning or just to get me curious...." + "TALKTEXT"
     #格納
     ms.push(tx)
   #================================#
   #▼シルフェ屋敷                  #
   #================================#
-  when "シルフェ屋敷"
+  when "Sylphy Residence"
     #▼パターン１
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
@@ -531,7 +531,7 @@ else
   #================================#
   #▼混濁したレンディカ            #
   #================================#
-  when "混濁したレンディカ"
+  when "Chaotic Rendica"
     #▼パターン１
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
@@ -550,7 +550,7 @@ else
   #================================#
   #▼ラーミルテリトリー            #
   #================================#
-  when "ラーミルテリトリー"
+  when "Ramil's Domain"
     #▼パターン１
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
