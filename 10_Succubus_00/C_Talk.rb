@@ -249,14 +249,14 @@ when "Caress - normal"
     when 20,10
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
-        tx["tx1"] = "\"ふふっ、我慢しなくていいのよ？\n　#{target}の弱い所はもう判ってるんだし\\H\"" 
-        tx["tx1"] = "\"#{pleasure_s}\n　いいわ、その表情……ぞくぞくしちゃう……\\H\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"もっとして欲しい？\n　なら、おねだりしてごらんなさい？\n　#{giggle}\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Ufufu, you don't have to fight it.\n I know all of #{target}'s weak spots\\H\"" 
+        tx["tx1"] = "\"#{pleasure_s}\n I like that face....so thrilling....\\H\""  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "\"You want more?\n Then you better beg for it.\n #{giggle}\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "\"こんな感じでどうかしら？\n　……#{target}のココは正直ね、#{giggle}\"" 
-        tx["tx1"] = "\"あら……無理しちゃって。\n　素直に感じてくれていいのよ？\n　#{giggle}\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"ふふっ、頑張るじゃない♪\n　どこまで耐えられるのかしらね……\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"How does this feel?\n ....You're more honest down here, #{target}. #{giggle}\"" 
+        tx["tx1"] = "\"My....to push yourself like that.\n You should be more honest with how it feels.\n #{giggle}\""  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "\"Nfufu, you're trying hard, alright♪\n But wor how long, I wonderどこまで耐えられるのかしらね……\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     #▼その他
     else
