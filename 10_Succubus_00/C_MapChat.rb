@@ -26,24 +26,24 @@ class MsgSuccubus_A < MsgBase
 if $msg.t_enemy.fed <= 20
   #====================================================================================================================
   #◆【大事な人】状態◆
-  if $msg.t_enemy.have_ability?("大切な人")
+  if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
-    tx["tx1"] = "「あぁん、おなか空いてきちゃったわ。\n　……ね、#{target}の熱いの……今すぐ頂戴？\\H」"
-    tx["tx4"] = "#{speaker}は熱っぽい瞳で、\n#{master}の下半身を見ている……！" + "TALKTEXT"
+    tx["tx1"] = "\"Man, feel like I could go for something.\n ....Say, #{target}, can I have some of your hot stuff....right now? \\H\""
+    tx["tx4"] = "#{speaker} is looking at #{master}'s lower half\nwith feverish eyes....!" + "TALKTEXT"
 
   #====================================================================================================================
   #◆【寵愛】状態◆
   elsif $msg.t_enemy.have_ability?("寵愛")
   #====================================================================================================================
-    tx["tx1"] = "「あぁん、おなか空いてきちゃったわ。\n　……ね、#{target}の熱いの……今すぐ頂戴？\\H」"
-    tx["tx4"] = "#{speaker}は熱っぽい瞳で、\n#{master}の下半身を見ている……！" + "TALKTEXT"
+    tx["tx1"] = "\"Man, feel like I could go for something.\n ....Say, #{target}, can I have some of your hot stuff....right now? \\H\""
+    tx["tx4"] = "#{speaker} is looking at #{master}'s lower half\nwith feverish eyes....!" + "TALKTEXT"
 
   #====================================================================================================================
   #◆通常状態(【寵愛】【大切な人】どちらも持っていない場合)◆
   else
   #====================================================================================================================
-    tx["tx1"] = "「んー……そろそろ食事にしてもいいかしらね。\n　ねぇ、#{target}もそう思わない？」"
-    tx["tx4"] = "#{speaker}は熱っぽい瞳で、\n#{master}の下半身を見ている……！" + "TALKTEXT"
+    tx["tx1"] = "\"Hmm....I think now is good time for a meal.\n Don't you agree, #{target}?\""
+    tx["tx4"] = "#{speaker} is looking at #{master}'s lower half\nwith feverish eyes....!" + "TALKTEXT"
 
   end
   #格納
@@ -54,24 +54,24 @@ if $msg.t_enemy.fed <= 20
 elsif $msg.t_enemy.spp <= 20 or $msg.t_enemy.hpp <= 20
   #====================================================================================================================
   #◆【大事な人】状態◆
-  if $msg.t_enemy.have_ability?("大切な人")
+  if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
-    tx["tx1"] = "「ねぇ……そろそろ一度戻らない？\n　柔らかいベッドが恋しくなっちゃったわ\\H」"
-    tx["tx4"] = "#{speaker}は冗談めいた口調で笑った。\n表情には少々疲労の色が見える……" + "TALKTEXT"
+    tx["tx1"] = "\"Say....don't you think it's about time we go back?\n I'm dying for the soft bed\\H\""
+    tx["tx4"] = "#{speaker} laughed with her tongue in her cheek.\nHer expression shows a slight fatigue...." + "TALKTEXT"
 
   #====================================================================================================================
   #◆【寵愛】状態◆
-  elsif $msg.t_enemy.have_ability?("寵愛")
+  elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
-    tx["tx1"] = "「ねぇ……そろそろ一度戻らない？\n　柔らかいベッドが恋しくなっちゃったわ\\H」"
-    tx["tx4"] = "#{speaker}は冗談めいた口調で笑った。\n表情には少々疲労の色が見える……" + "TALKTEXT"
+    tx["tx1"] = "\"Say....don't you think it's about time we go back?\n I'm dying for the soft bed\\H\""
+    tx["tx4"] = "#{speaker} laughed with her tongue in her cheek.\nHer expression shows a slight fatigue...." + "TALKTEXT"
 
   #====================================================================================================================
   #◆通常状態(【寵愛】【大切な人】どちらも持っていない場合)◆
   else
   #====================================================================================================================
-    tx["tx1"] = "「んー……。\n　そろそろ一度戻りましょうよ。\n　#{myname}、帰って湯浴みがしたいわ」"
-    tx["tx4"] = "#{speaker}は大きくため息をついた。\n少々疲労が溜まっているようだ……" + "TALKTEXT"
+    tx["tx1"] = "\"Hmm....\n We should be going back now.\n I wanna go home and have a bath.\""
+    tx["tx4"] = "#{speaker} sighed heavily.\nShe seems to have become somewhat fatigued...." + "TALKTEXT"
 
   end
   #格納
@@ -83,18 +83,18 @@ else
   #★汎用口上(環境に関わらず出てくる)
   #====================================================================================================================
   #◆【大事な人】状態◆
-  if $msg.t_enemy.have_ability?("大切な人")
+  if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "「はぁ～あ、こうしてる時間って存外退屈なのよね。\n　誰かさんが襲ってくれないかしら……？」"
-    tx["tx4"] = "#{speaker}は退屈そうに欠伸をしつつ、\nちらちらと#{master}を見ている……。" + "TALKTEXT"
+    tx["tx1"] = "\"Siiigh, didn't know how boring this would be.\n Won't somebody just come and attack us....?\""
+    tx["tx4"] = "#{speaker} takes glances at #{master}\n while yawning in a bored manner...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「#{giggle}\n　頑張ってる#{target}に、ちょっとだけご褒美♪」"
+    tx["tx1"] = "\"#{giggle}\n Here's a small reward to #{target} for working hard♪\""
     tx["tx4"] = "#{speaker}は#{master}の後ろから急に抱き着いてきた！\n#{master}の背中に柔らかい感触が押し付けられる……！" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -102,7 +102,7 @@ else
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「おかしいわね、どこに仕舞い込んだかしら……\n　ああ、何でもないわ、ちょっと探し物よ」"
+    tx["tx1"] = "\"おかしいわね、どこに仕舞い込んだかしら……\n　ああ、何でもないわ、ちょっと探し物よ\""
     tx["tx4"] = "#{speaker}が服の裾をひっくり返すたび、\n豊満な胸がぷるんぷるんと揺れている……。" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -110,7 +110,7 @@ else
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「～～～♪\n　～～～～～♪」"
+    tx["tx1"] = "\"～～～♪\n　～～～～～♪\""
     tx["tx4"] = "#{speaker}は何か歌を口ずさんでいる……。\n今は機嫌が良いようだ。" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -118,7 +118,7 @@ else
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「#{myname}が人間と一緒だなんてね。\n　仲間が見たら何て言うかしら？\n　#{giggle}」"
+    tx["tx1"] = "\"#{myname}が人間と一緒だなんてね。\n　仲間が見たら何て言うかしら？\n　#{giggle}\""
     tx["tx4"] = "#{speaker}は一人何かを思い出しながら、\n楽しげにくすくす笑っている……。" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -126,7 +126,7 @@ else
 
   #====================================================================================================================
   #◆【寵愛】状態◆
-  elsif $msg.t_enemy.have_ability?("寵愛")
+  elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
     #▼パターン１ 
     tx["tx1"] = "「はぁ～あ、こうしてる時間って存外退屈なのよね。\n　誰かさんが襲ってくれないかしら……？」"
