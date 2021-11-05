@@ -440,8 +440,8 @@ when "Mingle"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{giggle}\n Hey, about my breasts....what's your thought on it?\n I'm fairly confident of it.」"
-      tx["tx2"] = "\"This breast....\n Wanna fuck it with your robust cock?\n I'm fine with it. Do what you want....\\H」" 
+      tx["tx1"] = "\"#{giggle}\n Hey, about my breasts....what's your thought on it?\n I'm fairly confident of it.\""
+      tx["tx2"] = "\"This breast....\n Wanna fuck it with your robust cock?\n I'm fine with it. Do what you want....\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Oh dear....\nnot a fan of that stuff?\""
@@ -454,7 +454,7 @@ when "Mingle"
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"#{giggle}\n Say, could you hear my request for me?\""
-      tx["tx2"] = "\"See, just from hearing #{target}'s voice....\\H\n My pussy's dripping wet\\H\n Would you lick it for me....?\\H」" 
+      tx["tx2"] = "\"See, just from hearing #{target}'s voice....\\H\n My pussy's dripping wet\\H\n Would you lick it for me....?\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Oh dear....\nnot a fan of that stuff?\""
