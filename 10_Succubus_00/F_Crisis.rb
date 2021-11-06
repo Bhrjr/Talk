@@ -57,7 +57,7 @@ when "Enemy solo"
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"Aha....it should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
+  tx["tx1"] = "\"Aha....should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
@@ -135,7 +135,7 @@ when "Enemy solo"
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"Aha....it should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
+  tx["tx1"] = "\"Aha....should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
@@ -205,7 +205,7 @@ when "Enemy solo"
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"Aha....it should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
+  tx["tx1"] = "\"Aha....should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
@@ -274,7 +274,7 @@ when "Enemy solo"
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"Aha....it should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
+  tx["tx1"] = "\"Aha....should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
