@@ -183,7 +183,7 @@ when "貝合わせ"
   #格納
   ms.push(tx)
 #▼顔面騎乗▼****************************************************************************************
-when "騎乗：アソコ側"
+when "Pussy on top"
   tx["tx1"] = "\"Aha♪ I can feel your heavy breath\\H\n Guess that means you're enjoying it....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
