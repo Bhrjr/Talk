@@ -46,7 +46,7 @@ when "User rebound harm"
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"Whoa....\\H\n #{target}....keep looking this way\\H\""
+  tx["tx1"] = "\"Whoa....\\H\n Turn this way....#{target}\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -124,7 +124,7 @@ when "User rebound harm"
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"Whoa....\\H\n #{target}....keep looking this way\\H\""
+  tx["tx1"] = "\"Whoa....\\H\n Turn this way....#{target}\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -194,7 +194,7 @@ when "User rebound harm"
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"Whoa....\\H\n #{target}....keep looking this way\\H\""
+  tx["tx1"] = "\"Whoa....\\H\n Turn this way....#{target}\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -263,7 +263,7 @@ when "User rebound harm"
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"Whoa....\\H\n #{target}....keep looking this way\\H\""
+  tx["tx1"] = "\"Whoa....\\H\n Turn this way....#{target}\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
