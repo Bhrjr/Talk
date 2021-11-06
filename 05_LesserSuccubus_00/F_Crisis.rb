@@ -46,7 +46,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n Show me more, #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle}\n Lemme get a better look, #{target}....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -124,7 +124,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n Show me more, #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle}\n Lemme get a better look, #{target}....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -194,7 +194,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n Show me more, #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle}\n Lemme get a better look, #{target}....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -263,7 +263,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n Show me more, #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle}\n Lemme get a better look, #{target}....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
