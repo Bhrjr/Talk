@@ -82,7 +82,7 @@ when 2..4 #連携追撃
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
   tx["tx1"] = "\"Well, can you just relax....?\n I'll make you cum in no time\\H\""
-  tx["tx1"] = "\"#{giggle_s} It's pointless to try to fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s} It's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"#{giggle_s} You don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll be making you cum now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
