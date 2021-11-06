@@ -140,7 +140,7 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} I guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
+  tx["tx1"] = "\"#{giggle_s} Guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
   tx["tx1"] = "\"#{giggle}\n Since you're the contractor,\n #{myname}'m gonna treat you with respect, #{target}\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #  tx["tx1"] = "" if $game_switches[97] == true #連携が発生していた場合
@@ -448,8 +448,8 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} I guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
-  tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s} Guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
+  tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #  tx["tx1"] = "" if $game_switches[97] == true #連携が発生していた場合
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" and $game_switches[97] == true #連携が発生していた場合パターンB
@@ -728,8 +728,8 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} I guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
-  tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s} Guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
+  tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #  tx["tx1"] = "" if $game_switches[97] == true #連携が発生していた場合
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" and $game_switches[97] == true #連携が発生していた場合パターンB
@@ -1007,8 +1007,8 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} I guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
-  tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s} Guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
+  tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #  tx["tx1"] = "" if $game_switches[97] == true #連携が発生していた場合
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" and $game_switches[97] == true #連携が発生していた場合パターンB
