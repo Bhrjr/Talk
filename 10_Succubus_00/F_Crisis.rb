@@ -35,7 +35,7 @@ when "User solo"
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
 when "Both users"
-  tx["tx1"] = "\"#{pleasure_s}\n　#{target}もイきそうなのね……？\n　ふふっ……このまま一緒に……ね？\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n Guess you're gonna cum soon as well, #{target}....\n Ufufu....let's cum like this....together, yeah? \\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
@@ -52,27 +52,27 @@ when "User onanism"
 #■夢魔がクライシス状態になる
 #パートナーの攻めで夢魔がクライシス
 when "Enemy solo"
-  tx["tx1"] = "「あぁん……上手よ#{target}……\\H\n　早くイかせてぇ……\\H」"
+  tx["tx1"] = "\"Aaannh....you're good, #{target}....\\H\n Hurry up and make me cum....\\H\""
   #格納
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "「あはぁ……#{myname}もそろそろ……\\H\n　うふふ……このまま一緒に……ね？\\H」"
+  tx["tx1"] = "\"Aha....it should be about time for you too, #{myname}....\\H\n Ufufu....let's cum like this....together, yeah? \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
 when "Enemy rebound harm"
-  tx["tx1"] = "「#{pleasure_s}\n　#{myname}もイきそうになっちゃった……\\H」"
+  tx["tx1"] = "\"#{pleasure_s}\n I'm gonna cum soon too....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
 when "Enemy onanism"
-  tx["tx1"] = "「あぁん……\\H\n　ねぇ、もっと近くで#{myname}を見てぇ……\\H」"
+  tx["tx1"] = "\"Aaahhh....\\H\n Hey, look at me from closer....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
 when "Enemy friendly fire"
-  tx["tx1"] = "「#{pleasure_s}\n Ufufu, you can't take it anymore either?\\H」"
+  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you can't take it anymore either?\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -102,7 +102,7 @@ class MsgSuccubus_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 #■パートナーがクライシス状態になる
 case $msg.tag
@@ -172,7 +172,7 @@ end #case $msg.tag
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 #■パートナーがクライシス状態になる
 case $msg.tag
