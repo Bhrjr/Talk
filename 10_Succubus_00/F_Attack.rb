@@ -30,7 +30,7 @@ class MsgSuccubus_A < MsgBase
   tx["tx1"] = "\"Oh my, you like it?\n Then I won't hold anything back\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Ufufu, what a cute voice\\H\n I'll make you moan even more....\\H\"" if $msg.t_target.crisis? #対象がクライシス
-  tx["tx1"] = "\"And to think that you've just came....\\H\n Maybe I aroused you a little too much\\H\"" if $msg.t_target.weaken? #対象が絶頂中
+  tx["tx1"] = "\"And to think you've just came....\\H\n Maybe I aroused you a little too much\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -42,9 +42,9 @@ case $msg.at_type
 when "Kiss"
   tx["tx1"] = "\"Nnn....*kiss...smooch, fwah....\\H\n I'm gonna intoxicate you with my lips....の唇で、溺れさせてあげる……\\H」"
   tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n Ufufu, keep twirling your tongue like that....yeah....\\H\"" if $game_variables[17] > 35 #パターンB
-  tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n　そうよ、舌…上手じゃない…くすくす……\\H\"" if $game_variables[17] > 70 #パターンC
-  tx["tx1"] = "\"ちゅっ…んっ……れろぉ……\\H\n　うふっ……すっかり蕩けちゃって…可愛い\\H\"" if $msg.t_enemy.crisis?
-  tx["tx1"] = "\"…ちゅっ…ちゅぱっ…んっ……\\H\n　ふふ、もっと蕩けさせてあげる……\\H\"" if $msg.t_enemy.crisis? and $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n That's right, you're...so good with your tongue...*giggle....\\H\"" if $game_variables[17] > 70 #パターンC
+  tx["tx1"] = "\"Smooch...nnn....*lick....\\H\n　うふっ……すっかり蕩けちゃって…可愛い\\H\"" if $msg.t_enemy.crisis?
+  tx["tx1"] = "\"...ちゅっ…ちゅぱっ…んっ……\\H\n　ふふ、もっと蕩けさせてあげる……\\H\"" if $msg.t_enemy.crisis? and $game_variables[17] > 50 #パターンB
   #-----------------------------------------------------
   #格納
   ms.push(tx)
