@@ -72,7 +72,7 @@ when "Enemy onanism"
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
 when "Enemy friendly fire"
-  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you can't take it anymore either?\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, can't take it anymore either?\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ when "Enemy onanism"
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
 when "Enemy friendly fire"
-  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you can't take it anymore either?\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, can't take it anymore either?\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -220,7 +220,7 @@ when "Enemy onanism"
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
 when "Enemy friendly fire"
-  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you can't take it anymore either?\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, can't take it anymore either?\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -289,7 +289,7 @@ when "Enemy onanism"
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
 when "Enemy friendly fire"
-  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you can't take it anymore either?\\H\""
+  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, can't take it anymore either?\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
