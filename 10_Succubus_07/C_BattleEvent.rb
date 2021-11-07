@@ -16,7 +16,7 @@ class MsgSuccubus_A < MsgBase
                             #空ハッシュ挿入
                             tx={}
 #----------------------------------------------------------------------------------------------------------------------
-if $msg.tag == "戦闘開始"
+if $msg.tag == "Start the Battle"
                             #ムード格納(個別変更の場合は口上単位で修正する)
                             if $game_switches[85] == true
                               tx["md"] = "12" if $msg.talk_step == 1
@@ -37,15 +37,15 @@ if $msg.tag == "戦闘開始"
   if $game_switches[85] == true
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "「#{giggle}\n　今夜もいっぱい愉しみましょうね\\H」"
+      tx["tx1"] = "\"#{giggle}\n Let's have plenty of fun tonight like always\\H\""
       #▼初ベッドイン
-      tx["tx1"] = "「#{giggle}\n　どう、緊張しちゃってる？\n　大丈夫よ、#{myname}がリードしてあげる\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n Well? Are you nervous?\n Don't you worry, 'cause #{myname}'ll be taking the lead\\H\"" if $msg.t_enemy.bedin_count == 0
     when 1 #２番目
-      tx["tx1"] = "「#{giggle}\n　今夜は新しいコトにも挑戦してみたいわね……\\H」"
+      tx["tx1"] = "\"#{giggle}\n For tonight, I wanna try out something new....\\H\""
       #▼初ベッドイン
-      tx["tx1"] = "「#{giggle}\n　ベッドの上でするのも久しぶりよ\\H\n　今夜はめいっぱい楽しみましょうね\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n　Been a while since I've done it in bed\\H\n Let's enjoy ourselves as much as we can tonight\\H\"" if $msg.t_enemy.bedin_count == 0
     when 2 #３番目
-      tx["tx1"] = "「#{giggle}\n　油断してると食べられちゃうわよ？\n　頑張ってね\\H」"
+      tx["tx1"] = "\"#{giggle}\n 断してると食べられちゃうわよ？\n Break\H」"
       #▼初ベッドイン
       tx["tx1"] = "「#{giggle}\n　さあ、可愛いご主人様？\n　#{myname}には何を望むのかしら？\\H」" if $msg.t_enemy.bedin_count == 0
     end
