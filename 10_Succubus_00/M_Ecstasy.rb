@@ -35,7 +35,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
   tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to do\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to you\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n I won't let you go until I see you cumming\\H\n Well, help me out, guys♪\""
@@ -333,7 +333,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
   tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to do\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to you\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n I won't let you go until I see you cumming\\H\n Well, help me out, guys♪\""
@@ -603,7 +603,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
   tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to do\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to you\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n I won't let you go until I see you cumming\\H\n Well, help me out, guys♪\""
@@ -872,7 +872,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
   tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to do\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to you\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n I won't let you go until I see you cumming\\H\n Well, help me out, guys♪\""
