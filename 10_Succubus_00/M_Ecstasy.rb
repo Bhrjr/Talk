@@ -91,11 +91,11 @@ when 11..14 #連携余韻
   tx["tx1"] = "\"Oh, come on....\n I'm gonna get frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "「Aaannh, it's flowing out....\\H\n Does it get you more excited than facing multiple girls? \\H\""
+    tx["tx1"] = "\"Aaannh, it's flowing out....\\H\n Does it get you more excited than facing multiple girls? \\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
-    tx["tx1"] = "「#{giggle}\n　良く頑張りました\\H」"
+    tx["tx1"] = "\"#{giggle}\n You've done well\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エンブレイス
   elsif $msg.t_enemy.tops_binder?
@@ -389,11 +389,11 @@ when 11..14 #連携余韻
   tx["tx1"] = "\"Oh, come on....\n I'm gonna get frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "「Aaannh, it's flowing out....\\H\n Does it get you more excited than facing multiple girls? \\H\""
+    tx["tx1"] = "\"Aaannh, it's flowing out....\\H\n Does it get you more excited than facing multiple girls? \\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
-    tx["tx1"] = "「#{giggle}\n　良く頑張りました\\H」"
+    tx["tx1"] = "\"#{giggle}\n You've done well\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エンブレイス
   elsif $msg.t_enemy.tops_binder?
@@ -659,11 +659,11 @@ when 11..14 #連携余韻
   tx["tx1"] = "\"Oh, come on....\n I'm gonna get frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "「Aaannh, it's flowing out....\\H\n Does it get you more excited than facing multiple girls? \\H\""
+    tx["tx1"] = "\"Aaannh, it's flowing out....\\H\n Does it get you more excited than facing multiple girls? \\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
-    tx["tx1"] = "「#{giggle}\n　良く頑張りました\\H」"
+    tx["tx1"] = "\"#{giggle}\n You've done well\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エンブレイス
   elsif $msg.t_enemy.tops_binder?
@@ -928,11 +928,11 @@ when 11..14 #連携余韻
   tx["tx1"] = "\"Oh, come on....\n I'm gonna get frustrations like this.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
-    tx["tx1"] = "「Aaannh, it's flowing out....\\H\n Does it get you more excited than facing multiple girls? \\H\""
+    tx["tx1"] = "\"Aaannh, it's flowing out....\\H\n Does it get you more excited than facing multiple girls? \\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
-    tx["tx1"] = "「#{giggle}\n　良く頑張りました\\H」"
+    tx["tx1"] = "\"#{giggle}\n You've done well\\H\""
   #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼エンブレイス
   elsif $msg.t_enemy.tops_binder?
