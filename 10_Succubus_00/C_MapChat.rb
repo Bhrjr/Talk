@@ -291,7 +291,7 @@ else
       #▼パターン２
       tx={} #ハッシュ再挿入
       #-------------------------------------------------------------
-      tx["tx1"] = "\"For #{target}'s house, isn't it a bit too simple?\n I'd want something like a stunning decorations.\""
+      tx["tx1"] = "\"For #{target}'s house, isn't it a bit too simple?\n I'd want something like a stunning decoration.\""
       tx["tx4"] = "#{speaker} is musing while looking at the exterior of the house.\nAlthough strictly speaking, it isn't actually his house...." + "TALKTEXT"
       #格納
       ms.push(tx)
@@ -493,7 +493,7 @@ else
   #================================#
   #▼パルフィス密教会              #
   #================================#
-  when "パルフィス密教会"
+  when "Palfau Secret Church"
     #▼パターン１
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
@@ -505,7 +505,7 @@ else
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"You can fine plenty of my buddies here....\n　But remember to watch out for gals exposing too much of their skin.\n They might be too friendly for you\\H\""
+    tx["tx1"] = "\"You can find plenty of my buddies here....\n　But remember to watch out for gals exposing too much of their skin.\n They might be too friendly for you\\H\""
     tx["tx4"] = "Based on #{speaker}'s expression,\n I can't tell whether what she said now was a warning or just to get me curious...." + "TALKTEXT"
     #格納
     ms.push(tx)
