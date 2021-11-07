@@ -43,11 +43,11 @@ if $msg.tag == "Start the Battle"
     when 1 #２番目
       tx["tx1"] = "\"Looks like the night's gonna be long....\\H\n Let's enjoy ourselves as much as we can\\H」"
       #▼初ベッドイン
-      tx["tx1"] = "\"#{giggle}\n I better repay you for form a contract with me\\H\n Allh my body, of course....\\H\"" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n I better repay you for form a contract with me\\H\n All with my body, of course....\\H\"" if $msg.t_enemy.bedin_count == 0
     when 2 #３番目
-      tx["tx1"] = "\"#{giggle}\n　今夜は何回までイけるか挑戦してみる？\""
+      tx["tx1"] = "\"#{giggle}\n Wanna see how many times you can cum tonight? \""
       #▼初ベッドイン
-      tx["tx1"] = "\"#{giggle}\n　#{myname}のカラダは#{target}だけのものよ\\H\n　思うままに貪ってね……\\H\"" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n My body's yours and yours only, #{target}\\H\n Inまに貪ってね……\\H\"" if $msg.t_enemy.bedin_count == 0
     end
   #●空腹戦闘中
   elsif $game_switches[86] == true
