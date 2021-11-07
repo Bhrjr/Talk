@@ -291,7 +291,7 @@ else
       #▼パターン２
       tx={} #ハッシュ再挿入
       #-------------------------------------------------------------
-      tx["tx1"] = "\"For #{target}'s house, isn't it a bit too simple?\n I'd want something like some stunning decorations.\""
+      tx["tx1"] = "\"For #{target}'s house, isn't it a bit too simple?\n I'd want something like a stunning decorations.\""
       tx["tx4"] = "#{speaker} is musing while looking at the exterior of the house.\nAlthough strictly speaking, it isn't actually his house...." + "TALKTEXT"
       #格納
       ms.push(tx)
