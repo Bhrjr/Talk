@@ -63,7 +63,7 @@ when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"#{giggle}\n You'll take it off for me?\""
-    tx["tx1"] = "「#{giggle}\n Are you trying to seduce me?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"#{giggle}\n Are you trying to seduce me?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"How do you like my body? \\H\n Good enough to satisfy you, #{target}?\""
@@ -178,7 +178,7 @@ when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"#{giggle}\n You'll take it off for me?\""
-    tx["tx1"] = "「#{giggle}\n Are you trying to seduce me?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"#{giggle}\n Are you trying to seduce me?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"How do you like my body? \\H\n Good enough to satisfy you, #{target}?\""
@@ -264,7 +264,7 @@ when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"#{giggle}\n You'll take it off for me?\""
-    tx["tx1"] = "「#{giggle}\n Are you trying to seduce me?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"#{giggle}\n Are you trying to seduce me?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"How do you like my body? \\H\n Good enough to satisfy you, #{target}?\""
@@ -350,7 +350,7 @@ when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"#{giggle}\n You'll take it off for me?\""
-    tx["tx1"] = "「#{giggle}\n Are you trying to seduce me?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"#{giggle}\n Are you trying to seduce me?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"How do you like my body? \\H\n Good enough to satisfy you, #{target}?\""
