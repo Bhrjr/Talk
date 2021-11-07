@@ -34,7 +34,7 @@ when "User solo"
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
-when "アクター両者"
+when "Both users"
   tx["tx1"] = "\"#{pleasure_s}\n You're gonna cum soon as well, #{target}....?\n What say we cum like this together....? \\H\""
   #格納
   ms.push(tx)
