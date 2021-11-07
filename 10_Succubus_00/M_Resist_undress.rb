@@ -39,7 +39,7 @@ when "Succubus strips the player."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"Just hold still....\\H」"
-    tx["tx1"] = "\"#{giggle}\n Think it's about time, #{target}....yeah? \\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+    tx["tx1"] = "\"#{giggle}\n Think it's about time, #{target}....don't you agree? \\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
     tx["tx1"] = "\"Hey, hurry....\\H\n Don't tease me....\\H\"" if $game_switches[86] == true #▼空腹戦
   #---------------------------------------------------
   when 2 #主人公が抵抗した
@@ -130,11 +130,11 @@ class MsgSuccubus_A < MsgBase
                             #ムード格納(個別変更の場合は口上単位で修正する)
                             case $msg.talk_step
                             when 2 #レジスト成功
-                              tx["md"] = "2" if $msg.tag == "夢魔が主人公を脱衣" #脱衣できなかった
-                              tx["md"] = "3" if $msg.tag == "主人公が夢魔を脱衣" #相手を脱衣させた
+                              tx["md"] = "2" if $msg.tag == "Succubus strips the player." #脱衣できなかった
+                              tx["md"] = "3" if $msg.tag == "Player strips the succubus." #相手を脱衣させた
                             when 3 #レジスト失敗
-                              tx["md"] = "3" if $msg.tag == "夢魔が主人公を脱衣" #脱衣させられた
-                              tx["md"] = "2" if $msg.tag == "主人公が夢魔を脱衣" #相手を脱衣できなかった
+                              tx["md"] = "3" if $msg.tag == "Succubus strips the player." #脱衣させられた
+                              tx["md"] = "2" if $msg.tag == "Player strips the succubus." #相手を脱衣できなかった
                             end
 #====================================================================================================================
 #★友好度の状態によって口上が変動
@@ -146,7 +146,7 @@ class MsgSuccubus_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 case $msg.tag
 #====================================================================================================================
@@ -226,7 +226,7 @@ end #case $msg.tag
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 case $msg.tag
 #====================================================================================================================
