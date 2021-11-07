@@ -47,15 +47,15 @@ if $msg.tag == "Start the Battle"
     when 2 #３番目
       tx["tx1"] = "\"#{giggle}\n Wanna see how many times you can cum tonight? \""
       #▼初ベッドイン
-      tx["tx1"] = "\"#{giggle}\n My body's yours and yours only, #{target}\\H\n Inまに貪ってね……\\H\"" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n My body's yours and yours only, #{target}\\H\n Indulge in in all you want....\\H\"" if $msg.t_enemy.bedin_count == 0
     end
   #●空腹戦闘中
   elsif $game_switches[86] == true
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "\"#{giggle}\n　さぁて、おイタをする子にお仕置きしなきゃ\\H\""
+      tx["tx1"] = "\"#{giggle}\n I'd say a mischievous boy deserves to punished\\H\""
     when 1 #２番目
-      tx["tx1"] = "\"ちょっとは痛い目を見たほうがいいかしら？\n　……ああ、気持ちいいコト、の間違いだったわ\\H\""
+      tx["tx1"] = "\"Maybe a little pain would go a long way?\n....、気持ちいいコト、の間違いだったわ\\H\""
     when 2 #３番目
       tx["tx1"] = "\"さて、と……\\H\n　心の準備と……覚悟はいいかしらね？\\H\""
     end
