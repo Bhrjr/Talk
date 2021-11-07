@@ -39,7 +39,7 @@ when 1 #初撃
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n I won't let you go until I see you cumming\\H\n Well, help me out, guys♪\""
-  tx["tx1"] = "\"Hold on, #{myname}'m the one that's having fun right now.\n Can you just stay there and watch me like a good girl?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Hold on, #{myname}'m the one that's having fun right now.\n Can you just stay there and watch me like a good boy?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼アクセプト
@@ -337,7 +337,7 @@ when 1 #初撃
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n I won't let you go until I see you cumming\\H\n Well, help me out, guys♪\""
-  tx["tx1"] = "\"Hold on, #{myname}'m the one that's having fun right now.\n Can you just stay there and watch me like a good girl?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Hold on, #{myname}'m the one that's having fun right now.\n Can you just stay there and watch me like a good boy?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼アクセプト
@@ -607,7 +607,7 @@ when 1 #初撃
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n I won't let you go until I see you cumming\\H\n Well, help me out, guys♪\""
-  tx["tx1"] = "\"Hold on, #{myname}'m the one that's having fun right now.\n Can you just stay there and watch me like a good girl?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Hold on, #{myname}'m the one that's having fun right now.\n Can you just stay there and watch me like a good boy?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼アクセプト
@@ -876,7 +876,7 @@ when 1 #初撃
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "\"#{giggle}\n I won't let you go until I see you cumming\\H\n Well, help me out, guys♪\""
-  tx["tx1"] = "\"Hold on, #{myname}'m the one that's having fun right now.\n Can you just stay there and watch me like a good girl?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Hold on, #{myname}'m the one that's having fun right now.\n Can you just stay there and watch me like a good boy?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼アクセプト
