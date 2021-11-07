@@ -814,7 +814,7 @@ when "Crotch"
     tx["tx1"] = "\"Aaaah....\\H\n You're going so deep....nnnn....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
     tx["tx1"] = "\"Nha...aah....\\H\n That's amazing........\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
   else
-    tx["tx1"] = "\"Aaaannnh....\\H\n Ufufu, you want me to get you all stained....?\"" # 対象が着衣状態の時
+    tx["tx1"] = "\"Aaaannnh....\\H\n Ufufu, you wanna get me all stained....?\"" # 対象が着衣状態の時
     tx["tx1"] = "\"Nnnn....\\H\n But I'm fine with more direct touches....\\H\"" if $game_variables[17] > 50 # 対象が着衣状態の時・パターンB
     tx["tx1"] = "\"Aaaannnh....\\H\n Don't keep me in suspense like that....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス 対象が着衣状態の時
     tx["tx1"] = "\"Nha...aah....\\H\n That's amazing........\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
@@ -899,7 +899,7 @@ when "Crotch"
     tx["tx1"] = "\"Aaaah....\\H\n You're going so deep....nnnn....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
     tx["tx1"] = "\"Nha...aah....\\H\n That's amazing........\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
   else
-    tx["tx1"] = "\"Aaaannnh....\\H\n Ufufu, you want me to get you all stained....?\"" # 対象が着衣状態の時
+    tx["tx1"] = "\"Aaaannnh....\\H\n Ufufu, you wanna get me all stained....?\"" # 対象が着衣状態の時
     tx["tx1"] = "\"Nnnn....\\H\n But I'm fine with more direct touches....\\H\"" if $game_variables[17] > 50 # 対象が着衣状態の時・パターンB
     tx["tx1"] = "\"Aaaannnh....\\H\n Don't keep me in suspense like that....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス 対象が着衣状態の時
     tx["tx1"] = "\"Nha...aah....\\H\n That's amazing........\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
@@ -983,7 +983,7 @@ when "Crotch"
     tx["tx1"] = "\"Aaaah....\\H\n You're going so deep....nnnn....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
     tx["tx1"] = "\"Nha...aah....\\H\n That's amazing........\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
   else
-    tx["tx1"] = "\"Aaaannnh....\\H\n Ufufu, you want me to get you all stained....?\"" # 対象が着衣状態の時
+    tx["tx1"] = "\"Aaaannnh....\\H\n Ufufu, you wanna get me all stained....?\"" # 対象が着衣状態の時
     tx["tx1"] = "\"Nnnn....\\H\n But I'm fine with more direct touches....\\H\"" if $game_variables[17] > 50 # 対象が着衣状態の時・パターンB
     tx["tx1"] = "\"Aaaannnh....\\H\n Don't keep me in suspense like that....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス 対象が着衣状態の時
     tx["tx1"] = "\"Nha...aah....\\H\n That's amazing........\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
