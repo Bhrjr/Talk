@@ -191,8 +191,8 @@ when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle}\n Why don't I give you a little treat? \\H\""
-    tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H」" 
+    tx["tx1"] = "\"#{giggle}\n Why don't I show you something nice? \\H\""
+    tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H\"" 
     tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H\n It's not like I feel better if only #{target}'s naked\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -371,8 +371,8 @@ when "Leer"
   case $msg.talk_step
   when 1 #自慰開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle}\n Why don't I give you a little treat? \\H\""
-    tx["tx2"] = "\"You ever seen a girl\n jerking off from up close?\n ....I'll show you\\H\"" 
+    tx["tx1"] = "\"#{giggle}\n Why don't I show you something nice? \\H\""
+    tx["tx2"] = "\"Ever seen a girl\n jerking off from up close?\n ....I'll show you\\H\"" 
   when 77 #レジスト成功(視姦を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh my, not a fan of that stuff?\n #{myname}'m a fan of it though.\""
@@ -668,8 +668,8 @@ when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle}\n Why don't I give you a little treat? \\H\""
-    tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H」" 
+    tx["tx1"] = "\"#{giggle}\n Why don't I show you something nice? \\H\""
+    tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H\"" 
     tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H\n It's not like I feel better if only #{target}'s naked\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -848,7 +848,7 @@ when "Leer"
   case $msg.talk_step
   when 1 #自慰開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle}\n Why don't I give you a little treat? \\H\""
+    tx["tx1"] = "\"#{giggle}\n Why don't I show you something nice? \\H\""
     tx["tx2"] = "\"This is just for you, #{target}....\\H\n I'll let you watch as I do it by myself....\\H\"" 
   when 77 #レジスト成功(視姦を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1071,8 +1071,8 @@ when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle}\n Why don't I give you a little treat? \\H\""
-    tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H」" 
+    tx["tx1"] = "\"#{giggle}\n Why don't I show you something nice? \\H\""
+    tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H\"" 
     tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H\n It's not like I feel better if only #{target}'s naked\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1251,7 +1251,7 @@ when "Leer"
   case $msg.talk_step
   when 1 #自慰開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle}\n Why don't I give you a little treat? \\H\""
+    tx["tx1"] = "\"#{giggle}\n Why don't I show you something nice? \\H\""
     tx["tx2"] = "\"This is just for you, #{target}....\\H\n I'll let you watch as I do it by myself....\\H\"" 
   when 77 #レジスト成功(視姦を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1473,8 +1473,8 @@ when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle}\n Why don't I give you a little treat? \\H\""
-    tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H」" 
+    tx["tx1"] = "\"#{giggle}\n Why don't I show you something nice? \\H\""
+    tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H\"" 
     tx["tx2"] = "\"Can you watch me from there?\n As I get undressed....\\H\n It's not like I feel better if only #{target}'s naked\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1653,7 +1653,7 @@ when "Leer"
   case $msg.talk_step
   when 1 #自慰開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle}\n Why don't I give you a little treat? \\H\""
+    tx["tx1"] = "\"#{giggle}\n Why don't I show you something nice? \\H\""
     tx["tx2"] = "\"This is just for you, #{target}....\\H\n I'll let you watch as I do it by myself....\\H\"" 
   when 77 #レジスト成功(視姦を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
