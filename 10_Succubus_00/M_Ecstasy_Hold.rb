@@ -37,9 +37,9 @@ class MsgSuccubus_A < MsgBase
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「ふふ……またイっちゃいそう？\n　いいわよ、我慢しなくても……\\H」"
-  tx["tx1"] = "「あら、またイきそうなの？\n　ふふ、我慢できるかしらね……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle_s}……もうイっちゃいそう？\n　残念ねぇ……。\n　もっと色々してあげたかったけど\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
+  tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to do all kinds of stuff to you\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
