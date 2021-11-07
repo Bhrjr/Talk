@@ -38,7 +38,7 @@ case $msg.tag
 when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"Lemme get you undressed……\\H\""
+    tx["tx1"] = "\"Lemme get you undressed....\\H\""
     tx["tx1"] = "\"Can you get undressed too, #{target}....?\n #{myname}'ll help you with that.\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
@@ -153,7 +153,7 @@ case $msg.tag
 when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"Lemme get you undressed……\\H\""
+    tx["tx1"] = "\"Lemme get you undressed....\\H\""
     tx["tx1"] = "\"Can you get undressed too, #{target}....?\n #{myname}'ll help you with that.\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
@@ -239,7 +239,7 @@ case $msg.tag
 when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"Lemme get you undressed……\\H\""
+    tx["tx1"] = "\"Lemme get you undressed....\\H\""
     tx["tx1"] = "\"Can you get undressed too, #{target}....?\n #{myname}'ll help you with that.\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
@@ -325,7 +325,7 @@ case $msg.tag
 when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"Lemme get you undressed……\\H\""
+    tx["tx1"] = "\"Lemme get you undressed....\\H\""
     tx["tx1"] = "\"Can you get undressed too, #{target}....?\n #{myname}'ll help you with that.\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
