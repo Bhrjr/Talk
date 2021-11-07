@@ -86,7 +86,7 @@ else
   if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "\"Siiigh, didn't know how boring this would be.\n Won't somebody just come and attack us....?\""
+    tx["tx1"] = "\"Siiigh, didn't expect how boring this would be.\n Won't somebody just come and attack us....?\""
     tx["tx4"] = "#{speaker} takes glances at #{master}\n while yawning in a bored manner...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -129,7 +129,7 @@ else
   elsif $msg.t_enemy.have_ability?("Affection")
     #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "\"Siiigh, didn't know how boring this would be.\n Won't somebody just come and attack us....?\""
+    tx["tx1"] = "\"Siiigh, didn't expect how boring this would be.\n Won't somebody just come and attack us....?\""
     tx["tx4"] = "#{speaker} takes glances at #{master}\n while yawning in a bored manner...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -172,7 +172,7 @@ else
   else
    #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "\"Siiigh, didn't know how boring this would be.\n Won't somebody just come and attack us....?\""
+    tx["tx1"] = "\"Siiigh, didn't expect how boring this would be.\n Won't somebody just come and attack us....?\""
     tx["tx4"] = "#{speaker} takes glances at #{master}\n while yawning in a bored manner...." + "TALKTEXT"
     #格納
     ms.push(tx)
