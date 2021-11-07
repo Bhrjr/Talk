@@ -255,7 +255,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"#{myname}'ll make you get hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
+      tx["tx1"] = "\"#{myname}'ll get you hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
     when 3 #ホールドレジスト失敗
@@ -605,7 +605,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"#{myname}'ll make you get hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
+      tx["tx1"] = "\"#{myname}'ll get you hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
     when 3 #ホールドレジスト失敗
@@ -934,7 +934,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"#{myname}'ll make you get hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
+      tx["tx1"] = "\"#{myname}'ll get you hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
     when 3 #ホールドレジスト失敗
@@ -1262,7 +1262,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"#{myname}'ll make you get hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
+      tx["tx1"] = "\"#{myname}'ll get you hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
     when 3 #ホールドレジスト失敗
