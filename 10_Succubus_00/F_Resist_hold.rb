@@ -144,9 +144,9 @@ if $msg.tag == "Partner binds the succubus."
       tx["tx1"] = "\"Can't do anything about that.\n Then I'll take you on\\H\""
       tx["md"] = "12"
     when 3 #ホールド失敗
-      tx["tx1"] = "\"#{giggle}\n Don't you worry.\n You'll get your chance, #{target}\\H\""
+      tx["tx1"] = "\"#{giggle}\n Don't you worry, #{target}\n You'll get your chance\\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"#{giggle}\n Don't you worry.\n You'll get your chance, #{target}\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n Don't you worry, #{target}\n You'll get your chance\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -494,9 +494,9 @@ if $msg.tag == "Partner binds the succubus."
       tx["tx1"] = "\"Can't do anything about that.\n Then I'll take you on\\H\""
       tx["md"] = "12"
     when 3 #ホールド失敗
-      tx["tx1"] = "\"#{giggle}\n Don't you worry.\n You'll get your chance, #{target}\\H\""
+      tx["tx1"] = "\"#{giggle}\n Don't you worry, #{target}\n You'll get your chance\\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"#{giggle}\n Don't you worry.\n You'll get your chance, #{target}\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n Don't you worry, #{target}\n You'll get your chance\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -823,9 +823,9 @@ if $msg.tag == "Partner binds the succubus."
       tx["tx1"] = "\"Can't do anything about that.\n Then I'll take you on\\H\""
       tx["md"] = "12"
     when 3 #ホールド失敗
-      tx["tx1"] = "\"#{giggle}\n Don't you worry.\n You'll get your chance, #{target}\\H\""
+      tx["tx1"] = "\"#{giggle}\n Don't you worry, #{target}\n You'll get your chance\\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"#{giggle}\n Don't you worry.\n You'll get your chance, #{target}\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n Don't you worry, #{target}\n You'll get your chance\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -1151,9 +1151,9 @@ if $msg.tag == "Partner binds the succubus."
       tx["tx1"] = "\"Can't do anything about that.\n Then I'll take you on\\H\""
       tx["md"] = "12"
     when 3 #ホールド失敗
-      tx["tx1"] = "\"#{giggle}\n Don't you worry.\n You'll get your chance, #{target}\\H\""
+      tx["tx1"] = "\"#{giggle}\n Don't you worry, #{target}\n You'll get your chance\\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"#{giggle}\n Don't you worry.\n You'll get your chance, #{target}\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n Don't you worry, #{target}\n You'll get your chance\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
