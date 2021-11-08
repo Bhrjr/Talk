@@ -42,7 +42,7 @@ if $msg.t_enemy.fed <= 20
   #◆通常状態(【寵愛】【大切な人】どちらも持っていない場合)◆
   else
   #====================================================================================================================
-    tx["tx1"] = "\"Hmm....I think now is good time for a meal.\n Don't you agree, #{target}?\""
+    tx["tx1"] = "\"Hmm....I think now's good time for a meal.\n Don't you agree, #{target}?\""
     tx["tx4"] = "#{speaker} is looking at #{master}'s lower half\nwith feverish eyes....!" + "TALKTEXT"
 
   end
