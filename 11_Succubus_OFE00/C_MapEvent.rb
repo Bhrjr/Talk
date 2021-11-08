@@ -13,8 +13,8 @@
 
 
 
-class MsgSuccubus_A < MsgBase
- def msg_map_event_07
+class MsgSuccubus_B < MsgBase
+ def msg_map_event_00
 #=======================================================================================================================
 # ☆事前設定☆
                             #空ハッシュ挿入
