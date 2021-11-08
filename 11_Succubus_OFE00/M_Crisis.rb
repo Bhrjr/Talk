@@ -29,13 +29,13 @@ class MsgSuccubus_B < MsgBase
 #■主人公がクライシス状態になる
 case $msg.tag
 #夢魔の攻めで主人公がクライシス
-when "アクター単独"
-  tx["tx1"] = "「あら……もうおしまい？\n　ダメよ、もっと頑張ってくれなきゃ……\\H」"
+when "User solo"
+  tx["tx1"] = "\"Oh....done so soon?\n　You need to try a little harder than that....\\H\""
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
-when "アクター両者"
-  tx["tx1"] = "「#{giggle}\n　どちらが先にイっちゃうのかしらね……？\\H」"
+when "Both users"
+  tx["tx1"] = "「#{giggle}\n Wonder which of us'll cum first....\\H」"
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
