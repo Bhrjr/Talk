@@ -454,7 +454,7 @@ when "♀ rubbing"
   ms.push(tx)
 #▼顔面騎乗▼****************************************************************************************
 when "Pussy on top"
-  tx["tx1"] = "\"Aha♪ I can feel your heavy breath\\H\n Guess that means you're enjoying it....\\H\""
+  tx["tx1"] = "\"Aha♪ I can feel your heavy breath\\H\n That must mean you're enjoying it....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -550,7 +550,7 @@ when "♀ rubbing"
   ms.push(tx)
 #▼顔面騎乗▼****************************************************************************************
 when "Pussy on top"
-  tx["tx1"] = "\"Aha♪ I can feel your heavy breath\\H\n Guess that means you're enjoying it....\\H\""
+  tx["tx1"] = "\"Aha♪ I can feel your heavy breath\\H\n That must mean you're enjoying it....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -645,7 +645,7 @@ when "♀ rubbing"
   ms.push(tx)
 #▼顔面騎乗▼****************************************************************************************
 when "Pussy on top"
-  tx["tx1"] = "\"Aha♪ I can feel your heavy breath\\H\n Guess that means you're enjoying it....\\H\""
+  tx["tx1"] = "\"Aha♪ I can feel your heavy breath\\H\n That must mean you're enjoying it....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
