@@ -55,19 +55,19 @@ if $msg.tag == "Start the Battle"
     when 0 #１番目
       tx["tx1"] = "\"#{giggle}\n I'd say a mischievous boy deserves to punished\\H\""
     when 1 #２番目
-      tx["tx1"] = "\"Maybe a little pain would go a long way?\n....、気持ちいいコト、の間違いだったわ\\H\""
+      tx["tx1"] = "\"Maybe a little pain would go a long way?\n ....Oh, I was thinking of stuff that feels good\\H\""
     when 2 #３番目
-      tx["tx1"] = "\"さて、と……\\H\n　心の準備と……覚悟はいいかしらね？\\H\""
+      tx["tx1"] = "\"Now then....\\H\n Wonder if you've....all good to go? \\H\""
     end
   #●レア戦闘中(OFEの場合は[$game_switches[92] == true]、BOSSの場合は[$game_switches[91] == true]をそれぞれelsifでつけること)
   else
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "\"あら……\\H\n　美味しそうな子が迷い込んで来たわね\\H\n　ふふ、少し遊んであげようかしら……\\H\""
+      tx["tx1"] = "\"Oh, my....\\H\n Looks like a tasty-looking kid wandered into us\\H\n Ufufu, what say we play with him a little....\\H\""
     when 1 #２番目
-      tx["tx1"] = "\"ねぇ、こっちにいらっしゃい。\n　お姉さんたちが、いいコトしてあげる\\H\""
+      tx["tx1"] = "\"Hey, come here.\n We'll show you something fun\\H\""
     when 2 #３番目
-      tx["tx1"] = "\"怖がらなくてもいいのよ\\H\n　ほんの少しの間、\n You'll get to have a nice, pleasant dream....\\H\""
+      tx["tx1"] = "\"You don't have to be scared\\H\n For just a little while,\n you'll get to have a nice, pleasant dream....\\H\""
     end
   end
   #格納
@@ -80,7 +80,7 @@ if $msg.tag == "Start the Battle"
 #----------------------------------------------------------------------------------------------------------------------
 #■逃走失敗口上
 elsif $msg.tag == "Escape fail"
-  tx["tx1"] = "\"ふふふ……♪\n　だ～め、逃がさないわ。\n　大人しく#{myname}のモノになりなさい\\H\""
+  tx["tx1"] = "\"Ufufufu....♪\n No way I'm letting you escape.\n Just behave and be my plaything\\H\""
   #----------------------------------------------------------------------------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -100,25 +100,25 @@ elsif $msg.tag == "Contract"
   #▼契約開始
   when 1 
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"あぁん……\\H\n　気持ちよかったわ\\H\n　見かけによらず凄いのね……\\H\""
+    tx["tx1"] = "\"Aaannh....\\H\n That was nice\\H\n Would've never guessed how amazing you'd be from the way you look....\\H\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "\"ねぇ、#{target}……？\n　#{myname}を自分のモノにしてみる気、ない？\""
+    tx["tx2"] = "\"Say, #{target}....?\n Don't you feel like making me your belonging?\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx3"] = "\"#{myname}のカラダを好きに蹂躙できる契約……\\H\n　どうかしら、悪い提案ではないと思うけれど？\""
+    tx["tx3"] = "\"Forming a contract will let you violate me all you want....\\H\n How about it? Not too bad of a proposal, I'd say.\""
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約締結(即座に仲間に入る)
   when 2
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"ふふっ……\\H\n　契約成立、ね\\H\""
+    tx["tx1"] = "\"Ufufu....\\H\n Guess that means we now have a contract\\H\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
     tx["tx2"] = "\"You'll be my owner from now on, #{target}.\n Glad to meet you, my adorable master\\H\""
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約締結(ホームに送る)
   when 3
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"ふふっ……\\H\n　契約成立、ね\\H\n　それじゃ、先に戻ってベッドの準備をしておくわ\""
+    tx["tx1"] = "\"Ufufu....\\H\n Guess that means we now have a contract\\H\n Then I'll go ahead and get the bed ready.\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "\"早く帰って来てくれると嬉しいわ\\H\n　じゃ、今後ともよろしく、可愛い契約主さん♪\""
+    tx["tx2"] = "\"It'd be nice for you to hurry up and come back\\H\n Then glad to meet you, my adorable master♪\""
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約を行わない
   when 4
