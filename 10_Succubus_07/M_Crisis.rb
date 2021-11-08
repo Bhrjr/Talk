@@ -45,7 +45,7 @@ when "User rebound harm"
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n What are you fidgeting about?\n Lemme get a good look....will you? \\H\""
+  tx["tx1"] = "\"#{giggle}\n What are you fidgeting about?\n Lemme get a better look....will you? \\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -123,7 +123,7 @@ when "User rebound harm"
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n What are you fidgeting about?\n Lemme get a good look....will you? \\H\""
+  tx["tx1"] = "\"#{giggle}\n What are you fidgeting about?\n Lemme get a better look....will you? \\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -193,7 +193,7 @@ when "User rebound harm"
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n What are you fidgeting about?\n Lemme get a good look....will you? \\H\""
+  tx["tx1"] = "\"#{giggle}\n What are you fidgeting about?\n Lemme get a better look....will you? \\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -262,7 +262,7 @@ when "User rebound harm"
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle}\n What are you fidgeting about?\n Lemme get a good look....will you? \\H\""
+  tx["tx1"] = "\"#{giggle}\n What are you fidgeting about?\n Lemme get a better look....will you? \\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
