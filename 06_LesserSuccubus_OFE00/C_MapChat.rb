@@ -13,7 +13,7 @@
 
 
 
-class MsgLessersuccubus_A < MsgBase
+class MsgLessersuccubus_B < MsgBase
  def msg_map_chat_00
 #=======================================================================================================================
 # ☆事前設定☆
