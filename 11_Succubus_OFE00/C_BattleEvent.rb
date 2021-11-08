@@ -41,13 +41,13 @@ if $msg.tag == "Start the Battle"
       #▼初ベッドイン
       tx["tx1"] = "\"Ufufu....a room like this isn't too shabby either\\H\n Let's both forget ourselves....\n and roughly indulge in each other\\H\"" if $msg.t_enemy.bedin_count == 0
     when 1 #２番目
-      tx["tx1"] = "\"Looks like the night's gonna be long....\\H\n Let's enjoy ourselves as much as we can\\H」"
+      tx["tx1"] = "\"Looks like the night's gonna be long....\\H\n Time to enjoy ourselves as much as we can\\H」"
       #▼初ベッドイン
       tx["tx1"] = "\"#{giggle}\n I better repay you for form a contract with me\\H\n All with my body, of course....\\H\"" if $msg.t_enemy.bedin_count == 0
     when 2 #３番目
       tx["tx1"] = "\"#{giggle}\n Wanna see how many times you can cum tonight? \""
       #▼初ベッドイン
-      tx["tx1"] = "\"#{giggle}\n My body's yours and yours only, #{target}\\H\n Indulge in in all you want....\\H\"" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n My body's yours and yours only, #{target}\\H\n Indulge in it all you want....\\H\"" if $msg.t_enemy.bedin_count == 0
     end
   #●空腹戦闘中
   elsif $game_switches[86] == true
@@ -63,7 +63,7 @@ if $msg.tag == "Start the Battle"
   else
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "\"Oh, my....\\H\n Looks like a tasty-looking kid wandered into us\\H\n Ufufu, what say we play with him a little....\\H\""
+      tx["tx1"] = "\"Oh, my....\\H\n Looks like a tasty-looking kid just wandered into us\\H\n Ufufu, what say we play with him a little....\\H\""
     when 1 #２番目
       tx["tx1"] = "\"Hey, come here.\n We'll show you something fun\\H\""
     when 2 #３番目
@@ -125,7 +125,7 @@ elsif $msg.tag == "Contract"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"#{giggle}\n You're more stoic than you look.\n I don't mind that either.\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "\"Come and see us again.\n I'll do well to welcome in all kinds of ways.\n All kinds of ways....you see? \\H\""
+    tx["tx2"] = "\"Come and see us again.\n I'll do well to welcome you in all kinds of ways.\n All kinds of ways....got it? \\H\""
     #----------------------------------------------------------------------------------------------------------------------
   end
   #格納
