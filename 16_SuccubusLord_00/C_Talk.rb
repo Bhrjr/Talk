@@ -278,7 +278,7 @@ when "Caress - normal"
         tx["tx1"] = "\"#{giggle_s} ....Was this how you wanted it? \\H\n Your voice tell me\n it feels even better than last time....\\H\""  if $msg.weakpoints == 20 #性癖込み口上があればこちら
         tx["tx1"] = "\"#{giggle} I just adore the expression you're making right now, #{target}.\n A pathetic expression from having your sensitive and favorite parts pleasured and\n wanting it even more....\\H\""  if $msg.weakpoints == 20 and $game_variables[17] > 50 #性癖込み口上パターン２
         tx["tx1"] = "\"#{giggle} So you like this, huh?\n It's pointless to try and evade it.\n I'll make you moan so much so that you can't even try to cover it up\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
-        tx["tx1"] = "\"#{giggle_s} So this is what you like, #{target}\\H\n Like this, I'll throughly tease your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
+        tx["tx1"] = "\"#{giggle_s} So this is what you like, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
         tx["tx1"] = "\"#{giggle_s} ....Can't fight it anymore?\n If you want me to pleasure you to the end,\n you need to properly beg for more\\H\""  if $msg.t_target.crisis? == true and $msg.chain_attack == true
       #▼通常
       else
@@ -290,20 +290,20 @@ when "Caress - normal"
     else
       #▼弱点を発見された(SSを受けた)
       if $game_actors[101].critical == true
-        tx["tx1"] = "\"I found your weak spots, #{target}....\\H\n Aaah, that's a great reaction\\H I can't hold it back....\\H\n #{giggle_s} I'llい声でよがらせてあげる\\H\"" 
-        tx["tx1"] = "\"#{giggle_s}……ここがいいのね\\H\n　まだやめてあげない、このまま#{target}の弱いところ\n　すべて丸裸にしてあげる\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"こうされるとたまらないの？　ふふっ、隠してもだめ\\H\n　#{target}の欲しいもの、してほしいこと、\n　全部見つけだして満たしてあげる……\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
-        tx["tx1"] = "\"あは……今びくんって跳ねたわね\\H\n　気持ちよくても我慢しないと、こうやって好きなように\n　弱いところをいじめられちゃうのに……ほら\\H\""  if $msg.chain_attack == true and $game_variables[17] > 50
+        tx["tx1"] = "\"I found your weak spots, #{target}....\\H\n Aaah, that's a great reaction\\H I can't help it anymore....\\H\n #{giggle_s} I'll make you so blissful that you'll show it in an even better voice\\H\"" 
+        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. I'm going to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n I'm going to find out everything\n you desire for and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Aha....you shuddered just now\\H\n Unless you can fight the pleasure,\nI'm going to pick on your weak spots all I like....like this\\H\""  if $msg.chain_attack == true and $game_variables[17] > 50
       #▼通常
       else
-        tx["tx1"] = "\"ふふ、おすまししちゃって……\\H\n　その顔を快楽に歪ませるのが楽しみだわ\\H\"" 
-        tx["tx1"] = "\"#{giggle_s}、がんばって耐えなさい\\H\n　#{target}の弱いところを見つけるまで、\n　色んな方法で気持ちよくしてあげる……\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = \"#{giggle_s}……どうかしら？　もっとしてほしい？\n　#{target}が望むのなら、\n　いくらでも続けてあげるわ\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Nfufu, such a prude look...\\H\n I can't wait to distort that face in pleasure\\H\"" 
+        tx["tx1"] = "\"#{giggle_s} Try to hold out as much as you can\\H\n Until I find your weak spot,\n I'm going to pleasure you in all sorts of ways, #{target}....\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = \"#{giggle_s} ....How is it? You want more?\n I can keep going if you want\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle_s}\\H　これ以上はやめてくれって？\n　いいわ、今はここまでにしておいてあげる。\n　またしてほしくなったらいつでも言ってちょうだい\\H\""
+    tx["tx1"] = "\"#{giggle_s}\\H You want me to stop now?\n Alright, I'll leave it at that for now.\n Remember to tell me when you want me to do it again\\H\""
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -317,7 +317,7 @@ when "Caress - intercourse"
   case $msg.talk_step
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"優しい言葉をもらいながら愛しあうとね、\n　欲しい気持ちが溢れてきて格別なのよ……\\H\""
+    tx["tx1"] = "\"share love with some kind words \n is a whole way to overflow your desires....\\H\""
     tx["tx2"] = "\"ねぇ、#{target}……\\H\n　愛欲のままに、もっと深く、もっと濃密に、\n　心が重なりあうまで求めあいましょう……\\H\"" 
     tx["tx2"] = "\"#{target}も、カラダを重ねあって、\n　いちばん深くで溶けあいたいでしょう\\H\n　求めるままに#{myname}を抱きしめて……\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
