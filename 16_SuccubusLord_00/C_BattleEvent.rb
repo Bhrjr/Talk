@@ -67,7 +67,7 @@ if $msg.tag == "Start the Battle"
     when 0 #１番目
       tx["tx1"] = "\"Oh my, a lost child, perhaps?\n ....#{giggle_s} That can't be.\n What could you want to have come this far? \\H\""
     when 1 #２番目
-      tx["tx1"] = "\"I won't be letting you get away.\n Instead, I'll treat you with love, #{target}\\H\""
+      tx["tx1"] = "\"I'm not letting you get away.\n Instead, I'll treat you with love, #{target}\\H\""
     when 2 #３番目
       tx["tx1"] = "\"#{giggle_s} What a lovely face.\n Makes me just want to captivate it....\\H\""
     end
@@ -94,7 +94,7 @@ elsif $msg.tag == "Escape fail"
 
 #----------------------------------------------------------------------------------------------------------------------
 #■契約口上
-elsif $msg.tag == "契約"
+elsif $msg.tag == "Contract"
   #----------------------#
   #▼ステップで状況判断  #
   #----------------------#
@@ -102,32 +102,32 @@ elsif $msg.tag == "契約"
   #▼契約開始
   when 1 
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{target}のこと可愛がってあげようと思ったのに、\n　まさか#{myname}が可愛がられちゃうなんてね……\\H\""
+    tx["tx1"] = "\"I was going to treat you with love,\n but I was the one that got treated with love instead....\\H\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
     tx["tx2"] = "\"#{myname}'ve taken a liking to you, #{target}.\n I wonder if you can let me be by your side?\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx3"] = "\"求められればいつだってこのカラダを差し出すわ。\n　話し相手にもなるし、もちろん夜の相手だって歓迎よ。\n　……どうかしら？」"
+    tx["tx3"] = "\"I'll off up this body whenever you want.\n We'll get to make some conversations, and what we'll do at nighttime goes without questin.\n ....What do you say?」"
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約締結(即座に仲間に入る)
   when 2
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「ふふっ、ありがとう。\n　よろしくお願いするわね、#{target}\\H」"
+    tx["tx1"] = "\"Ufufu, thanks.\n We'll be partners from here on out, #{target}\\H\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "#{speaker}は嬉しそうな笑顔を浮かべ、\n#{master}の手を両手で包んだ。"
+    tx["tx2"] = "#{speaker} smiled happily and\n wrapped #{master}'s hand with both her hands."
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約締結(ホームに送る)
   when 3
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「ふふっ、ありがとう。\n　用があれば呼んでちょうだい、いつでも待ってるわ\\H」"
+    tx["tx1"] = "\"Ufufu, thanks.\n Call me if you need something; I'll be waiting at all times\\H\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "#{master}の頬に軽く口付けて、\n#{speaker}は柔らかく微笑んでみせた。"
+    tx["tx2"] = "Pecking #{master} on the cheek, \n#{speaker} smiled softly."
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約を行わない
   when 4
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「……そう、残念ね。\n　今日のところはおとなしく引き下がることにするわ」"
+    tx["tx1"] = "\"....I see, that's a shame.\n I suppose I'll pull out for today.\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "「気が変わったらいつでも会いに来てちょうだい。\n　#{myname}を振った#{target}のこと、\n　皆で熱烈に歓迎してあげる\\H」"
+    tx["tx2"] = "\"Come and see me again whenever you change your mind.\n Knowing that you've turned me down,\n I'll be sure to give you a passionate welcome with everyone\\H\""
     #----------------------------------------------------------------------------------------------------------------------
   end
   #格納
