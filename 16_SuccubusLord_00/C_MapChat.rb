@@ -86,7 +86,7 @@ else
   if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "\"#{giggle_s}....Is there something you need? \\H\""
+    tx["tx1"] = "\"#{giggle_s}....is there something you need? \\H\""
     tx["tx4"] = "#{speaker} appears to be in good spirits...." + "TALKTEXT"
     #格納
     ms.push(tx)
