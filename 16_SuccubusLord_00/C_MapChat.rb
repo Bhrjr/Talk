@@ -110,7 +110,7 @@ else
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Hey, why don't we go somewhere just by ourselves?\n ....#{giggle_s} I'm just joking\\H\n I wouldn't mind doing it for real though....\\H\""
+    tx["tx1"] = "\"Hey, why don't we go somewhere just by ourselves?\n ....#{giggle_s} I'm joking\\H\n I wouldn't mind doing it for real though....\\H\""
     tx["tx4"] = "#{speaker} appears to be in good spirits...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -129,40 +129,40 @@ else
   elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "「#{giggle_s}……何かご用？\\H」"
-    tx["tx4"] = "#{speaker}はご機嫌のようだ……" + "TALKTEXT"
+    tx["tx1"] = "\"#{giggle_s}....is there something you need? \\H\""
+    tx["tx4"] = "#{speaker} appears to be in good spirits...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「何かしら、#{target}。\n　#{myname}の顔に見惚れちゃった？\\H」"
-    tx["tx4"] = "#{speaker}は艶然と微笑んだ……" + "TALKTEXT"
+    tx["tx1"] = "\"What is it, #{target}?\n Were you captivated by my face? \\H\""
+    tx["tx4"] = "#{speaker} smiles sweetly...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「どうしたの？\n　#{myname}のカラダが\n　恋しくなったのかしら？\\H」"
-    tx["tx4"] = "#{speaker}は見せ付けるように\n自分の身体へ手を這わせている……" + "TALKTEXT"
+    tx["tx1"] = "\"What is it?\n Are you thirsting\n for my body? \\H\""
+    tx["tx4"] = "As though showing off,\n #{speaker} runs her finger along her body...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「ねぇ、このまま二人きりでどこかへ行ってしまわない？\n　……#{giggle_s}、冗談よ\\H\n　そんな顔しないでちょうだい」"
-    tx["tx4"] = "#{speaker}はご機嫌のようだ……" + "TALKTEXT"
+    tx["tx1"] = "\"Hey, why don't we go somewhere just by ourselves?\n ....#{giggle_s} I'm joking\\H\n I wouldn't mind doing it for real though....\\H\""
+    tx["tx4"] = "#{speaker} appears to be in good spirits...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「もしも辛くなったら、\n　いつでもこの胸に飛び込んできてくれていいのよ\\H」"
-    tx["tx4"] = "#{speaker}は誘うように\n豊かな乳房を見せ付けてくる……" + "TALKTEXT"
+    tx["tx1"] = "\"If you ever feel down,\n feel free to dive into these breasts of mine\\H\""
+    tx["tx4"] = "#{speaker} shows off her plump breasts\n as if luring him...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
@@ -172,40 +172,40 @@ else
   else
   #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "「#{giggle_s}……何かご用？\\H」"
-    tx["tx4"] = "#{speaker}はご機嫌のようだ……" + "TALKTEXT"
+    tx["tx1"] = "\"#{giggle_s}....is there something you need? \\H\""
+    tx["tx4"] = "#{speaker} appears to be in good spirits...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「何かしら、#{target}。\n　#{myname}の顔に見惚れちゃった？\\H」"
-    tx["tx4"] = "#{speaker}は艶然と微笑んだ……" + "TALKTEXT"
+    tx["tx1"] = "\"What is it, #{target}?\n Were you captivated by my face? \\H\""
+    tx["tx4"] = "#{speaker} smiles sweetly...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「どうしたの？\n　#{myname}のカラダが\n　恋しくなったのかしら？\\H」"
-    tx["tx4"] = "#{speaker}は見せ付けるように\n自分の身体へ手を這わせている……" + "TALKTEXT"
+    tx["tx1"] = "\"What is it?\n Are you thirsting\n for my body? \\H\""
+    tx["tx4"] = "As though showing off,\n #{speaker} runs her finger along her body...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「そんなに急ぐこともないんじゃないかしら？\n　……ふうん、色々大変なのね」"
-    tx["tx4"] = "#{speaker}はご機嫌のようだ……" + "TALKTEXT"
+    tx["tx1"] = "\"Hey, why don't we go somewhere just by ourselves?\n ....#{giggle_s} I'm joking\\H\n I wouldn't mind doing it for real though....\\H\""
+    tx["tx4"] = "#{speaker} appears to be in good spirits...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「もしも辛くなったら、\n　いつでもこの胸に飛び込んできてくれていいのよ\\H」"
-    tx["tx4"] = "#{speaker}は誘うように\n豊かな乳房を見せ付けてくる……" + "TALKTEXT"
+    tx["tx1"] = "\"If you ever feel down,\n feel free to dive into these breasts of mine\\H\""
+    tx["tx4"] = "#{speaker} shows off her plump breasts\n as if luring him...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
