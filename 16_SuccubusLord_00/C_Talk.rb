@@ -272,7 +272,7 @@ when "Caress - normal"
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"Shuddering like that must mean you're enjoying it quite a lot\\H\n #{giggle_s} Making a cute face like that\n just makes me want to bully you more....\\H\"" 
-        tx["tx1"] = "\"#{giggle_s} ....What a great voice\\H\n Wonder if you can let me hear more of it\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle_s} ....What a great voice\\H\n Could you let me hear more of it? \\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle_s} ....Making such a pitiful resistance by desperately holding your voice down....\\H\n Go ahead and fight it if you can,\n I'll have you squealing until you give in...\\H\""  if $msg.t_target.crisis? == true
         tx["tx1"] = "\"Aren't you at the end of your rope? Trying to fight it won't do any good.\n I already know where and how to strike\n to please you, #{target}....\\H\""  if $msg.t_target.crisis? == true and $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle_s} ....Was this how you wanted it? \\H\n Your voice tell me\n it feels even better than last time....\\H\""  if $msg.weakpoints == 20 #性癖込み口上があればこちら
@@ -337,17 +337,17 @@ when "Caress - intercourse"
       tx["tx1"] = "\"#{giggle_s} What a nice expression there....\\H\n Show me more you getting turned on\\H\"" 
       tx["tx1"] = "\"#{giggle_s} ....I know that feels nice.\n You just have to be more honest to the blissfulness....\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Becoming just a bit more honest\n and yielding your mind to my body\n will make it feel so good that it'll stain your heart in pure white....\\H\""  if $msg.t_target.crisis? == true
-      tx["tx1"] = "\"Feel the tightening while inside me....\\H\n　#{target}を咥え込んで、絡みついて、\n　めちゃくちゃにいじめたがってるの、わかるかしら\\H\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
+      tx["tx1"] = "\"Feel the tightening of my insides....\\H\n Do you realize I'm clamping on your dick, twisting around it,\n and teasing it without holding back? \\H\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
     #▼Lv1
     when 1
-      tx["tx1"] = "\"激しく犯されるのと、ゆっくり弄ばれるの、\n　#{target}はどちらが好み？\\H\"" 
-      tx["tx1"] = "\"#{giggle_s}……\\H　これからどうやって\n　#{target}のことを\n　いじめてあげようかしら……\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"#{giggle_s}……我慢なんてしなくていいのよ\\H\n　いつだって好きなように、#{myname}の中に\n　欲望を吐き出してちょうだい\\H\""  if $msg.t_target.crisis? == true
-      tx["tx1"] = "\"ほら、とうとう押し倒しちゃったわ……\\H　#{giggle_s}……本当はこうされたかったのかしら？\n　中でいじめられて、嬉しそうに震えてるわ……\\H\""  if $game_actors[101].critical == true #攻守交替
+      tx["tx1"] = "\"Which do you prefer, #{target}?\n Being roughly violated or slowly teased? \\H\"" 
+      tx["tx1"] = "\"#{giggle_s} ....\\H How should\n I pick on you\n from now on....? \\H\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"#{giggle_s} ....There's no need to hold it back\\H\n Shoot out your lust inside me\n whenver you feel like it\\H\""  if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Now I finally have you pinned down....\\H #{giggle_s} ....Was this what you actually wanted?\n Teasing you with my privates makes you tremble in happiness....\\H\""  if $game_actors[101].critical == true #攻守交替
     #▼Deffence
     else
-      tx["tx1"] = "\"#{giggle_s}……リードされるのも好きだけれど、\n　おとなしくしてるのは嫌いなの。\n　#{target}は気持ちいいかしら\\H\"" 
-      tx["tx1"] = "\"こんな風に責められるなんて思ってなかった？\n　#{giggle_s}……#{myname}に任せてくれるなら、\n　もっと色んな愉しみ方を教えてあげる……\\H\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"#{giggle_s} ....I like taking the initiative and all,\n but I do want to see you putting up some fight.\n I wonder if you're feeling pleased, #{target}\\H\"" 
+      tx["tx1"] = "\"Didn't think you'd be harassed like this?\n #{giggle_s} ....Leave it to me and\n I'll show you even more ways to have fun....\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"#{myname}のことを押し倒したんだもの、\n　今更逃げたりなんかしないわよね？\n　#{giggle_s}\\H　いい表情だわ……\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"#{giggle_s}……感じてるかわいらしい顔が丸見えね\\H\n　ほらほら、いくら気持ちいいからって、気を抜いてたら\n　#{myname}がリードしちゃうわよ\\H\""  if $game_actors[101].critical == true #主人公レベル１～３時
     end
