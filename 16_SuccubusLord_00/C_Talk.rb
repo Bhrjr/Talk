@@ -336,7 +336,7 @@ when "Caress - intercourse"
     when 2
       tx["tx1"] = "\"#{giggle_s} What a nice expression there....\\H\n Show me more you getting turned on\\H\"" 
       tx["tx1"] = "\"#{giggle_s} ....I know that feels nice.\n You just have to be more honest to the blissfulness....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Becoming just a bit more honest and leave your mind to my body あと少し、もう少しだけ素直になって、\n　#{myname}のカラダに意識を委ねれば、\n will make it feel so good that it'll stain your heart in pure white.... 心も真っ白く染まるくらい気持ちよくなれるわ……\\H\""  if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Becoming just a bit more honest\n and yielding your mind to my body\n will make it feel so good that it'll stain your heart in pure white....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"ほら、中で締め付けられてるのを感じて……\\H\n　#{target}を咥え込んで、絡みついて、\n　めちゃくちゃにいじめたがってるの、わかるかしら\\H\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
     #▼Lv1
     when 1
