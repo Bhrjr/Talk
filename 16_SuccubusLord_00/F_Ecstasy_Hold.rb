@@ -454,7 +454,7 @@ case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
   tx["tx1"] = "\"#{giggle_s}....\\H\""
-  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -538,7 +538,7 @@ when 2..4 #連携追撃
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
   tx["tx1"] = "\"#{giggle_s}....\\H\""
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -619,8 +619,8 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -660,10 +660,10 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true #仕掛け手が同種族
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "Angry" #仕掛け手が同種族・パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -703,8 +703,8 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -744,8 +744,8 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -785,8 +785,8 @@ when 21 #続行(ホールド継続)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -845,13 +845,13 @@ ms.push(tx)
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -891,10 +891,10 @@ when 1 #初撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true #仕掛け手が同種族
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "Angry" #仕掛け手が同種族・パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -934,8 +934,8 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -975,8 +975,8 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1016,8 +1016,8 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1057,10 +1057,10 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true #仕掛け手が同種族
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "Angry" #仕掛け手が同種族・パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1100,8 +1100,8 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1141,8 +1141,8 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1182,8 +1182,8 @@ when 21 #続行(ホールド継続)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1246,8 +1246,8 @@ else
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1287,10 +1287,10 @@ when 1 #初撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true #仕掛け手が同種族
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "Angry" #仕掛け手が同種族・パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1330,8 +1330,8 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1371,8 +1371,8 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1412,8 +1412,8 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1453,10 +1453,10 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
-  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true #仕掛け手が同種族
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "Angry" #仕掛け手が同種族・パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1496,8 +1496,8 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1537,8 +1537,8 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -1578,8 +1578,8 @@ when 21 #続行(ホールド継続)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "「#{giggle_s}……\\H」"
-  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
