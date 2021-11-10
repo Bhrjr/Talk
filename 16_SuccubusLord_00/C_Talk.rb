@@ -390,7 +390,7 @@ when "Show love"
     tx["tx1"] = "\"Nnnhh.... #{giggle_s}\\H\n How innocent of you, #{target}.\n I wouldn't mind you to keep going\\H\""
   when 79 #レジスト中断(奉仕しすぎて恍惚した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle_s} ....Are you that wrapped up in it?\n You aught to be more honest to your lust\n and give in to the ecstasy of indulging in me....\\H\""
+    tx["tx1"] = "\"#{giggle_s} ....Are you that wrapped up in it?\n You aught to be more honest to your lust\n and immerse yourself in indulging in me....\\H\""
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -899,7 +899,7 @@ when "Show love"
     tx["tx1"] = "\"Nnnhh.... #{giggle_s}\\H\n How innocent of you, #{target}.\n I wouldn't mind you to keep going\\H\""
   when 79 #レジスト中断(奉仕しすぎて恍惚した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle_s} ....Are you that wrapped up in it?\n You aught to be more honest to your lust\n and give in to the ecstasy of indulging in me....\\H\""
+    tx["tx1"] = "\"#{giggle_s} ....Are you that wrapped up in it?\n You aught to be more honest to your lust\n and immerse yourself in indulging in me....\\H\""
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -1334,7 +1334,7 @@ when "Show love"
     tx["tx1"] = "\"Nnnhh.... #{giggle_s}\\H\n How innocent of you, #{target}.\n I wouldn't mind you to keep going\\H\""
   when 79 #レジスト中断(奉仕しすぎて恍惚した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle_s} ....Are you that wrapped up in it?\n You aught to be more honest to your lust\n and give in to the ecstasy of indulging in me....\\H\""
+    tx["tx1"] = "\"#{giggle_s} ....Are you that wrapped up in it?\n You aught to be more honest to your lust\n and immerse yourself in indulging in me....\\H\""
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -1768,7 +1768,7 @@ when "Show love"
     tx["tx1"] = "\"Nnnhh.... #{giggle_s}\\H\n How innocent of you, #{target}.\n I wouldn't mind you to keep going\\H\""
   when 79 #レジスト中断(奉仕しすぎて恍惚した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{giggle_s} ....Are you that wrapped up in it?\n You aught to be more honest to your lust\n and give in to the ecstasy of indulging in me....\\H\""
+    tx["tx1"] = "\"#{giggle_s} ....Are you that wrapped up in it?\n You aught to be more honest to your lust\n and immerse yourself in indulging in me....\\H\""
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
