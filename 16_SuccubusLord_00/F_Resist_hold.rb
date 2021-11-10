@@ -68,7 +68,7 @@ if $msg.tag == "Partner binds the succubus."
       tx["tx1"] = "\"#{giggle_s}\\H\n Come here and I'll show you some fun....\\H\""
     when 2 #ホールド成功
       tx["tx1"] = "\"#{giggle_s} You're great, #{target}\\H\n What say we share some fun to get along with each other....\\H\""
-      tx["tx1"] = "\"Already so passionate....\\H\n #{giggle_s} I want you to thrist for me as you wish.\n I'll do well to go along with it....\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Already so passionate....\\H\n #{giggle_s} I want you to thirst for me as you wish.\n I'll do well to go along with it....\\H\"" if $msg.t_target.crisis? == true
     when 3 #ホールド失敗
       tx["tx1"] = "\"I don't want you hesitating.\n You should be aggressively seeking for me……\\H\""
       tx["md"] = "0"
@@ -487,20 +487,20 @@ if $msg.tag == "パートナーが夢魔をホールド"
   case $msg.at_type
   #▼シェルマッチ▼****************************************************************************************
   #====================================================================================================================
-  when "貝合わせ"
+  when "Tribadism"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle_s}\\H\n　おいで、楽しませてあげる……\\H」"
+      tx["tx1"] = "\"#{giggle_s}\\H\n Come here and I'll show you some fun....\\H\""
     when 2 #ホールド成功
-      tx["tx1"] = "「#{giggle_s}、#{target}は素敵ね\\H\n　さあ、睦みあう愉びを分かち合いましょう……\\H」"
-      tx["tx1"] = "「もうこんなに熱くして……\\H\n　#{giggle_s}、好きなだけ求めてちょうだい、\n　何度だって付き合ってあげる……\\H」" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"#{giggle_s} You're great, #{target}\\H\n What say we share some fun to get along with each other....\\H\""
+      tx["tx1"] = "\"Already so passionate....\\H\n #{giggle_s} I want you to thirst for me as you wish.\n I'll do well to go along with it....\\H\"" if $msg.t_target.crisis? == true
     when 3 #ホールド失敗
-      tx["tx1"] = "「ためらっちゃ嫌よ、\n　もっと激しく求めて……\\H」"
+      tx["tx1"] = "\"I don't want you hesitating.\n You should be aggressively seeking for me……\\H\""
       tx["md"] = "0"
       #途中で行動をキャンセルした場合
       if $game_switches[89] == true
-        tx["tx1"] = "「ためらっちゃ嫌よ、\n　もっと激しく求めて……\\H」"
+      tx["tx1"] = "\"I don't want you hesitating.\n You should be aggressively seeking for me……\\H\""
         tx["md"] = "0"
       end
     end
