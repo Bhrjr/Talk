@@ -282,7 +282,7 @@ when "Caress - normal"
         tx["tx1"] = "\"#{giggle_s} ....Can't fight it anymore?\n If you want me to pleasure you to the end,\n you need to properly beg for more\\H\""  if $msg.t_target.crisis? == true and $msg.chain_attack == true
       #▼通常
       else
-        tx["tx1"] = "\"#{giggle_s} ....You held out well\\H\n Guess I can't satisfy you without hitting weak spots....\\H\"" 
+        tx["tx1"] = "\"#{giggle_s} ....You're holding out well\\H\n Guess I can't satisfy you without hitting the weak spots....\\H\"" 
         tx["tx1"] = "\"#{giggle_s} Your face tells me you haven't had enough\\H\n I won't know how you want to be pleasured\n unless you tell me....\\H\"" if $game_variables[17] > 50
         tx["tx1"] = "\"Don't forget to beg for it if you want to be pleasured.\n I'll be sure to tease\n your most favorite part without holding back, #{target}....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
@@ -616,36 +616,36 @@ when "Rejected"
     tx["tx1"] = "「#{giggle_s}……\\H\n　どうしたの？　最後までしてほしいのかしら\\H」"
     #----------------------------
     tx["md"] = "29"
-  when "夢魔クライシス"
+  when "Succubus CRISIS"
     # 夢魔がクライシス中に話しかけた場合
     case rand(3)
     when 1,2
-      tx["tx1"] = "「#{pleasure_cr}」"
+      tx["tx1"] = "\"#{pleasure_l}\""
     when 3
-      tx["tx1"] = "「あは、んくっ、あぁ、っふふ、……っ\\H\n　もう、言葉なんて、いらないわ……っ\\H\n　最後まで、#{myname}を、愛して……\\H」"
+      tx["tx1"] = "\"Aha, nguh, aaahh, ufufu....\\H\n No need for words anymore....\\H\n Show me your love till the end....\\H」"
     end
     #----------------------------
     tx["md"] = "29"
-  when "夢魔恍惚中"
+  when "Succubus in ecstasy"
     # 夢魔が恍惚中の場合
     case rand(3)
     when 1
-      tx["tx1"] = "「は、ぁ……っ\\H」"
+      tx["tx1"] = "\"*G-Gasp....\\H\""
     when 2
-      tx["tx1"] = "「ふ、ふふ……\\H\n　高鳴りが、止まらないわ……\\H」"
+      tx["tx1"] = "\"U-Ufufu....\\H\n My cries won't stop....\\H\""
     when 3
-      tx["tx1"] = "「ん、ぁ、はぁ……\\H\n　とても、素敵よ……\\H」"
+      tx["tx1"] = "\"Nnn, ah, haaah....\\H\n So fantastic....\\H\""
     end
     #----------------------------
     tx["md"] = "30"
-  when "夢魔暴走中"
+  when "Succubus running berserk"
     # 夢魔が暴走中の場合
-    tx["tx1"] = "「#{giggle_s}……\\H」"
+    tx["tx1"] = "\"#{giggle_s}...\\H\""
     #----------------------------
     tx["md"] = "30"
-  when "試行過多"
+  when "Excess moves"
     # ベッドイン中でない時に、同じ夢魔に同一戦闘で３回を越えて話しかけた場合
-    tx["tx1"] = "「#{target}の気持ちは十分にわかったわ。\n　これ以上は#{myname}のカラダに、\n　直接、深く、濃密に教えてほしいわ……\\H」"
+    tx["tx1"] = "\"I have a good grasp of your feelings now, #{target}.\n I want you to tell it more\n directly, deeply, and intimately to my body....\\H\""
     #----------------------------
   end
   #格納
@@ -658,18 +658,18 @@ when "Rejected"
 #トークを仕掛けた場合、必ずムードと好感度が上がる。その部分の会話。
 #これが表示された後、ランダムで要求その他の分岐に入る(入らない場合もある)
 #会話に対して、好意的に返してくれる
-when "前口上"
+when "Initial remarks"
 #==================================================================================================================
   case $mood.point
   # 好感度がとても高い場合
   when 50..100
-    tx["tx1"] = "「いいのかしら、そんな言葉をくれて……\\H」"
+    tx["tx1"] = "\"Wonder if it's alright to tell me that....\\H\""
   # 好感度が高まっている場合
   when 21..49
-    tx["tx1"] = "「あら……\\H\n　#{target}はずいぶんと口が達者なのね\\H」"
+    tx["tx1"] = "\"Oh, my....\\H\n You certainly have a way with words, #{target}\\H\""
   # 好感度が低い場合
   else
-    tx["tx1"] = "「#{giggle_s}……本気にしてもいいのかしら？」"
+    tx["tx1"] = "\"#{giggle_s} ....Should I take that seriously?\""
   end
   #格納
   ms.push(tx)
@@ -679,9 +679,9 @@ when "前口上"
 
 #▼好意▼****************************************************************************************
 #会話に対して、好意的に返してくれる(選択肢なし、ムードと好感度が自動で上がるボーナス会話)
-when "好意"
-  tx["tx1"] = "「とはいえ、言われて悪い気はしないわね……\\H」"
-  tx["tx1"] = "「……ふふ、ありがとう。嬉しいわ\\H」" if $mood.point > 50 #前口上が好感度高い場合
+when "Favor"
+  tx["tx1"] = "\"Even so, it's not too unpleasant to hear that....\\H\""
+  tx["tx1"] = "\"……Ufufu, thanks. That makes me happy\\H\"" if $mood.point > 50 #前口上が好感度高い場合
   #----------------------------------------------------------------------------------------------------------------------
   #格納
   ms.push(tx)
@@ -690,20 +690,20 @@ when "好意"
 
 #▼主人公脱衣▼****************************************************************************************
 #主人公が自ら脱ぐよう要求される
-when "主人公脱衣"
+when "Player stripped"
   case $msg.talk_step
   when 1 #脱衣要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「その言葉、#{myname}に信じさせて。\n　甘い言葉だけじゃ酔えないわ」"
-    tx["tx2"] = "「#{target}のカラダを見せてちょうだい。\n　すべて隠さずさらけ出して……\\H」" 
-    tx["tx2"] = "「#{myname}だけその気じゃ寂しいわ。\n　#{target}も一緒に楽しみましょう\\H」"  if $msg.t_enemy.nude? #既に相手が脱いでいる
+    tx["tx1"] = "\"Make me believe those words of yours.\n Just some sweet words won't be enough to intoxicate me.\""
+    tx["tx2"] = "\"Let me see your body, #{target}.\n Show me everything without hiding anything....\\H\"" 
+    tx["tx2"] = "\"It doesn't feel right for only me to be like this.\nYou should be enjoying yourself with me, #{target}\\H\""  if $msg.t_enemy.nude? #既に相手が脱いでいる
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「……ずるい男だわ」"
+    tx["tx1"] = "\"....What a sly man you are.\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{giggle_s}……\\H\n　#{target}、いい男ね……\\H」"
-    tx["tx1"] = "「やだ、#{target}ってば……\\H\n　本当にその気にさせるのがうまいんだから……\\H」" if $msg.t_enemy.state?(32) #ドキっとした
+    tx["tx1"] = "\"#{giggle_s} ....\\H\n You're a great man, #{target}\\H\""
+    tx["tx1"] = "\"Oh, come on, #{target}....\\H\n You really know how to get the mood right....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -713,20 +713,20 @@ when "主人公脱衣"
 
 #▼夢魔脱衣▼****************************************************************************************
 #夢魔が自ら脱ぐ
-when "夢魔脱衣"
+when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「そんなに言うのなら、もっといいことしましょう？\n　#{myname}、#{target}と\n　もっと熱く愛し合いたいの……\\H」"
-    tx["tx2"] = "「#{target}のためにこの肌をさらすわ。\n　最後まで見ていてちょうだい……\\H」" 
-    tx["tx2"] = "「#{target}が待ってるんだもの、\n　#{myname}もこのカラダを捧げるわ……\\H」"  if $game_actors[101].nude? #既に主人公が脱いでいる
+    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more passionate love with you, #{target}....\\H\""
+    tx["tx2"] = "\"Just for you, I'm revealing this skin of mine, #{target}.\n Remember to watch me until I'm done....\\H\"" 
+    tx["tx2"] = "\"Seeing how much you're waiting,\n I'll be offering my body as well, #{target}....\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「……もう、ひどいことするのね」"
+    tx["tx1"] = "\"....How unkind of you.\""
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{giggle_s}……\\H\n　どうかしら、#{myname}のカラダ……\\H」"
-    tx["tx1"] = "「このカラダを気に入ってくれたようで嬉しいわ\\H\n　さあ、素敵な時間にしましょう……\\H」" if $game_actors[101].state?(32) #ドキっとした
+    tx["tx1"] = "\"#{giggle_s} ....\\H\n How do you like my body....? \\H\""
+    tx["tx1"] = "\"Glad to see that you like my body\\H\n Let's have a wonderful time....\\H\"" if $game_actors[101].state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -736,23 +736,23 @@ when "夢魔脱衣"
 
 #▼吸精▼****************************************************************************************
 #精気を吸わせるよう要求される
-when "吸精・口","吸精・性器"
+when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{myname}は欲張りなの。\n　#{target}の精を味わいたいわ……\\H」"
-    tx["tx2"] = "「ねえ、いいでしょう？\n　#{target}の言葉が嘘じゃないって\n　証明してちょうだい……\\H」" 
-    tx["tx2"] = "「こんなにおいしそうなものを見せびらかして\n　そんなことを言うんだもの。\n　もちろん、そのつもりなのよね……\\H」"  if $msg.tag == "吸精・性器" #主人公が裸時のみ発生
+    tx["tx1"] = "\"#{myname}'m quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
+    tx["tx2"] = "\"Isn't it fine?\n Prove to me that\n your words aren't a lie....\\H\"" 
+    tx["tx2"] = "\"You're saying such\n while showing off something so delicous-looking.\n That can only mean one thing....\\H\""  if $msg.tag == "Energy-suck - genitals" #主人公が裸時のみ発生
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「その気にさせておいて拒むだなんて、\n　#{target}はひどい男ね」"
+    tx["tx1"] = "\"How unkind of you to\n set the mood like that and refuse me.\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     case rand(2)
     when 0
-    tx["tx1"] = "「あは……おいしい\\H　言葉に劣らず素敵な味ね……\\H\n　もっとしっかり味わいたくなっちゃうわ\\H」"
+    tx["tx1"] = "\"Aha....delicious\\H It tastes just as great as your words....\\H\n Now I want to get a full taste\\H\""
     when 1
-    tx["tx1"] = "「#{giggle_s}……ごちそうさま。\n　#{target}は寛大ね……\\H」"
+    tx["tx1"] = "\"#{giggle_s}....Thanks for the food.\n You're so generous, #{target}....\\H\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
