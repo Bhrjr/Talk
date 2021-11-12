@@ -252,17 +252,17 @@ elsif $msg.tag == "Succubus binds the player."
       when 3 #ホールドレジスト失敗
        tx["tx1"] = "「#{giggle} I know you like big breasts.\n You're making sweet moans just from wrapping it gently\\H\n Just take it easy and savor it to your heart's content....\\H」"
         #自ら受け入れた場合
-       tx["tx1"] = "「....#{giggle_s}\\H Getting so hard just from touching my breasts\\H\n I what were the ideas you were getting? どんな妄想を膨らませ、期待してくれていたのかしら？\n　その願望、何もかも暴いて満たしてあげる……\\H」" if $game_switches[89] == true
+       tx["tx1"] = "「....#{giggle_s}\\H Getting so hard just from touching my breasts\\H\n I'm wondering what ideas you were getting.\n That hopes of yours, I'm going to make them all run wild and gratify them....\\H」" if $game_switches[89] == true
       end
     else #胸弱点でない
       case $msg.talk_step
       when 1 #ホールドレジスト中
-        tx["tx1"] = "「#{myname}の胸はどうかしら？\n　全部呑み込んで隠しちゃうかもしれないわよ……\\H」"
-        tx["tx1"] = "「今にも爆ぜそうな#{target}のここを\n　#{myname}の胸で包んで、\n　心を快楽に染めてあげる……\\H」" if $msg.t_target.crisis? == true
+        tx["tx1"] = "「How do you like my breasts?\n It might swallow it all up and cover it....\\H」"
+        tx["tx1"] = "「With my breasts, I'm going to cover\n your dick down that'll burst at any moment\n and taint your heart in pleasure, #{target}....\\H」" if $msg.t_target.crisis? == true
       when 2 #ホールドレジスト成功
-        tx["tx1"] = "「お気に召さないかしら？\n　少しは自信があったのだけど、仕方ないわね」"
+        tx["tx1"] = "「Was that not what you preferred?\n I was fairly confident for it, but nothing I can do about it.」"
         if $msg.t_target.crisis? == true
-          tx["tx1"] = "「本能に身を委ねるのは怖い？\n　#{giggle_s}、その気持ちを楽しめるのも\n　今のうちだけよ……\\H」"
+          tx["tx1"] = "「You're too afraid too leave your body to your inner desires?\n　#{giggle_s}、その気持ちを楽しめるのも\n　今のうちだけよ……\\H」"
           tx["md"] = "0"
         end
       when 3 #ホールドレジスト失敗
