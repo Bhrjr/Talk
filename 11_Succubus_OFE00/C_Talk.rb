@@ -301,7 +301,7 @@ when "Caress - intercourse"
     when 3
       tx["tx1"] = "\"Aha....you're amazing, #{target}\\H\n You keep on going wild inside me....\\H\"" 
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"#{giggle}\n I really adore the face you're making\\H\n I want you let go of it all inside me\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
+      tx["tx1"] = "\"#{giggle}\n I really adore the face you're making\\H\n I want you to finish like that inside me\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
     when 2
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\"" 
@@ -778,7 +778,7 @@ when "Caress - intercourse"
     when 3
       tx["tx1"] = "\"Aha....you're amazing, #{target}\\H\n You keep on going wild inside me....\\H\"" 
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"#{giggle}\n I really adore the face you're making\\H\n I want you let go of it all inside me\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
+      tx["tx1"] = "\"#{giggle}\n I really adore the face you're making\\H\n I want you to finish like that inside me\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
     when 2
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\"" 
@@ -1181,7 +1181,7 @@ when "Caress - intercourse"
     when 3
       tx["tx1"] = "\"Aha....you're amazing, #{target}\\H\n You keep on going wild inside me....\\H\"" 
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"#{giggle}\n I really adore the face you're making\\H\n I want you let go of it all inside me\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
+      tx["tx1"] = "\"#{giggle}\n I really adore the face you're making\\H\n I want you to finish like that inside me\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
     when 2
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\"" 
@@ -1583,7 +1583,7 @@ when "Caress - intercourse"
     when 3
       tx["tx1"] = "\"Aha....you're amazing, #{target}\\H\n You keep on going wild inside me....\\H\"" 
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"#{giggle}\n I really adore the face you're making\\H\n I want you let go of it all inside me\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
+      tx["tx1"] = "\"#{giggle}\n I really adore the face you're making\\H\n I want you to finish like that inside me\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
     when 2
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\"" 
