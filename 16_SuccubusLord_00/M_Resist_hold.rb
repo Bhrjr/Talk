@@ -212,9 +212,9 @@ elsif $msg.tag == "Succubus binds the player."
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"You'll hurt my feelings by refusing me like that....\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「Ufufu....#{myname}の蜜の味はどうかしら\\H\n　こうやって自分のいやらしさを見せつけてると、\n　倒錯感でとってもゾクゾクしちゃうわ……\\H」"
+      tx["tx1"] = "「Ufufu....I wonder how my nectars taste\\H\n Looking at my own vulgarness like this\n feels so kinky it gives me the shivers....\\H」"
       #自ら受け入れた場合
-      tx["tx1"] = "「もう、#{target}は好き者さんね\\H\n　いいわ、#{myname}の昂り、\n　余すことなく味わってちょうだい\\H」" if $game_switches[89] == true
+      tx["tx1"] = "「Wow you're lecherous, #{target}\\H\n That's fine though, I want you to\n thoroughly taste of my arousal\\H」" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -225,14 +225,14 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{myname}に身を任せて……\n　#{myname}の与える快楽を\n　受け入れなさい……\\H」"
+      tx["tx1"] = "「Just leave your body to me....\n Accept the pleasure\n #{myname} provide you....\\H」"
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「されるがままは嫌い？\n　そこまで言うなら、#{myname}のことも\n　ちゃんと満足させてくれるのよね？\\H」"
+      tx["tx1"] = "「Not a fan of playing along?\n That must mean you'll be able to\n satisfy me properly\\H」"
       tx["md"] = "0"
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「#{giggle_s}……いい子ね\\H\n　素直な#{target}にはご褒美よ、\n　#{myname}の虜にしてあげる……\\H」"
+      tx["tx1"] = "「#{giggle_s} ....Good boy\\H\n For being so obedient,\n you get to be my captive, #{target}....\\H」"
       #自ら受け入れた場合
-      tx["tx1"] = "「くすくす……もう逃がさないわ。\n　#{myname}のものになるまで、\n　至上の悦楽で絡め取ってあげる……\\H」" if $game_switches[89] == true
+      tx["tx1"] = "「*Giggle....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H」" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -245,7 +245,7 @@ elsif $msg.tag == "Succubus binds the player."
     if $msg.t_target.have_ability?(12) #ロウラット胸弱点
       case $msg.talk_step
       when 1 #ホールドレジスト中
-       tx["tx1"] = "「ほら、見て……#{target}のモノが\n　柔らかな谷間に呑み込まれていく、いやらしい光景を\\H\n　#{myname}の胸で甘く愛されて、蕩けてみたいでしょう……\\H」"
+       tx["tx1"] = "「Have a look.... At the vulgar sight\n of your manhood getting swallowed up by the soft cleavage, #{target}\\H\n Don't you feel like it's going to #{myname}の胸で甘く愛されて、蕩けてみたいでしょう……\\H」"
       when 2 #ホールドレジスト成功
        tx["tx1"] = "「#{giggle}　嫌だなんて、本当かしら？\n　振り払ってもまだ#{myname}の胸から目が離せないのに\\H\n　芽生えた欲望を無視なんて、できないわよね……\\H」"
        tx["md"] = "0"
