@@ -25,7 +25,7 @@ class MsgSuccubuslord_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{target}の欲望、\n　#{myname}のカラダで満たしてあげる\\H\n　力を抜いて、#{myname}に身を任せて……\\H」"
+  tx["tx1"] = "\"Let me fulfill your\n desires with my body, #{target}\\H\n Just relax and leave your body to me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
