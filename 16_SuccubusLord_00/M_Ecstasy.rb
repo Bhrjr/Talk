@@ -37,7 +37,7 @@ when 1 #初撃
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "\"No escape for you, #{target},\n only getting entangled and getting toyed with like this.\""
+  tx["tx1"] = "\"No escape for you, #{target};\n only getting entangled and getting toyed with like this.\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -321,7 +321,7 @@ class MsgSuccubuslord_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 #----------------------------------------------------------------------------------------------------------------------
 case $msg.talk_step
@@ -332,7 +332,7 @@ when 1 #初撃
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "\"No escape for you, #{target},\n only getting entangled and getting toyed with like this.\""
+  tx["tx1"] = "\"No escape for you, #{target};\n only getting entangled and getting toyed with like this.\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -594,12 +594,12 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{giggle}　我慢なんてしなくていいわ……\n　身を包む心地よさに任せて、カラダが求めるまま、\n　ただ快楽を貪るの……\\H」"
+  tx["tx1"] = "\"#{giggle} You don't have to hold it in....\n All you have to do is leave your body to the comfort surrounding it and\n indulge in the pleasure as it demands....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "「#{target}はもう逃げられない、\n　こうして絡め取られて弄ばれるしかないの」"
+  tx["tx1"] = "\"No escape for you, #{target};\n only getting entangled and getting toyed with like this.\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -638,17 +638,17 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "「今、楽にしてあげる……\\H　#{target}の内で滾る欲望、\n　すべて吐き出しなさい……\\H」"
+  tx["tx1"] = "\"I'll put you at ease now....\\H Your desire seething inside you,\n let it all out, #{target}....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "「ぴちゅ……\\H　#{giggle}\n　たくさん出したわね……\\H　熱くて、臭くて……\n　どろどろに煮詰まった、素敵な欲望の味……\\H」"
+  tx["tx1"] = "\"Fwah....\\H #{giggle}\n You let out so much....\\H The wonderful taste of your\n hot, smelly....and viscous boiled-down desire....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "「弄ばれるのはどうだったかしら？\n　嬉しい？　悔しい？　……#{giggle_s}\\H\n　そんなことどうでもいいくらい、気持ちよかった？」"
+  tx["tx1"] = "\"How did getting toyed with make you feel?\n Happy? Frustrated? ....#{giggle_s}\\H\n Did it feel so good that none of it mattered?\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -685,12 +685,12 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "「意固地な#{target}が\n　もっと自分の欲望に忠実になれるように、#{myname}が\n　最高の快楽をあげる\\H　さあ、力を抜いて……\\H」"
+  tx["tx1"] = "\"#{myname}'m going to give you the highest pleasure\n so that you who's so stubborn can be\n faithful to your desires\\H Just take it easy....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "「#{giggle}　いい顔になったわね\\H\n　もう何も考えられない、快楽だけを求める顔……\\H」"
-  tx["tx2"] = "「何もかも忘れて、#{myname}に溺れるといいわ……\n　さあ……このカラダ、好きなだけ貪りなさい……\\H」"
+  tx["tx1"] = "\"#{giggle} What a great face you have there\\H\n One that can't think of anything anymore and seeking only pleasure....\\H\""
+  tx["tx2"] = "\"You can just forget everything and immerse youself in me....\n Here you go....endulge in this body all you want....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 end
@@ -860,12 +860,12 @@ else
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{giggle}　我慢なんてしなくていいわ……\n　身を包む心地よさに任せて、カラダが求めるまま、\n　ただ快楽を貪るの……\\H」"
+  tx["tx1"] = "\"#{giggle} You don't have to hold it in....\n All you have to do is leave your body to the comfort surrounding it and\n indulge in the pleasure as it demands....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "「#{target}はもう逃げられない、\n　こうして絡め取られて弄ばれるしかないの」"
+  tx["tx1"] = "\"No escape for you, #{target};\n only getting entangled and getting toyed with like this.\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -904,17 +904,17 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "「今、楽にしてあげる……\\H　#{target}の内で滾る欲望、\n　すべて吐き出しなさい……\\H」"
+  tx["tx1"] = "\"I'll put you at ease now....\\H Your desire seething inside you,\n let it all out, #{target}....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "「ぴちゅ……\\H　#{giggle}\n　たくさん出したわね……\\H　熱くて、臭くて……\n　どろどろに煮詰まった、素敵な欲望の味……\\H」"
+  tx["tx1"] = "\"Fwah....\\H #{giggle}\n You let out so much....\\H The wonderful taste of your\n hot, smelly....and viscous boiled-down desire....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "「弄ばれるのはどうだったかしら？\n　嬉しい？　悔しい？　……#{giggle_s}\\H\n　そんなことどうでもいいくらい、気持ちよかった？」"
+  tx["tx1"] = "\"How did getting toyed with make you feel?\n Happy? Frustrated? ....#{giggle_s}\\H\n Did it feel so good that none of it mattered?\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -951,12 +951,12 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "「意固地な#{target}が\n　もっと自分の欲望に忠実になれるように、#{myname}が\n　最高の快楽をあげる\\H　さあ、力を抜いて……\\H」"
+  tx["tx1"] = "\"#{myname}'m going to give you the highest pleasure\n so that you who's so stubborn can be\n faithful to your desires\\H Just take it easy....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "「#{giggle}　いい顔になったわね\\H\n　もう何も考えられない、快楽だけを求める顔……\\H」"
-  tx["tx2"] = "「何もかも忘れて、#{myname}に溺れるといいわ……\n　さあ……このカラダ、好きなだけ貪りなさい……\\H」"
+  tx["tx1"] = "\"#{giggle} What a great face you have there\\H\n One that can't think of anything anymore and seeking only pleasure....\\H\""
+  tx["tx2"] = "\"You can just forget everything and immerse youself in me....\n Here you go....endulge in this body all you want....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 end
