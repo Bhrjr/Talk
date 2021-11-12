@@ -165,7 +165,7 @@ when 9 #とどめ
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "\"I'll take in whatever repulsive and shameful desires you have, #{myname}\\H\n Indulge in this body like in your vulgar dreams\n and shamelessly stain my breasts with your seethingdkt cloudiness #{myname}の胸を煮え滾る白濁で淫らに穢して……\\H」"
+    tx["tx1"] = "\"I'll take in whatever repulsive and shameful desires you have, #{myname}\\H\n Indulge in this body like in your vulgar dreams\n and shamelessly stain my breasts with your seething-hot cloudiness....\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -186,7 +186,7 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "「……#{giggle_s}\\H　こんなにたくさん出して……\n　自分の欲望に呑まれるのはそんなに気持ちよかった？\n　必死に我慢した見返りの味はどうかしら……\\H」"
+  tx["tx1"] = "\"....#{giggle_s}\\H Bursting out so much like this....\n Did getting overwhelmed by your desires feel that good?\n How did the reward of all that desperate endurance feel....? \\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -202,7 +202,7 @@ when 10 #余韻
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "「あ、は……\\H　熱くて、……あん、火傷しちゃいそう\\H\n　胸の中でびくびく震えて、滾る劣情を迸らせて……\n　穢れた欲望の匂い……卑猥で、ふふ、素敵だわ……\\H」"
+    tx["tx1"] = "\"A-ha....\\H So hot, anhh, that I feel like I'll burn myself\\H\n inside my breasts 胸の中でびくびく震えて、滾る劣情を迸らせて……\n　穢れた欲望の匂い……卑猥で、ふふ、素敵だわ……\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
