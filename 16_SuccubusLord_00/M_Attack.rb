@@ -189,8 +189,8 @@ when "Paizuri"
   case $msg.t_enemy.initiative_level
   when 3 #ホールドレベル3
     if $msg.t_target.crisis? #対象がクライシス
-      tx["tx1"] = "\"Gettting sticky with droll every time your face is pulled out from the cleavage....\n #{giggle_s}.... It's like I'm getting soiled by a man's arousal 牡の昂りで穢されていくようだわ\\H\n　ぬるついて、艶やかに濡れ光って……素敵な化粧ね\\H\""
-      tx["tx1"] = "\"#{target}の涎でぬるぬるで、\n　抑え込んでも反り返って……その刺激で勝手に喘いで\\H\n　#{giggle_s}……とても倒錯的で、素敵な姿よ……\\H\"" if $game_variables[17] > 33 #ランダム分岐
+      tx["tx1"] = "\"Gettting sticky with droll every time your face is pulled out from the cleavage....\n #{giggle_s}.... It's like I'm getting soiled by a male arousal\\H\n Smearing it and giving it a glossy sheen....what a great salve\\H\""
+      tx["tx1"] = "\"getting all slimy from your drool #{target}の涎でぬるぬるで、\n　抑え込んでも反り返って……その刺激で勝手に喘いで\\H\n　#{giggle_s}……とても倒錯的で、素敵な姿よ……\\H\"" if $game_variables[17] > 33 #ランダム分岐
       tx["tx1"] = "\"乳房で擦り上げるたびににちゃにちゃ鳴って……\n　ふふ……こんなにいやらしくされたお返しが必要ね？\n　この淫猥な胸で、心まで快楽で満たしてあげる……\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
         tx["tx1"] = "\"#{giggle_s}……必死になって我慢なんてしなくていいの、\n　理性まで蕩けるよう、思い切りしごき上げてあげる\\H\n　乳房で挟み潰され嬲られる快感、愉しみなさい……\\H\""
