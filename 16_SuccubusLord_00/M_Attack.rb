@@ -76,7 +76,7 @@ when "breasts"
     tx["tx1"] = "\"Aaaanh, jumping up from just sticking it in.... #{giggle_s} What a wild child\\H\n Your little fellow here filled with desires,\n I'm going to gently wrap it in pleasure and mesmerize it in ecstasy\\H\"" if $game_variables[17] > 50 #ランダム分岐
     if $msg.t_target.crisis? #対象がクライシス
       tx["tx1"] = "\"#{giggle} To be utterly mesmerized like that....\\H\n Alright then, make this breast all sticky and stained if that's what you want....\\H Release your boiling hot cloudiness as you desire\\H\""
-      tx["tx1"] = "\"……#{giggle_s}\\H So hard and hard....\n My breasts' going to get mesmerized by animal-like passio  #{myname}の胸が劣情で溶かされちゃいそうだわ……\\H\n　期待と欲望のままに、心まで蕩けさせてあげる……\\H\"" if $game_variables[17] > 50 #ランダム分岐
+      tx["tx1"] = "\"....#{giggle_s}\\H So hard and hard....\n My breasts' going to melt from the animal-like passion....\\H\n As you wish, I'll have even your heart fascinated....\\H\"" if $game_variables[17] > 50 #ランダム分岐
     end
   when "対象：口" #ぱふぱふ
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -143,7 +143,7 @@ class MsgSuccubuslord_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"#{giggle}　ほら、もっと酔いしれて……\\H\n　このカラダと触れ合う快楽に溺れて、\n　#{myname}から離れたくなくなるくらいに……\\H\""
+  tx["tx1"] = "\"#{giggle} I need you get more intoxicated on it....\\H\n Enough that you're engulfed by the pleasure touching this body\n and don't wish to separate from me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
@@ -189,7 +189,7 @@ when "Paizuri"
   case $msg.t_enemy.initiative_level
   when 3 #ホールドレベル3
     if $msg.t_target.crisis? #対象がクライシス
-      tx["tx1"] = "\"谷間から顔を出すたび涎でべとべとにして……\n　#{giggle_s}……、牡の昂りで穢されていくようだわ\\H\n　ぬるついて、艶やかに濡れ光って……素敵な化粧ね\\H\""
+      tx["tx1"] = "\"Gettting sticky with droll every time your face is pulled out from the cleavage....\n #{giggle_s}.... It's like I'm getting soiled by a man's arousal 牡の昂りで穢されていくようだわ\\H\n　ぬるついて、艶やかに濡れ光って……素敵な化粧ね\\H\""
       tx["tx1"] = "\"#{target}の涎でぬるぬるで、\n　抑え込んでも反り返って……その刺激で勝手に喘いで\\H\n　#{giggle_s}……とても倒錯的で、素敵な姿よ……\\H\"" if $game_variables[17] > 33 #ランダム分岐
       tx["tx1"] = "\"乳房で擦り上げるたびににちゃにちゃ鳴って……\n　ふふ……こんなにいやらしくされたお返しが必要ね？\n　この淫猥な胸で、心まで快楽で満たしてあげる……\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
