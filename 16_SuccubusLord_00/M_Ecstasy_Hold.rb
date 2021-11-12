@@ -202,7 +202,7 @@ when 10 #余韻
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "\"A-ha....\\H So hot, anhh, that I feel like I'll burn myself\\H\n inside my breasts 胸の中でびくびく震えて、滾る劣情を迸らせて……\n　穢れた欲望の匂い……卑猥で、ふふ、素敵だわ……\\H」"
+    tx["tx1"] = "\"A-ha....\\H So hot, anhh, that I feel like I'll burn myself\\H\n Twitching and gushing out your seething passion inside my breasts....\n Such impure desire smells....so indecent and, fantastic....\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -223,7 +223,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "「#{giggle}　熱い迸りを感じるわ……\\H\n　意地っ張りの#{target}の、\n　快楽に蕩けた理性の残滓を……\\H」"
+  tx["tx1"] = "\"#{giggle} I can feel it hotly pouring out....\\H\n Of the remains of your\n stubborn reasoning mesmerized by pleasure....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -262,7 +262,7 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "「#{target}が望むのなら、\n　何もわからなくなるくらいの、最高の快楽をあげる\\H\n　さあ……どうしたいか、言ってごらんなさい……？\\H」"
+  tx["tx1"] = "\"If you want, I can\n provide you with the highest pleasure that'll leave you unable to care for anything, #{target}\\H\n Now....could mind telling me what you'd like....? \\H」"
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -278,7 +278,7 @@ when 20 #続行(ホールド解除)
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "「ほら、こんなに……#{giggle_s}、間から溢れてくるわ\\H\n　#{target}は胸だけで満足？\n　このカラダのすべて、好きに貪っていいのよ……\\H」"
+    tx["tx1"] = "\"Look at how.... #{giggle_s} It's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -299,7 +299,7 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "「#{target}のここは\n　誰よりも素直で貪欲ね……\\H　#{giggle}\n　いいわ、このまま溺れるまで続けてあげる\\H」"
+  tx["tx1"] = "\"Your manhood down here is\n more honest and greedier than anyone, #{target}....\\H #{giggle}\n Fine then, I'll carry on until you succumb to it\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -315,7 +315,7 @@ when 21 #続行(ホールド継続)
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "「……あん、また大きくして……ふふ、もっとシたいの？\n　いいわよ……白濁した情欲でこの胸を蹂躙してみせて\\H\n　何度でも穢して、匂いが取れなくなるくらいに……\\H」"
+    tx["tx1"] = "\"....Aannh, it's so huge again....ufufu, you want more?\n Okay then....violate these breasts with your cloudy desires\\H\n Stain it enough that the small doesn't go away....\\H\""
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -336,8 +336,8 @@ when 21 #続行(ホールド継続)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "「#{giggle}　いい顔になったわね\\H\n　もう何も考えられない、快楽だけを求める顔……\\H」"
-  tx["tx2"] = "「何もかも忘れて、#{myname}に溺れるといいわ……\n　さあ……このカラダ、好きなだけ貪りなさい……\\H」"
+  tx["tx1"] = "\"#{giggle} What a great face you have there\\H\n One that can't think of anything anymore and seeking only pleasure....\\H\""
+  tx["tx2"] = "\"You can just forget everything and immerse youself in me....\n Here you go....endulge in this body all you want....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -353,8 +353,8 @@ when 30 #ゲームオーバー(失神)
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "「#{giggle}　すっかり蕩けきっちゃったかしら？\n　頭も心も気持ちよくなることでいっぱいで、\n　この胸に溺れることしか考えられないでしょう\\H」"
-    tx["tx2"] = "「何度白濁を放っても、どれだけこのカラダを穢しても、\n　蕩けるほどの絶頂でも満たされない欲望に溺れる、\n　甘い堕落の悦び……#{myname}の胸の中で教えてあげる……\\H」"
+    tx["tx1"] = "\"{giggle} Have you been completely fascinated by it?\n Your head and mind must both be full of pleasure\n that you can't think of anything else than succumbing to these breasts\\H\""
+    tx["tx2"] = "\"The joy of sweet depravity plunging you\n in an unsatisfiable desire regardless of how many times you eject the cloudiness, soil this body,\n and orgasm enough to be mesmerized....I'll show you inside my breasts....\\H\""
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
