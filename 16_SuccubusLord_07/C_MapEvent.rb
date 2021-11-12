@@ -25,30 +25,30 @@ class MsgSuccubuslord_A < MsgBase
 case $msg.tag
 #=======================================================================================================================
 #★精の献上-----------------------------------------------------------------------------------------------------------#
-when "精の献上"
+when "Energy Feeding"
   #====================================================================================================================
   #◆【大事な人】状態◆
-  if $msg.t_enemy.have_ability?("大切な人")
+  if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
     case $msg.talk_step
     when 1 #献上開始
-      tx["tx1"] = "「じっとしててちょうだい、\n　#{target}をしっかりと感じたいの\\H\n　#{giggle_s}、いただきます……\\H」"
+      tx["tx1"] = "\"Just stay still.\n I want to get a full taste of you, #{target}\\H\n #{giggle_s} Here I dig in....\\H\""
       #------------------------------------------------------------------------------------------------------------------
     when 2 #献上終了
-      tx["tx1"] = "「ああ、染み渡るわ……\\H\n　#{target}からもらう精は格別ね\\H\n　愛してるわ、#{target}\\H」"
+      tx["tx1"] = "\"Aaaahh, it's spreading through me....\\H\n The semen from you really are something else, #{target}\\H\n I just love it\\H\""
       #------------------------------------------------------------------------------------------------------------------
     end
 
   #====================================================================================================================
   #◆【寵愛】状態◆
-  elsif $msg.t_enemy.have_ability?("寵愛")
+  elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
     case $msg.talk_step
     when 1 #献上開始
-      tx["tx1"] = "「ふふっ、待ってたわ\\H\n　それじゃあ、いただきます……\\H」"
+      tx["tx1"] = "\"Ufufu, I've been waiting for it\\H\n Then here I dig in....\\H\""
       #------------------------------------------------------------------------------------------------------------------
     when 2 #献上終了
-      tx["tx1"] = "「ごちそうさま。ありがとう、おいしかったわ\\H」"
+      tx["tx1"] = "\"Thanks for the meal. It was really good\\H\""
       #------------------------------------------------------------------------------------------------------------------
     end
 
@@ -58,10 +58,10 @@ when "精の献上"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #献上開始
-      tx["tx1"] = "「空腹で倒れちゃうかと思ったわ\\H\n　さあ、早くちょうだい……\\H」"
+      tx["tx1"] = "\"I thought I was gonna collapse from the hunger\\H\n Hurry up and give it here....\\H\""
       #------------------------------------------------------------------------------------------------------------------
     when 2 #献上終了
-      tx["tx1"] = "「ふふ、はしたないところを見せちゃったわね……\\H」"
+      tx["tx1"] = "\"Ufufu, I ended up showing something shameful....\\H\""
       #------------------------------------------------------------------------------------------------------------------
     end
   end
@@ -72,44 +72,44 @@ when "精の献上"
 
 #=======================================================================================================================
 #★空腹-----------------------------------------------------------------------------------------------------------#
-when "空腹"
+when "Hungry"
   #====================================================================================================================
   #◆【大事な人】状態◆
-  if $msg.t_enemy.have_ability?("大切な人")
+  if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
     case $msg.talk_step
     when 1 # 空腹１人目
-      tx["tx1"] = "「ねぇ、#{target}……\n　#{myname}、寂しいわ……」"
-      tx["tx2"] = "「あまりわがままは言いたくないけれど、\n　これだけはどうしても我慢できないの……」"
-      tx["tx3"] = "「数多の言葉よりもひとつのキスで語って。\n　#{target}のありったけの愛情を\n　#{myname}に注いでちょうだい\\H」"
-      tx["tx4"] = "凄艶な笑みを浮かべた#{speaker}が\n舌なめずりをしながら静かに迫ってくる！\n#{master}に逃げ場は無い……！" + "TALKTEXT"
+      tx["tx1"] = "\"Hey, #{target}....\n I feel so lonely here....\""
+      tx["tx2"] = "\"I don't want to sound too selfish, but\n I really can't take this anymore....\""
+      tx["tx3"] = "\"A kiss will speak louder than some countless words\n I want you to pour\n every love you've got into me\\H\""
+      tx["tx4"] = "Casting a fanciful smile, #{speaker}\n approaches quietly as she licks her lips!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
-      tx["tx1"] = "「#{myname}のことも忘れちゃ嫌よ……\\H」"
+      tx["tx1"] = "\"#{myname} don't want you to forget me either....\\H\""
       #tx["tx2"] = ""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
-      tx["tx1"] = "「#{giggle_s}、\n　#{target}は人気者ね。\n　#{myname}も混ぜてもらおうかしら\\H」"
+      tx["tx1"] = "\"#{giggle_s}\n You sure are popular, #{target}.\n What say #{myname} join in as well\\H\""
       #tx["tx2"] = ""
     end
 
   #====================================================================================================================
   #◆【寵愛】状態◆
-  elsif $msg.t_enemy.have_ability?("寵愛")
+  elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
     case $msg.talk_step
     when 1 # 空腹１人目
-      tx["tx1"] = "「#{target}は嫌いじゃないけれど、\n　女を大切にしない男は好きじゃないわ……」"
-      tx["tx2"] = "#{speaker}は思わせぶりに指を蠢かせると、\n#{master}の背中と下腹部を撫で回し、\n耳の奥へと絡みついてくるような声音で囁いてくる……"
-      tx["tx3"] = "「聡明な#{target}のことだもの。\n　#{myname}が何を言いたいか、わかるでしょう……？」"
-      tx["tx4"] = "#{speaker}の瞳が怪しい光を帯びる！\n#{master}に逃げ場は無い……！" + "TALKTEXT"
+      tx["tx1"] = "\"It's not like I hate you, #{target},\n but I don't like men that don't look after their woman....\""
+      tx["tx2"] = "Crawling her fingers suggestively,\n #{speaker} strokes #{master}'s back and abdomen,\n whispering in a voice and that twines deep in his ears...."
+      tx["tx3"] = "\"I know you're sensible enough.\n You do realize what #{myname}'m trying to say, right....?\""
+      tx["tx4"] = "#{speaker}'s eyes have an eerie shine to them!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
-      tx["tx1"] = "「#{myname}もお腹が空いたわ……\\H」"
+      tx["tx1"] = "\"#{myname}'m hungry too....\\H\""
       #tx["tx2"] = ""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
-      tx["tx1"] = "「#{giggle_s}、#{myname}も混ぜてちょうだい\\H」"
+      tx["tx1"] = "\"#{giggle_s} Let me join in as well\\H\""
       #tx["tx2"] = ""
     end
 
@@ -119,17 +119,17 @@ when "空腹"
   #====================================================================================================================
     case $msg.talk_step
     when 1 # 空腹１人目
-      tx["tx1"] = "「ねえ、食事はまだかしら？\n　もう空腹で耐え切れないわ」"
-      tx["tx2"] = "「まさか忘れてたなんてことはないわよね？\n　#{target}のことだもの、\n　そんな安い男だなんて思わないけれど」"
-      tx["tx3"] = "「言い訳は聞かないわ。\n　ちゃんと言い聞かせれば覚えてくれる、\n　そうよね？　#{target}……\\H」"
-      tx["tx4"] = "#{speaker}は空腹で我を忘れている！\n#{master}に逃げ場は無い……！" + "TALKTEXT"
+      tx["tx1"] = "\"Hey, still no meal yet?\n I can't bear this hunger anymore.\""
+      tx["tx2"] = "\"You wouldn't tell me you've forgot about it, would you?\n I highly doubt\n you're such a stingy man.\""
+      tx["tx3"] = "\"I won't take any excuses.\n I know you'll remember it after a good talking-to.\n Right, #{target}....? \\H\""
+      tx["tx4"] = "#{speaker} is going mad from the hunger!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
-      tx["tx1"] = "「#{myname}もお腹が空いたわ……\\H」"
+      tx["tx1"] = "\"#{myname}'m hungry too....\\H\""
       #tx["tx2"] = ""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
-      tx["tx1"] = "「#{giggle_s}、#{myname}も混ぜてちょうだい\\H」"
+      tx["tx1"] = "\"#{giggle_s} Let me join in as well\\H\""
       #tx["tx2"] = ""
     end
   end
@@ -140,9 +140,9 @@ when "空腹"
 
 #=======================================================================================================================
 #★調理技能-----------------------------------------------------------------------------------------------------------#
-when "調理"
+when "Cook"
   case $msg.at_type
-  when "意気込み"
+  when "Put on Steam"
     #==================================================================================================================
     #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
     #==================================================================================================================
@@ -157,16 +157,16 @@ when "調理"
     case $msg.t_enemy.cook_dex
     #消し炭orどろどろ
     when 0..49
-      tx["tx1"] = "「料理？　食事の？\n　うぅん、自信はないわね……」"
+      tx["tx1"] = "\"Cooking? For meal?\n Hmmm, not so sure about that....\""
     #サラダやサンドイッチが作れるレベル
     when 50..149
-      tx["tx1"] = "「あまり難しいものはできないわ。\n　簡単なものでいいかしら？」"
+      tx["tx1"] = "\"I can't make anything really difficult.\n Would something simple do it?\""
     #マリネやスープが作れるレベル
     when 150..349
-      tx["tx1"] = "「お腹が空いたの？\n　少し待っててちょうだい、軽食でよければ用意するわ」"
+      tx["tx1"] = "\"You're hungry?\n Just wait a little, I'll prepare something if you're fine with a light meal.\""
     #メインディッシュが作れるレベル
     when 350..999
-      tx["tx1"] = "「任せてちょうだい、腕によりをかけて作るわよ\\H」"
+      tx["tx1"] = "\"Just leave it to me; I'll do my very best\\H\""
     end
     #格納
     ms.push(tx)
@@ -176,14 +176,14 @@ when "調理"
 
 #=======================================================================================================================
 #★ランクアップ(対応しない夢魔は項目ごと消去推奨----------------------------------------------------------------------#
-when "ランクアップ"
+when "Rank Up"
   case $msg.talk_step
   when 1 #ランクアップ前口上
  #  tx["tx1"] = ""
   when 2 #ランクアップ開始
  #  tx["tx1"] = ""
   when 3 #ランクアップ終了（サキュバスからランクアップした後の口上）
-    tx["tx1"] = "「#{giggle}\n　それじゃ、行きましょうか。\n　それとも……少し休憩してから行く……？\\H」"
+    tx["tx1"] = "\"#{giggle}\n Then time to go.\n Or....after a little break, perhaps....? \\H\""
   when 4 #ランクアップしない
  #  tx["tx1"] = ""
   end
