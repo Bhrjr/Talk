@@ -70,18 +70,18 @@ if $msg.tag == "Player binds the succubus"
       tx["tx1"] = "\"I can't wait anymore....\n Hurry up and\n devour me....\\H\"" if $msg.t_enemy.crisis? == true
       tx["tx1"] = "\"#{giggle_s} Can't wait anymore....?\n Fine then, thrust your yearnings\n onto me as you wish, #{target}....\\H\"" if $msg.t_target.crisis? == true
     when 2 #ホールド成功
-      tx["tx1"] = "\"Nnnhh....\\H\n #{giggle_s} You're so manly for your cute face....\\H\n Okay then, do whatever you want with me....\\H」"
-      tx["tx1"] = "\"Ah-ha....\\H Ufufu, I knew nothing beats this....\\H\n The joy of being penetrated by a man and having the deepest region pursued is\n the supreme delight for a woman....\\H」" if $msg.t_enemy.crisis? == true
-      tx["tx1"] = "\"Aaannh....\\H Yes, you've got it....\\H\n Pursue me all you want and\n release your hot desires in the innermost area....\\H」" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Nnnhh....\\H\n #{giggle_s} You're so manly for your cute face....\\H\n Okay then, do whatever you want with me....\\H\""
+      tx["tx1"] = "\"Ah-ha....\\H Ufufu, I knew nothing beats this....\\H\n The joy of being penetrated by a man and having the deepest region pursued is\n the supreme delight for a woman....\\H\"" if $msg.t_enemy.crisis? == true
+      tx["tx1"] = "\"Aaannh....\\H Yes, you've got it....\\H\n Pursue me all you want and\n release your hot desires in the innermost area....\\H\"" if $msg.t_target.crisis? == true
     when 3 #ホールド失敗
-      tx["tx1"] = "\"#{giggle_s} I'm not going to just do as I'm told.\n You need to get me in the mood\n with your own hands, #{target}\\H」"
-      tx["tx1"] = "\"You don't have to be scared....\n You're free to be more selfish and\n leave anything too difficult to me, #{target}....\\H」" if $msg.t_enemy.crisis? == true
-      tx["tx1"] = "\"Dear me, were you just teasing me....? \\H\n Don't you worry, #{myname}'m not going anywhere.\n Yield your body to the animal-like desires gushing forth from below\\H」" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"#{giggle_s} I'm not going to just do as I'm told.\n You need to get me in the mood\n with your own hands, #{target}\\H\""
+      tx["tx1"] = "\"You don't have to be scared....\n You're free to be more selfish and\n leave anything too difficult to me, #{target}....\\H\"" if $msg.t_enemy.crisis? == true
+      tx["tx1"] = "\"Dear me, were you just teasing me....? \\H\n Don't you worry, #{myname}'m not going anywhere.\n Yield your body to the animal-like desires gushing forth from below\\H\"" if $msg.t_target.crisis? == true
       #途中で行動をキャンセルした場合
       if $game_switches[89] == true
-        tx["tx1"] = "「Oh my....\n Indecisiveness won't get you any likes.」"
-        tx["tx1"] = "「Maybe you're not interested in pushing down a woman?\n Taking your time will get you\n pinned down by me, you know\\H」" if $msg.t_target.crisis? == true
-        tx["tx1"] = "「Keeping me in suspense like that....\n Oh #{target}, for your cute face,\n you're more daring than you look....\\H」" if $msg.t_enemy.crisis? == true
+        tx["tx1"] = "\"Oh my....\n Indecisiveness won't get you any likes.\""
+        tx["tx1"] = "\"Maybe you're not interested in pushing down a woman?\n Taking your time will get you\n pinned down by me, you know\\H\"" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"Keeping me in suspense like that....\n Oh #{target}, for your cute face,\n you're more daring than you look....\\H\"" if $msg.t_enemy.crisis? == true
       end
     end
     #格納
@@ -101,7 +101,7 @@ if $msg.tag == "Player binds the succubus"
       tx["md"] = "3"
       #途中で行動をキャンセルした場合
       if $game_switches[89] == true
-        tx["tx1"] = "「Yes, that's how it should be.\n Now that I know how mature you are,\n let's proceed without any tactlessness\\H」"
+        tx["tx1"] = "\"Yes, that's how it should be.\n Now that I know how mature you are,\n let's proceed without any tactlessness\\H\""
         tx["md"] = "3"
       end
     end
@@ -177,26 +177,26 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「I'm thinking now's the time\n to dig into you, #{target}....\\H」"
-      tx["tx1"] = "「I can't take this anymore....\n Accept my love, will you....\\H」" if $msg.t_enemy.crisis? == true
-      tx["tx1"] = "「Quivering in delight like that....\n Luring me that temptingly will\n stimulate me that much more....\\H」" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"I'm thinking now's the time\n to dig into you, #{target}....\\H\""
+      tx["tx1"] = "\"I can't take this anymore....\n Accept my love, will you....\\H\"" if $msg.t_enemy.crisis? == true
+      tx["tx1"] = "\"Quivering in delight like that....\n Luring me that temptingly will\n stimulate me that much more....\\H\"" if $msg.t_target.crisis? == true
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「You don't want to be on bottom?\n Then you better show me you're a man that'd\n pin me down and make me squeal\\H」"
+      tx["tx1"] = "\"You don't want to be on bottom?\n Then you better show me you're a man that'd\n pin me down and make me squeal\\H\""
       tx["md"] = "0"
       if $msg.t_target.crisis? == true
-        tx["tx1"] = "「It's so adorable to see you\n fighting it desperately, #{target}....\\H\n I'm going to make you surrender in my arms\\H」"
+        tx["tx1"] = "\"It's so adorable to see you\n fighting it desperately, #{target}....\\H\n I'm going to make you surrender in my arms\\H\""
         tx["md"] = "0"
       end
-      tx["tx1"] = "「Augh, so mean....」" if $msg.t_enemy.crisis? == true
+      tx["tx1"] = "\"Augh, so mean....」" if $msg.t_enemy.crisis? == true
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「Aahaa....\\H Nothing beats this....\\H\n This moment that lets me feel most intimate with the partner I'm getting in on with\n makes me the happiest....\\H」"
-      tx["tx1"] = "「Aha, I knew experiencing it directly is a whole different level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H」" if $msg.t_target.crisis? == true
-      tx["tx1"] = "「I can feel you deep inside my stomach, #{target}....\\H\n Maybe giving love in my pussy will\n make you happier a little....? \\H」" if $msg.t_enemy.crisis? == true
+      tx["tx1"] = "\"Aahaa....\\H Nothing beats this....\\H\n This moment that lets me feel most intimate with the partner I'm getting in on with\n makes me the happiest....\\H\""
+      tx["tx1"] = "\"Aha, I knew experiencing it directly is a whole different level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"I can feel you deep inside my stomach, #{target}....\\H\n Maybe giving love in my pussy will\n make you happier a little....? \\H\"" if $msg.t_enemy.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
-        tx["tx1"] = "「Nnnhh....\\H #{giggle_s} You wanted to dig in?\n But you see, I like to have more of a challenge than some docile men.\n I wonder how you'll taste, #{target}....\\H」"
-        tx["tx1"] = "「Ufufu....\\H You're great, #{target}....\\H\n Would you mind giving\n me love just like this....? \\H」" if $msg.t_enemy.crisis? == true
-        tx["tx1"] = "「#{giggle_s} ....So you'll let me eat you as I please?\n But I can't say if being that defenseless is alright,\n seeing how greedy #{myname} can be....\\H」" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"Nnnhh....\\H #{giggle_s} You wanted to dig in?\n But you see, I like to have more of a challenge than some docile men.\n I wonder how you'll taste, #{target}....\\H\""
+        tx["tx1"] = "\"Ufufu....\\H You're great, #{target}....\\H\n Would you mind giving\n me love just like this....? \\H\"" if $msg.t_enemy.crisis? == true
+        tx["tx1"] = "\"#{giggle_s} ....So you'll let me eat you as I please?\n But I can't say if being that defenseless is alright,\n seeing how greedy #{myname} can be....\\H\"" if $msg.t_target.crisis? == true
       end
     end
     #格納
@@ -208,13 +208,13 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「I want you to feel the smell\n of my vulgar desires, #{target}....\\H」"
+      tx["tx1"] = "\"I want you to feel the smell\n of my vulgar desires, #{target}....\\H\""
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"You'll hurt my feelings by refusing me like that....\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「Ufufu....I wonder how my nectars taste\\H\n Looking at my own vulgarness like this\n feels so kinky it gives me the shivers....\\H」"
+      tx["tx1"] = "\"Ufufu....I wonder how my nectars taste\\H\n Looking at my own vulgarness like this\n feels so kinky it gives me the shivers....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「Wow you're lecherous, #{target}\\H\n That's fine though, I want you to\n thoroughly savor of my arousal\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"Wow you're lecherous, #{target}\\H\n That's fine though, I want you to\n thoroughly savor of my arousal\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -225,14 +225,14 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「Just leave your body to me....\n Accept the pleasure\n #{myname} provide you....\\H」"
+      tx["tx1"] = "\"Just leave your body to me....\n Accept the pleasure\n #{myname} provide you....\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「Not a fan of playing along?\n That must mean you'll be able to\n satisfy me properly\\H」"
+      tx["tx1"] = "\"Not a fan of playing along?\n That must mean you'll be able to\n satisfy me properly\\H\""
       tx["md"] = "0"
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「#{giggle_s} ....Good boy\\H\n For being so obedient,\n you get to be my captive, #{target}....\\H」"
+      tx["tx1"] = "\"#{giggle_s} ....Good boy\\H\n For being so obedient,\n you get to be my captive, #{target}....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「*Giggle....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"*Giggle....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -245,33 +245,33 @@ elsif $msg.tag == "Succubus binds the player."
     if $msg.t_target.have_ability?(12) #ロウラット胸弱点
       case $msg.talk_step
       when 1 #ホールドレジスト中
-       tx["tx1"] = "「Have a look.... At the vulgar sight\n of your manhood getting swallowed up by the soft cleavage, #{target}\\H\n Don't you feel like it's going to melt from doted by breasts....? \\H」"
+       tx["tx1"] = "\"Have a look.... At the vulgar sight\n of your manhood getting swallowed up by the soft cleavage, #{target}\\H\n Don't you feel like it's going to melt from doted by breasts....? \\H\""
       when 2 #ホールドレジスト成功
-       tx["tx1"] = "「#{giggle} You sure you don't like it?\n Even after shaking off from it, you won't take your eyes off from my breasts\\H\n You can't possibly ignore your desire now that it has sprouted....\\H」"
+       tx["tx1"] = "\"#{giggle} You sure you don't like it?\n Even after shaking off from it, you won't take your eyes off from my breasts\\H\n You can't possibly ignore your desire now that it has sprouted....\\H\""
        tx["md"] = "0"
       when 3 #ホールドレジスト失敗
-       tx["tx1"] = "「#{giggle} I know you like big breasts.\n You're making sweet moans just from wrapping it gently\\H\n Just take it easy and savor it to your heart's content....\\H」"
+       tx["tx1"] = "\"#{giggle} I know you like big breasts.\n You're making sweet moans just from wrapping it gently\\H\n Just take it easy and savor it to your heart's content....\\H\""
         #自ら受け入れた場合
-       tx["tx1"] = "「....#{giggle_s}\\H Getting so hard just from touching my breasts\\H\n I'm wondering what ideas you were getting.\n That hopes of yours, I'm going to make them all run wild and gratify them....\\H」" if $game_switches[89] == true
+       tx["tx1"] = "\"....#{giggle_s}\\H Getting so hard just from touching my breasts\\H\n I'm wondering what ideas you were getting.\n Those hopes of yours, I'm going to make them all run wild and gratify them....\\H\"" if $game_switches[89] == true
       end
     else #胸弱点でない
       case $msg.talk_step
       when 1 #ホールドレジスト中
-        tx["tx1"] = "「How do you like my breasts?\n It might swallow it all up and cover it....\\H」"
-        tx["tx1"] = "「With my breasts, I'm going to cover\n your dick down that'll burst at any moment\n and taint your heart in pleasure, #{target}....\\H」" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"How do you like my breasts?\n It might swallow it all up and cover it....\\H\""
+        tx["tx1"] = "\"With my breasts, I'm going to cover\n your dick down that'll burst at any moment\n and taint your heart in pleasure, #{target}....\\H\"" if $msg.t_target.crisis? == true
       when 2 #ホールドレジスト成功
-        tx["tx1"] = "「Was that not what you preferred?\n I was fairly confident for it, but nothing I can do about it.」"
+        tx["tx1"] = "\"Was that not what you preferred?\n I was fairly confident for it, but nothing I can do about it.\""
         if $msg.t_target.crisis? == true
-          tx["tx1"] = "「You're too afraid too leave your body to your inner desires?\n　#{giggle_s}、その気持ちを楽しめるのも\n　今のうちだけよ……\\H」"
+          tx["tx1"] = "\"You're too afraid too leave your body to your inner desires?\n #{giggle_s} You only entertain that feeling\n for so long....\\H\""
           tx["md"] = "0"
         end
       when 3 #ホールドレジスト失敗
-        tx["tx1"] = "「#{giggle_s}、#{target}のここは\n　随分と恥ずかしがり屋さんね\\H\n　すぐにすべてをさらけ出させてあげる……\\H」"
-        tx["tx1"] = "「#{giggle_s}、すっかり硬くて熱くて……\n　いやらしい願望の匂いがどんどん昇ってくるわ\\H\n　たっぷり溜め込んだ欲望、すべて吐き出しなさい\\H」" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"#{giggle_s} Your dick down here's\n fairly shy, I see\\H\n I'm going to soon have it expose everything....\\H\""
+        tx["tx1"] = "\"#{giggle_s} So hard and hot....\n I can smell more of the the shameful wishes\\H\n Let out every one of the desires you've saved up\\H\"" if $msg.t_target.crisis? == true
         #自ら受け入れた場合
         if $game_switches[89] == true
-          tx["tx1"] = "「#{giggle_s}、想像しちゃったかしら？\n　もちろん期待してくれて構わないわ、\n　#{target}を天国へ導いてあげる\\H」"
-          tx["tx1"] = "「#{giggle_s}、誘われるままに差し出しちゃって……\n　欲望に素直なのはいいことよ、\n　すべてを快楽で真っ白にできるもの……\\H」" if $msg.t_target.crisis? == true
+          tx["tx1"] = "\"#{giggle_s} Did you imagine how it'd be?\n I don't mind if you were eager for to it, of course.\n I'm going to show you the way to heaven, #{target}\\H\""
+          tx["tx1"] = "\"#{giggle_s} Holding it out just as you were lured....\n It's good that you're being honest to your lust.\n You'll be able to make everything pure white in bliss....\\H\"" if $msg.t_target.crisis? == true
         end
       end
     end
@@ -301,22 +301,22 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「少し味見させてもらうわね……\\H」"
-      tx["tx1"] = "「こんなに切なそうに震えちゃって……\n　先走りが溢れて、#{giggle_s}、おいしそう……\\H」" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"I'm going to have a little taste....\\H\""
+      tx["tx1"] = "\"Shuddering that pitifully....\n #{giggle_s} You look so delicious with that precum flowing out....\\H\"" if $msg.t_target.crisis? == true
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「残念、こんなにおいしそうなのに。\n　おあずけされて舌が寂しいわ……\\H」"
+      tx["tx1"] = "\"Such a shame when it looks so delicious.\n Having to wait makes my tongue feel so empty....\\H\""
       tx["md"] = "0"
       if $msg.t_target.crisis? == true
-        tx["tx1"] = "「そんなに慌てちゃって、どうしたの？\n　お口でされるのに弱いのかしら\\H」"
+        tx["tx1"] = "\"Why the panic?\n Is it that you're weak to blowjobs? \\H\""
         tx["md"] = "0"
       end
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「ん……ちゅぱ……#{giggle_s}\\H\n　たくさん吸い舐ってあげるから、\n　がんばって耐えてごらんなさい……\\H」"
-      tx["tx1"] = "「#{giggle_s}、口の中でびくびく脈打ってる……\\H\n　#{myname}の唾液と吐息の熱、\n　微かな舌遣いの機微、感じるかしら……\\H」" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Mmmm....fwah.... #{giggle_s}\\H\n Try to bear it as much as you can,\n because I'm going to suck it and lick it good....\\H\""
+      tx["tx1"] = "\"#{giggle_s} It's twitching and pulsing in my mouth....\\H\n Can you feel my saliva, the heat from my breath,\n and the subtle usage of my tongue....? \\H\"" if $msg.t_target.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
-        tx["tx1"] = "「んふふ\\H　自分から腰を突き出しちゃって……\\H\n　唇が気になっちゃった？　それとも舌？\n　#{giggle_s}、舌なめずりしてあげましょうか\\H」"
-        tx["tx1"] = "「んっ……\\H　もう我慢できなかったの？\n　そう必死だと意地悪したくなっちゃうわ……\n　ほら、#{myname}の吐息を感じて……\\H」" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"Nfufu\\H Sticking out your waist on your own....\\H\n Did you take a liking for my lips? Or my tongue?\n #{giggle_s} Why don't I start with licking my lips\\H\""
+        tx["tx1"] = "\"Mmmmhh....\\H Can't hold it in anymore?\n That franticness makes me want to be mean to you....\n Go ahead and feel my breath....\\H\"" if $msg.t_target.crisis? == true
       end
     end
     #格納
