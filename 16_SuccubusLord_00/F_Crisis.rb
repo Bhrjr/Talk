@@ -57,7 +57,7 @@ when "User onanism"
 #■夢魔がクライシス状態になる
 #パートナーの攻めで夢魔がクライシス
 when "Enemy solo"
-  tx["tx1"] = "\"Aha, that's it, #{target}....\\H\n Like this, don't hold anything back and go all the way....\\H\""
+  tx["tx1"] = "\"Aha, that's it, #{target}....\\H\n Like this, don't hold anything back until I finish....\\H\""
   #格納
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
@@ -140,7 +140,7 @@ when "User onanism"
 #■夢魔がクライシス状態になる
 #パートナーの攻めで夢魔がクライシス
 when "Enemy solo"
-  tx["tx1"] = "\"Aha, that's it, #{target}....\\H\n Like this, don't hold anything back and go all the way....\\H\""
+  tx["tx1"] = "\"Aha, that's it, #{target}....\\H\n Like this, don't hold anything back until I finish....\\H\""
   #格納
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
@@ -215,7 +215,7 @@ when "User onanism"
 #■夢魔がクライシス状態になる
 #パートナーの攻めで夢魔がクライシス
 when "Enemy solo"
-  tx["tx1"] = "\"Aha, that's it, #{target}....\\H\n Like this, don't hold anything back and go all the way....\\H\""
+  tx["tx1"] = "\"Aha, that's it, #{target}....\\H\n Like this, don't hold anything back until I finish....\\H\""
   #格納
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
@@ -289,7 +289,7 @@ when "User onanism"
 #■夢魔がクライシス状態になる
 #パートナーの攻めで夢魔がクライシス
 when "Enemy solo"
-  tx["tx1"] = "\"Aha, that's it, #{target}....\\H\n Like this, don't hold anything back and go all the way....\\H\""
+  tx["tx1"] = "\"Aha, that's it, #{target}....\\H\n Like this, don't hold anything back until I finish....\\H\""
   #格納
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
