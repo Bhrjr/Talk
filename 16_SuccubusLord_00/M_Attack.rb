@@ -143,7 +143,7 @@ class MsgSuccubuslord_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"#{giggle} I need you to be more immersed in it....\\H\n Enough that you're engulfed by the pleasure touching this body\n and don't wish to separate from me....\\H\""
+  tx["tx1"] = "\"#{giggle} I need you to be more intoxicated in it....\\H\n Enough that you're engulfed by the pleasure touching this body\n and don't wish to separate from me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
