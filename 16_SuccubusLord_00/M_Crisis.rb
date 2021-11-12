@@ -29,55 +29,55 @@ class MsgSuccubuslord_A < MsgBase
 #■主人公がクライシス状態になる
 case $msg.tag
 #夢魔の攻めで主人公がクライシス
-when "アクター単独"
+when "User solo"
   case rand(2)
   when 0
-    tx["tx1"] = "「#{giggle} Looks like you're at the threshold\\H\n Leave your body to me as\n I make you surrender in pleasure....\\H」"
+    tx["tx1"] = "\"#{giggle} Looks like you're at the threshold\\H\n Leave your body to me as\n I make you surrender in pleasure....\\H\""
   when 1
-    tx["tx1"] = "「#{giggle_s} Your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H」"
+    tx["tx1"] = "\"#{giggle_s} Your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
   end
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
-when "アクター両者"
-  tx["tx1"] = "「#{giggle_s}……\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H」"
+when "Both users"
+  tx["tx1"] = "\"#{giggle_s}……\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
-when "アクターリバウンド自爆"
-  tx["tx1"] = "「Looks like I managed to pleasured you\\H\n #{giggle_s}....I'm glad for it and all, but I don't want you to be the only one satisfied.\n Make me moan as well....\\H」"
+when "User rebound harm"
+  tx["tx1"] = "\"Looks like I managed to pleasured you\\H\n #{giggle_s}....I'm glad for it and all, but I don't want you to be the only one satisfied.\n Make me moan as well....\\H\""
   #格納
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
-when "アクター自慰"
-  tx["tx1"] = "「You can't take it anymore, perhaps?\n I would've let you use my body\n anytime you wanted, #{target}....\\H」"
+when "User onanism"
+  tx["tx1"] = "\"Can't take it anymore, perhaps?\n I would've let you use my body\n anytime you wanted, #{target}....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔がクライシス状態になる
 #主人公の攻めで夢魔がクライシス
-when "エネミー単独"
-  tx["tx1"] = "「Aaannh....\\H That's so great, #{target}....\\H\n Keep going like that until I finish....\\H」"
+when "Enemy solo"
+  tx["tx1"] = "\"Aaannh....\\H That's so great, #{target}....\\H\n Keep going like that until I finish....\\H\""
   #格納
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
-when "エネミー両者"
-  tx["tx1"] = "「#{giggle}\n Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if 二人で一緒に果てるのも、素敵だと思わない……？\\H」"
+when "Both foes"
+  tx["tx1"] = "\"#{giggle}\n Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
-when "エネミーリバウンド自爆"
-  tx["tx1"] = "「Aha....\\H How persistent of you, #{target}....\\H\n I was going to pleasure you,\n but #{myname} was the one that got pleasured instead Dちゃったわ……\\H」"
+when "Enemy rebound harm"
+  tx["tx1"] = "\"Aha....\\H How persistent of you, #{target}....\\H\n I was going to pleasure you,\n but #{myname} was the one that got pleasured instead....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
-  tx["tx1"] = "「あはっ……\\H　ねぇ、ちゃんと見てくれてるかしら\\H\n　#{target}に見られてこんなになってるの……\n　お願い、#{myname}の火照りを鎮めて……\\H」"
+when "Enemy onanism"
+  tx["tx1"] = "\"Aha....\\H Would you mind watching me properly? \\H\n I'm ending like this from you watching me, #{target}....\n Suppress my heated-up passion, please....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
-when "エネミー仲間攻め"
-  tx["tx1"] = "「こら、ちょっと、やりすぎ……はぅっ\\H\n　だめよ、せっかく#{target}がいるのに\\H\n　勝手に満足したらもったいないわ……あぁんっ\\H」"
+when "Enemy friendly fire"
+  tx["tx1"] = "\"Hey, you're going too far....haugh\\H\n No, not when you're here, #{target}\\H\n It'd be a shame for only me to be satisfied....aannhh\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -107,7 +107,7 @@ class MsgSuccubuslord_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 #■主人公がクライシス状態になる
 case $msg.tag
