@@ -106,7 +106,7 @@ elsif $msg.tag == "Contract"
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
     tx["tx2"] = "\"#{myname}'ve taken a liking to you, #{target}.\n I wonder if you can let me be by your side?\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx3"] = "\"I'll off up this body whenever you want.\n We'll get to make some conversations, and what we'll do at nighttime goes without questin.\n ....What do you say?」"
+    tx["tx3"] = "\"I'll off up this body whenever you want.\n We'll get to share some talks, and what we do at nighttime goes without questin.\n ....What do you say?」"
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約締結(即座に仲間に入る)
   when 2
@@ -118,7 +118,7 @@ elsif $msg.tag == "Contract"
   #▼契約締結(ホームに送る)
   when 3
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Ufufu, thanks.\n Call me if you need something; I'll be waiting at all times\\H\""
+    tx["tx1"] = "\"Ufufu, thanks.\n Call me if you need something. I'll be waiting at all times\\H\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
     tx["tx2"] = "Pecking #{master} on the cheek, \n#{speaker} smiled softly."
     #----------------------------------------------------------------------------------------------------------------------
