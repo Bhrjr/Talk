@@ -190,7 +190,7 @@ elsif $msg.tag == "Succubus binds the player."
       tx["tx1"] = "\"Augh, so mean....」" if $msg.t_enemy.crisis? == true
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Aahaa....\\H Nothing beats this....\\H\n This moment that lets me feel most intimate with the partner I'm getting in on with\n makes me the happiest....\\H\""
-      tx["tx1"] = "\"Aha, I knew experiencing it directly is a whole different level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Aha, I knew experiencing it directly is on a whole new level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
       tx["tx1"] = "\"I can feel you deep inside my stomach, #{target}....\\H\n Maybe giving love in my pussy will\n make you happier a little....? \\H\"" if $msg.t_enemy.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
@@ -552,7 +552,7 @@ elsif $msg.tag == "Succubus binds the player."
       tx["tx1"] = "\"Augh, so mean....」" if $msg.t_enemy.crisis? == true
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Aahaa....\\H Nothing beats this....\\H\n This moment that lets me feel most intimate with the partner I'm getting in on with\n makes me the happiest....\\H\""
-      tx["tx1"] = "\"Aha, I knew experiencing it directly is a whole different level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Aha, I knew experiencing it directly is on a whole new level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
       tx["tx1"] = "\"I can feel you deep inside my stomach, #{target}....\\H\n Maybe giving love in my pussy will\n make you happier a little....? \\H\"" if $msg.t_enemy.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
@@ -894,7 +894,7 @@ elsif $msg.tag == "Succubus binds the player."
       tx["tx1"] = "\"Augh, so mean....」" if $msg.t_enemy.crisis? == true
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Aahaa....\\H Nothing beats this....\\H\n This moment that lets me feel most intimate with the partner I'm getting in on with\n makes me the happiest....\\H\""
-      tx["tx1"] = "\"Aha, I knew experiencing it directly is a whole different level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Aha, I knew experiencing it directly is on a whole new level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
       tx["tx1"] = "\"I can feel you deep inside my stomach, #{target}....\\H\n Maybe giving love in my pussy will\n make you happier a little....? \\H\"" if $msg.t_enemy.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
@@ -1235,7 +1235,7 @@ elsif $msg.tag == "Succubus binds the player."
       tx["tx1"] = "\"Augh, so mean....」" if $msg.t_enemy.crisis? == true
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Aahaa....\\H Nothing beats this....\\H\n This moment that lets me feel most intimate with the partner I'm getting in on with\n makes me the happiest....\\H\""
-      tx["tx1"] = "\"Aha, I knew experiencing it directly is a whole different level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Aha, I knew experiencing it directly is on a whole new level....\\H\n I'm wondering what kind of sound you're making, #{target}.\n Can't wait to see how much fun we can have....\\H\"" if $msg.t_target.crisis? == true
       tx["tx1"] = "\"I can feel you deep inside my stomach, #{target}....\\H\n Maybe giving love in my pussy will\n make you happier a little....? \\H\"" if $msg.t_enemy.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
