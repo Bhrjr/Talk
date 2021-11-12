@@ -36,7 +36,7 @@ class MsgSuccubuslord_A < MsgBase
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{pleasure_l}\n That's it, more, go all the way....\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That's it, more, until I finish....\\H\""
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
@@ -152,7 +152,7 @@ if $msg.t_enemy.have_ability?("Significant Other")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{pleasure_l}\n That's it, more, go all the way....\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That's it, more, until I finish....\\H\""
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
@@ -238,7 +238,7 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{pleasure_l}\n That's it, more, go all the way....\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That's it, more, until I finish....\\H\""
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
@@ -324,7 +324,7 @@ else
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{pleasure_l}\n That's it, more, go all the way....\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That's it, more, until I finish....\\H\""
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
