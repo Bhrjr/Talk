@@ -25,7 +25,7 @@ class MsgSuccubuslord_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle_s}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -36,7 +36,7 @@ class MsgSuccubuslord_A < MsgBase
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{giggle}　今の震え方……本気よね？\n　取り繕ってもだめよ、全部伝わってくるんだから\\H\n　自分のカラダの声、聞かせてあげる……\\H」"
+  tx["tx1"] = "\"#{giggle} The way you're quivering now....must be for real, isn't it?\n You can't brush it aside since I can see it all\\H\n Let me hear the sound your body makes....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -52,7 +52,7 @@ when 1 #初撃
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "「ふふ、とても辛そうね。どうしてそんな顔をするの？\n　快楽を前にして躊躇する必要なんてないわ、\n　欲望のままにこの胸で気持ちよくなっていいのよ\\H」"
+    tx["tx1"] = "\"Ufufu, you look very pleased there. Why are you making that face?\n There's no need to hesitate before the pleasure.\n You should just pleasure yourself with these breasts like you desire\\H\""
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -73,7 +73,7 @@ when 1 #初撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "「ほら、もっと押し付けてあげる\\H\n　#{myname}のカラダに溺れなさい……\\H」"
+  tx["tx1"] = "\"I'm going to press it some more\\H\n Immerse yourself in my body....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -112,7 +112,7 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
-  tx["tx1"] = "「少し意地悪にしてあげただけで……\n　ほら、もう声が止まらないでしょう？\n　理性では抗っても、心とカラダは耐えられない……\\H」"
+  tx["tx1"] = "\"All that from a little cruelty....\n Can't stop squealing now, can you?\n Your reasoning may fight against it, but your mind and body cannot....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -128,7 +128,7 @@ when 7 #本人追撃(一部のみ)
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "「この柔らかな胸に荒れ狂う獣欲を解き放ちたい、\n　この甘やかな谷間を醜悪な肉欲の汚濁で満たしたい、\n　このカラダを卑しい劣情で穢したい……でしょう？」"
+    tx["tx1"] = "\"In these soft breasts, you want to release your animal-like desire running wild,\n fill these sweet cleavages with the repulsive filth from your lust,\n and dirty this body with your shameful passion....right?\""
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -149,7 +149,7 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "「#{target}が素直になれば、\n　好きなだけこの快楽を享受できるのよ\\H\n　さあ……力を抜いて、#{myname}に身を委ねて……\\H」"
+  tx["tx1"] = "\"Just by being honest,\n you'll be able to enjoy this pleasure all you want, #{target}\\H\n Now....just take it easy and yield your body to me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -165,7 +165,7 @@ when 9 #とどめ
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "「どんなに醜く浅ましい欲望も#{myname}が受け止めてあげる\\H\n　いやらしい妄想のままにこのカラダを貪って、\n　#{myname}の胸を煮え滾る白濁で淫らに穢して……\\H」"
+    tx["tx1"] = "\"I'll take in whatever repulsive and shameful desires you have, #{myname}\\H\n Indulge in this body like in your vulgar dreams\n and shamelessly stain my breasts with your seethingdkt cloudiness #{myname}の胸を煮え滾る白濁で淫らに穢して……\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
