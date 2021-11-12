@@ -57,12 +57,12 @@ when "アクター自慰"
 #■夢魔がクライシス状態になる
 #主人公の攻めで夢魔がクライシス
 when "エネミー単独"
-  tx["tx1"] = "「Aaannh....\\H That's so great, #{target}....\\H\n Keep going until I finish like that....\\H」"
+  tx["tx1"] = "「Aaannh....\\H That's so great, #{target}....\\H\n Keep going like that until I finish....\\H」"
   #格納
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
 when "エネミー両者"
-  tx["tx1"] = "「#{giggle}\n　#{target}も限界なんでしょう？\n　二人で一緒に果てるのも、素敵だと思わない……？\\H」"
+  tx["tx1"] = "「#{giggle}\n Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if 二人で一緒に果てるのも、素敵だと思わない……？\\H」"
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
