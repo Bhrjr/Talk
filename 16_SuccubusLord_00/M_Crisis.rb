@@ -67,7 +67,7 @@ when "エネミー両者"
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
 when "エネミーリバウンド自爆"
-  tx["tx1"] = "「あはっ……\\H　#{target}、我慢強いのね……\\H\n　気持ちよくしてあげようと思ったのに、\n　#{myname}が気持ちよくなっちゃったわ……\\H」"
+  tx["tx1"] = "「Aha....\\H How persistent of you, #{target}....\\H\n I was going to pleasure you,\n but #{myname} was the one that got pleasured instead Dちゃったわ……\\H」"
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
