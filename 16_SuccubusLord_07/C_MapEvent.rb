@@ -121,7 +121,7 @@ when "Hungry"
     when 1 # 空腹１人目
       tx["tx1"] = "\"Hey, still no meal yet?\n I can't bear this hunger anymore.\""
       tx["tx2"] = "\"You wouldn't tell me you've forgot about it, would you?\n I highly doubt\n you're such a stingy man.\""
-      tx["tx3"] = "\"I won't take any excuses.\n I know you'll remember it after a good talking-to.\n Right, #{target}....? \\H\""
+      tx["tx3"] = "\"I won't take any excuses.\n You'll learn to remember it after a good talking-to.\n Right, #{target}....? \\H\""
       tx["tx4"] = "#{speaker} is going mad from the hunger!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
