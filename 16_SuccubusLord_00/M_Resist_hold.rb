@@ -214,7 +214,7 @@ elsif $msg.tag == "Succubus binds the player."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "「Ufufu....I wonder how my nectars taste\\H\n Looking at my own vulgarness like this\n feels so kinky it gives me the shivers....\\H」"
       #自ら受け入れた場合
-      tx["tx1"] = "「Wow you're lecherous, #{target}\\H\n That's fine though, I want you to\n thoroughly taste of my arousal\\H」" if $game_switches[89] == true
+      tx["tx1"] = "「Wow you're lecherous, #{target}\\H\n That's fine though, I want you to\n thoroughly savor of my arousal\\H」" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -245,14 +245,14 @@ elsif $msg.tag == "Succubus binds the player."
     if $msg.t_target.have_ability?(12) #ロウラット胸弱点
       case $msg.talk_step
       when 1 #ホールドレジスト中
-       tx["tx1"] = "「Have a look.... At the vulgar sight\n of your manhood getting swallowed up by the soft cleavage, #{target}\\H\n Don't you feel like it's going to #{myname}の胸で甘く愛されて、蕩けてみたいでしょう……\\H」"
+       tx["tx1"] = "「Have a look.... At the vulgar sight\n of your manhood getting swallowed up by the soft cleavage, #{target}\\H\n Don't you feel like it's going to melt from doted by breasts....? \\H」"
       when 2 #ホールドレジスト成功
-       tx["tx1"] = "「#{giggle}　嫌だなんて、本当かしら？\n　振り払ってもまだ#{myname}の胸から目が離せないのに\\H\n　芽生えた欲望を無視なんて、できないわよね……\\H」"
+       tx["tx1"] = "「#{giggle} You sure you don't like it?\n Even after shaking off from it, you won't take your eyes off from my breasts\\H\n You can't possibly ignore your desire now that it has sprouted....\\H」"
        tx["md"] = "0"
       when 3 #ホールドレジスト失敗
-       tx["tx1"] = "「#{giggle}　大きな胸、好きなんでしょう？\n　優しく包み込んであげただけで甘い吐息が漏れてるわ\\H\n　力を抜いて、心行くまで味わってちょうだい……\\H」"
+       tx["tx1"] = "「#{giggle} I know you like big breasts.\n You're making sweet moans just from wrapping it gently\\H\n Just take it easy and savor it to your heart's content....\\H」"
         #自ら受け入れた場合
-       tx["tx1"] = "「……#{giggle_s}\\H　胸に触れただけでこんなに硬くして\\H\n　どんな妄想を膨らませ、期待してくれていたのかしら？\n　その願望、何もかも暴いて満たしてあげる……\\H」" if $game_switches[89] == true
+       tx["tx1"] = "「....#{giggle_s}\\H Getting so hard just from touching my breasts\\H\n I what were the ideas you were getting? どんな妄想を膨らませ、期待してくれていたのかしら？\n　その願望、何もかも暴いて満たしてあげる……\\H」" if $game_switches[89] == true
       end
     else #胸弱点でない
       case $msg.talk_step
