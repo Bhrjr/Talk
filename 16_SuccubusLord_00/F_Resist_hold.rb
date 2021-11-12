@@ -375,7 +375,7 @@ elsif $msg.tag == "Succubus binds the partner."
       #自ら受け入れた場合
       if $game_switches[89] == true
         tx["tx1"] = "\"#{giggle_s} I guess you're\n pretty confident about it, #{target}.\n I can't wait to try the sweetness of the overflowing nectar....\\H\""
-        tx["tx1"] = "\"#{giggle_s}\\H\n Your shameful desires are overflowing and oozing out as a sweet nectar,\n where this shameful princess is just itching to open her mouth....\\H\"" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"#{giggle_s}\\H\n Your shameful desires are overflowing and oozing out as a sweet nectar,\n where this shameful princess is just thirsting to open her mouth....\\H\"" if $msg.t_target.crisis? == true
       end
     end
     #格納
@@ -801,7 +801,7 @@ elsif $msg.tag == "Succubus binds the partner."
       #自ら受け入れた場合
       if $game_switches[89] == true
         tx["tx1"] = "\"#{giggle_s} I guess you're\n pretty confident about it, #{target}.\n I can't wait to try the sweetness of the overflowing nectar....\\H\""
-        tx["tx1"] = "\"#{giggle_s}\\H\n Your shameful desires are overflowing and oozing out as a sweet nectar,\n where this shameful princess is just itching to open her mouth....\\H\"" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"#{giggle_s}\\H\n Your shameful desires are overflowing and oozing out as a sweet nectar,\n where this shameful princess is just thirsting to open her mouth....\\H\"" if $msg.t_target.crisis? == true
       end
     end
     #格納
@@ -1206,7 +1206,7 @@ elsif $msg.tag == "Succubus binds the partner."
       #自ら受け入れた場合
       if $game_switches[89] == true
         tx["tx1"] = "\"#{giggle_s} I guess you're\n pretty confident about it, #{target}.\n I can't wait to try the sweetness of the overflowing nectar....\\H\""
-        tx["tx1"] = "\"#{giggle_s}\\H\n Your shameful desires are overflowing and oozing out as a sweet nectar,\n where this shameful princess is just itching to open her mouth....\\H\"" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"#{giggle_s}\\H\n Your shameful desires are overflowing and oozing out as a sweet nectar,\n where this shameful princess is just thirsting to open her mouth....\\H\"" if $msg.t_target.crisis? == true
       end
     end
     #格納
@@ -1610,7 +1610,7 @@ elsif $msg.tag == "Succubus binds the partner."
       #自ら受け入れた場合
       if $game_switches[89] == true
         tx["tx1"] = "\"#{giggle_s} I guess you're\n pretty confident about it, #{target}.\n I can't wait to try the sweetness of the overflowing nectar....\\H\""
-        tx["tx1"] = "\"#{giggle_s}\\H\n Your shameful desires are overflowing and oozing out as a sweet nectar,\n where this shameful princess is just itching to open her mouth....\\H\"" if $msg.t_target.crisis? == true
+        tx["tx1"] = "\"#{giggle_s}\\H\n Your shameful desires are overflowing and oozing out as a sweet nectar,\n where this shameful princess is just thirsting to open her mouth....\\H\"" if $msg.t_target.crisis? == true
       end
     end
     #格納
