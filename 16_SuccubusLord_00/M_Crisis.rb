@@ -32,32 +32,32 @@ case $msg.tag
 when "アクター単独"
   case rand(2)
   when 0
-    tx["tx1"] = "「#{giggle}　もう限界のようね\\H\n　気持ちよく降参させてあげる、\n　おとなしく身を任せなさい……\\H」"
+    tx["tx1"] = "「#{giggle} Looks like you're at the threshold\\H\n Leave your body to me as\n I make you surrender in pleasure....\\H」"
   when 1
-    tx["tx1"] = "「#{giggle_s}、お顔、蕩けてるわよ\\H\n　そのかわいい表情をもっと見ていたいわ、\n　がんばって耐えてみせてちょうだい\\H」"
+    tx["tx1"] = "「#{giggle_s} Your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H」"
   end
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
 when "アクター両者"
-  tx["tx1"] = "「#{giggle_s}……\\H　ほら、手が止まってるわよ？\n　あまりもたもたするようなら、\n　#{target}のこと、搾り取っちゃうかも……\\H」"
+  tx["tx1"] = "「#{giggle_s}……\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H」"
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
 when "アクターリバウンド自爆"
-  tx["tx1"] = "「#{myname}で気持ちよくなってくれたのね\\H\n　#{giggle_s}……嬉しいけれど、一人で満足しちゃ嫌よ。\n　#{myname}のことも気持ちよくして……\\H」"
+  tx["tx1"] = "「Looks like I managed to pleasured you\\H\n #{giggle_s}....I'm glad for it and all, but I don't want you to be the only one satisfied.\n Make me moan as well....\\H」"
   #格納
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
 when "アクター自慰"
-  tx["tx1"] = "「我慢できなくなっちゃったのかしら？\n　#{target}が望むなら、\n　いつだってこのカラダを使わせてあげるのに……\\H」"
+  tx["tx1"] = "「You can't take it anymore, perhaps?\n I would've let you use my body\n anytime you wanted, #{target}....\\H」"
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔がクライシス状態になる
 #主人公の攻めで夢魔がクライシス
 when "エネミー単独"
-  tx["tx1"] = "「あぁん……\\H　#{target}、とてもいいわ……\\H\n　そのまま最後まで続けてちょうだい……\\H」"
+  tx["tx1"] = "「Aaannh....\\H That's so great, #{target}....\\H\n Keep going until I finish like that....\\H」"
   #格納
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
