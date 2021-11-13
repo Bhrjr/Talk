@@ -37,7 +37,7 @@ when 1 #初撃
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "\"You know very well that you can't escape, #{target}.\n Even a slight touch makes you like this....\\H\""
+  tx["tx1"] = "\"You know very well you can't escape, #{target}.\n Even a slight touch makes you like this....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -350,7 +350,7 @@ when 1 #初撃
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "\"You know very well that you can't escape, #{target}.\n Even a slight touch makes you like this....\\H\""
+  tx["tx1"] = "\"You know very well you can't escape, #{target}.\n Even a slight touch makes you like this....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -635,7 +635,7 @@ when 1 #初撃
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "\"You know very well that you can't escape, #{target}.\n Even a slight touch makes you like this....\\H\""
+  tx["tx1"] = "\"You know very well you can't escape, #{target}.\n Even a slight touch makes you like this....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -919,7 +919,7 @@ when 1 #初撃
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "\"You know very well that you can't escape, #{target}.\n Even a slight touch makes you like this....\\H\""
+  tx["tx1"] = "\"You know very well you can't escape, #{target}.\n Even a slight touch makes you like this....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
