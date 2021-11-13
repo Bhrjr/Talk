@@ -65,7 +65,7 @@ if $msg.tag == "Start the Battle"
     when 0 #１番目
       tx["tx1"] = "\"Hello there!\n Wanna play with us, #{target}?\""
     when 1 #２番目
-      tx["tx1"] = "\"Hey, hey, where'd you come from?\n #{myname}'m an Imp, nice to meetcha!\""
+      tx["tx1"] = "\"Hey hey, where'd you come from?\n #{myname}'m an Imp, nice to meetcha!\""
     when 2 #３番目
       tx["tx1"] = "\"#{giggle}\n You're so tall, #{target}♪\n C'mere and hug me tight\\H\""
     end
