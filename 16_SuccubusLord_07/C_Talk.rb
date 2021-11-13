@@ -318,7 +318,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Sharing love with kind words\n is a whole new way to overflow your desires....\\H\""
-    tx["tx2"] = "\"Say, #{target}....\\H\n Staying true to our lust, let's pursue each other\n deeper and more clearly until our hearts overlap....\\H\"" 
+    tx["tx2"] = "\"Say, #{target}....\\H\n Staying true to our lust, let's pursue each other\n deeper and clearer until our hearts overlap....\\H\"" 
     tx["tx2"] = "\"I know you want to overlap our bodies\n and melt in full with me, #{target}\\H\n Hold me tight just the way you want....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -827,7 +827,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Sharing love with kind words\n is a whole new way to overflow your desires....\\H\""
-    tx["tx2"] = "\"Hey, #{target}....\\H\n Staying true to our lust, let's pursue each other\n deeper and more clearly until our hearts overlap....\\H\"" 
+    tx["tx2"] = "\"Hey, #{target}....\\H\n Staying true to our lust, let's pursue each other\n deeper and clearer until our hearts overlap....\\H\"" 
     tx["tx2"] = "\"I know you want to overlap our bodies\n and melt in full with me, #{target}\\H\n Hold me tight just the way you want....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1262,7 +1262,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Sharing love with kind words\n is a whole new way to overflow your desires....\\H\""
-    tx["tx2"] = "\"Hey, #{target}....\\H\n Staying true to our lust, let's pursue each other\n deeper and more clearly until our hearts overlap....\\H\"" 
+    tx["tx2"] = "\"Hey, #{target}....\\H\n Staying true to our lust, let's pursue each other\n deeper and clearer until our hearts overlap....\\H\"" 
     tx["tx2"] = "\"I know you want to overlap our bodies\n and melt in full with me, #{target}\\H\n Hold me tight just the way you want....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1696,7 +1696,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Sharing love with kind words\n is a whole new way to overflow your desires....\\H\""
-    tx["tx2"] = "\"Hey, #{target}....\\H\n Staying true to our lust, let's pursue each other\n deeper and more clearly until our hearts overlap....\\H\"" 
+    tx["tx2"] = "\"Hey, #{target}....\\H\n Staying true to our lust, let's pursue each other\n deeper and clearer until our hearts overlap....\\H\"" 
     tx["tx2"] = "\"I know you want to overlap our bodies\n and melt in full with me, #{target}\\H\n Hold me tight just the way you want....\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
