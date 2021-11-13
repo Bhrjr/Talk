@@ -28,7 +28,7 @@ class MsgSuccubuslord_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -36,7 +36,7 @@ if $msg.t_enemy.have_ability?("大切な人")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{target}の欲望、\n　#{myname}のカラダで満たしてあげる\\H\n　力を抜いて、#{myname}に身を任せて……\\H」"
+  tx["tx1"] = "\"Let me fulfill your\n desires with my body, #{target}\\H\n Just relax and leave your body to me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
@@ -48,8 +48,8 @@ if $msg.t_enemy.have_ability?("大切な人")
                           tx={}
 case $msg.at_type
 #▼キス▼****************************************************************************************
-when "キス"
-  tx["tx1"] = "「#{kiss_l}\n　……#{giggle_s}\\H　理性も思考も全部吸い出して、\n　気持ちいいこと以外何も考えられなくしてあげる\\H」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\n ....#{giggle_s}\\H I'm going to suck out both your reason and mind and\n make you unable to think of anything other than pleasure\\H\""
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -76,18 +76,18 @@ when "口"
   #格納
   ms.push(tx)
 #▼胸攻め▼****************************************************************************************
-when "胸"
+when "breasts"
   case $msg.at_parts
-  when "対象：ペニス" #パイズリ
+  when "Target: Penis" #パイズリ
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
-    tx["tx1"] = "「ほら……#{target}の大事なところ、\n　この胸でたっぷりと余すことなく愛してあげる\\H\n　力を抜いて、柔らかな感触に身を委ねて……\\H」"
-    tx["tx1"] = "「あん、挟んだだけで跳ねて……#{giggle_s}、暴れん坊ね\\H\n　欲望に満ちた素敵な#{target}のコ、\n　優しく快楽で包み込んで、甘く蕩けさせてあげるわ\\H」" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"....With these breasts of mine,\n I'm going to thoroughly provide love to your precious area, #{target}\\H\n Just relax and surrender your body to the soft sensation....\\H\""
+    tx["tx1"] = "\"Aaaanh, jumping up from just sticking it in.... #{giggle_s} What a wild child\\H\n Your little fellow here filled with desires,\n I'm going to gently wrap it in pleasure and mesmerize it in ecstasy\\H\"" if $game_variables[17] > 50 #ランダム分岐
     if $msg.t_target.crisis? #対象がクライシス
-      tx["tx1"] = "「#{giggle}　すっかり蕩けちゃって……\\H\n　いいのよ、この胸をどろどろに穢しても……\\H　煮え滾る白濁、欲望のままに吐き出してちょうだい\\H」"
-      tx["tx1"] = "「……#{giggle_s}\\H　こんなに硬く、熱くして……\n　#{myname}の胸が劣情で溶かされちゃいそうだわ……\\H\n　期待と欲望のままに、心まで蕩けさせてあげる……\\H」" if $game_variables[17] > 50 #ランダム分岐
+      tx["tx1"] = "\"#{giggle} To be utterly mesmerized like that....\\H\n Alright then, make this breast all sticky and stained if that's what you want....\\H Release your boiling hot cloudiness as you desire\\H\""
+      tx["tx1"] = "\"....#{giggle_s}\\H So hard and hard....\n My breasts' going to melt from the animal-like passion....\\H\n As you wish, I'll have even your heart fascinated....\\H\"" if $game_variables[17] > 50 #ランダム分岐
     end
   when "対象：口" #ぱふぱふ
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -147,7 +147,7 @@ end #case $msg.at_parts
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -155,7 +155,7 @@ elsif $msg.t_enemy.have_ability?("寵愛")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{target}の欲望、\n　#{myname}のカラダで満たしてあげる\\H\n　力を抜いて、#{myname}に身を任せて……\\H」"
+  tx["tx1"] = "\"Let me fulfill your\n desires with my body, #{target}\\H\n Just relax and leave your body to me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
@@ -167,8 +167,8 @@ elsif $msg.t_enemy.have_ability?("寵愛")
                           tx={}
 case $msg.at_type
 #▼キス▼****************************************************************************************
-when "キス"
-  tx["tx1"] = "「#{kiss_l}\n　……#{giggle_s}\\H　理性も思考も全部吸い出して、\n　気持ちいいこと以外何も考えられなくしてあげる\\H」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\n ....#{giggle_s}\\H I'm going to suck out both your reason and mind and\n make you unable to think of anything other than pleasure\\H\""
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -195,18 +195,18 @@ when "口"
   #格納
   ms.push(tx)
 #▼胸攻め▼****************************************************************************************
-when "胸"
+when "breasts"
   case $msg.at_parts
-  when "対象：ペニス" #パイズリ
+  when "Target: Penis" #パイズリ
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
-    tx["tx1"] = "「ほら……#{target}の大事なところ、\n　この胸でたっぷりと余すことなく愛してあげる\\H\n　力を抜いて、柔らかな感触に身を委ねて……\\H」"
-    tx["tx1"] = "「あん、挟んだだけで跳ねて……#{giggle_s}、暴れん坊ね\\H\n　欲望に満ちた素敵な#{target}のコ、\n　優しく快楽で包み込んで、甘く蕩けさせてあげるわ\\H」" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"....With these breasts of mine,\n I'm going to thoroughly provide love to your precious area, #{target}\\H\n Just relax and surrender your body to the soft sensation....\\H\""
+    tx["tx1"] = "\"Aaaanh, jumping up from just sticking it in.... #{giggle_s} What a wild child\\H\n Your little fellow here filled with desires,\n I'm going to gently wrap it in pleasure and mesmerize it in ecstasy\\H\"" if $game_variables[17] > 50 #ランダム分岐
     if $msg.t_target.crisis? #対象がクライシス
-      tx["tx1"] = "「#{giggle}　すっかり蕩けちゃって……\\H\n　いいのよ、この胸をどろどろに穢しても……\\H　煮え滾る白濁、欲望のままに吐き出してちょうだい\\H」"
-      tx["tx1"] = "「……#{giggle_s}\\H　こんなに硬く、熱くして……\n　#{myname}の胸が劣情で溶かされちゃいそうだわ……\\H\n　期待と欲望のままに、心まで蕩けさせてあげる……\\H」" if $game_variables[17] > 50 #ランダム分岐
+      tx["tx1"] = "\"#{giggle} To be utterly mesmerized like that....\\H\n Alright then, make this breast all sticky and stained if that's what you want....\\H Release your boiling hot cloudiness as you desire\\H\""
+      tx["tx1"] = "\"....#{giggle_s}\\H So hard and hard....\n My breasts' going to melt from the animal-like passion....\\H\n As you wish, I'll have even your heart fascinated....\\H\"" if $game_variables[17] > 50 #ランダム分岐
     end
   when "対象：口" #ぱふぱふ
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -272,7 +272,7 @@ else
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{target}の欲望、\n　#{myname}のカラダで満たしてあげる\\H\n　力を抜いて、#{myname}に身を任せて……\\H」"
+  tx["tx1"] = "\"Let me fulfill your\n desires with my body, #{target}\\H\n Just relax and leave your body to me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
@@ -284,8 +284,8 @@ else
                           tx={}
 case $msg.at_type
 #▼キス▼****************************************************************************************
-when "キス"
-  tx["tx1"] = "「#{kiss_l}\n　……#{giggle_s}\\H　理性も思考も全部吸い出して、\n　気持ちいいこと以外何も考えられなくしてあげる\\H」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\n ....#{giggle_s}\\H I'm going to suck out both your reason and mind and\n make you unable to think of anything other than pleasure\\H\""
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -312,18 +312,18 @@ when "口"
   #格納
   ms.push(tx)
 #▼胸攻め▼****************************************************************************************
-when "胸"
+when "breasts"
   case $msg.at_parts
-  when "対象：ペニス" #パイズリ
+  when "Target: Penis" #パイズリ
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #    tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
-    tx["tx1"] = "「ほら……#{target}の大事なところ、\n　この胸でたっぷりと余すことなく愛してあげる\\H\n　力を抜いて、柔らかな感触に身を委ねて……\\H」"
-    tx["tx1"] = "「あん、挟んだだけで跳ねて……#{giggle_s}、暴れん坊ね\\H\n　欲望に満ちた素敵な#{target}のコ、\n　優しく快楽で包み込んで、甘く蕩けさせてあげるわ\\H」" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"....With these breasts of mine,\n I'm going to thoroughly provide love to your precious area, #{target}\\H\n Just relax and surrender your body to the soft sensation....\\H\""
+    tx["tx1"] = "\"Aaaanh, jumping up from just sticking it in.... #{giggle_s} What a wild child\\H\n Your little fellow here filled with desires,\n I'm going to gently wrap it in pleasure and mesmerize it in ecstasy\\H\"" if $game_variables[17] > 50 #ランダム分岐
     if $msg.t_target.crisis? #対象がクライシス
-      tx["tx1"] = "「#{giggle}　すっかり蕩けちゃって……\\H\n　いいのよ、この胸をどろどろに穢しても……\\H　煮え滾る白濁、欲望のままに吐き出してちょうだい\\H」"
-      tx["tx1"] = "「……#{giggle_s}\\H　こんなに硬く、熱くして……\n　#{myname}の胸が劣情で溶かされちゃいそうだわ……\\H\n　期待と欲望のままに、心まで蕩けさせてあげる……\\H」" if $game_variables[17] > 50 #ランダム分岐
+      tx["tx1"] = "\"#{giggle} To be utterly mesmerized like that....\\H\n Alright then, make this breast all sticky and stained if that's what you want....\\H Release your boiling hot cloudiness as you desire\\H\""
+      tx["tx1"] = "\"....#{giggle_s}\\H So hard and hard....\n My breasts' going to melt from the animal-like passion....\\H\n As you wish, I'll have even your heart fascinated....\\H\"" if $game_variables[17] > 50 #ランダム分岐
     end
   when "対象：口" #ぱふぱふ
 #    tx["tx1"] = "「#{giggle_s}……\\H」"
@@ -411,7 +411,7 @@ class MsgSuccubuslord_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -419,7 +419,7 @@ if $msg.t_enemy.have_ability?("大切な人")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}　ほら、もっと酔いしれて……\\H\n　このカラダと触れ合う快楽に溺れて、\n　#{myname}から離れたくなくなるくらいに……\\H」"
+  tx["tx1"] = "\"#{giggle} I need you to be more intoxicated in it....\\H\n Enough that you're engulfed by the pleasure touching this body\n and don't wish to separate from me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
@@ -458,40 +458,40 @@ when "ぱふぱふ"
   #格納
   ms.push(tx)
 #▼パイズリ▼****************************************************************************************
-when "パイズリ"
+when "Paizuri"
 #  tx["tx1"] = ""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
   case $msg.t_enemy.initiative_level
   when 3 #ホールドレベル3
     if $msg.t_target.crisis? #対象がクライシス
-      tx["tx1"] = "「谷間から顔を出すたび涎でべとべとにして……\n　#{giggle_s}……、牡の昂りで穢されていくようだわ\\H\n　ぬるついて、艶やかに濡れ光って……素敵な化粧ね\\H」"
-      tx["tx1"] = "「#{target}の涎でぬるぬるで、\n　抑え込んでも反り返って……その刺激で勝手に喘いで\\H\n　#{giggle_s}……とても倒錯的で、素敵な姿よ……\\H」" if $game_variables[17] > 33 #ランダム分岐
-      tx["tx1"] = "「乳房で擦り上げるたびににちゃにちゃ鳴って……\n　ふふ……こんなにいやらしくされたお返しが必要ね？\n　この淫猥な胸で、心まで快楽で満たしてあげる……\\H」" if $game_variables[17] > 66 #ランダム分岐
+      tx["tx1"] = "\"Gettting sticky with droll every time your face is pulled out from the cleavage....\n #{giggle_s}.... It's like I'm getting soiled by a male arousal\\H\n Smearing it and giving it a glossy sheen....what a great salve\\H\""
+      tx["tx1"] = "\"I've gotten all slimy from your drool and\n pushing you down just makes you slouch back....gasping so candidly and stimulatingly like that\\H\n #{giggle_s} ....Such a perverse and marvelous look....\\H\"" if $game_variables[17] > 33 #ランダム分岐
+      tx["tx1"] = "\"Every rub from my breasts makes slimy noises....\n Ufufu....looks like you need something indecent like this as paybacks.\n With these shameful breasts, I'm going to indulge even your heart in pleasure....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
-        tx["tx1"] = "「#{giggle_s}……必死になって我慢なんてしなくていいの、\n　理性まで蕩けるよう、思い切りしごき上げてあげる\\H\n　乳房で挟み潰され嬲られる快感、愉しみなさい……\\H」"
-        tx["tx1"] = "「小さなお口が開きっぱなし……涎が止まらないのね\\H\n　……ふふ、吐息にすら敏感に反応して、節操のないコ\\H\n　唇や吐息も使ってかわいがってあげる……ちゅっ\\H」" if $game_variables[17] > 33 #ランダム分岐
-        tx["tx1"] = "「強く締め上げられるたびに腰を震わせて悦んで……\n　ふふ、こうして甘く嬲られるのが好きなのね\\H\n　たっぷり味わいなさい……大好きな胸の感触を……\\H」" if $game_variables[17] > 66 #ランダム分岐
+        tx["tx1"] = "\"#{giggle_s} ....No need to desperately try and fight it.\n I'm going to stroke it as hard as I can to erode even your reasoning\\H\n Enjoy the pleasure of being crushed and teased by the breasts....\\H\""
+        tx["tx1"] = "\"Your tiny mouth keeps staying open....and the drools won't stop\\H\n .....Ufufu, reacting sensitively to breathing even, what a fickle manhood\\H\n I'll pamper you by using my lips and breathing as well....smooch\\H\"" if $game_variables[17] > 33 #ランダム分４岐
+        tx["tx1"] = "\"Shaking your hips in delight every time I squeeze it firmly....\n Nfufu, so you like to be teased lightly like this\\H\n Get a good taste of it....the sensation of your favorite breasts....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     else #非クライシス
-      tx["tx1"] = "「優しい温もりに包まれて、たまらないでしょう？\n　左右から圧迫したままたっぷりしごいてあげる、\n　柔らかな感触をはっきりと感じられるように……\\H」"
-      tx["tx1"] = "「胸に埋めて、ぎゅっと押さえつけて閉じ込めて……\n　少しずつ締め上げて、ゆっくり追い詰めてあげる……\\H\n　#{giggle_s}……今、ぴくりと震えて期待したでしょう\\H」" if $game_variables[17] > 33 #ランダム分岐
-      tx["tx1"] = "「胸の中に閉じ込めて優しく締め上げるたび、\n　硬く雄雄しく反り返って、淫らな熱で膨らんで……\\H\n　#{giggle_s}……#{myname}の胸ごと溶けあってしまいそう……\\H」" if $game_variables[17] > 66 #ランダム分岐
+      tx["tx1"] = "\"Being covered gently by warmth feels irresistible, right?\n While presing it from both sides, I'm going to stroke it good so\n you can get a good feel of the soft soft sensation....\\H\""
+      tx["tx1"] = "\"Burying it in breasts, pressing it tight, and confining it....\n I'm going to tighten it little by little and slowly corner you....\\H\n #{giggle_s} ....That twitch just now must've meant you were enjoying it\\H\"" if $game_variables[17] > 33 #ランダム分岐
+      tx["tx1"] = "\"Having confined it within my breasts, every gentle squeeze makes it\n stiffly bend back and swell up feverishly....\\H\n #{giggle_s} ....I feel like my breasts' going to melt with it....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
-        tx["tx1"] = "「#{giggle}　ほら、少し意地悪してあげる\\H\n　根元から先端まで、胸で絞り上げるように……\\H\n　乳房の潰れる感触、姿、音……愉しんでちょうだい\\H」"
-        tx["tx1"] = "「谷間に収まらないほど物欲しげに反り返ったこのコの、\n　充血して膨らんだ先っぽ、舌で嬲ってあげる……んっ\\H\n　ちゅっ、れろ……ふふ、腰が溶けるようでしょう？\\H」" if $game_variables[17] > 33 #ランダム分岐
-        tx["tx1"] = "「もっと自分から、カラダごと味わってちょうだい？\n　腰ごと抱きしめて、ほら、ぎゅっと押し付けてあげる\\H\n　……#{giggle_s}、いい声ね……うっとりしちゃうわ\\H」" if $game_variables[17] > 66 #ランダム分岐
+        tx["tx1"] = "\"#{giggle} Let me be a bit cruel to you now\\H\n In order to wring it out from the base to the tip with my breasts....\\H\n Enjoy the feel, look and sound....of being crushed by the breasts\\H\""
+        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *Kiss, *lick....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
+        tx["tx1"] = "\"Can you taste more of my body on your own?\n I'm going to embrace your whole waist and press it tight\\H\n ....#{giggle_s} What a nice cry....it's going to mesmerize me....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     end
   when 2 #ホールドレベル2
-    tx["tx1"] = "「優しく挟み込んで、柔らかく揉みこんで……#{giggle_s}\\H\n　#{myname}の胸の温もり、しっかり味わって蕩けなさい\\H\n　……ふふ、一層硬くして……もっとして欲しいの？\\H」"
-    tx["tx1"] = "「ほら、力を抜いて……カラダの奥までほぐしてあげる\\H\n　柔らかな胸に包まれて、たぷたぷと優しく揺れて……\n　甘美なまどろみの中を泳いでいるようでしょう……\\H」" if $game_variables[17] > 50 #ランダム分岐
-    tx["tx1"] = "「#{giggle}　気持ちよくて力が抜けちゃったのね？\n　大事なところを胸の谷間に囚われたまま逃れられずに、\n　優しく嬲られ続ける無力感……興奮するでしょう？\\H」" if $msg.t_target.critical == true #ホールドレベル1→2
+    tx["tx1"] = "\"Sticking it in gently and rubbing it softly.... #{giggle_s}\\H\n I want you to get a full taste of my breasts' warmth and be enthralled by it\\H\n ....Ufufu, it's still getting harder....you want more? \\H\""
+    tx["tx1"] = "\"Just relax and....I'm going to thoroughly loosen up your body\\H\n Covering it in my soft breasts and shaking it gently....\n Doesn't it feel like you're swimming in a sweet nap....? \\H\"" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"#{giggle} You've been worn down by the pleasure, haven't you?\n Unable to escape while having your precious area seized by my cleavage,\n the helpless feeling of getting gently teased....doesn't it arouse you? \\H\"" if $msg.t_target.critical == true #ホールドレベル1→2
   else #ホールドレベル1
-    tx["tx1"] = "「そんなにもがいていたら満足に味わえないでしょう？\n　大人しくして、湧き上がる欲望に身を任せて……\n　柔らかに絡め取られる恍惚に溺れなさい……\\H」"
-    tx["tx1"] = "「んっ……だめよ、簡単には放してあげられないわ。\n　#{target}のここは、まだ足りない、\n　もっと抱きしめてほしいって訴えてきてるもの……\\H」" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"Struggling like that won't let you savor it in full.\n Just hold still and surrender your body to your desire welling up....\n Immerse yourself in the ecstasy gently entangling you....\\H\""
+    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading me for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
   end
-  tx["tx1"] = "「#{giggle_s}……まだ優しくしてあげたほうがいいかしら？\n　落ち着くまでこうやってゆるく包み込んでいてあげる\\H\n　大丈夫よ、すぐにまたシて欲しくなるわ……\\H」" if $msg.t_target.weaken? #対象が絶頂中
+  tx["tx1"] = "\"#{giggle_s} ....Maybe I should've been gentler for now?\n I'll wrap it slowly like this until you settle down\\H\n Don't you worry, you'll want to do it again in no time....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -531,7 +531,7 @@ end #case $msg.at_parts
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -539,7 +539,7 @@ elsif $msg.t_enemy.have_ability?("寵愛")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}　ほら、もっと酔いしれて……\\H\n　このカラダと触れ合う快楽に溺れて、\n　#{myname}から離れたくなくなるくらいに……\\H」"
+  tx["tx1"] = "\"#{giggle} I need you to be more intoxicated in it....\\H\n Enough that you're engulfed by the pleasure touching this body\n and don't wish to separate from me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
@@ -578,40 +578,40 @@ when "ぱふぱふ"
   #格納
   ms.push(tx)
 #▼パイズリ▼****************************************************************************************
-when "パイズリ"
+when "Paizuri"
 #  tx["tx1"] = ""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
   case $msg.t_enemy.initiative_level
   when 3 #ホールドレベル3
     if $msg.t_target.crisis? #対象がクライシス
-      tx["tx1"] = "「谷間から顔を出すたび涎でべとべとにして……\n　#{giggle_s}……、牡の昂りで穢されていくようだわ\\H\n　ぬるついて、艶やかに濡れ光って……素敵な化粧ね\\H」"
-      tx["tx1"] = "「#{target}の涎でぬるぬるで、\n　抑え込んでも反り返って……その刺激で勝手に喘いで\\H\n　#{giggle_s}……とても倒錯的で、素敵な姿よ……\\H」" if $game_variables[17] > 33 #ランダム分岐
-      tx["tx1"] = "「乳房で擦り上げるたびににちゃにちゃ鳴って……\n　ふふ……こんなにいやらしくされたお返しが必要ね？\n　この淫猥な胸で、心まで快楽で満たしてあげる……\\H」" if $game_variables[17] > 66 #ランダム分岐
+      tx["tx1"] = "\"Gettting sticky with droll every time your face is pulled out from the cleavage....\n #{giggle_s}.... It's like I'm getting soiled by a male arousal\\H\n Smearing it and giving it a glossy sheen....what a great salve\\H\""
+      tx["tx1"] = "\"I've gotten all slimy from your drool and\n pushing you down just makes you slouch back....gasping so candidly and stimulatingly like that\\H\n #{giggle_s} ....Such a perverse and marvelous look....\\H\"" if $game_variables[17] > 33 #ランダム分岐
+      tx["tx1"] = "\"Every rub from my breasts makes slimy noises....\n Ufufu....looks like you need something indecent like this as paybacks.\n With these shameful breasts, I'm going to indulge even your heart in pleasure....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
-        tx["tx1"] = "「#{giggle_s}……必死になって我慢なんてしなくていいの、\n　理性まで蕩けるよう、思い切りしごき上げてあげる\\H\n　乳房で挟み潰され嬲られる快感、愉しみなさい……\\H」"
-        tx["tx1"] = "「小さなお口が開きっぱなし……涎が止まらないのね\\H\n　……ふふ、吐息にすら敏感に反応して、節操のないコ\\H\n　唇や吐息も使ってかわいがってあげる……ちゅっ\\H」" if $game_variables[17] > 33 #ランダム分岐
-        tx["tx1"] = "「強く締め上げられるたびに腰を震わせて悦んで……\n　ふふ、こうして甘く嬲られるのが好きなのね\\H\n　たっぷり味わいなさい……大好きな胸の感触を……\\H」" if $game_variables[17] > 66 #ランダム分岐
+        tx["tx1"] = "\"#{giggle_s} ....No need to desperately try and fight it.\n I'm going to stroke it as hard as I can to erode even your reasoning\\H\n Enjoy the pleasure of being crushed and teased by the breasts....\\H\""
+        tx["tx1"] = "\"Your tiny mouth keeps staying open....and the drools won't stop\\H\n .....Ufufu, reacting sensitively to breathing even, what a fickle manhood\\H\n I'll pamper you by using my lips and breathing as well....smooch\\H\"" if $game_variables[17] > 33 #ランダム分４岐
+        tx["tx1"] = "\"Shaking your hips in delight every time I squeeze it firmly....\n Nfufu, so you like to be teased lightly like this\\H\n Get a good taste of it....the sensation of your favorite breasts....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     else #非クライシス
-      tx["tx1"] = "「優しい温もりに包まれて、たまらないでしょう？\n　左右から圧迫したままたっぷりしごいてあげる、\n　柔らかな感触をはっきりと感じられるように……\\H」"
-      tx["tx1"] = "「胸に埋めて、ぎゅっと押さえつけて閉じ込めて……\n　少しずつ締め上げて、ゆっくり追い詰めてあげる……\\H\n　#{giggle_s}……今、ぴくりと震えて期待したでしょう\\H」" if $game_variables[17] > 33 #ランダム分岐
-      tx["tx1"] = "「胸の中に閉じ込めて優しく締め上げるたび、\n　硬く雄雄しく反り返って、淫らな熱で膨らんで……\\H\n　#{giggle_s}……#{myname}の胸ごと溶けあってしまいそう……\\H」" if $game_variables[17] > 66 #ランダム分岐
+      tx["tx1"] = "\"Being covered gently by warmth feels irresistible, right?\n While presing it from both sides, I'm going to stroke it good so\n you can get a good feel of the soft soft sensation....\\H\""
+      tx["tx1"] = "\"Burying it in breasts, pressing it tight, and confining it....\n I'm going to tighten it little by little and slowly corner you....\\H\n #{giggle_s} ....That twitch just now must've meant you were enjoying it\\H\"" if $game_variables[17] > 33 #ランダム分岐
+      tx["tx1"] = "\"Having confined it within my breasts, every gentle squeeze makes it\n stiffly bend back and swell up feverishly....\\H\n #{giggle_s} ....I feel like my breasts' going to melt with it....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
-        tx["tx1"] = "「#{giggle}　ほら、少し意地悪してあげる\\H\n　根元から先端まで、胸で絞り上げるように……\\H\n　乳房の潰れる感触、姿、音……愉しんでちょうだい\\H」"
-        tx["tx1"] = "「谷間に収まらないほど物欲しげに反り返ったこのコの、\n　充血して膨らんだ先っぽ、舌で嬲ってあげる……んっ\\H\n　ちゅっ、れろ……ふふ、腰が溶けるようでしょう？\\H」" if $game_variables[17] > 33 #ランダム分岐
-        tx["tx1"] = "「もっと自分から、カラダごと味わってちょうだい？\n　腰ごと抱きしめて、ほら、ぎゅっと押し付けてあげる\\H\n　……#{giggle_s}、いい声ね……うっとりしちゃうわ\\H」" if $game_variables[17] > 66 #ランダム分岐
+        tx["tx1"] = "\"#{giggle} Let me be a bit cruel to you now\\H\n In order to wring it out from the base to the tip with my breasts....\\H\n Enjoy the feel, look and sound....of being crushed by the breasts\\H\""
+        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *Kiss, *lick....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
+        tx["tx1"] = "\"Can you taste more of my body on your own?\n I'm going to embrace your whole waist and press it tight\\H\n ....#{giggle_s} What a nice cry....it's going to mesmerize me....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     end
   when 2 #ホールドレベル2
-    tx["tx1"] = "「優しく挟み込んで、柔らかく揉みこんで……#{giggle_s}\\H\n　#{myname}の胸の温もり、しっかり味わって蕩けなさい\\H\n　……ふふ、一層硬くして……もっとして欲しいの？\\H」"
-    tx["tx1"] = "「ほら、力を抜いて……カラダの奥までほぐしてあげる\\H\n　柔らかな胸に包まれて、たぷたぷと優しく揺れて……\n　甘美なまどろみの中を泳いでいるようでしょう……\\H」" if $game_variables[17] > 50 #ランダム分岐
-    tx["tx1"] = "「#{giggle}　気持ちよくて力が抜けちゃったのね？\n　大事なところを胸の谷間に囚われたまま逃れられずに、\n　優しく嬲られ続ける無力感……興奮するでしょう？\\H」" if $msg.t_target.critical == true #ホールドレベル1→2
+    tx["tx1"] = "\"Sticking it in gently and rubbing it softly.... #{giggle_s}\\H\n I want you to get a full taste of my breasts' warmth and be enthralled by it\\H\n ....Ufufu, it's still getting harder....you want more? \\H\""
+    tx["tx1"] = "\"Just relax and....I'm going to thoroughly loosen up your body\\H\n Covering it in my soft breasts and shaking it gently....\n Doesn't it feel like you're swimming in a sweet nap....? \\H\"" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"#{giggle} You've been worn down by the pleasure, haven't you?\n Unable to escape while having your precious area seized by my cleavage,\n the helpless feeling of getting gently teased....doesn't it arouse you? \\H\"" if $msg.t_target.critical == true #ホールドレベル1→2
   else #ホールドレベル1
-    tx["tx1"] = "「そんなにもがいていたら満足に味わえないでしょう？\n　大人しくして、湧き上がる欲望に身を任せて……\n　柔らかに絡め取られる恍惚に溺れなさい……\\H」"
-    tx["tx1"] = "「んっ……だめよ、簡単には放してあげられないわ。\n　#{target}のここは、まだ足りない、\n　もっと抱きしめてほしいって訴えてきてるもの……\\H」" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"Struggling like that won't let you savor it in full.\n Just hold still and surrender your body to your desire welling up....\n Immerse yourself in the ecstasy gently entangling you....\\H\""
+    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading me for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
   end
-  tx["tx1"] = "「#{giggle_s}……まだ優しくしてあげたほうがいいかしら？\n　落ち着くまでこうやってゆるく包み込んでいてあげる\\H\n　大丈夫よ、すぐにまたシて欲しくなるわ……\\H」" if $msg.t_target.weaken? #対象が絶頂中
+  tx["tx1"] = "\"#{giggle_s} ....Maybe I should've been gentler for now?\n I'll wrap it slowly like this until you settle down\\H\n Don't you worry, you'll want to do it again in no time....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -657,7 +657,7 @@ else
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}　ほら、もっと酔いしれて……\\H\n　このカラダと触れ合う快楽に溺れて、\n　#{myname}から離れたくなくなるくらいに……\\H」"
+  tx["tx1"] = "\"#{giggle} I need you to be more intoxicated in it....\\H\n Enough that you're engulfed by the pleasure touching this body\n and don't wish to separate from me....\\H\""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.weaken? #対象が絶頂中
@@ -696,40 +696,40 @@ when "ぱふぱふ"
   #格納
   ms.push(tx)
 #▼パイズリ▼****************************************************************************************
-when "パイズリ"
+when "Paizuri"
 #  tx["tx1"] = ""
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_target.crisis? #対象がクライシス
   case $msg.t_enemy.initiative_level
   when 3 #ホールドレベル3
     if $msg.t_target.crisis? #対象がクライシス
-      tx["tx1"] = "「谷間から顔を出すたび涎でべとべとにして……\n　#{giggle_s}……、牡の昂りで穢されていくようだわ\\H\n　ぬるついて、艶やかに濡れ光って……素敵な化粧ね\\H」"
-      tx["tx1"] = "「#{target}の涎でぬるぬるで、\n　抑え込んでも反り返って……その刺激で勝手に喘いで\\H\n　#{giggle_s}……とても倒錯的で、素敵な姿よ……\\H」" if $game_variables[17] > 33 #ランダム分岐
-      tx["tx1"] = "「乳房で擦り上げるたびににちゃにちゃ鳴って……\n　ふふ……こんなにいやらしくされたお返しが必要ね？\n　この淫猥な胸で、心まで快楽で満たしてあげる……\\H」" if $game_variables[17] > 66 #ランダム分岐
+      tx["tx1"] = "\"Gettting sticky with droll every time your face is pulled out from the cleavage....\n #{giggle_s}.... It's like I'm getting soiled by a male arousal\\H\n Smearing it and giving it a glossy sheen....what a great salve\\H\""
+      tx["tx1"] = "\"I've gotten all slimy from your drool and\n pushing you down just makes you slouch back....gasping so candidly and stimulatingly like that\\H\n #{giggle_s} ....Such a perverse and marvelous look....\\H\"" if $game_variables[17] > 33 #ランダム分岐
+      tx["tx1"] = "\"Every rub from my breasts makes slimy noises....\n Ufufu....looks like you need something indecent like this as paybacks.\n With these shameful breasts, I'm going to indulge even your heart in pleasure....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
-        tx["tx1"] = "「#{giggle_s}……必死になって我慢なんてしなくていいの、\n　理性まで蕩けるよう、思い切りしごき上げてあげる\\H\n　乳房で挟み潰され嬲られる快感、愉しみなさい……\\H」"
-        tx["tx1"] = "「小さなお口が開きっぱなし……涎が止まらないのね\\H\n　……ふふ、吐息にすら敏感に反応して、節操のないコ\\H\n　唇や吐息も使ってかわいがってあげる……ちゅっ\\H」" if $game_variables[17] > 33 #ランダム分岐
-        tx["tx1"] = "「強く締め上げられるたびに腰を震わせて悦んで……\n　ふふ、こうして甘く嬲られるのが好きなのね\\H\n　たっぷり味わいなさい……大好きな胸の感触を……\\H」" if $game_variables[17] > 66 #ランダム分岐
+        tx["tx1"] = "\"#{giggle_s} ....No need to desperately try and fight it.\n I'm going to stroke it as hard as I can to erode even your reasoning\\H\n Enjoy the pleasure of being crushed and teased by the breasts....\\H\""
+        tx["tx1"] = "\"Your tiny mouth keeps staying open....and the drools won't stop\\H\n .....Ufufu, reacting sensitively to breathing even, what a fickle manhood\\H\n I'll pamper you by using my lips and breathing as well....smooch\\H\"" if $game_variables[17] > 33 #ランダム分４岐
+        tx["tx1"] = "\"Shaking your hips in delight every time I squeeze it firmly....\n Nfufu, so you like to be teased lightly like this\\H\n Get a good taste of it....the sensation of your favorite breasts....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     else #非クライシス
-      tx["tx1"] = "「優しい温もりに包まれて、たまらないでしょう？\n　左右から圧迫したままたっぷりしごいてあげる、\n　柔らかな感触をはっきりと感じられるように……\\H」"
-      tx["tx1"] = "「胸に埋めて、ぎゅっと押さえつけて閉じ込めて……\n　少しずつ締め上げて、ゆっくり追い詰めてあげる……\\H\n　#{giggle_s}……今、ぴくりと震えて期待したでしょう\\H」" if $game_variables[17] > 33 #ランダム分岐
-      tx["tx1"] = "「胸の中に閉じ込めて優しく締め上げるたび、\n　硬く雄雄しく反り返って、淫らな熱で膨らんで……\\H\n　#{giggle_s}……#{myname}の胸ごと溶けあってしまいそう……\\H」" if $game_variables[17] > 66 #ランダム分岐
+      tx["tx1"] = "\"Being covered gently by warmth feels irresistible, right?\n While presing it from both sides, I'm going to stroke it good so\n you can get a good feel of the soft soft sensation....\\H\""
+      tx["tx1"] = "\"Burying it in breasts, pressing it tight, and confining it....\n I'm going to tighten it little by little and slowly corner you....\\H\n #{giggle_s} ....That twitch just now must've meant you were enjoying it\\H\"" if $game_variables[17] > 33 #ランダム分岐
+      tx["tx1"] = "\"Having confined it within my breasts, every gentle squeeze makes it\n stiffly bend back and swell up feverishly....\\H\n #{giggle_s} ....I feel like my breasts' going to melt with it....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
-        tx["tx1"] = "「#{giggle}　ほら、少し意地悪してあげる\\H\n　根元から先端まで、胸で絞り上げるように……\\H\n　乳房の潰れる感触、姿、音……愉しんでちょうだい\\H」"
-        tx["tx1"] = "「谷間に収まらないほど物欲しげに反り返ったこのコの、\n　充血して膨らんだ先っぽ、舌で嬲ってあげる……んっ\\H\n　ちゅっ、れろ……ふふ、腰が溶けるようでしょう？\\H」" if $game_variables[17] > 33 #ランダム分岐
-        tx["tx1"] = "「もっと自分から、カラダごと味わってちょうだい？\n　腰ごと抱きしめて、ほら、ぎゅっと押し付けてあげる\\H\n　……#{giggle_s}、いい声ね……うっとりしちゃうわ\\H」" if $game_variables[17] > 66 #ランダム分岐
+        tx["tx1"] = "\"#{giggle} Let me be a bit cruel to you now\\H\n In order to wring it out from the base to the tip with my breasts....\\H\n Enjoy the feel, look and sound....of being crushed by the breasts\\H\""
+        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *Kiss, *lick....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
+        tx["tx1"] = "\"Can you taste more of my body on your own?\n I'm going to embrace your whole waist and press it tight\\H\n ....#{giggle_s} What a nice cry....it's going to mesmerize me....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     end
   when 2 #ホールドレベル2
-    tx["tx1"] = "「優しく挟み込んで、柔らかく揉みこんで……#{giggle_s}\\H\n　#{myname}の胸の温もり、しっかり味わって蕩けなさい\\H\n　……ふふ、一層硬くして……もっとして欲しいの？\\H」"
-    tx["tx1"] = "「ほら、力を抜いて……カラダの奥までほぐしてあげる\\H\n　柔らかな胸に包まれて、たぷたぷと優しく揺れて……\n　甘美なまどろみの中を泳いでいるようでしょう……\\H」" if $game_variables[17] > 50 #ランダム分岐
-    tx["tx1"] = "「#{giggle}　気持ちよくて力が抜けちゃったのね？\n　大事なところを胸の谷間に囚われたまま逃れられずに、\n　優しく嬲られ続ける無力感……興奮するでしょう？\\H」" if $msg.t_target.critical == true #ホールドレベル1→2
+    tx["tx1"] = "\"Sticking it in gently and rubbing it softly.... #{giggle_s}\\H\n I want you to get a full taste of my breasts' warmth and be enthralled by it\\H\n ....Ufufu, it's still getting harder....you want more? \\H\""
+    tx["tx1"] = "\"Just relax and....I'm going to thoroughly loosen up your body\\H\n Covering it in my soft breasts and shaking it gently....\n Doesn't it feel like you're swimming in a sweet nap....? \\H\"" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"#{giggle} You've been worn down by the pleasure, haven't you?\n Unable to escape while having your precious area seized by my cleavage,\n the helpless feeling of getting gently teased....doesn't it arouse you? \\H\"" if $msg.t_target.critical == true #ホールドレベル1→2
   else #ホールドレベル1
-    tx["tx1"] = "「そんなにもがいていたら満足に味わえないでしょう？\n　大人しくして、湧き上がる欲望に身を任せて……\n　柔らかに絡め取られる恍惚に溺れなさい……\\H」"
-    tx["tx1"] = "「んっ……だめよ、簡単には放してあげられないわ。\n　#{target}のここは、まだ足りない、\n　もっと抱きしめてほしいって訴えてきてるもの……\\H」" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"Struggling like that won't let you savor it in full.\n Just hold still and surrender your body to your desire welling up....\n Immerse yourself in the ecstasy gently entangling you....\\H\""
+    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading me for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
   end
-  tx["tx1"] = "「#{giggle_s}……まだ優しくしてあげたほうがいいかしら？\n　落ち着くまでこうやってゆるく包み込んでいてあげる\\H\n　大丈夫よ、すぐにまたシて欲しくなるわ……\\H」" if $msg.t_target.weaken? #対象が絶頂中
+  tx["tx1"] = "\"#{giggle_s} ....Maybe I should've been gentler for now?\n I'll wrap it slowly like this until you settle down\\H\n Don't you worry, you'll want to do it again in no time....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -796,7 +796,7 @@ class MsgSuccubuslord_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 #==================================================================================================================
 # ☆事前設定☆
@@ -805,9 +805,9 @@ if $msg.t_enemy.have_ability?("大切な人")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{pleasure_s}\n　ふふっ、積極的じゃない……\\H」"
-  tx["tx1"] = "「#{pleasure_l}\n　気持ちいいわ、もっとしてちょうだい……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "「#{pleasure_cr}\n　もう、#{target}ってば……\\H\n　見かけに、よらず……んっ\\H　容赦、ないのね……\\H」" if $msg.t_enemy.weaken? #自分が絶頂中
+  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, talk about being aggressive....\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That feels so nice; I want more....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"#{pleasure_cr}\n Oh, #{target}....\\H\n You're more, relentless....nnh\\H Than you, look....\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -816,9 +816,9 @@ if $msg.t_enemy.have_ability?("大切な人")
                           tx={}
 case $msg.at_type
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}　#{giggle}\n　#{myname}のこと、夢中にさせてごらんなさい……\\H」"
-  tx["tx1"] = "「#{kiss_l}\n　お願い、もっと……\\H\n　溺れるくらい、してちょうだい……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l} #{giggle}\n Make me in ecstasy, will you....\\H\""
+  tx["tx1"] = "\"#{kiss_l}\n More, please....\\H\n Make me intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
@@ -873,7 +873,7 @@ end #case $msg.at_type
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 #==================================================================================================================
 # ☆事前設定☆
@@ -882,9 +882,9 @@ elsif $msg.t_enemy.have_ability?("寵愛")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{pleasure_s}\n　ふふっ、積極的じゃない……\\H」"
-  tx["tx1"] = "「#{pleasure_l}\n　気持ちいいわ、もっとしてちょうだい……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "「#{pleasure_cr}\n　もう、#{target}ってば……\\H\n　見かけに、よらず……んっ\\H　容赦、ないのね……\\H」" if $msg.t_enemy.weaken? #自分が絶頂中
+  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, talk about being aggressive....\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That feels so nice; I want more....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"#{pleasure_cr}\n Oh, #{target}....\\H\n You're more, relentless....nnh\\H Than you, look....\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -893,9 +893,9 @@ elsif $msg.t_enemy.have_ability?("寵愛")
                           tx={}
 case $msg.at_type
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}　#{giggle}\n　#{myname}のこと、夢中にさせてごらんなさい……\\H」"
-  tx["tx1"] = "「#{kiss_l}\n　お願い、もっと……\\H\n　溺れるくらい、してちょうだい……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l} #{giggle}\n Make me in ecstasy, will you....\\H\""
+  tx["tx1"] = "\"#{kiss_l}\n More, please....\\H\n Make me intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
@@ -958,9 +958,9 @@ else
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{pleasure_s}\n　ふふっ、積極的じゃない……\\H」"
-  tx["tx1"] = "「#{pleasure_l}\n　気持ちいいわ、もっとしてちょうだい……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "「#{pleasure_cr}\n　もう、#{target}ってば……\\H\n　見かけに、よらず……んっ\\H　容赦、ないのね……\\H」" if $msg.t_enemy.weaken? #自分が絶頂中
+  tx["tx1"] = "\"#{pleasure_s}\n Ufufu, talk about being aggressive....\\H\""
+  tx["tx1"] = "\"#{pleasure_l}\n That feels so nice; I want more....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"#{pleasure_cr}\n Oh, #{target}....\\H\n You're more, relentless....nnh\\H Than you, look....\\H\"" if $msg.t_enemy.weaken? #自分が絶頂中
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -969,9 +969,9 @@ else
                           tx={}
 case $msg.at_type
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}　#{giggle}\n　#{myname}のこと、夢中にさせてごらんなさい……\\H」"
-  tx["tx1"] = "「#{kiss_l}\n　お願い、もっと……\\H\n　溺れるくらい、してちょうだい……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l} #{giggle}\n Make me in ecstasy, will you....\\H\""
+  tx["tx1"] = "\"#{kiss_l}\n More, please....\\H\n Make me intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
