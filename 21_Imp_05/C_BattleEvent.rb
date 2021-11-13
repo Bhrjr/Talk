@@ -39,35 +39,35 @@ if $msg.tag == "Start the Battle"
     when 0 #１番目
       tx["tx1"] = "\"Ahaha♪\n Like always, let's have lots of fun tonight♪\""
       #▼初ベッドイン
-      tx["tx1"] = "\"Yay, the bed's so nice and fluffy♪\n Guess we're gonna have sex here from now on\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"Yay, the bed's so nice and fluffy♪\n Guess this is where we're gonna have sex from now on\\H\"" if $msg.t_enemy.bedin_count == 0
     when 1 #２番目
-      tx["tx1"] = "「#{giggle}\n So you wanna play with me, huh?\n I won't fall behind, you know? \\H」"
+      tx["tx1"] = "\"#{giggle}\n So you wanna play with me, huh?\n I won't fall behind, you know? \\H\""
       #▼初ベッドイン
-      tx["tx1"] = "「So this is your room, huh, #{target}\\H\n Whoa, so incredible\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"So this is your room, huh, #{target}\\H\n Whoa, so incredible\\H\"" if $msg.t_enemy.bedin_count == 0
     when 2 #３番目
-      tx["tx1"] = "「#{giggle}\n #{myname} wanna play a lot too\\H\n Lemme join you guys♪」"
+      tx["tx1"] = "\"#{giggle}\n #{myname} wanna play a lot too\\H\n Lemme join you guys♪\""
       #▼初ベッドイン
-      tx["tx1"] = "「#{giggle}\n So you've brought me to a place like this\\H\n What're you gonna do to me? \\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle}\n So you've brought me to a place like this\\H\n What're you gonna do to me? \\H\"" if $msg.t_enemy.bedin_count == 0
     end
   #●空腹戦闘中
   elsif $game_switches[86] == true
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "「Hey, #{target}....\\H\n My tummy's growling like crazy....\\H」"
+      tx["tx1"] = "\"Hey, #{target}....\\H\n My tummy's growling like crazy....\\H\""
     when 1 #２番目
-      tx["tx1"] = "「Gimme me a snack, #{target}♪\n Of course, the one that's hot and white♪」"
+      tx["tx1"] = "\"Gimme me a snack, #{target}♪\n Of course, the one that's hot and white♪\""
     when 2 #３番目
-      tx["tx1"] = "「#{giggle}\n Lemme join in too\\H\n You're fine with that, right, #{target}? ♪」"
+      tx["tx1"] = "\"#{giggle}\n Lemme join in too\\H\n You're fine with that, right, #{target}? ♪\""
     end
   #●レア戦闘中(OFEの場合は[$game_switches[92] == true]、BOSSの場合は[$game_switches[91] == true]をそれぞれelsifでつけること)
   else
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "「Hello there!\n Wanna play with us, #{target}?」"
+      tx["tx1"] = "\"Hello there!\n Wanna play with us, #{target}?\""
     when 1 #２番目
-      tx["tx1"] = "「Hey, hey, where'd you come from?\n #{myname}'m an Imp, nice to meetcha!」"
+      tx["tx1"] = "\"Hey, hey, where'd you come from?\n #{myname}'m an Imp, nice to meetcha!\""
     when 2 #３番目
-      tx["tx1"] = "「#{giggle}\n You're so tall, #{target}♪\n C'mere and hug me tight\\H」"
+      tx["tx1"] = "\"#{giggle}\n You're so tall, #{target}♪\n C'mere and hug me tight\\H\""
     end
   end
   #格納
@@ -79,8 +79,8 @@ if $msg.tag == "Start the Battle"
 
 #----------------------------------------------------------------------------------------------------------------------
 #■逃走失敗口上
-elsif $msg.tag == "逃走失敗"
-  tx["tx1"] = "「Ahaha, time to play tag♪\n　ほ～らつかまえた～\\H」"
+elsif $msg.tag == "Escape fail"
+  tx["tx1"] = "\"Ahaha, time to play tag♪\n Gotcha\\H\""
   #----------------------------------------------------------------------------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -92,7 +92,7 @@ elsif $msg.tag == "逃走失敗"
 
 #----------------------------------------------------------------------------------------------------------------------
 #■契約口上
-elsif $msg.tag == "契約"
+elsif $msg.tag == "Contract"
   #----------------------#
   #▼ステップで状況判断  #
   #----------------------#
@@ -100,32 +100,32 @@ elsif $msg.tag == "契約"
   #▼契約開始
   when 1 
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「ねぇ#{target}、もう帰っちゃうの？\n　#{myname}ともっと遊んでよぉ」"
+    tx["tx1"] = "\"Hey, #{target}. Are you gonna go home now?\n Keep playing with me.\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "「……あ、そうだ！\n　ね、ね、#{myname}も一緒に行ってもいい？」"
+    tx["tx2"] = "\"....Ah, I have an idea!\n Hey, hey, can I go with you?\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx3"] = "「#{myname}ね、\n　もっと#{target}と遊びたいんだ♪\n　ね、いいでしょ？」"
+    tx["tx3"] = "\"You see, #{myname}\n wanna play more with you, #{target}♪\n You're fine with that, right?\""
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約締結(即座に仲間に入る)
   when 2
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「うわ～い、やったぁ！\n　#{target}大好きぃ♪」"
+    tx["tx1"] = "\"Woo-hoo!\n You're the best, #{target}♪\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "「#{target}、#{myname}といっぱい遊んでねっ♪\n　約束だよっ\\H」"
+    tx["tx2"] = "\"You better play with me a lot, #{target}♪\n It's a promise\\H\""
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約締結(ホームに送る)
   when 3
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「うわ～い、やったぁ！\n　#{target}大好きぃ♪」"
+    tx["tx1"] = "\"Woo-hoo!\n You're the best, #{target}♪\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "「……ありゃ、でもお友達いっぱいだね。\n　じゃ、#{target}のおうちで遊んでるね♪\n　どんなおうちかな～、わくわく\\H」"
+    tx["tx2"] = "\"....Uhh, but you've got way too many pals with you.\n Then time to play at your house♪\n Wonder what house it is? Can't wait to find out\\H\""
     #----------------------------------------------------------------------------------------------------------------------
   #▼契約を行わない
   when 4
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「え～、つまんな～い……！\n　ふんだ、いいもん……。\n　だったら違う子と遊ぶもん……！」"
+    tx["tx1"] = "\"Wha? So lame....!\n Hmph, fine then....\n I'm just gonna play with another guy....!\""
     # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    tx["tx2"] = "「……でも、でもね。\n　また今度遊んでね。\n　ね、絶対だよ？」"
+    tx["tx2"] = "\"....Still,\n let's play again next time.\n You better, okay?\""
     #----------------------------------------------------------------------------------------------------------------------
   end
   #格納
