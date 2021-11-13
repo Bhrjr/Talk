@@ -748,7 +748,7 @@ if $msg.t_enemy.have_ability?("Significant Other")
   #==================================================================================================================
   tx["tx1"] = "\"#{pleasure_s}\n Ufufu, so assertive....\\H\""
   tx["tx1"] = "\"#{pleasure_l}\n You're good....aha, that feels so nice....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "\"#{pleasure_cr}\n Aha.... #{target}....\n You're so unkind....\\H #{pleasure_s}\"" if $msg.t_enemy.weaken? #自分が絶頂中
+  tx["tx1"] = "\"#{pleasure_cr}\n Aha.... #{target}....\n You're so mean....\\H #{pleasure_s}\"" if $msg.t_enemy.weaken? #自分が絶頂中
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -824,7 +824,7 @@ elsif $msg.t_enemy.have_ability?("Affection")
   #==================================================================================================================
   tx["tx1"] = "\"#{pleasure_s}\n Ufufu, so assertive....\\H\""
   tx["tx1"] = "\"#{pleasure_l}\n You're good....aha, that feels so nice....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "\"#{pleasure_cr}\n Aha.... #{target}....\n You're so unkind....\\H #{pleasure_s}\"" if $msg.t_enemy.weaken? #自分が絶頂中
+  tx["tx1"] = "\"#{pleasure_cr}\n Aha.... #{target}....\n You're so mean....\\H #{pleasure_s}\"" if $msg.t_enemy.weaken? #自分が絶頂中
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -899,7 +899,7 @@ else
   #==================================================================================================================
   tx["tx1"] = "\"#{pleasure_s}\n Ufufu, so assertive....\\H\""
   tx["tx1"] = "\"#{pleasure_l}\n You're good....aha, that feels so nice....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "\"#{pleasure_cr}\n Aha.... #{target}....\n You're so unkind....\\H #{pleasure_s}\"" if $msg.t_enemy.weaken? #自分が絶頂中
+  tx["tx1"] = "\"#{pleasure_cr}\n Aha.... #{target}....\n You're so mean....\\H #{pleasure_s}\"" if $msg.t_enemy.weaken? #自分が絶頂中
   #格納
   ms.push(tx)
   #==================================================================================================================
