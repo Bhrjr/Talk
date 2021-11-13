@@ -153,7 +153,7 @@ else
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Hey, why don't we go somewhere just by ourselves?\n ....#{giggle_s} I'm joking\\H\n I wouldn't mind doing it for real though....\\H\""
+    tx["tx1"] = "\"Hey, why don't we go somewhere just by ourselves?\n ....#{giggle_s} I'm joking\\H\n Please don't make that face for me.\""
     tx["tx4"] = "#{speaker} appears to be in good spirits...." + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -196,7 +196,7 @@ else
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Hey, why don't we go somewhere just by ourselves?\n ....#{giggle_s} I'm joking\\H\n I wouldn't mind doing it for real though....\\H\""
+    tx["tx1"] = "\"Is there anything to be in such a hurry for?\n ....Hmm, you must be having a tough time.\""
     tx["tx4"] = "#{speaker} appears to be in good spirits...." + "TALKTEXT"
     #格納
     ms.push(tx)
