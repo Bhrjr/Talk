@@ -275,7 +275,7 @@ class MsgSuccubuslord_A < MsgBase
 case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
-  tx["tx1"] = "\"#{kiss_l} #{giggle}\n Make me in ecstasy, will you....\\H\""
+  tx["tx1"] = "\"#{kiss_l} #{giggle}\n Put me in ecstasy, will you....\\H\""
   tx["tx1"] = "\"#{kiss_l}\n More, please....\\H\n Make me intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{giggle_s}……\\H」" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
