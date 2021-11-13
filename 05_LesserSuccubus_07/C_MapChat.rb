@@ -57,21 +57,21 @@ elsif $msg.t_enemy.spp <= 20 or $msg.t_enemy.hpp <= 20
   if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
     tx["tx1"] = "\"H-Hey, #{target}...let's go home already....\n I'm beat....\""
-    tx["tx4"] = "#{speaker} pulled on the hem of his clothes....\nLooks like she's worn out...." + "TALKTEXT"
+    tx["tx4"] = "#{speaker} pulled the hem of his clothes....\nLooks like she's worn out...." + "TALKTEXT"
 
   #====================================================================================================================
   #◆【寵愛】状態◆
   elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
     tx["tx1"] = "\"H-Hey, #{target}...let's go home already....\n I'm beat....\""
-    tx["tx4"] = "#{speaker} pulled on the hem of his clothes....\nLooks like she's worn out...." + "TALKTEXT"
+    tx["tx4"] = "#{speaker} pulled the hem of his clothes....\nLooks like she's worn out...." + "TALKTEXT"
 
   #====================================================================================================================
   #◆通常状態(【寵愛】【大切な人】どちらも持っていない場合)◆
   else
   #====================================================================================================================
     tx["tx1"] = "\"H-Hey, #{target}...let's go home already....\n I'm beat....\""
-    tx["tx4"] = "#{speaker} pulled on the hem of his clothes....\nLooks like she's worn out...." + "TALKTEXT"
+    tx["tx4"] = "#{speaker} pulled the hem of his clothes....\nLooks like she's worn out...." + "TALKTEXT"
 
   end
   #格納
