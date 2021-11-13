@@ -489,7 +489,7 @@ when "Paizuri"
     tx["tx1"] = "\"#{giggle} You've been worn down by the pleasure, haven't you?\n Unable to escape while having your precious area seized by my cleavage,\n the helpless feeling of getting gently teased....doesn't it arouse you? \\H\"" if $msg.t_target.critical == true #ホールドレベル1→2
   else #ホールドレベル1
     tx["tx1"] = "\"Struggling like that won't let you savor it in full.\n Just hold still and surrender your body to your desire welling up....\n Immerse yourself in the ecstasy gently entangling you....\\H\""
-    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading me for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
   end
   tx["tx1"] = "\"#{giggle_s} ....Maybe I should've been gentler for now?\n I'll wrap it slowly like this until you settle down\\H\n Don't you worry, you'll want to do it again in no time....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
@@ -609,7 +609,7 @@ when "Paizuri"
     tx["tx1"] = "\"#{giggle} You've been worn down by the pleasure, haven't you?\n Unable to escape while having your precious area seized by my cleavage,\n the helpless feeling of getting gently teased....doesn't it arouse you? \\H\"" if $msg.t_target.critical == true #ホールドレベル1→2
   else #ホールドレベル1
     tx["tx1"] = "\"Struggling like that won't let you savor it in full.\n Just hold still and surrender your body to your desire welling up....\n Immerse yourself in the ecstasy gently entangling you....\\H\""
-    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading me for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
   end
   tx["tx1"] = "\"#{giggle_s} ....Maybe I should've been gentler for now?\n I'll wrap it slowly like this until you settle down\\H\n Don't you worry, you'll want to do it again in no time....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
@@ -727,7 +727,7 @@ when "Paizuri"
     tx["tx1"] = "\"#{giggle} You've been worn down by the pleasure, haven't you?\n Unable to escape while having your precious area seized by my cleavage,\n the helpless feeling of getting gently teased....doesn't it arouse you? \\H\"" if $msg.t_target.critical == true #ホールドレベル1→2
   else #ホールドレベル1
     tx["tx1"] = "\"Struggling like that won't let you savor it in full.\n Just hold still and surrender your body to your desire welling up....\n Immerse yourself in the ecstasy gently entangling you....\\H\""
-    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading me for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
+    tx["tx1"] = "\"Nnn....oh no, I'm not letting you go so easily.\n Your shaft down here tells me it hasn't had enough and\n is pleading for more hug, #{target}....\\H\"" if $game_variables[17] > 50 #ランダム分岐
   end
   tx["tx1"] = "\"#{giggle_s} ....Maybe I should've been gentler for now?\n I'll wrap it slowly like this until you settle down\\H\n Don't you worry, you'll want to do it again in no time....\\H\"" if $msg.t_target.weaken? #対象が絶頂中
   #-----------------------------------------------------
