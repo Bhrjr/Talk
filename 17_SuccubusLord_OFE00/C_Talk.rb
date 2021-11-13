@@ -291,8 +291,8 @@ when "Caress - normal"
       #▼弱点を発見された(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"I found your weak spots, #{target}....\\H\n Aaah, that's a great reaction\\H I can't help it anymore....\\H\n #{giggle_s} I'll make you so blissful that you'll show it in an even better voice\\H\"" 
-        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. I'm going to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n I'm going to find out everything\n you desire for and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. Time to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n Time to find out everything\n you desire and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
         tx["tx1"] = "\"Aha....you shuddered just now\\H\n Unless you can fight the pleasure,\nI'm going to pick on your weak spots all I like....like this\\H\""  if $msg.chain_attack == true and $game_variables[17] > 50
       #▼通常
       else
@@ -328,7 +328,7 @@ when "Caress - intercourse"
     case $msg.t_enemy.initiative_level
     #▼MAX
     when 3
-      tx["tx1"] = "\"#{giggle_s} I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n I'm going to tease you while I've swallowed you up....\\H\"" 
+      tx["tx1"] = "\"#{giggle_s} I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n Time to tease you while I've swallowed you up....\\H\"" 
       tx["tx1"] = "\"There's no use in resisting it, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aha\\H Quivering inside me....\\H\n I wonder what'll happen if I squeeze you out,\n bite you gently, and playfully pick on you....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"You're making a nice moan\\H Did getting teased inside me feel good?\n Going even far as to relax....it was so easy to pin you down\\H\n #{giggle_s} Like this, I'm going to squeeze it all out with my privates....\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
@@ -800,8 +800,8 @@ when "Caress - normal"
       #▼弱点を発見された(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"I found your weak spots, #{target}....\\H\n Aaah, that's a great reaction\\H I can't help it anymore....\\H\n #{giggle_s} I'll make you so blissful that you'll show it in an even better voice\\H\"" 
-        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. I'm going to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n I'm going to find out everything\n you desire for and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. Time to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n Time to find out everything\n you desire and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
         tx["tx1"] = "\"Aha....you shuddered just now\\H\n Unless you can fight the pleasure,\nI'm going to pick on your weak spots all I like....like this\\H\""  if $msg.chain_attack == true and $game_variables[17] > 50
       #▼通常
       else
@@ -837,7 +837,7 @@ when "Caress - intercourse"
     case $msg.t_enemy.initiative_level
     #▼MAX
     when 3
-      tx["tx1"] = "\"#{giggle_s} I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n I'm going to tease you while I've swallowed you up....\\H\"" 
+      tx["tx1"] = "\"#{giggle_s} I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n Time to tease you while I've swallowed you up....\\H\"" 
       tx["tx1"] = "\"There's no use in resisting it, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aha\\H Quivering inside me....\\H\n I wonder what'll happen if I squeeze you out,\n bite you gently, and playfully pick on you....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"You're making a nice moan\\H Did getting teased inside me feel good?\n Going even far as to relax....it was so easy to pin you down\\H\n #{giggle_s} Like this, I'm going to squeeze it all out with my privates....\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
@@ -1235,8 +1235,8 @@ when "Caress - normal"
       #▼弱点を発見された(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"I found your weak spots, #{target}....\\H\n Aaah, that's a great reaction\\H I can't help it anymore....\\H\n #{giggle_s} I'll make you so blissful that you'll show it in an even better voice\\H\"" 
-        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. I'm going to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n I'm going to find out everything\n you desire for and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. Time to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n Time to find out everything\n you desire and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
         tx["tx1"] = "\"Aha....you shuddered just now\\H\n Unless you can fight the pleasure,\nI'm going to pick on your weak spots all I like....like this\\H\""  if $msg.chain_attack == true and $game_variables[17] > 50
       #▼通常
       else
@@ -1272,7 +1272,7 @@ when "Caress - intercourse"
     case $msg.t_enemy.initiative_level
     #▼MAX
     when 3
-      tx["tx1"] = "\"#{giggle_s} I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n I'm going to tease you while I've swallowed you up....\\H\"" 
+      tx["tx1"] = "\"#{giggle_s} I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n Time to tease you while I've swallowed you up....\\H\"" 
       tx["tx1"] = "\"There's no use in resisting it, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aha\\H Quivering inside me....\\H\n I wonder what'll happen if I squeeze you out,\n bite you gently, and playfully pick on you....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"You're making a nice moan\\H Did getting teased inside me feel good?\n Going even far as to relax....it was so easy to pin you down\\H\n #{giggle_s} Like this, I'm going to squeeze it all out with my privates....\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
@@ -1669,8 +1669,8 @@ when "Caress - normal"
       #▼弱点を発見された(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"I found your weak spots, #{target}....\\H\n Aaah, that's a great reaction\\H I can't help it anymore....\\H\n #{giggle_s} I'll make you so blissful that you'll show it in an even better voice\\H\"" 
-        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. I'm going to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
-        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n I'm going to find out everything\n you desire for and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"#{giggle_s} ....So you like it here, I see\\H\n I'm not done yet. Time to expose\n all your weaks spots for what they are\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"Can't endure it when I do it like this? Ufufu, you can't hide it here\\H\n Time to find out everything\n you desire and gratify them....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
         tx["tx1"] = "\"Aha....you shuddered just now\\H\n Unless you can fight the pleasure,\nI'm going to pick on your weak spots all I like....like this\\H\""  if $msg.chain_attack == true and $game_variables[17] > 50
       #▼通常
       else
@@ -1706,7 +1706,7 @@ when "Caress - intercourse"
     case $msg.t_enemy.initiative_level
     #▼MAX
     when 3
-      tx["tx1"] = "\"#{giggle_s} I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n I'm going to tease you while I've swallowed you up....\\H\"" 
+      tx["tx1"] = "\"#{giggle_s} I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n Time to tease you while I've swallowed you up....\\H\"" 
       tx["tx1"] = "\"There's no use in resisting it, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aha\\H Quivering inside me....\\H\n I wonder what'll happen if I squeeze you out,\n bite you gently, and playfully pick on you....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"You're making a nice moan\\H Did getting teased inside me feel good?\n Going even far as to relax....it was so easy to pin you down\\H\n #{giggle_s} Like this, I'm going to squeeze it all out with my privates....\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
