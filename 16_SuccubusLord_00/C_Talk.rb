@@ -231,8 +231,8 @@ when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{myname}'m quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
-    tx["tx2"] = "\"Isn't it fine?\n Prove to me that\n your words aren't a lie....\\H\"" 
+    tx["tx1"] = "\"#{myname} can be quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
+    tx["tx2"] = "\"Isn't it fine?\n Prove to me\n your words aren't a lie....\\H\"" 
     tx["tx2"] = "\"You're saying such\n while showing off something so delicous-looking.\n That can only mean one thing....\\H\""  if $msg.tag == "Energy-suck - genitals" #主人公が裸時のみ発生
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -278,7 +278,7 @@ when "Caress - normal"
         tx["tx1"] = "\"#{giggle_s} ....Was this how you wanted it? \\H\n Your voice tell me\n it feels even better than last time....\\H\""  if $msg.weakpoints == 20 #性癖込み口上があればこちら
         tx["tx1"] = "\"#{giggle} I just adore the expression you're making right now, #{target}.\n A pathetic expression from having your sensitive and favorite parts pleasured and\n wanting it even more....\\H\""  if $msg.weakpoints == 20 and $game_variables[17] > 50 #性癖込み口上パターン２
         tx["tx1"] = "\"#{giggle} So you like this, huh?\n It's pointless to try and evade it.\n I'll make you moan so much so that you can't even try to cover it up\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
-        tx["tx1"] = "\"#{giggle_s} So this is what you like, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
+        tx["tx1"] = "\"#{giggle_s} So this is what you're a fan of, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
         tx["tx1"] = "\"#{giggle_s} ....Can't fight it anymore?\n If you want me to pleasure you to the end,\n you need to properly beg for more\\H\""  if $msg.t_target.crisis? == true and $msg.chain_attack == true
       #▼通常
       else
@@ -740,8 +740,8 @@ when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{myname}'m quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
-    tx["tx2"] = "\"Isn't it fine?\n Prove to me that\n your words aren't a lie....\\H\"" 
+    tx["tx1"] = "\"#{myname} can be quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
+    tx["tx2"] = "\"Isn't it fine?\n Prove to me\n your words aren't a lie....\\H\"" 
     tx["tx2"] = "\"You're saying such\n while showing off something so delicous-looking.\n That can only mean one thing....\\H\""  if $msg.tag == "Energy-suck - genitals" #主人公が裸時のみ発生
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -787,7 +787,7 @@ when "Caress - normal"
         tx["tx1"] = "\"#{giggle_s} ....Was this how you wanted it? \\H\n Your voice tell me\n it feels even better than last time....\\H\""  if $msg.weakpoints == 20 #性癖込み口上があればこちら
         tx["tx1"] = "\"#{giggle} I just adore the expression you're making right now, #{target}.\n A pathetic expression from having your sensitive and favorite parts pleasured and\n wanting it even more....\\H\""  if $msg.weakpoints == 20 and $game_variables[17] > 50 #性癖込み口上パターン２
         tx["tx1"] = "\"#{giggle} So you like this, huh?\n It's pointless to try and evade it.\n I'll make you moan so much so that you can't even try to cover it up\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
-        tx["tx1"] = "\"#{giggle_s} So this is what you like, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
+        tx["tx1"] = "\"#{giggle_s} So this is what you're a fan of, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
         tx["tx1"] = "\"#{giggle_s} ....Can't fight it anymore?\n If you want me to pleasure you to the end,\n you need to properly beg for more\\H\""  if $msg.t_target.crisis? == true and $msg.chain_attack == true
       #▼通常
       else
@@ -1175,8 +1175,8 @@ when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{myname}'m quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
-    tx["tx2"] = "\"Isn't it fine?\n Prove to me that\n your words aren't a lie....\\H\"" 
+    tx["tx1"] = "\"#{myname} can be quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
+    tx["tx2"] = "\"Isn't it fine?\n Prove to me\n your words aren't a lie....\\H\"" 
     tx["tx2"] = "\"You're saying such\n while showing off something so delicous-looking.\n That can only mean one thing....\\H\""  if $msg.tag == "Energy-suck - genitals" #主人公が裸時のみ発生
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1222,7 +1222,7 @@ when "Caress - normal"
         tx["tx1"] = "\"#{giggle_s} ....Was this how you wanted it? \\H\n Your voice tell me\n it feels even better than last time....\\H\""  if $msg.weakpoints == 20 #性癖込み口上があればこちら
         tx["tx1"] = "\"#{giggle} I just adore the expression you're making right now, #{target}.\n A pathetic expression from having your sensitive and favorite parts pleasured and\n wanting it even more....\\H\""  if $msg.weakpoints == 20 and $game_variables[17] > 50 #性癖込み口上パターン２
         tx["tx1"] = "\"#{giggle} So you like this, huh?\n It's pointless to try and evade it.\n I'll make you moan so much so that you can't even try to cover it up\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
-        tx["tx1"] = "\"#{giggle_s} So this is what you like, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
+        tx["tx1"] = "\"#{giggle_s} So this is what you're a fan of, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
         tx["tx1"] = "\"#{giggle_s} ....Can't fight it anymore?\n If you want me to pleasure you to the end,\n you need to properly beg for more\\H\""  if $msg.t_target.crisis? == true and $msg.chain_attack == true
       #▼通常
       else
@@ -1609,8 +1609,8 @@ when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"#{myname}'m quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
-    tx["tx2"] = "\"Isn't it fine?\n Prove to me that\n your words aren't a lie....\\H\"" 
+    tx["tx1"] = "\"#{myname} can be quite greedy, you know.\n I'd like to have a taste of your energy, #{target}....\\H\""
+    tx["tx2"] = "\"Isn't it fine?\n Prove to me\n your words aren't a lie....\\H\"" 
     tx["tx2"] = "\"You're saying such\n while showing off something so delicous-looking.\n That can only mean one thing....\\H\""  if $msg.tag == "Energy-suck - genitals" #主人公が裸時のみ発生
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1656,7 +1656,7 @@ when "Caress - normal"
         tx["tx1"] = "\"#{giggle_s} ....Was this how you wanted it? \\H\n Your voice tell me\n it feels even better than last time....\\H\""  if $msg.weakpoints == 20 #性癖込み口上があればこちら
         tx["tx1"] = "\"#{giggle} I just adore the expression you're making right now, #{target}.\n A pathetic expression from having your sensitive and favorite parts pleasured and\n wanting it even more....\\H\""  if $msg.weakpoints == 20 and $game_variables[17] > 50 #性癖込み口上パターン２
         tx["tx1"] = "\"#{giggle} So you like this, huh?\n It's pointless to try and evade it.\n I'll make you moan so much so that you can't even try to cover it up\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
-        tx["tx1"] = "\"#{giggle_s} So this is what you like, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
+        tx["tx1"] = "\"#{giggle_s} So this is what you're a fan of, #{target}\\H\n Like this, I'll throughly pick on your weak spots\n until your mind melts from the pleasure....\\H\""  if $msg.chain_attack == true and $msg.weakpoints == 20 #同じ部位で連撃中かつ性癖合致
         tx["tx1"] = "\"#{giggle_s} ....Can't fight it anymore?\n If you want me to pleasure you to the end,\n you need to properly beg for more\\H\""  if $msg.t_target.crisis? == true and $msg.chain_attack == true
       #▼通常
       else
