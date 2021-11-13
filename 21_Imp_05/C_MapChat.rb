@@ -94,7 +94,7 @@ else
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Hey, hey, #{target}.\n Do you like teeny-tiny girls?\""
+    tx["tx1"] = "\"Hey, hey, #{target}.\n You like teeny-tiny girls?\""
     tx["tx4"] = "With a curious look, #{speaker} is\nwaiting eagerly for #{master}'s reply.\nHe's greatly troubled as to how he should answer...." + "TALKTEXT"
     #格納
     ms.push(tx)
