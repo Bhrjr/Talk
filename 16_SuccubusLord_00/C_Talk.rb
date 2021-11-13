@@ -492,7 +492,7 @@ when "Mingle"
       tx["tx1"] = "\"Oh....not a fan of stuff like this, I wonder?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{pleasure_l}\n I can feel your breath....nnhh, it's keeps flowing out....\\H\n #{giggle_s} ....Remember to get a good taste of it....\\H\""
+      tx["tx1"] = "\"#{pleasure_l}\n I can feel your breath....nnhh, it keeps flowing out....\\H\n #{giggle_s} ....Remember to get a good taste of it....\\H\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -1001,7 +1001,7 @@ when "Mingle"
       tx["tx1"] = "\"Oh....not a fan of stuff like this, I wonder?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{pleasure_l}\n I can feel your breath....nnhh, it's keeps flowing out....\\H\n #{giggle_s} ....Remember to get a good taste of it....\\H\""
+      tx["tx1"] = "\"#{pleasure_l}\n I can feel your breath....nnhh, it keeps flowing out....\\H\n #{giggle_s} ....Remember to get a good taste of it....\\H\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -1436,7 +1436,7 @@ when "Mingle"
       tx["tx1"] = "\"Oh....not a fan of stuff like this, I wonder?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{pleasure_l}\n I can feel your breath....nnhh, it's keeps flowing out....\\H\n #{giggle_s} ....Remember to get a good taste of it....\\H\""
+      tx["tx1"] = "\"#{pleasure_l}\n I can feel your breath....nnhh, it keeps flowing out....\\H\n #{giggle_s} ....Remember to get a good taste of it....\\H\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -1870,7 +1870,7 @@ when "Mingle"
       tx["tx1"] = "\"Oh....not a fan of stuff like this, I wonder?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{pleasure_l}\n I can feel your breath....nnhh, it's keeps flowing out....\\H\n #{giggle_s} ....Remember to get a good taste of it....\\H\""
+      tx["tx1"] = "\"#{pleasure_l}\n I can feel your breath....nnhh, it keeps flowing out....\\H\n #{giggle_s} ....Remember to get a good taste of it....\\H\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
