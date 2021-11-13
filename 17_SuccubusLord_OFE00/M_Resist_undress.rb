@@ -46,7 +46,7 @@ when "Succubus strips the player."
   #  tx["tx1"] = "" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 3 #主人公が脱衣した
-    tx["tx1"] = "\"#{giggle_s} What a nice body you have....\\H\n One that's has faithfully lived out his days\n and has paved the way until now....\\H\""
+    tx["tx1"] = "\"#{giggle_s} What a nice body you've got there....\\H\n One that's has faithfully lived out his days\n and has paved the way until now....\\H\""
     #▼自ら受け入れた場合
     tx["tx1"] = "\"Oh, my....\\H\n To expose yourself without any shame,\n you're more bolder than you look\\H\"" if $game_switches[89] == true
   #---------------------------------------------------
@@ -155,7 +155,7 @@ when "Succubus strips the player."
   #  tx["tx1"] = "" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 3 #主人公が脱衣した
-    tx["tx1"] = "\"#{giggle_s} What a nice body you have....\\H\n One that's has faithfully lived out his days\n and has paved the way until now....\\H\""
+    tx["tx1"] = "\"#{giggle_s} What a nice body you've got there....\\H\n One that's has faithfully lived out his days\n and has paved the way until now....\\H\""
     #▼自ら受け入れた場合
     tx["tx1"] = "\"Oh, my....\\H\n To expose yourself without any shame,\n you're more bolder than you look\\H\"" if $game_switches[89] == true
   #---------------------------------------------------
@@ -235,7 +235,7 @@ when "Succubus strips the player."
   #  tx["tx1"] = "" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 3 #主人公が脱衣した
-    tx["tx1"] = "\"#{giggle_s} What a nice body you have....\\H\n One that's has faithfully lived out his days\n and has paved the way until now....\\H\""
+    tx["tx1"] = "\"#{giggle_s} What a nice body you've got there....\\H\n One that's has faithfully lived out his days\n and has paved the way until now....\\H\""
     #▼自ら受け入れた場合
     tx["tx1"] = "\"Oh, my....\\H\n To expose yourself without any shame,\n you're more bolder than you look\\H\"" if $game_switches[89] == true
   #---------------------------------------------------
@@ -315,7 +315,7 @@ when "Succubus strips the player."
   #  tx["tx1"] = "" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 3 #主人公が脱衣した
-    tx["tx1"] = "\"#{giggle_s} What a nice body you have....\\H\n One that's has faithfully lived out his days\n and has paved the way until now....\\H\""
+    tx["tx1"] = "\"#{giggle_s} What a nice body you've got there....\\H\n One that's has faithfully lived out his days\n and has paved the way until now....\\H\""
     #▼自ら受け入れた場合
     tx["tx1"] = "\"Oh, my....\\H\n To expose yourself without any shame,\n you're more bolder than you look\\H\"" if $game_switches[89] == true
   #---------------------------------------------------
