@@ -16,7 +16,7 @@ class MsgImp_A < MsgBase
                             #空ハッシュ挿入
                             tx={}
 #----------------------------------------------------------------------------------------------------------------------
-if $msg.tag == "戦闘開始"
+if $msg.tag == "Start the Battle"
                             #ムード格納(個別変更の場合は口上単位で修正する)
                             if $game_switches[85] == true
                               tx["md"] = "12" if $msg.talk_step == 1
@@ -37,37 +37,37 @@ if $msg.tag == "戦闘開始"
   if $game_switches[85] == true
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "「あははっ♪\n　今日もいっぱい遊ぼうね～♪」"
+      tx["tx1"] = "\"Ahaha♪\n Like always, let's have lots of fun tonight♪\""
       #▼初ベッドイン
-      tx["tx1"] = "「うわぁい、ベッドがふかふかだぁ♪\n　ね、今からここでえっちなことするんだよね\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"Yay, the bed's so nice and fluffy♪\n Guess we're gonna have sex here from now on\\H」" if $msg.t_enemy.bedin_count == 0
     when 1 #２番目
-      tx["tx1"] = "「#{giggle}\n　#{target}は#{myname}と遊びたいんだよね？\n　負けないぞ～？\\H」"
+      tx["tx1"] = "「#{giggle}\n So you wanna play with me, huh?\n I won't fall behind, you know? \\H」"
       #▼初ベッドイン
-      tx["tx1"] = "「ここが#{target}のお部屋なんだね\\H\n　うわ～、すごいすご～い\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "「So this is your room, huh, #{target}\\H\n Whoa, so incredible\\H」" if $msg.t_enemy.bedin_count == 0
     when 2 #３番目
-      tx["tx1"] = "「#{giggle}\n　#{myname}もいっしょに遊びた～い\\H\n　い～れ～てっ♪」"
+      tx["tx1"] = "「#{giggle}\n #{myname} wanna play a lot too\\H\n Lemme join you guys♪」"
       #▼初ベッドイン
-      tx["tx1"] = "「#{giggle}\n　こんなところに連れてきて～\\H\n　#{myname}に何するつもり～？\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "「#{giggle}\n So you've brought me to a place like this\\H\n What're you gonna do to me? \\H」" if $msg.t_enemy.bedin_count == 0
     end
   #●空腹戦闘中
   elsif $game_switches[86] == true
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "「ねぇ#{target}……\\H\n　#{myname}、もうおなかぺこぺこだよう……\\H」"
+      tx["tx1"] = "「Hey, #{target}....\\H\n My tummy's growling like crazy....\\H」"
     when 1 #２番目
-      tx["tx1"] = "「#{target}、おやつちょうだ～い♪\n　もちろん、熱くて白いアレ♪」"
+      tx["tx1"] = "「Gimme me a snack, #{target}♪\n Of course, the one that's hot and white♪」"
     when 2 #３番目
-      tx["tx1"] = "「#{giggle}\n　#{myname}も混ぜて～\\H\n　#{target}、いいよねぇ～？♪」"
+      tx["tx1"] = "「#{giggle}\n Lemme join in too\\H\n You're fine with that, right, #{target}? ♪」"
     end
   #●レア戦闘中(OFEの場合は[$game_switches[92] == true]、BOSSの場合は[$game_switches[91] == true]をそれぞれelsifでつけること)
   else
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "「こんにちはっ！\n　#{target}も一緒に遊ぶ～？」"
+      tx["tx1"] = "「Hello there!\n Wanna play with us, #{target}?」"
     when 1 #２番目
-      tx["tx1"] = "「ね、ね、どこから来たの？\n　あたし#{myname}、よろしくね！」"
+      tx["tx1"] = "「Hey, hey, where'd you come from?\n #{myname}'m an Imp, nice to meetcha!」"
     when 2 #３番目
-      tx["tx1"] = "「#{giggle}\n　#{target}、背がたか～い♪\n　え～い、抱きついちゃえ\\H」"
+      tx["tx1"] = "「#{giggle}\n You're so tall, #{target}♪\n C'mere and hug me tight\\H」"
     end
   end
   #格納
@@ -80,7 +80,7 @@ if $msg.tag == "戦闘開始"
 #----------------------------------------------------------------------------------------------------------------------
 #■逃走失敗口上
 elsif $msg.tag == "逃走失敗"
-  tx["tx1"] = "「あははっ、鬼ごっこだぁ♪\n　ほ～らつかまえた～\\H」"
+  tx["tx1"] = "「Ahaha, time to play tag♪\n　ほ～らつかまえた～\\H」"
   #----------------------------------------------------------------------------------------------------------------------
   #格納
   tx["md"] = "3"
