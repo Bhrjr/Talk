@@ -237,11 +237,11 @@ when "Caress - normal"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey hey, #{target}.\n Can I ask something from you?\""
-    tx["tx2"] = "\"じゃ、#{target}はそこに寝てて？\n　動いちゃダメだからね～\\H\"" 
-    tx["tx2"] = "\"じゃ、#{target}はそこに寝てて？\n　動いちゃダメだからね～\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
+    tx["tx2"] = "\"Then can you just lie down there?\n No moving around\\H\"" 
+    tx["tx2"] = "\"Then can you just lie down there?\n No moving around\\H\""  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"も～！\n　動いちゃダメって言ったのに～！\""
+    tx["tx1"] = "\"Oh, come on!\n I said no moving around!\""
   when 2..76 #レジスト失敗(愛撫を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     case $msg.weakpoints
@@ -249,14 +249,14 @@ when "Caress - normal"
     when 20,10
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
-        tx["tx1"] = "\"えへっ、今の気持ちよかった？\n　じゃ、もっともっとやってあげちゃうね♪\"" 
-        tx["tx1"] = "\"そうそう、ここだったっけ\\H\n　#{target}、気持ちいいところがあったら、\n　ちゃ～んと#{myname}に教えてね？\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"それそれそれ～っ♪\n　あはははっ、ぴくぴくしておもしろ～い\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Ehe, did that feel good just now?\nThen I'm gonna do more and more♪\"" 
+        tx["tx1"] = "\"I see, so that's where it was\\H\n Remember to tell me if there's\n somewhere that feels good, got it, #{target}?\""  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "\"Oooh, yeaah♪\n Ahahaha, I just adore how you're twitching\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "\"え～と、確かこんな感じで……、\n　え、さっきと違う？\n　あれ～……？\"" 
-        tx["tx1"] = "\"あれ～、おかしいなあ？\n　さっきはこれで良かったよね？\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"んふふ～、ガマンしちゃダメ～っ♪\n　もっと気持ちよくなって～\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Uhhh, pretty sure it went like this....\n Uh, was that not it?\n Huuuh....?\"" 
+        tx["tx1"] = "\"Huh?? That's strange,\n that's how it worked last time, right?\""  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "\"Nfuガマンしちゃダメ～っ♪\n　もっと気持ちよくなって～\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     #▼その他
     else
