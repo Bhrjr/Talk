@@ -263,8 +263,8 @@ when "Caress - normal"
       #▼弱点を発見された(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "「Wow, that surprised me....\n Awesome, it got bigger than just now♪」" 
-        tx["tx1"] = "「あはっ、ぴくぴくしてる♪\n　#{target}、気持ちいい～？」"  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "「あっ、今の良かった？\n　それじゃ、どんどんやっちゃうよ～♪」"  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "「Aha, it's twitching♪\n Does it feel good, #{target}?」"  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "「Ah, did I get it just now:?、今の良かった？\n　それじゃ、どんどんやっちゃうよ～♪」"  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
         tx["tx1"] = "「んふふ～、どう？\n　気持ちよくなってきたでしょ？\\H」" 
