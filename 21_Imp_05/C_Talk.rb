@@ -264,11 +264,11 @@ when "Caress - normal"
       if $game_actors[101].critical == true
         tx["tx1"] = "「Wow, that surprised me....\n Awesome, it got bigger than just now♪」" 
         tx["tx1"] = "「Aha, it's twitching♪\n Does it feel good, #{target}?」"  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "「Ah, did I get it just now:?、今の良かった？\n　それじゃ、どんどんやっちゃうよ～♪」"  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "「Ah, did I get it just now?\n Then time for some follow-ups♪」"  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "「んふふ～、どう？\n　気持ちよくなってきたでしょ？\\H」" 
-        tx["tx1"] = "「#{giggle}\n　#{target}の、おっきいね～\\H\n　あ、今ぴくってした\\H」"  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "「Nfufu, how is it?\n Did it feel good? \\H」" 
+        tx["tx1"] = "「#{giggle}\n Your dick's so big, #{target}\\H\n　あ、今ぴくってした\\H」"  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "「んしょ……んしょ……。\n　ん～、これでいいんだったっけ？\n　ねぇ、#{target}、これって気持ちいい？」"  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
