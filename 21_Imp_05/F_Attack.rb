@@ -25,7 +25,7 @@ class MsgImp_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"Ehehe, lemme do it for you♪」"
+  tx["tx1"] = "\"Ehehe, lemme do it for you♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Hey, #{target}.\n You need to feel even better\\H\"" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -38,7 +38,7 @@ class MsgImp_A < MsgBase
 case $msg.at_type
 #▼キス▼****************************************************************************************
 when "Kiss"
-  tx["tx1"] = "\"Smooch\\H\n Aha, we can have more smoochies if you want\\H\""
+  tx["tx1"] = "\"Smooooch\\H\n Aha, we can have more smoochies if you want\\H\""
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -176,7 +176,7 @@ when "貝合わせ"
 #▼顔面騎乗▼****************************************************************************************
 when "Pussy on top"
   tx["tx1"] = "\"Ahaha, the horsie goes clippety-clop♪\""
-  tx["tx1"] = "\"Ah, nuh-uh. #{myname}'m the one that's doing it!\n You don't hafta move, #{target}!\"" if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"Ah-, nuh-uh. #{myname}'m the one that's doing it!\n You don't hafta move, #{target}!\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -283,7 +283,7 @@ when "Hips"
 when "Crotch"
   tx["tx1"] = "\"Ahah, that tickles, #{target}♪\n　……Annh\\H\""
   tx["tx1"] = "\"Ahaha, you shouldn't grind it so much♪\n ....Annnh\\H\"" unless $msg.t_target.nude? # 対象が着衣状態の時
-  tx["tx1"] = "\"Aah....nnnh........fuah....\\H\n Keep going, #{target}....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"Aah....nnnh........fuah....\\H\n Keep doing it, #{target}....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
