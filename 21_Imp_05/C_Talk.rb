@@ -254,15 +254,15 @@ when "Caress - normal"
         tx["tx1"] = "\"Oooh, yeaah♪\n Ahahaha, I just adore how you're twitching\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "\"Uhhh, pretty sure it went like this....\n Uh, was that not it?\n Huuuh....?\"" 
+        tx["tx1"] = "\"Uhhh, pretty sure it went like this....\n Uh, is that not it?\n Huuuh....?\"" 
         tx["tx1"] = "\"Huh?? That's strange,\n that's how it worked last time, right?\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"Nfuガマンしちゃダメ～っ♪\n　もっと気持ちよくなって～\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Nfufu, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     #▼その他
     else
       #▼弱点を発見された(SSを受けた)
       if $game_actors[101].critical == true
-        tx["tx1"] = "「わっ、びっくりした～……。\n　すご～い、さっきよりカタくなったよ♪」" 
+        tx["tx1"] = "「Wow, that surprised me....\n Awesome, it got bigger than just now♪」" 
         tx["tx1"] = "「あはっ、ぴくぴくしてる♪\n　#{target}、気持ちいい～？」"  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "「あっ、今の良かった？\n　それじゃ、どんどんやっちゃうよ～♪」"  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
@@ -371,26 +371,26 @@ when "Leer"
   case $msg.talk_step
   when 1 #自慰開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「えへへ……♪\n　#{target}にだけ、見せてあげる\\H」"
-    tx["tx2"] = "「あはっ、ちょっとドキドキしちゃう\\H\n　見ててね～♪」" 
+    tx["tx1"] = "\"えへへ……♪\n　#{target}にだけ、見せてあげる\\H\""
+    tx["tx2"] = "\"あはっ、ちょっとドキドキしちゃう\\H\n　見ててね～♪\"" 
   when 77 #レジスト成功(視姦を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「も～、見てくれなきゃダメ～っ！」"
+    tx["tx1"] = "\"も～、見てくれなきゃダメ～っ！\""
   when 2..76 #レジスト失敗(視姦を了承した場合)
     #----------------------------------------------------------------------------------------------------------------------
     case $msg.at_parts
     #▼胸を弄る
-    when "対象：胸","対象：口"
-      tx["tx1"] = "「#{pleasure_s}\n　こうやって、自分でもみもみしてたら、\n　#{myname}の胸も大きくなるのかなぁ……？」" 
-      tx["tx1"] = "「あは……っ\\H\n　乳首が立っちゃった……\\H\n　#{target}、見える……？」"  if $game_variables[17] > 50 #パターンB
+    when "Target: Breasts","Target: Mouth"
+      tx["tx1"] = "\"#{pleasure_s}\n　こうやって、自分でもみもみしてたら、\n　#{myname}の胸も大きくなるのかなぁ……？\"" 
+      tx["tx1"] = "\"あは……っ\\H\n　乳首が立っちゃった……\\H\n　#{target}、見える……？\""  if $game_variables[17] > 50 #パターンB
     #▼アソコを弄る
-    when "対象：アソコ","対象：尻"
-      tx["tx1"] = "「んっ……は……っ\\H\n　ここをね、こすると気持ちいいの……\\H\n　んんっ……あっ……\\H」" 
-      tx["tx1"] = "「えへへっ……♪\n　見られてると、いつもより気持ちいいんだ\\H\n　#{myname}、変なのかな？」"  if $game_variables[17] > 50 #パターンB
+    when "Target: Pussy","Target: Ass"
+      tx["tx1"] = "\"んっ……は……っ\\H\n　ここをね、こすると気持ちいいの……\\H\n　んんっ……あっ……\\H\"" 
+      tx["tx1"] = "\"えへへっ……♪\n　見られてると、いつもより気持ちいいんだ\\H\n　#{myname}、変なのかな？\""  if $game_variables[17] > 50 #パターンB
     #▼陰核を弄る
-    when "対象：陰核","対象：アナル"
-      tx["tx1"] = "\"あっ……#{pleasure_s}\n　ここ触ると、びりびりって来るの……\\H\n　……ふぁあんっ\\H\"" 
-      tx["tx1"] = "\"#{target}、見てる……？\n　えへっ、ドキドキしちゃうでしょ……？\\H\""  if $game_variables[17] > 50 #パターンB
+    when "Target: Clitoris","Target: Anus"
+      tx["tx1"] = "\"Aaah.... #{pleasure_s}\n Touching here gives me the thrills....\\H\n ....Fwaaah\\H\"" 
+      tx["tx1"] = "\"#{target}, are you watching me....?\n Ehe, doesn't it make your heart race....?\\H\""  if $game_variables[17] > 50 #パターンB
     end
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
