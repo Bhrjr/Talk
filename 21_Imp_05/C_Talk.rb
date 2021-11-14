@@ -343,14 +343,14 @@ when "Show love"
     #----------------------------------------------------------------------------------------------------------------------
     #▼SS時
     if $msg.t_enemy.critical == true
-      tx["tx1"] = "\"#{pleasure_s}\n That feels great, #{target}....\\H\n Keep at it........\\H\"" 
+      tx["tx1"] = "\"#{pleasure_s}\n That feels great, #{target}....\\H\n Keep doing it........\\H\"" 
       tx["tx1"] = "\"#{pleasure_cr}\n More, #{target}....\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aaannh, aanhh!\\H\n No, #{myname}'m gonna bounce!!\\H\n #{pleasure_cr}\""  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
       tx["tx1"] = "\"#{pleasure_l}\n That's good....\\H\n #{pleasure_s}\"" 
       tx["tx1"] = "\"#{pleasure_l}\n #{target}....it feels so nice....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Please, #{target}....\\H\n More....keep at it....\\H\n #{pleasure_s}\""  if $msg.chain_attack == true #同じ部位を連撃中
+      tx["tx1"] = "\"Please, #{target}....\\H\n More....keep doing it....\\H\n #{pleasure_s}\""  if $msg.chain_attack == true #同じ部位を連撃中
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -820,14 +820,14 @@ when "Show love"
     #----------------------------------------------------------------------------------------------------------------------
     #▼SS時
     if $msg.t_enemy.critical == true
-      tx["tx1"] = "\"#{pleasure_s}\n That feels great, #{target}....\\H\n Keep at it........\\H\"" 
+      tx["tx1"] = "\"#{pleasure_s}\n That feels great, #{target}....\\H\n Keep doing it........\\H\"" 
       tx["tx1"] = "\"#{pleasure_cr}\n More, #{target}....\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aaannh, aanhh!\\H\n No, #{myname}'m gonna bounce!!\\H\n #{pleasure_cr}\""  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
       tx["tx1"] = "\"#{pleasure_l}\n That's good....\\H\n #{pleasure_s}\"" 
       tx["tx1"] = "\"#{pleasure_l}\n #{target}....it feels so nice....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Please, #{target}....\\H\n More....keep at it....\\H\n #{pleasure_s}\""  if $msg.chain_attack == true #同じ部位を連撃中
+      tx["tx1"] = "\"Please, #{target}....\\H\n More....keep doing it....\\H\n #{pleasure_s}\""  if $msg.chain_attack == true #同じ部位を連撃中
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1223,14 +1223,14 @@ when "Show love"
     #----------------------------------------------------------------------------------------------------------------------
     #▼SS時
     if $msg.t_enemy.critical == true
-      tx["tx1"] = "\"#{pleasure_s}\n That feels great, #{target}....\\H\n Keep at it........\\H\"" 
+      tx["tx1"] = "\"#{pleasure_s}\n That feels great, #{target}....\\H\n Keep doing it........\\H\"" 
       tx["tx1"] = "\"#{pleasure_cr}\n More, #{target}....\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aaannh, aanhh!\\H\n No, #{myname}'m gonna bounce!!\\H\n #{pleasure_cr}\""  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
       tx["tx1"] = "\"#{pleasure_l}\n That's good....\\H\n #{pleasure_s}\"" 
       tx["tx1"] = "\"#{pleasure_l}\n #{target}....it feels so nice....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Please, #{target}....\\H\n More....keep at it....\\H\n #{pleasure_s}\""  if $msg.chain_attack == true #同じ部位を連撃中
+      tx["tx1"] = "\"Please, #{target}....\\H\n More....keep doing it....\\H\n #{pleasure_s}\""  if $msg.chain_attack == true #同じ部位を連撃中
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
@@ -1625,14 +1625,14 @@ when "Show love"
     #----------------------------------------------------------------------------------------------------------------------
     #▼SS時
     if $msg.t_enemy.critical == true
-      tx["tx1"] = "\"#{pleasure_s}\n That feels great, #{target}....\\H\n Keep at it........\\H\"" 
+      tx["tx1"] = "\"#{pleasure_s}\n That feels great, #{target}....\\H\n Keep doing it........\\H\"" 
       tx["tx1"] = "\"#{pleasure_cr}\n More, #{target}....\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aaannh, aanhh!\\H\n No, #{myname}'m gonna bounce!!\\H\n #{pleasure_cr}\""  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
       tx["tx1"] = "\"#{pleasure_l}\n That's good....\\H\n #{pleasure_s}\"" 
       tx["tx1"] = "\"#{pleasure_l}\n #{target}....it feels so nice....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Please, #{target}....\\H\n More....keep at it....\\H\n #{pleasure_s}\""  if $msg.chain_attack == true #同じ部位を連撃中
+      tx["tx1"] = "\"Please, #{target}....\\H\n More....keep doing it....\\H\n #{pleasure_s}\""  if $msg.chain_attack == true #同じ部位を連撃中
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
