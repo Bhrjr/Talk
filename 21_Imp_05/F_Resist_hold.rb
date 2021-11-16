@@ -118,7 +118,7 @@ if $msg.tag == "Partner binds the succubus."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"Huh?? You're gonna stop?\""
     when 2 #ホールド成功
-      tx["tx1"] = "\"Oh come on, why??\"
+      tx["tx1"] = "\"Oh come on, why??\""
       tx["md"] = "2"
     when 3 #ホールド失敗
       tx["tx1"] = "\"#{giggle}\n Not until #{myname} say so♪\""
@@ -139,9 +139,9 @@ if $msg.tag == "Partner binds the succubus."
       tx["tx1"] = "\"Geez, can't help it then.\n Then this time, you'll play with me, right?\""
       tx["md"] = "10"
     when 3 #ホールド失敗
-      tx["tx1"] = "\"Save that for later♪ I'm in the middle of playing right now.\""
+      tx["tx1"] = "\"Save that for later♪ I'm playing right now.\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"Save that for later♪ I'm in the middle of playing right now.\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Save that for later♪ I'm playing right now.\"" if $game_switches[89] == true
       tx["md"] = "11"
     end
     #格納
@@ -198,7 +198,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「I get it, #{myname}♪\n Doing it like this make you feels good, right? \\H」"
+      tx["tx1"] = "\"I get it, #{myname}♪\n Doing it like this make you feels good, right? \\H」"
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Come on, don't run away!\""
     when 3 #ホールドレジスト失敗
@@ -356,7 +356,7 @@ class MsgImp_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 #■パートナーが夢魔をホールドする
 if $msg.tag == "パートナーが夢魔をホールド"
@@ -674,7 +674,7 @@ end
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 #■パートナーが夢魔をホールドする
 if $msg.tag == "パートナーが夢魔をホールド"
