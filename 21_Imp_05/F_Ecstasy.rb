@@ -32,8 +32,8 @@ class MsgImp_A < MsgBase
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H」"
-  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H」" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
@@ -313,7 +313,7 @@ class MsgImp_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -337,8 +337,8 @@ if $msg.t_enemy.have_ability?("Significant Other")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H」"
-  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H」" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
@@ -614,8 +614,8 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H」"
-  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H」" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
@@ -890,8 +890,8 @@ else
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H」"
-  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H」" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
