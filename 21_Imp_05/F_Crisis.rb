@@ -40,7 +40,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n　#{giggle}\""
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
@@ -107,50 +107,50 @@ if $msg.t_enemy.have_ability?("Significant Other")
 #■パートナーがクライシス状態になる
 case $msg.tag
 #夢魔の攻めでパートナーがクライシス
-when "アクター単独"
-  tx["tx1"] = "「あはっ、気持ちいい？\n　#{myname}じょうずでしょ♪」"
+when "User solo"
+  tx["tx1"] = "\"Aha, does it feel good?\n #{myname}'m pretty good, right? ♪\""
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
-when "アクター両者"
-  tx["tx1"] = "「#{pleasure_s}\n　#{target}も飛んじゃいそう……？\n　ね、#{myname}をぎゅーってしてくれる……？\\H」"
+when "Both users"
+  tx["tx1"] = "\"#{pleasure_s}\n You're about to bounce too, #{target}....?\n Can you hold me tight then....?\\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
-when "アクターリバウンド自爆"
-  tx["tx1"] = "「あれれ～、もうおしまいかな～？\n　#{myname}は何もしてないんだけどな～？♪\n　#{giggle}」"
+when "User rebound harm"
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
-when "アクター自慰"
-  tx={"tx1" => "「わぁ……\\H\n　そんなふうにしたら気持ちいいんだぁ……\\H」","md" => "3"}
+when "User onanism"
+  tx={"tx1" => "\"Wowie....\\H\n So doing it like that feels nice, huh....\\H\"","md" => "3"}
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔がクライシス状態になる
 #パートナーの攻めで夢魔がクライシス
-when "エネミー単独"
-  tx["tx1"] = "「#{target}、#{myname}ね……。\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy solo"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
-when "エネミー両者"
-  tx["tx1"] = "「#{target}、#{myname}をぎゅってして……！\n　なんだか飛んでっちゃいそう……！\\H」"
+when "Both foes"
+  tx["tx1"] = "\"Hold me tight, #{target}....!\n I feel like I'm gonna bounce....! \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
-when "エネミーリバウンド自爆"
-  tx["tx1"] = "「#{target}、#{myname}ね……。\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy rebound harm"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
-  tx["tx1"] = "「あぁん……気持ちいいよぉ……\\H\n　#{myname}のここ、触ってぇ……\\H」"
+when "Enemy onanism"
+  tx["tx1"] = "\"Anngh....that feels so good....\\H\n Touch me down here....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
-when "エネミー仲間攻め"
-  tx["tx1"] = "「やぁ～ん\\H\n　んもぉ、後でひどいんだから……\n　#{pleasure_s}」"
+when "Enemy friendly fire"
+  tx["tx1"] = "\"Aieeee\\H\n Oh, you won't get away with that....\n　#{pleasure_s}\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -177,50 +177,50 @@ elsif $msg.t_enemy.have_ability?("Affection")
 #■パートナーがクライシス状態になる
 case $msg.tag
 #夢魔の攻めでパートナーがクライシス
-when "アクター単独"
-  tx["tx1"] = "「あはっ、気持ちいい？\n　#{myname}じょうずでしょ♪」"
+when "User solo"
+  tx["tx1"] = "\"Aha, does it feel good?\n #{myname}'m pretty good, right? ♪\""
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
-when "アクター両者"
-  tx["tx1"] = "「#{pleasure_s}\n　#{target}も飛んじゃいそう……？\n　ね、#{myname}をぎゅーってしてくれる……？\\H」"
+when "Both users"
+  tx["tx1"] = "\"#{pleasure_s}\n You're about to bounce too, #{target}....?\n Can you hold me tight then....?\\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
-when "アクターリバウンド自爆"
-  tx["tx1"] = "「あれれ～、もうおしまいかな～？\n　#{myname}は何もしてないんだけどな～？♪\n　#{giggle}」"
+when "User rebound harm"
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
-when "アクター自慰"
-  tx={"tx1" => "「わぁ……\\H\n　そんなふうにしたら気持ちいいんだぁ……\\H」","md" => "3"}
+when "User onanism"
+  tx={"tx1" => "\"Wowie....\\H\n So doing it like that feels nice, huh....\\H\"","md" => "3"}
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔がクライシス状態になる
 #パートナーの攻めで夢魔がクライシス
-when "エネミー単独"
-  tx["tx1"] = "「#{target}、#{myname}ね……。\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy solo"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
-when "エネミー両者"
-  tx["tx1"] = "「#{target}、#{myname}をぎゅってして……！\n　なんだか飛んでっちゃいそう……！\\H」"
+when "Both foes"
+  tx["tx1"] = "\"Hold me tight, #{target}....!\n I feel like I'm gonna bounce....! \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
-when "エネミーリバウンド自爆"
-  tx["tx1"] = "「#{target}、#{myname}ね……。\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy rebound harm"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
-  tx["tx1"] = "「あぁん……気持ちいいよぉ……\\H\n　#{myname}のここ、触ってぇ……\\H」"
+when "Enemy onanism"
+  tx["tx1"] = "\"Anngh....that feels so good....\\H\n Touch me down here....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
-when "エネミー仲間攻め"
-  tx["tx1"] = "「やぁ～ん\\H\n　んもぉ、後でひどいんだから……\n　#{pleasure_s}」"
+when "Enemy friendly fire"
+  tx["tx1"] = "\"Aieeee\\H\n Oh, you won't get away with that....\n　#{pleasure_s}\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -246,50 +246,50 @@ else
 #■パートナーがクライシス状態になる
 case $msg.tag
 #夢魔の攻めでパートナーがクライシス
-when "アクター単独"
-  tx["tx1"] = "「あはっ、気持ちいい？\n　#{myname}じょうずでしょ♪」"
+when "User solo"
+  tx["tx1"] = "\"Aha, does it feel good?\n #{myname}'m pretty good, right? ♪\""
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受けパートナーもクライシス
-when "アクター両者"
-  tx["tx1"] = "「#{pleasure_s}\n　#{target}も飛んじゃいそう……？\n　ね、#{myname}をぎゅーってしてくれる……？\\H」"
+when "Both users"
+  tx["tx1"] = "\"#{pleasure_s}\n You're about to bounce too, #{target}....?\n Can you hold me tight then....?\\H\""
   #格納
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
-when "アクターリバウンド自爆"
-  tx["tx1"] = "「あれれ～、もうおしまいかな～？\n　#{myname}は何もしてないんだけどな～？♪\n　#{giggle}」"
+when "User rebound harm"
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
-when "アクター自慰"
-  tx={"tx1" => "「わぁ……\\H\n　そんなふうにしたら気持ちいいんだぁ……\\H」","md" => "3"}
+when "User onanism"
+  tx={"tx1" => "\"Wowie....\\H\n So doing it like that feels nice, huh....\\H\"","md" => "3"}
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔がクライシス状態になる
 #パートナーの攻めで夢魔がクライシス
-when "エネミー単独"
-  tx["tx1"] = "「#{target}、#{myname}ね……。\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy solo"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
-when "エネミー両者"
-  tx["tx1"] = "「#{target}、#{myname}をぎゅってして……！\n　なんだか飛んでっちゃいそう……！\\H」"
+when "Both foes"
+  tx["tx1"] = "\"Hold me tight, #{target}....!\n I feel like I'm gonna bounce....! \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
-when "エネミーリバウンド自爆"
-  tx["tx1"] = "「#{target}、#{myname}ね……。\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy rebound harm"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
-  tx["tx1"] = "「あぁん……気持ちいいよぉ……\\H\n　#{myname}のここ、触ってぇ……\\H」"
+when "Enemy onanism"
+  tx["tx1"] = "\"Anngh....that feels so good....\\H\n Touch me down here....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
-when "エネミー仲間攻め"
-  tx["tx1"] = "「やぁ～ん\\H\n　んもぉ、後でひどいんだから……\n　#{pleasure_s}」"
+when "Enemy friendly fire"
+  tx["tx1"] = "\"Aieeee\\H\n Oh, you won't get away with that....\n　#{pleasure_s}\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
