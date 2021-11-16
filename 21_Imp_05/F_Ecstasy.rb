@@ -133,9 +133,9 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(非ホールド時はホールド解除と同じstep)
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\""
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\""
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"....Oh, you're going beddy-byes....?\n So lame....\""
@@ -438,9 +438,9 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(非ホールド時はホールド解除と同じstep)
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\""
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\""
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"....Oh, you're going beddy-byes....?\n So lame....\""
@@ -715,9 +715,9 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(非ホールド時はホールド解除と同じstep)
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\""
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\""
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"....Oh, you're going beddy-byes....?\n So lame....\""
@@ -991,9 +991,9 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(非ホールド時はホールド解除と同じstep)
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\""
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick nap♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\""
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"....Oh, you're going beddy-byes....?\n So lame....\""
