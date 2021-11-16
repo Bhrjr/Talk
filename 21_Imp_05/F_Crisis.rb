@@ -45,7 +45,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx={"tx1" => "\"Wowie....\\H\n So it feels nice to do it like that, huh....\\H\"","md" => "3"}
+  tx={"tx1" => "\"Wowie....\\H\n So doing it like that feels nice, huh....\\H\"","md" => "3"}
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
