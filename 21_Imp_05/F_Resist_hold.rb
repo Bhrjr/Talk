@@ -359,7 +359,7 @@ class MsgImp_A < MsgBase
 if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 #■パートナーが夢魔をホールドする
-if $msg.tag == "パートナーが夢魔をホールド"
+if $msg.tag == "Partner binds the succubus."
   # ☆事前設定☆
                             #空ハッシュ挿入
                             tx={}
@@ -375,13 +375,13 @@ if $msg.tag == "パートナーが夢魔をホールド"
   #==================================================================================================================
   case $msg.talk_step
   when 1 #ホールドレジスト中
-    tx["tx1"] = "「ここまでお～いで\\H」"
+    tx["tx1"] = "\"You need to come over here\\H\""
   when 2 #ホールド成功
-    tx["tx1"] = "「や～ん、捕まっちゃったぁ♪」"
+    tx["tx1"] = "\"Aieee, you got me♪\""
   when 3 #ホールド失敗
-    tx["tx1"] = "「残念でした～っ♪」"
+    tx["tx1"] = "\"Too bad♪\""
     #途中で行動をキャンセルした場合
-    tx["tx1"] = "「残念でした～っ♪」" if $game_switches[89] == true
+    tx["tx1"] = "\"Too bad♪\"" if $game_switches[89] == true
   end
   #格納
   ms.push(tx)
@@ -400,51 +400,51 @@ if $msg.tag == "パートナーが夢魔をホールド"
   case $msg.at_type
   #▼シェルマッチ▼****************************************************************************************
   #====================================================================================================================
-  when "貝合わせ"
+  when "Tribadism"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「あははっ♪\n　#{myname}と気持ちいいことしたいの？\\H」"
+      tx["tx1"] = "\"Ahaha♪\n You wanna have some fun with me? \\H\""
     when 2 #ホールド成功
-      tx["tx1"] = "「あぁんっ♪\n　つかまっちゃったぁ\\H」"
+      tx["tx1"] = "\"Annngh♪\n You got me\\H\""
     when 3 #ホールド失敗
-      tx["tx1"] = "「えへへっ、ダ～メっ\\H\n　だって#{target}と遊びたいんだもん♪」"
+      tx["tx1"] = "\"Ehehe, nuh-uh\\H\n But I do want to play with you♪\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "「えへへっ、ダ～メっ\\H\n　だって#{target}と遊びたいんだもん♪」" if $game_switches[89] == true
+      tx["tx1"] = "\"Ehehe, nuh-uh\\H\n But I do want to play with you♪\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
 
   #▼騎乗系▼***********************************************************************************
   #====================================================================================================================
-  when "顔面騎乗"
+  when "Facesitted"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「あはっ、おまたが丸見え～♪」"
+      tx["tx1"] = "\"Aha, I can totally see your crotch♪\""
     when 2 #ホールド成功
-      tx["tx1"] = "「んむっ？！\n　んぐっ、んむーっ……！\\H」"
+      tx["tx1"] = "\"Nmmmph?!\n Nguh, mmmph....! \\H\""
     when 3 #ホールド失敗
-      tx["tx1"] = "「わっ、びっくりしたぁ！\n　も～、#{myname}の頭はイスじゃないよ？」"
+      tx["tx1"] = "\"Man, that surprised me!\n Geez, my head's not a chair, you know.\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "「えへへっ♪\n　後で#{myname}のも見せたげるね\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"Ehehe♪\n #{myname}'ll show you mine later too\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
 
   #▼ディルド系▼*********************************************************************************
   #====================================================================================================================
-  when "ディルド♀挿入","ディルド口挿入","ディルド尻挿入"
+  when "Dildo'ed","Mouth Dildo'ed","Ass Dildo'ed"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「わ～、すっご～い♪\n　それ、入れちゃうの？入るかなぁ……？」"
+      tx["tx1"] = "\"Whoa, awesome♪\n You're gonna put that in? Dunno if it can....\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「んあぁっ……！\\H\n　ふ、太すぎるよぉ……っ！\\H」"
+      tx["tx1"] = "\"Nnnahhh....!\\H\n I-It's too thick....! \\H\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「や、やっぱりそれダメっ！\n　絶対入んないからっ！」"
+      tx["tx1"] = "\"A-Anything but that!\n No way it's gonna go in!\""
       #自ら受け入れた場合
-      tx["tx1"] = "「だよね～？\n　#{myname}にはたぶん入んないよ、それ」" if $game_switches[89] == true
+      tx["tx1"] = "\"Right?\n I doubt that's gonna go in me.\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
