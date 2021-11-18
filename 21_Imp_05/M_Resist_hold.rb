@@ -72,7 +72,7 @@ if $msg.tag == "Player binds the succubus."
       tx["tx1"] = "\"Eyyargh....\\H\n Ehe, it went all the way through....\\H\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
     when 3 #ホールド失敗
       tx["tx1"] = "\"I'm telling you, it hurts!\n Geez, you gotta be gentle with it!\""
-      tx["tx1"] = "\"Ehehe, nuh-uh\\H\n I'll think 'bout it after you play with me some more♪\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
+      tx["tx1"] = "\"Ehehe, nuh-uh\\H\n I'll think 'bout it after you play with me more♪\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
       tx["md"] = "11" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
       #途中で行動をキャンセルした場合
 #   #  tx["tx1"] = "" if $game_switches[89] == true
@@ -160,7 +160,7 @@ elsif $msg.tag == "Succubus binds the player."
   case $msg.at_type
   #▼アクセプト▼*****************************************************************************************
   #====================================================================================================================
-  when "♀挿入：♀側"
+  when "Insertion done by ♀"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
@@ -256,7 +256,7 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "\"Wonder if it'll go inside my pussy....\""
+      tx["tx1"] = "\"Wonder if it'll go inside my mouth....\""
       tx["tx1"] = "\"#{giggle}\n I'm gonna lick it, #{target}\\H\"" if $game_switches[86] == true #空腹戦
     when 2 #ホールドレジスト成功
       tx["tx1"] = "\"Maaan, why're you running?\""
@@ -329,7 +329,7 @@ class MsgImp_A < MsgBase
 if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 #■主人公が夢魔をホールドする
-if $msg.tag == "主人公が夢魔をホールド"
+if $msg.tag == "Player binds the succubus."
   # ☆事前設定☆
                             #空ハッシュ挿入
                             tx={}
@@ -345,13 +345,13 @@ if $msg.tag == "主人公が夢魔をホールド"
   #==================================================================================================================
   case $msg.talk_step
   when 1 #ホールドレジスト中
-    tx["tx1"] = "「ここまでお～いで\\H」"
+    tx["tx1"] = "\"You need to come over here\\H\""
   when 2 #ホールド成功
-    tx["tx1"] = "「や～ん、捕まっちゃったぁ♪」"
+    tx["tx1"] = "\"Aieee, you got me♪\""
   when 3 #ホールド失敗
-    tx["tx1"] = "「残念でした～っ♪」"
+    tx["tx1"] = "\"Too bad♪\""
     #途中で行動をキャンセルした場合
-    tx["tx1"] = "「残念でした～っ♪」" if $game_switches[89] == true
+    tx["tx1"] = "\"Too bad♪\"" if $game_switches[89] == true
   end
   #格納
   ms.push(tx)
@@ -370,18 +370,18 @@ if $msg.tag == "主人公が夢魔をホールド"
   case $msg.at_type
   #▼インサート▼****************************************************************************************
   #====================================================================================================================
-  when "♀挿入：♂側"
+  when "Insertion done by ♂"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n　もう#{myname}のココに入れたいの～？\\H」"
-      tx["tx1"] = "「#{giggle}\n　#{myname}のココに入れたいの～？\\H」" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
+      tx["tx1"] = "\"#{giggle}\n Wanna put it in my pussy already? \\H\""
+      tx["tx1"] = "\"#{giggle}\n Wanna put it in my pussy? \\H\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
     when 2 #ホールド成功
-      tx["tx1"] = "「あうぅっ……！\\H\n　アソコがいっぱいだよぉ……っ\\H」"
-      tx["tx1"] = "「あうぅっ……\\H\n　えへ、全部入っちゃったぁ……\\H」" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
+      tx["tx1"] = "\"Eyyargh....\\H\n My pussy's all full....\\H\""
+      tx["tx1"] = "\"Eyyargh....\\H\n Ehe, it went all the way through....\\H\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
     when 3 #ホールド失敗
-      tx["tx1"] = "「えへへっ、ダ～メっ\\H\n　もっと遊んでくれたら考えたげる♪」"
-      tx["tx1"] = "「えへへっ、ダ～メっ\\H\n　もっと遊んでくれたら考えたげる♪」" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
+      tx["tx1"] = "\"Ehehe, nuh-uh\\H\n I'll think 'bout it after you play with me more♪\""
+      tx["tx1"] = "\"Ehehe, nuh-uh\\H\n I'll think 'bout it after you play with me more♪\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
       #途中で行動をキャンセルした場合
 #   #  tx["tx1"] = "" if $game_switches[89] == true
     end
@@ -389,36 +389,36 @@ if $msg.tag == "主人公が夢魔をホールド"
     ms.push(tx)
   #▼リリース(自分のホールド解除)▼*********************************************************************************
   #====================================================================================================================
-  when "自分ホールド解除"
+  when "Undo Hold on the user."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「あれ～、やめちゃうの？」"
+      tx["tx1"] = "\"Huh?? You're gonna stop?\""
     when 2 #ホールド成功
-      tx["tx1"] = "「も～、しかたないなあ♪\n　じゃ、次は何して遊ぶの？」"
+      tx["tx1"] = "\"Geez, can't help it then.\n Then what do you want to play with next?\""
       tx["md"] = "11"
     when 3 #ホールド失敗
-      tx["tx1"] = "「#{giggle}\n　#{myname}がいいって言うまでだ～め♪」"
+      tx["tx1"] = "\"#{giggle}\n Not until #{myname} say so♪\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "「#{giggle}\n　#{myname}がいいって言うまでだ～め♪」" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n Not until #{myname} say so♪\"" if $game_switches[89] == true
       tx["md"] = "11"
     end
     #格納
     ms.push(tx)
   #▼インタラプト(仲間のホールド解除)▼*********************************************************************************
   #====================================================================================================================
-  when "仲間ホールド解除"
+  when "Undo Hold on the ally."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「え、なになになに？」"
+      tx["tx1"] = "\"Eh, what is it, what is it?\""
     when 2 #ホールド成功
-      tx["tx1"] = "「も～、しかたないなあ。\n　それじゃ、今度は#{target}が遊んでね？」"
+      tx["tx1"] = "\"Geez, can't help it then.\n Then this time, you'll play with me, right?\""
       tx["md"] = "11"
     when 3 #ホールド失敗
-      tx["tx1"] = "「今遊んでるとこだから、また後でね～♪」"
+      tx["tx1"] = "\"Save that for later♪ I'm playing right now.\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "「今遊んでるとこだから、また後でね～♪」" if $game_switches[89] == true
+      tx["tx1"] = "\"Save that for later♪ I'm playing right now.\"" if $game_switches[89] == true
       tx["md"] = "11"
     end
     #格納
@@ -427,7 +427,7 @@ if $msg.tag == "主人公が夢魔をホールド"
   #==================================================================================================================
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔が主人公をホールドする
-elsif $msg.tag == "夢魔が主人公をホールド"
+elsif $msg.tag == "Succubus binds the player."
   # ☆事前設定☆
                             #空ハッシュ挿入
                             tx={}
@@ -443,13 +443,13 @@ elsif $msg.tag == "夢魔が主人公をホールド"
   #==================================================================================================================
   case $msg.talk_step
   when 1 #ホールドレジスト中
-    tx["tx1"] = "「まてまて～っ♪\n　つかまえちゃうぞ～っ\\H」"
+    tx["tx1"] = "\"Hold on♪\n I'm gonna get you\\H\""
   when 2 #ホールドレジスト成功
-    tx["tx1"] = "「む～、逃げられちゃった……」"
+    tx["tx1"] = "\"Hmph, you got away....\""
   when 3 #ホールドレジスト失敗
-    tx["tx1"] = "「つっかま～えたっ♪」"
+    tx["tx1"] = "\"Gotcha♪\""
     #自ら受け入れた場合
-    tx["tx1"] = "「つっかま～えたっ♪」" if $game_switches[89] == true
+    tx["tx1"] = "\"Gotcha♪\"" if $game_switches[89] == true
   end
   #格納
   ms.push(tx)
@@ -468,18 +468,18 @@ elsif $msg.tag == "夢魔が主人公をホールド"
   case $msg.at_type
   #▼アクセプト▼*****************************************************************************************
   #====================================================================================================================
-  when "♀挿入：♀側"
+  when "Insertion done by ♀"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「んしょ……っと。\n　#{myname}のココに入れたげるね\\H」"
-      tx["tx1"] = "「んしょ……っと♪\n　#{myname}のココはじゅんびおっけ～だよ\\H」" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
+      tx["tx1"] = "\"Oomph....hup.\n #{myname} wanna put it in my pussy\\H\""
+      tx["tx1"] = "\"Oomph....hup♪\n My pussy's good to go\\H\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「あれ、おかしいなぁ？\n　入んないや……」"
-      tx["tx1"] = "「あれ、おかしいなぁ？\n　うまく入んないや……」" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
+      tx["tx1"] = "\"Huh, that's weird.\n It's not going in....\""
+      tx["tx1"] = "\"Huh, that's weird.\n It's not really going in....\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「あうぅ……っ！\\H\n　#{myname}のアソコが広がっちゃう……\\H」"
-      tx["tx1"] = "「あうぅ……っ\\H\n　ぬるんって入っちゃったぁ……\\H」" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
+      tx["tx1"] = "\"Eyyargh....!\\H\n My pussy's spreading out....\\H\""
+      tx["tx1"] = "\"Eyyargh....!\\H\n It slipped right in....\\H\"" if $msg.t_enemy.lub_female > 30 #潤滑度30以上
       #自ら受け入れた場合
 #      tx["tx1"] = "「」" if $game_switches[89] == true
     end
@@ -488,34 +488,34 @@ elsif $msg.tag == "夢魔が主人公をホールド"
 
   #▼騎乗系▼***********************************************************************************
   #====================================================================================================================
-  when "顔面騎乗","尻騎乗"
+  when "Facesitted","Dark-sided"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{target}、いくよっ♪\n　それ～っ！」"
+      tx["tx1"] = "\"Here I go, #{target}♪\n Take this!\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「あいたたた、お尻打っちゃった……。\n　も～、よけちゃダメだよぉ……」"
+      tx["tx1"] = "\"Owowow, I bumped my butt....\n Gee, you shouldn't avoid it....\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「あはっ、お馬さんパカパカ～っ♪\n　きゃっ、#{target}、もごもごしちゃダメっ\\H」"
+      tx["tx1"] = "\"Aha, the horsie goes clippety-clop♪\n Kyah, no squirming, #{target}\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「あはっ、お馬さんパカパカ～っ♪\n　きゃっ、#{target}、もごもごしちゃダメっ\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"Aha, the horsie goes clippety-clop♪\n Kyah, no squirming, #{target}\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
 
   #▼エンブレイス▼*********************************************************************************
   #====================================================================================================================
-  when "背面拘束"
+  when "Backside Bind"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「まてまて～っ♪\n　つかまえちゃうぞ～っ\\H」"
+      tx["tx1"] = "\"Hold on♪\n I'm gonna get you\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「む～、逃げられちゃった……」"
+      tx["tx1"] = "\"Hmph, you got away....\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「つっかま～えたっ♪」"
+      tx["tx1"] = "\"Gotcha♪\""
       #自ら受け入れた場合
-      tx["tx1"] = "「つっかま～えたっ♪」" if $game_switches[89] == true
+      tx["tx1"] = "\"Gotcha♪\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -523,68 +523,68 @@ elsif $msg.tag == "夢魔が主人公をホールド"
 
   #▼胸系▼*********************************************************************************
   #====================================================================================================================
-  when "パイズリ","ぱふぱふ"
+  when "Jiggly-Wiggly"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「まてまて～っ♪\n　つかまえちゃうぞ～っ\\H」"
+      tx["tx1"] = "\"Hold on♪\n I'm gonna get you\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「む～、逃げられちゃった……」"
+      tx["tx1"] = "\"Hmph, you got away....\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「つっかま～えたっ♪\n　えへへ、#{myname}だってできるもんねっ\\H」"
+      tx["tx1"] = "\"Gotcha♪\n Ehehe, so even #{myname} can do it\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「つっかま～えたっ♪\n　えへへ、#{myname}だってできるもんねっ\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"Gotcha♪\n Ehehe, so even #{myname} can do it\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
 
   #▼フラッタナイズ▼*********************************************************************************
   #====================================================================================================================
-  when "キッス"
+  when "Kiss"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「ねぇねぇ、#{target}。\n　#{myname}と、いっぱいちゅーして\\H」"
+      tx["tx1"] = "\"Hey hey, #{target}.\n Let's have lots of smoochies\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「あ～ん、#{target}のいじわる～」"
+      tx["tx1"] = "\"Maan, you meanie.\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「#{kiss_l}\n　#{giggle}」"
+      tx["tx1"] = "\"#{kiss_l}\n #{giggle}\""
       #自ら受け入れた場合
-      tx["tx1"] = "「#{kiss_l}\n　#{giggle}」" if $game_switches[89] == true
+      tx["tx1"] = "\"#{kiss_l}\n #{giggle}\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
 
   #▼オーラルアクセプト▼*********************************************************************************
   #====================================================================================================================
-  when "口挿入：口側"
+  when "♀ giving fellatio"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n　#{myname}がおくちでぺろぺろしてあげる\\H」"
+      tx["tx1"] = "\"#{giggle}\n Time to lick it for you\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「あ～ん、噛んだりしないよ～？」"
+      tx["tx1"] = "\"Maan, not like I'm gonna bite it, you know?\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「あむっ……んふ……っ\\H」"
+      tx["tx1"] = "\"Nom....mfu....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「はもっ……んぐ……\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"Nom....mfu....\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
 
   #▼ディルドインバック▼*********************************************************************************
   #====================================================================================================================
-  when "ディルド尻挿入"
+  when "Ass Dildo'ed"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n　ね、コレ入れてみていい？」"
+      tx["tx1"] = "\"#{giggle}\n Hey, can I try putting this in?\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「あ～ん、なんで逃げるの～？」"
+      tx["tx1"] = "\"Maaan, why're you running?\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「わ～、すご～い♪\n　奥まで入っちゃったぁ\\H」"
+      tx["tx1"] = "\"Whoa, awesome♪\n It went all the way in\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「わ～、すご～い♪\n　奥まで入っちゃったぁ\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"Whoa, awesome♪\n It went all the way in\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
