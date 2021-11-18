@@ -40,7 +40,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n #{giggle}\""
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname}'m not doing anything though♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
@@ -118,7 +118,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n #{giggle}\""
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname}'m not doing anything though♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
@@ -188,7 +188,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n #{giggle}\""
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname}'m not doing anything though♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
@@ -257,7 +257,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname} wasn't doing anything♪\n #{giggle}\""
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname}'m not doing anything though♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
