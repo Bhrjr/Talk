@@ -153,7 +153,7 @@ class MsgImp_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"Ah, does doing it like this make you feel good?\n Then I'm gonna do more on you♪\""
+  tx["tx1"] = "\"Ah, does it feel good when I do it like this?\n Then I'm gonna do more on you♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
