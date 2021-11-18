@@ -29,50 +29,50 @@ class MsgImp_A < MsgBase
 #■主人公がクライシス状態になる
 case $msg.tag
 #夢魔の攻めで主人公がクライシス
-when "アクター単独"
-  tx["tx1"] = "「あれれ～、もうおしまいかな～？\n　それじゃ#{myname}が手伝ってあげるよ♪\n　#{giggle}」"
+when "User solo"
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n Then let me help you with that♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
-when "アクター両者"
-  tx["tx1"] = "「#{pleasure_s}\n　#{target}も飛んじゃいそう……？\n　ね、#{myname}をぎゅーってしてくれる……？\\H」"
+when "Both users"
+  tx["tx1"] = "\"#{pleasure_s}\n　#{target}も飛んじゃいそう……？\n　ね、#{myname}をぎゅーってしてくれる……？\\H」"
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
 when "アクターリバウンド自爆"
-  tx["tx1"] = "「あれれ～、もうおしまいかな～？\n　#{myname}は何もしてないんだけどな～？♪\n　#{giggle}」"
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n But #{myname}'m not doing anything though♪\n #{giggle}\""
   #格納
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
-when "アクター自慰"
-  tx["tx1"] = "「わ～、男の子ってそうやるんだぁ……\\H\n　ね、もっとやって見せて♪」"
+when "User onanism"
+  tx["tx1"] = "\"Oh wow, so that's how a guy does it....\\H\n Hey, show me more♪\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔がクライシス状態になる
 #主人公の攻めで夢魔がクライシス
-when "エネミー単独"
-  tx["tx1"] = "「#{target}、#{myname}ね……。\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy solo"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
-when "エネミー両者"
-  tx["tx1"] = "「#{target}、#{myname}をぎゅってして……！\n　なんだか飛んでっちゃいそう……！\\H」"
+when "Both foes"
+  tx["tx1"] = "\"Hold me tight, #{target}....!\n I feel like I'm gonna bounce....! \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
-when "エネミーリバウンド自爆"
-  tx["tx1"] = "「#{target}、#{myname}ね……。\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy rebound harm"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
-  tx["tx1"] = "「あぁん……気持ちいいよぉ……\\H\n　#{myname}のここ、触ってぇ……\\H」"
+when "Enemy onanism"
+  tx["tx1"] = "\"Anngh....that feels so good....\\H\n Touch me down here....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
-when "エネミー仲間攻め"
-  tx["tx1"] = "「やぁ～ん\\H\n　鬼さんはあっちだよぉ……ふあぁん\\H」"
+when "Enemy friendly fire"
+  tx["tx1"] = "\"Aieeee\\H\n The guy that's it's over there....mwaahhn\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -102,7 +102,7 @@ class MsgImp_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 #■主人公がクライシス状態になる
 case $msg.tag
@@ -172,7 +172,7 @@ end #case $msg.tag
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 #■主人公がクライシス状態になる
 case $msg.tag
