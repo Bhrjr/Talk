@@ -44,7 +44,7 @@ when 9 #とどめ
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H」"
+  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H\""
   tx["tx2"] = "\"Hey, keep doing what you did just now\\H\n Pretty please, #{target}? \\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"Aha....\\H\n That felt nice....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
@@ -162,7 +162,7 @@ when 9 #とどめ
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H」"
+  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H\""
   tx["tx2"] = "\"Hey, keep doing what you did just now\\H\n Pretty please, #{target}? \\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"Aha....\\H\n That felt nice....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
@@ -251,7 +251,7 @@ when 9 #とどめ
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H」"
+  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H\""
   tx["tx2"] = "\"Hey, keep doing what you did just now\\H\n Pretty please, #{target}? \\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"Aha....\\H\n That felt nice....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
@@ -339,7 +339,7 @@ when 9 #とどめ
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H」"
+  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H\""
   tx["tx2"] = "\"Hey, keep doing what you did just now\\H\n Pretty please, #{target}? \\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"Aha....\\H\n That felt nice....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
