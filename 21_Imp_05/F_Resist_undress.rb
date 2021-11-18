@@ -39,7 +39,7 @@ when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"Lemme take it off for you♪\""
-    tx["tx1"] = "\"You should get butt-naked too, #{target}♪」" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+    tx["tx1"] = "\"You should get butt-naked too, #{target}♪\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
     tx["tx1"] = "\"Oh come on!\n #{myname}'m gonna take it off for you!\""
