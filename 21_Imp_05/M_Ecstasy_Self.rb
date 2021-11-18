@@ -243,19 +243,19 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{pleasure_l}\n　きもちいい……きもちいいよぉ……\\H」"
+  tx["tx1"] = "\"#{pleasure_l}\n That feels good....so good....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{pleasure_l}\n　#{myname}、もうとんじゃいそう……\\H」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n #{myname}, my body feels light and fluffy now....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「#{target}、\n　おねがい、ぎゅーってしてて……！\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{target}、\n　おねがい、ぎゅーってしてて……！\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「あはぁ……\\H\n　あははっ、なんだかふらふらするぅ……\\H\n　ちょっとだけお休み～……」"
-  tx["tx1"] = "「あはぁ……\\H\n　えへ、次は#{myname}がしてあげる♪\n　……でもちょっと休んでからね～……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx2"] = "「#{giggle}\n　#{target}、大好きぃ……\\H」"
-  tx["tx1"] = "「あはぁ……\\H\n　気持ちよかったぁ……\\H」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "「……ねぇ、今のもっかいやって？\n　#{myname}、今の好き\\H\n　ね、いいでしょ？」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H\n Time for a quick break....\""
+  tx["tx1"] = "\"Aha....\\H\n Ehe, lemme do it for you next♪\n ....But after a quick break....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx2"] = "\"#{giggle}\n I love you, #{target}....\\H\""
+  tx["tx1"] = "\"Aha....\\H\n That felt nice....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"....Hey, can you do that just now again?\n I like it\\H\n Hey, isn't it fine?\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
@@ -331,19 +331,19 @@ else
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{pleasure_l}\n　きもちいい……きもちいいよぉ……\\H」"
+  tx["tx1"] = "\"#{pleasure_l}\n That feels good....so good....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{pleasure_l}\n　#{myname}、もうとんじゃいそう……\\H」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n #{myname}, my body feels light and fluffy now....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「#{target}、\n　おねがい、ぎゅーってしてて……！\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{target}、\n　おねがい、ぎゅーってしてて……！\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「あはぁ……\\H\n　あははっ、なんだかふらふらするぅ……\\H\n　ちょっとだけお休み～……」"
-  tx["tx1"] = "「あはぁ……\\H\n　えへ、次は#{myname}がしてあげる♪\n　……でもちょっと休んでからね～……\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx2"] = "「#{giggle}\n　#{target}、大好きぃ……\\H」"
-  tx["tx1"] = "「あはぁ……\\H\n　気持ちよかったぁ……\\H」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "「……ねぇ、今のもっかいやって？\n　#{myname}、今の好き\\H\n　ね、いいでしょ？」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"Aha....\\H\n Ahaha, I feel kinda dizzy....\\H\n Time for a quick break....\""
+  tx["tx1"] = "\"Aha....\\H\n Ehe, lemme do it for you next♪\n ....But after a quick break....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx2"] = "\"#{giggle}\n I love you, #{target}....\\H\""
+  tx["tx1"] = "\"Aha....\\H\n That felt nice....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"....Hey, can you do that just now again?\n I like it\\H\n Hey, isn't it fine?\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
