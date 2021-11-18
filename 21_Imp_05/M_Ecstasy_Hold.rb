@@ -25,7 +25,7 @@ class MsgImp_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -36,9 +36,9 @@ class MsgImp_A < MsgBase
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「あれ～、またイっちゃうの#{target}？\n　あはははっ\\H」"
-  tx["tx1"] = "「あれ～、またイっちゃうの#{target}？\n　あはははっ\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「んふふ～、どうしたの#{target}？\n　もうイっちゃうの？」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
+  tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -74,8 +74,8 @@ when 1 #初撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "「あははっ、皆で遊ぶと楽しいねっ♪\n　ね、#{target}もそう思うでしょ～？」"
-  tx["tx1"] = "「んも～、#{target}は#{myname}と遊んでるの～！\n　ね、#{target}、そうだよね～？」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"Ahaha, playing with everybody sure is fun♪\n Don't you think so, #{target}?\""
+  tx["tx1"] = "\"Man, he's supposed to play with me!\n Right, #{target}?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼アクセプト
@@ -150,9 +150,9 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "「それじゃ、また手伝ってあげるね\\H\n　それっ、イっちゃえ～っ♪」"
-  tx["tx1"] = "「それじゃ、また手伝ってあげるね\\H\n　それっ、イっちゃえ～っ♪」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「あはっ、それじゃ手伝ってあげる\\H\n　それっ、イっちゃえ～っ♪」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Then time to help you out again\\H\n Just let it out♪\""
+  tx["tx1"] = "\"Then time to help you out again\\H\n Just let it out♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Aha, then lemme help you with that\\H\n Just let it out♪\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -188,9 +188,9 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "「あははっ、また#{myname}の勝ちぃ～♪\n　んふふ～、どうする？まだやっちゃう？\\H」"
-  tx["tx1"] = "「あははっ、また#{myname}の勝ちぃ～♪\n　んふふ～、どうする？まだやっちゃう？\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「あははっ、#{myname}の勝ちぃ～♪\n　ね、ね、もう一回やろうよ\\H」" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\""
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Ahaha, #{myname} won♪\n Hey hey, let's go one more time\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -226,8 +226,8 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "「あはぁ……\\H\n　あ、あれ、#{target}？どしたの？\n　……やりすぎちゃったかな？」"
-  tx["tx1"] = "「う～……#{myname}が遊んでもらってたのにぃ……！」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"Aha....\\H\n H-Huh? What's wrong, #{target}?\n ....Maybe I went too far?\""
+  tx["tx1"] = "\"Ugh....but I was the one you played with....!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼アクセプト
@@ -265,9 +265,9 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "「#{giggle}\n　それじゃちょっとおやすみしてからね♪\n　#{myname}もごろごろする～\\H」"
-  tx["tx1"] = "「#{giggle}\n　それじゃちょっとおやすみしてからね♪\n　#{myname}もごろごろする～\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle}\n　それじゃちょっとおやすみしてからね♪\n　#{myname}もごろごろする～\\H」" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\""
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -303,9 +303,9 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "「#{giggle}\n　それじゃちょっとおやすみしてからね♪\n　#{myname}もごろごろする～\\H」"
-  tx["tx1"] = "「#{giggle}\n　それじゃちょっとおやすみしてからね♪\n　#{myname}もごろごろする～\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle}\n　それじゃちょっとおやすみしてからね♪\n　#{myname}もごろごろする～\\H」" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\""
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n Then let's go again after a quick rest♪\n Break time for me too\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -341,9 +341,9 @@ when 21 #続行(ホールド継続)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "「……ありゃ、おねんねしちゃった……？\n　つまんないの～……」"
-  tx["tx1"] = "「……ありゃ、おねんねしちゃった……？\n　つまんないの～……」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「……ありゃ、おねんねしちゃった……？\n　つまんないの～……」" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"....Oh, you're going beddy-byes....?\n So lame....\""
+  tx["tx1"] = "\"....Oh, you're going beddy-byes....?\n So lame....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Oh, you're going beddy-byes....?\n So lame....\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -400,7 +400,7 @@ class MsgImp_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -417,7 +417,7 @@ class MsgImp_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 case $msg.talk_step
 #★専用★==============================================================================================================
@@ -782,7 +782,7 @@ ms.push(tx)
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 case $msg.talk_step
 #★専用★==============================================================================================================
