@@ -176,7 +176,7 @@ when "Player stripped"
     tx["tx1"] = "\"Hmph. Well, I thought as much.\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Whoa there....that's quite....\\H\n Ufufu, I see you have quit the guts.」"
+    tx["tx1"] = "\"Whoa there....that's quite....\\H\n Ufufu, I see you have quit the guts.\""
     tx["tx1"] = "\"Whoa there....that's quite....\\H\n Face this way more, I can't get a good look.\"" if $msg.t_enemy.state?(32) #夢魔がドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -192,15 +192,15 @@ when "Succubus stripped"
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Alright then....\n How about I show you something nice? \\H\""
-    tx["tx2"] = "\"Hehe.... ……まあ、そこで見てなよ。\n　中々拝めない、#{myname}の生着替えだぜ……\\H」" 
-    tx["tx2"] = "\"Hehe.... まあ、そこで見てなよ。\n　#{target}だけ裸じゃ割に合わんだろ？」"  if $game_actors[101].nude? #既に主人公が脱いでいる
+    tx["tx2"] = "\"Hehe....well, watch me from there.\n As I get undressed which you won't get to see anywhere else....\\H\"" 
+    tx["tx2"] = "\"Hehe....well, watch me from there.\n You wouldn't like it if only you're naked, would you?\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「なんだよ、\n　#{myname}の裸に興味ないって？」"
+    tx["tx1"] = "\"What,\n you mean you're not interested in me naked?\""
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「ほぉれ、どうだい？\n　これでも、スタイルには割と自信あるんだがな」"
-    tx["tx1"] = "「ほぉれ、どうだい？\n　……ふふっ、股間のそいつは正直だな\\H」" if $game_actors[101].state?(32) #主人公がドキっとした
+    tx["tx1"] = "\"Welll, what do you think?\n You should know I'm fairly confident in my physique.\""
+    tx["tx1"] = "\"Welll, what do you think?\n .....Hehe, that thing on your groin's honest about it\\H\"" if $game_actors[101].state?(32) #主人公がドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -210,16 +210,16 @@ when "Succubus stripped"
 
 #▼吸精▼****************************************************************************************
 #精気を吸わせるよう要求される
-when "吸精・口","吸精・性器"
+when "Energy-suck - mouth","Energy-suck - genitals"
   case $msg.talk_step
   when 1 #吸精要求
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「さて……#{target}。\n　さっきの言葉が嘘じゃないってんなら、\n　#{myname}の言うことも聞いてくれるよな？」"
-    tx["tx2"] = "「#{target}の精、味見させてくれよ\\H\n　なぁに、すぐ終わるさ……\\H」" 
-    tx["tx2"] = "「#{target}の精、味見させてくでよ\\H\n　なぁに、感じてりゃすぐ終わるさ……\\H」"  if $msg.tag == "吸精・性器"
+    tx["tx1"] = "\"Alright.... #{target},\n if your words just now's not a lie,\n can you hear what #{myname} got to say?\""
+    tx["tx2"] = "\"Let me have a taste of your energy\\H\n What? It'll be over soon....\\H\"" 
+    tx["tx2"] = "\"Let me have a taste of your energy\\H\n What? It'll be over just as you feel it....\\H\""  if $msg.tag == "Energy-suck - genitals"
   when 77 #レジスト成功(脱衣を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「別に死にゃしないってのに……。\n　臆病なのはいただけないぜ？」"
+    tx["tx1"] = "\"別に死にゃしないってのに……。\n　臆病なのはいただけないぜ？」"
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "「おっ……こりゃなかなか……\\H\n　ふふっ、ごちそうさん♪」"
