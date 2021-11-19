@@ -143,7 +143,7 @@ when "Initial remarks"
     tx["tx1"] = "\"Oh my, is it alright for you to say that? \\H\""
   # 好感度が低い場合
   else
-    tx["tx1"] = "\"#{giggle}\n Oh wow, that makes me feel better, even for a flattery....\""
+    tx["tx1"] = "\"#{giggle}\n Oh wow, that doesn't sound so bad for a flattery....\""
   end
   #格納
   ms.push(tx)
