@@ -208,7 +208,7 @@ when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more passionate love with you, #{target}....\\H\""
+    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more steamy love with you, #{target}....\\H\""
     tx["tx2"] = "\"Just for you, I'm revealing this skin of mine, #{target}.\n Remember to watch me until I'm done....\\H\"" 
     tx["tx2"] = "\"Seeing how much you're waiting,\n I'll be offering my body as well, #{target}....\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
@@ -717,7 +717,7 @@ when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more passionate love with you, #{target}....\\H\""
+    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more steamy love with you, #{target}....\\H\""
     tx["tx2"] = "\"Just for you, I'm revealing this skin of mine, #{target}.\n Remember to watch me until I'm done....\\H\"" 
     tx["tx2"] = "\"Seeing how much you're waiting,\n I'll be offering my body as well, #{target}....\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
@@ -1152,7 +1152,7 @@ when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more passionate love with you, #{target}....\\H\""
+    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more steamy love with you, #{target}....\\H\""
     tx["tx2"] = "\"Just for you, I'm revealing this skin of mine, #{target}.\n Remember to watch me until I'm done....\\H\"" 
     tx["tx2"] = "\"Seeing how much you're waiting,\n I'll be offering my body as well, #{target}....\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
@@ -1586,7 +1586,7 @@ when "Succubus stripped"
   case $msg.talk_step
   when 1 #夢魔脱衣
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more passionate love with you, #{target}....\\H\""
+    tx["tx1"] = "\"If you're going to say that, how about we do something even better?\n I want to share a\n more steamy love with you, #{target}....\\H\""
     tx["tx2"] = "\"Just for you, I'm revealing this skin of mine, #{target}.\n Remember to watch me until I'm done....\\H\"" 
     tx["tx2"] = "\"Seeing how much you're waiting,\n I'll be offering my body as well, #{target}....\\H\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
