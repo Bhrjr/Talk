@@ -90,7 +90,7 @@ when "Partner undresses themself."
 when "Succubus undresses herself."
   #------------------------------------------------------------------------------------------------------------------
   tx["tx1"] = "\"Ufufu, I've kept you waiting\\H\""
-  tx["tx1"] = "\"Let's have a more passionate love\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+  tx["tx1"] = "\"Let's have a more steamy love\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -199,7 +199,7 @@ when "Partner undresses themself."
 when "Succubus undresses herself."
   #------------------------------------------------------------------------------------------------------------------
   tx["tx1"] = "\"Ufufu, I've kept you waiting\\H\""
-  tx["tx1"] = "\"Let's have a more passionate love\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+  tx["tx1"] = "\"Let's have a more steamy love\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
     #---------------------------------------------------
     #格納
     tx["md"] = "3"
@@ -279,7 +279,7 @@ when "Partner undresses themself."
 when "Succubus undresses herself."
   #------------------------------------------------------------------------------------------------------------------
   tx["tx1"] = "\"Ufufu, I've kept you waiting\\H\""
-  tx["tx1"] = "\"Let's have a more passionate love\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+  tx["tx1"] = "\"Let's have a more steamy love\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
     #---------------------------------------------------
     #格納
     tx["md"] = "3"
@@ -359,7 +359,7 @@ when "Partner undresses themself."
 when "Succubus undresses herself."
   #------------------------------------------------------------------------------------------------------------------
   tx["tx1"] = "\"Ufufu, I've kept you waiting\\H\""
-  tx["tx1"] = "\"Let's have a more passionate love\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+  tx["tx1"] = "\"Let's have a more steamy love\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
     #---------------------------------------------------
     #格納
     tx["md"] = "3"
