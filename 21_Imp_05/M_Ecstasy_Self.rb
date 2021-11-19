@@ -38,7 +38,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"#{pleasure_l}\n That feels good....so good....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "\"#{pleasure_l}\n #{myname}, my body feels light and fluffy now....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n My body feels light and fluffy now....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
   tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
@@ -156,7 +156,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"#{pleasure_l}\n That feels good....so good....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "\"#{pleasure_l}\n #{myname}, my body feels light and fluffy now....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n #{myname} feel like I'm gonna bounce....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
   tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
@@ -245,7 +245,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"#{pleasure_l}\n That feels good....so good....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "\"#{pleasure_l}\n #{myname}, my body feels light and fluffy now....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n #{myname} feel like I'm gonna bounce....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
   tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
@@ -333,7 +333,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"#{pleasure_l}\n That feels good....so good....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "\"#{pleasure_l}\n #{myname}, my body feels light and fluffy now....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n #{myname} feel like I'm gonna bounce....\\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
   tx["tx1"] = "\"#{target},\n please, hold me tight....!\n　#{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
