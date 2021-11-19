@@ -99,7 +99,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Nfufu♪\n What's wrong?\n #{myname}'ve got no idea here♪\""
+    tx["tx1"] = "\"Hehe♪\n What's wrong?\n #{myname}'ve got no idea here♪\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -256,7 +256,7 @@ when "Caress - normal"
       else
         tx["tx1"] = "\"Uhhh, pretty sure it went like this....\n Uh, is that not it?\n Huuuh....?\"" 
         tx["tx1"] = "\"Huh?? That's strange,\n that's how it worked last time, right?\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"Nfufu, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Hehe, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     #▼その他
     else
@@ -267,7 +267,7 @@ when "Caress - normal"
         tx["tx1"] = "\"Ah, did I get it just now?\n Then time for some follow-ups♪\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "\"Nfufu, how is it?\n Did it feel good? \\H\"" 
+        tx["tx1"] = "\"Hehe, how is it?\n Did it feel good? \\H\"" 
         tx["tx1"] = "\"#{giggle}\n Your dick's so big, #{target}\\H\n Ah, you twitched just now\\H\""  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "\"Oomph....oomph....\n Hmm, did that do the trick?\n Hey, #{target}, does this feel good?\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
@@ -576,7 +576,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Nfufu♪\n What's wrong?\n #{myname}'ve got no idea here♪\""
+    tx["tx1"] = "\"Hehe♪\n What's wrong?\n #{myname}'ve got no idea here♪\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -733,7 +733,7 @@ when "Caress - normal"
       else
         tx["tx1"] = "\"Uhhh, pretty sure it went like this....\n Uh, is that not it?\n Huuuh....?\"" 
         tx["tx1"] = "\"Huh?? That's strange,\n that's how it worked last time, right?\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"Nfufu, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Hehe, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     #▼その他
     else
@@ -744,7 +744,7 @@ when "Caress - normal"
         tx["tx1"] = "\"Ah, did I get it just now?\n Then time for some follow-ups♪\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "\"Nfufu, how is it?\n Did it feel good? \\H\"" 
+        tx["tx1"] = "\"Hehe, how is it?\n Did it feel good? \\H\"" 
         tx["tx1"] = "\"#{giggle}\n Your dick's so big, #{target}\\H\n Ah, you twitched just now\\H\""  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "\"Oomph....oomph....\n Hmm, did that do the trick?\n Hey, #{target}, does this feel good?\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
@@ -979,7 +979,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Nfufu♪\n What's wrong?\n #{myname}'ve got no idea here♪\""
+    tx["tx1"] = "\"Hehe♪\n What's wrong?\n #{myname}'ve got no idea here♪\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -1136,7 +1136,7 @@ when "Caress - normal"
       else
         tx["tx1"] = "\"Uhhh, pretty sure it went like this....\n Uh, is that not it?\n Huuuh....?\"" 
         tx["tx1"] = "\"Huh?? That's strange,\n that's how it worked last time, right?\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"Nfufu, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Hehe, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     #▼その他
     else
@@ -1147,7 +1147,7 @@ when "Caress - normal"
         tx["tx1"] = "\"Ah, did I get it just now?\n Then time for some follow-ups♪\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "\"Nfufu, how is it?\n Did it feel good? \\H\"" 
+        tx["tx1"] = "\"Hehe, how is it?\n Did it feel good? \\H\"" 
         tx["tx1"] = "\"#{giggle}\n Your dick's so big, #{target}\\H\n Ah, you twitched just now\\H\""  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "\"Oomph....oomph....\n Hmm, did that do the trick?\n Hey, #{target}, does this feel good?\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
@@ -1381,7 +1381,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Nfufu♪\n What's wrong?\n #{myname}'ve got no idea here♪\""
+    tx["tx1"] = "\"Hehe♪\n What's wrong?\n #{myname}'ve got no idea here♪\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -1538,7 +1538,7 @@ when "Caress - normal"
       else
         tx["tx1"] = "\"Uhhh, pretty sure it went like this....\n Uh, is that not it?\n Huuuh....?\"" 
         tx["tx1"] = "\"Huh?? That's strange,\n that's how it worked last time, right?\""  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "\"Nfufu, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "\"Hehe, you shouldn't fight it♪\n I want you to feel even better\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     #▼その他
     else
@@ -1549,7 +1549,7 @@ when "Caress - normal"
         tx["tx1"] = "\"Ah, did I get it just now?\n Then time for some follow-ups♪\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "\"Nfufu, how is it?\n Did it feel good? \\H\"" 
+        tx["tx1"] = "\"Hehe, how is it?\n Did it feel good? \\H\"" 
         tx["tx1"] = "\"#{giggle}\n Your dick's so big, #{target}\\H\n Ah, you twitched just now\\H\""  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "\"Oomph....oomph....\n Hmm, did that do the trick?\n Hey, #{target}, does this feel good?\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
