@@ -314,7 +314,7 @@ when "Partner undresses themself."
   when 4
     tx["tx1"] = "\"Wow, your breasts' so big, #{target}\\H\n Can #{myname} become like you too?\""
   when 5
-    tx["tx1"] = "\"Wowsers, your breasts' so big\\H\n Can #{myname} I become like you too?\""
+    tx["tx1"] = "\"Wowsers, your breasts' so big\\H\n Can #{myname} become like you too?\""
   end
   tx["tx1"] = "\"#{giggle}\n You're butt-naked now too♪\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
@@ -413,7 +413,7 @@ when "Partner undresses themself."
   when 4
     tx["tx1"] = "\"Wow, your breasts' so big, #{target}\\H\n Can #{myname} become like you too?\""
   when 5
-    tx["tx1"] = "\"Wowsers, your breasts' so big\\H\n Can #{myname} I become like you too?\""
+    tx["tx1"] = "\"Wowsers, your breasts' so big\\H\n Can #{myname} become like you too?\""
   end
   tx["tx1"] = "\"#{giggle}\n You're butt-naked now too♪\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
