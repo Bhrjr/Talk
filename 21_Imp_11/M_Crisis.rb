@@ -29,50 +29,50 @@ class MsgImp_A < MsgBase
 #■主人公がクライシス状態になる
 case $msg.tag
 #夢魔の攻めで主人公がクライシス
-when "アクター単独"
-  tx["tx1"] = "「ふふ～ん、もうおしまいかな～？\n　#{target}、たいしたことないんだねっ♪」"
+when "User solo"
+  tx["tx1"] = "\"Hehe, you're gonna finish already?\n Guess that means you're no big deal, #{target}♪\""
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
-when "アクター両者"
-  tx["tx1"] = "「こ、このぉ～……！\n　負けないんだからぁ……っ……\\H」"
+when "Both users"
+  tx["tx1"] = "\"W-Why you....\n #{myname}'m not losing to you....you hear....\\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
-when "アクターリバウンド自爆"
-  tx["tx1"] = "「あれれ～、もうおしまいかな～？\n　#{target}、たいしたことないんだねっ♪」"
+when "User rebound harm"
+  tx["tx1"] = "\"Huuh??? You're gonna finish already??\n Guess that means you're no big deal, #{target}♪\""
   #格納
   ms.push(tx)
 #主人公が自慰行為等で自らクライシス
-when "アクター自慰"
-  tx["tx1"] = "「あれれ～、なにやってるの？\n　#{myname}がお手伝いしよっか？」"
+when "User onanism"
+  tx["tx1"] = "\"Huuh? Whatcha doing?\n How 'bout #{myname} give you a hand?\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
 #■夢魔がクライシス状態になる
 #主人公の攻めで夢魔がクライシス
-when "エネミー単独"
-  tx["tx1"] = "「やぁん……ダメだよぉ……\\H\n　#{target}、いじめないでぇ……\\H」"
+when "Enemy solo"
+  tx["tx1"] = "\"Eyyargh....no....\\H\n Don't bully me, #{target}....\\H\""
   #格納
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
-when "エネミー両者"
-  tx["tx1"] = "「や、やだぁ……っ……\\H\n　そんなにしちゃ……！\n　#{pleasure_s}」"
+when "Both foes"
+  tx["tx1"] = "\"N-Noooo........\\H\n If you do it like that....\n #{pleasure_s}\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
-when "エネミーリバウンド自爆"
-  tx["tx1"] = "「#{target}、#{myname}ね……\n　なんだか、からだがふわふわしてきた……\\H」"
+when "Enemy rebound harm"
+  tx["tx1"] = "\"#{target}, I....\n My body feels kinda light and fluffy....\\H\""
   #格納
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
-when "エネミー自慰"
-  tx["tx1"] = "「#{pleasure_l}\n　どうしよ……とまんなくなっちゃった……\\H」"
+when "Enemy onanism"
+  tx["tx1"] = "\"#{pleasure_l}\n What should I do....I can't stop....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
-when "エネミー仲間攻め"
-  tx["tx1"] = "「わぁっ？\n　な、なんで#{myname}のとこに来るのっ……\n　#{pleasure_s}」"
+when "Enemy friendly fire"
+  tx["tx1"] = "\"Whoa?\n W-Why're you coming at me....\n #{pleasure_s}\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
