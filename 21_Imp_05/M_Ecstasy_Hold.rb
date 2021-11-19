@@ -38,7 +38,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
   tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Hehe, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -188,8 +188,8 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\""
-  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Hehe, what should we do now? Wanna go again? \\H\""
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Hehe, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Ahaha, #{myname} won♪\n Hey hey, let's go one more time\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -424,7 +424,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
   tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Hehe, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -574,8 +574,8 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\""
-  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Hehe, what should we do now? Wanna go again? \\H\""
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Hehe, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Ahaha, #{myname} won♪\n Hey hey, let's go one more time\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -789,7 +789,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
   tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Hehe, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -939,8 +939,8 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\""
-  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Hehe, what should we do now? Wanna go again? \\H\""
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Hehe, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Ahaha, #{myname} won♪\n Hey hey, let's go one more time\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -1152,7 +1152,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\""
   tx["tx1"] = "\"Huuuh? Gonna cum again, #{target}?\n Ahahah\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Nfufu, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Hehe, what's wrong, #{target}?\n Gonna cum soon?\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
   #  tx["tx1"] = ""
@@ -1302,8 +1302,8 @@ when 9 #とどめ
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
-  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\""
-  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Nfufu, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Hehe, what should we do now? Wanna go again? \\H\""
+  tx["tx1"] = "\"Ahaha, #{myname} won again♪\n Hehe, what should we do now? Wanna go again? \\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"Ahaha, #{myname} won♪\n Hey hey, let's go one more time\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
