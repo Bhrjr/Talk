@@ -56,21 +56,21 @@ elsif $msg.t_enemy.spp <= 20 or $msg.t_enemy.hpp <= 20
   #◆【大事な人】状態◆
   if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
-    tx["tx1"] = "\"Phew....I must say, I'm beat.\n Hey, #{target},\n I think now's the time to consider turning back.」"
+    tx["tx1"] = "\"Phew....I gotta say, I'm beat.\n Hey, #{target},\n I think now's the time to consider turning back.\""
     tx["tx4"] = "#{speaker} gave a deep sigh....\nLooks like she's worn out...." + "TALKTEXT"
 
   #====================================================================================================================
   #◆【寵愛】状態◆
   elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
-    tx["tx1"] = "「ふぅ……流石に疲れたな。\n　なあ#{target}、\n　そろそろ一度引き返すのも考えようぜ」"
-    tx["tx4"] = "#{speaker}が大きなため息をついた……。\nどうやら疲労してきているようだ……。" + "TALKTEXT"
+    tx["tx1"] = "\"Phew....I gotta say, I'm beat.\n Hey, #{target},\n I think now's the time to consider turning back.\""
+    tx["tx4"] = "#{speaker} gave a deep sigh....\nLooks like she's worn out...." + "TALKTEXT"
 
   #====================================================================================================================
   #◆通常状態(【寵愛】【大切な人】どちらも持っていない場合)◆
   else
   #====================================================================================================================
-    tx["tx1"] = "「はぁ……流石に連戦はキツいかね……？\n　#{target}、次は少し下がってていいか？」"
+    tx["tx1"] = "「Sigh....I have to admit, 流石に連戦はキツいかね……？\n　#{target}、次は少し下がってていいか？」"
     tx["tx4"] = "#{speaker}の息が荒い……。\n思ったより消耗しているようだ……。" + "TALKTEXT"
 
   end
