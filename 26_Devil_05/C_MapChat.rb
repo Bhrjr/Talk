@@ -102,7 +102,7 @@ else
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Ahaha, why that depressing look?\n You need to stand straight, I tell you♪\""
+    tx["tx1"] = "\"Ahaha, why that depressing look?\n You gotta stand straight, I tell you♪\""
     tx["tx4"] = "#{speaker} put her arms around #{master}'s neck and squeezed it tight....!\nA soft sensation presses down on his cheek....!" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -129,40 +129,40 @@ else
   elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "「ふぁ～あ、何か暇で仕方ないなあ……。\n　誰か遊びに来ないもんかねえ」"
-    tx["tx4"] = "#{speaker}は退屈そうに欠伸をしている……。" + "TALKTEXT"
+    tx["tx1"] = "\"Yaaawn, can't believe how much free time we have....\n Can't somebody just come out to play?\""
+    tx["tx4"] = "#{speaker} is yawning in boredom...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「お、何見てんだい？\n　イイもんなら#{myname}にも見せてくれよ」"
-    tx["tx4"] = "#{speaker}が横から覗き込んできた……。\n健康的な二つの膨らみが、目の前で揺れている……。" + "TALKTEXT"
+    tx["tx1"] = "\"Oh, you see something?\n Show me if it's something good.\""
+    tx["tx4"] = "#{speaker} peered into it from the side....\nHer two healthy bosoms are shaking before my eyes...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「あっはっはっ、何を辛気臭い面してんだい？\n　シャキっとしなよシャキっと♪」"
-    tx["tx4"] = "#{speaker}が首に腕を回して締め上げてきた……！\n柔らかい感触が#{master}の頬を圧迫する……！" + "TALKTEXT"
+    tx["tx1"] = "\"Ahaha, why that depressing look?\n You gotta stand straight, I tell you♪\""
+    tx["tx4"] = "#{speaker} put her arms around #{master}'s neck and squeezed it tight....!\nA soft sensation presses down on his cheek....!" + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「おかしいなあ、どこにやったんだ……？\n　……ちょ、今こっち見るなぁ！！」"
-    tx["tx4"] = "#{speaker}の声で振り向くと、\nそこには服を脱ぎ散らかして全裸の#{speaker}の姿が？！\n次の瞬間、視界が急に真っ暗になった……。" + "TALKTEXT"
+    tx["tx1"] = "\"That's odd, where did I do it in....?\n ....Hey, don't you look over here!!\""
+    tx["tx4"] = "#{speaker}'s voice has him turn around,\n only to see her buck-naked with her clothes stripped and lying around?!\nThe next moment, his vision suddenly became pitch-dark...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「……………」"
-    tx["tx4"] = "#{speaker}は何やら難しい顔をしている。\n今は近づかないでおこう……。" + "TALKTEXT"
+    tx["tx1"] = "\"...........\""
+    tx["tx4"] = "#{speaker} has a serious look for some reason.\nLet's not get close to her right now...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
@@ -172,40 +172,40 @@ else
   else
   #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "「ふぁ～あ、何か暇で仕方ないなあ……。\n　誰か遊びに来ないもんかねえ」"
-    tx["tx4"] = "#{speaker}は退屈そうに欠伸をしている……。" + "TALKTEXT"
+    tx["tx1"] = "\"Yaaawn, can't believe how much free time we have....\n Can't somebody just come out to play?\""
+    tx["tx4"] = "#{speaker} is yawning in boredom...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「お、何見てんだい？\n　イイもんなら#{myname}にも見せてくれよ」"
-    tx["tx4"] = "#{speaker}が横から覗き込んできた……。\n健康的な二つの膨らみが、目の前で揺れている……。" + "TALKTEXT"
+    tx["tx1"] = "\"Oh, you see something?\n Show me if it's something good.\""
+    tx["tx4"] = "#{speaker} peered into it from the side....\nHer two healthy bosoms are shaking before my eyes...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「あっはっはっ、何を辛気臭い面してんだい？\n　シャキっとしなよシャキっと♪」"
-    tx["tx4"] = "#{speaker}が首に腕を回して締め上げてきた……！\n柔らかい感触が#{master}の頬を圧迫する……！" + "TALKTEXT"
+    tx["tx1"] = "\"Ahaha, why that depressing look?\n You gotta stand straight, I tell you♪\""
+    tx["tx4"] = "#{speaker} put her arms around #{master}'s neck and squeezed it tight....!\nA soft sensation presses down on his cheek....!" + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「おかしいなあ、どこにやったんだ……？\n　……ちょ、今こっち見るなぁ！！」"
-    tx["tx4"] = "#{speaker}の声で振り向くと、\nそこには服を脱ぎ散らかして全裸の#{speaker}の姿が？！\n次の瞬間、視界が急に真っ暗になった……。" + "TALKTEXT"
+    tx["tx1"] = "\"That's odd, where did I do it in....?\n ....Hey, don't you look over here!!\""
+    tx["tx4"] = "#{speaker}'s voice has him turn around,\n only to see her buck-naked with her clothes stripped and lying around?!\nThe next moment, his vision suddenly became pitch-dark...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「……………」"
-    tx["tx4"] = "#{speaker}は何やら難しい顔をしている。\n今は近づかないでおこう……。" + "TALKTEXT"
+    tx["tx1"] = "\"...........\""
+    tx["tx4"] = "#{speaker} has a serious look for some reason.\nLet's not get close to her right now...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
