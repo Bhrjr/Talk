@@ -70,8 +70,8 @@ elsif $msg.t_enemy.spp <= 20 or $msg.t_enemy.hpp <= 20
   #◆通常状態(【寵愛】【大切な人】どちらも持っていない場合)◆
   else
   #====================================================================================================================
-    tx["tx1"] = "「Sigh....I have to admit, 流石に連戦はキツいかね……？\n　#{target}、次は少し下がってていいか？」"
-    tx["tx4"] = "#{speaker}の息が荒い……。\n思ったより消耗しているようだ……。" + "TALKTEXT"
+    tx["tx1"] = "\"Sigh....I have to admit, continuing to fight might not be a good idea....\n Can we pull out now, #{target}?\""
+    tx["tx4"] = "#{speaker} is breathing heavily....\nI guess she's more exhausted than I thought...." + "TALKTEXT"
 
   end
   #格納
@@ -86,23 +86,23 @@ else
   if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
     #▼パターン１ 
-    tx["tx1"] = "「ふぁ～あ、何か暇で仕方ないなあ……。\n　誰か遊びに来ないもんかねえ」"
-    tx["tx4"] = "#{speaker}は退屈そうに欠伸をしている……。" + "TALKTEXT"
+    tx["tx1"] = "\"Yaaawn, I can't stand how much free time we have....\n Can't somebody just come out to play?\""
+    tx["tx4"] = "#{speaker} is yawning in boredom...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン２
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「お、何見てんだい？\n　イイもんなら#{myname}にも見せてくれよ」"
-    tx["tx4"] = "#{speaker}が横から覗き込んできた……。\n健康的な二つの膨らみが、目の前で揺れている……。" + "TALKTEXT"
+    tx["tx1"] = "\"Oh, you see something?\n Show me if it's something good.\""
+    tx["tx4"] = "#{speaker} peered into it from the side....\nHer two healthy bosoms are shaking before my eyes...." + "TALKTEXT"
     #格納
     ms.push(tx)
     #-------------------------------------------------------------
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「あっはっはっ、何を辛気臭い面してんだい？\n　シャキっとしなよシャキっと♪」"
+    tx["tx1"] = "\"あっはっはっ、何を辛気臭い面してんだい？\n　シャキっとしなよシャキっと♪\""
     tx["tx4"] = "#{speaker}が首に腕を回して締め上げてきた……！\n柔らかい感触が#{master}の頬を圧迫する……！" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -110,7 +110,7 @@ else
     #▼パターン４
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「おかしいなあ、どこにやったんだ……？\n　……ちょ、今こっち見るなぁ！！」"
+    tx["tx1"] = "\"おかしいなあ、どこにやったんだ……？\n　……ちょ、今こっち見るなぁ！！\""
     tx["tx4"] = "#{speaker}の声で振り向くと、\nそこには服を脱ぎ散らかして全裸の#{speaker}の姿が？！\n次の瞬間、視界が急に真っ暗になった……。" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -118,7 +118,7 @@ else
     #▼パターン５
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "「……………」"
+    tx["tx1"] = "\"……………\""
     tx["tx4"] = "#{speaker}は何やら難しい顔をしている。\n今は近づかないでおこう……。" + "TALKTEXT"
     #格納
     ms.push(tx)
