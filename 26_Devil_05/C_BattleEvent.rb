@@ -16,7 +16,7 @@ class MsgDevil_A < MsgBase
                             #空ハッシュ挿入
                             tx={}
 #----------------------------------------------------------------------------------------------------------------------
-if $msg.tag == "戦闘開始"
+if $msg.tag == "Start the Battle"
                             #ムード格納(個別変更の場合は口上単位で修正する)
                             if $game_switches[85] == true
                               tx["md"] = "12" if $msg.talk_step == 1
@@ -37,15 +37,15 @@ if $msg.tag == "戦闘開始"
   if $game_switches[85] == true
     case $msg.talk_step
     when 0 #１番目
-      tx["tx1"] = "「#{giggle}\n　それじゃ、お互い目一杯楽しもうか\\H」"
+      tx["tx1"] = "「#{giggle}\n Then what say we enjoy ourselves to the fullest? \\H」"
       #▼初ベッドイン
-      tx["tx1"] = "「……何だよ緊張してるのかい？\n　……安心しな、#{myname}もだ\\H\n　じゃ、そろそろ始めようか……？\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "「....What is it? Nervous?\n ....Don't worry, #{myname}'m the same\\H\n Then what say we break the ice....? \\H」" if $msg.t_enemy.bedin_count == 0
     when 1 #２番目
-      tx["tx1"] = "「おっと、抜け駆けは無しだ。\n　#{myname}も混ぜてもらうぜ？」"
+      tx["tx1"] = "「Hey, no head start here.\n Could you let me chip in?」"
       #▼初ベッドイン
-      tx["tx1"] = "「割といい感じの部屋だな、ここ。\n　……ここなら少々乱れても大丈夫そうだな\\H」" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "「This room ain't so shabby.\n ....I guess it won't hurt to make it a little unruly\\H」" if $msg.t_enemy.bedin_count == 0
     when 2 #３番目
-      tx["tx1"] = "「#{myname}も忘れてもらっちゃ困るぜ？\n　さーて、皆で熱い夜にしようかね\\H」"
+      tx["tx1"] = "「You'll be sorry to forget 'bout me, you hear?\n Then let's have a steamy night with everyone, shall me? \\H」"
       #▼初ベッドイン
       tx["tx1"] = "「……ははっ、柄にもなく緊張してら。\n　ま、お手柔らかに頼むぜ……？\\H」" if $msg.t_enemy.bedin_count == 0
     end
@@ -79,8 +79,8 @@ if $msg.tag == "戦闘開始"
 
 #----------------------------------------------------------------------------------------------------------------------
 #■逃走失敗口上
-elsif $msg.tag == "逃走失敗"
-  tx["tx1"] = "「おっとぉ……！\n　ちょっと待ちなよ#{target}。\n　お楽しみはこれからだってのに」"
+elsif $msg.tag == "Escape fail"
+  tx["tx1"] = "「Hey....!\n Hold your horses there, #{target}.\n Not when the fun is just getting started.」"
   #----------------------------------------------------------------------------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -92,7 +92,7 @@ elsif $msg.tag == "逃走失敗"
 
 #----------------------------------------------------------------------------------------------------------------------
 #■契約口上
-elsif $msg.tag == "契約"
+elsif $msg.tag == "Contract"
   #----------------------#
   #▼ステップで状況判断  #
   #----------------------#
