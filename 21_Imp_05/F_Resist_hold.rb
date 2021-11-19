@@ -105,7 +105,7 @@ if $msg.tag == "Partner binds the succubus."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"A-Anything but that!\n No way it's gonna go in!\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"Right?\n I doubt that's gonna go in me.\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Right?\n I doubt that's gonna go inside me.\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -444,7 +444,7 @@ if $msg.tag == "Partner binds the succubus."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"A-Anything but that!\n No way it's gonna go in!\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"Right?\n I doubt that's gonna go in me.\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Right?\n I doubt that's gonna go inside me.\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -762,7 +762,7 @@ if $msg.tag == "Partner binds the succubus."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"A-Anything but that!\n No way it's gonna go in!\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"Right?\n I doubt that's gonna go in me.\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Right?\n I doubt that's gonna go inside me.\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -1079,7 +1079,7 @@ if $msg.tag == "Partner binds the succubus."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"A-Anything but that!\n No way it's gonna go in!\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"Right?\n I doubt that's gonna go in me.\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Right?\n I doubt that's gonna go inside me.\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
