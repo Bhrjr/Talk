@@ -45,7 +45,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"Hey hey, does it feel nice when you do it like that?\n Tell me♪」"
+  tx["tx1"] = "\"Hey hey, does it feel nice when you do it like that?\n Tell me♪\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ when "Enemy rebound harm"
   ms.push(tx)
 #夢魔が自慰行為等で自らクライシス
 when "Enemy onanism"
-  tx["tx1"] = "「Nnnhh....fwahh....\\H\n What should I do....I can't stop....\\H」"
+  tx["tx1"] = "\"Nnnhh....fwahh....\\H\n What should I do....I can't stop....\\H\""
   #格納
   ms.push(tx)
 #夢魔が味方夢魔から攻められてクライシス
