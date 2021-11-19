@@ -505,7 +505,7 @@ else
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
     tx["tx1"] = "\"Wowie, this house's so big.\n I think #{myname}'m gonna get lost....\""
-    tx["tx4"] = "#{speaker} is looking around restless...." + "TALKTEXT"
+    tx["tx4"] = "#{speaker} is looking around restlessly...." + "TALKTEXT"
     #格納
     ms.push(tx)
   #================================#
