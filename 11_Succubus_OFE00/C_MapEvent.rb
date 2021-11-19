@@ -146,7 +146,7 @@ when "Cook"
     #==================================================================================================================
     #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
     #==================================================================================================================
-    tx["tx1"] = "\"Can't help it then.\n Just wait a bit, I'll get it ready right now.\""
+    tx["tx1"] = "\"Can't help it then.\n Just wait a little and I'll get it ready right away.\""
     #格納
     ms.push(tx)
     #==================================================================================================================
@@ -163,7 +163,7 @@ when "Cook"
       tx["tx1"] = "\"Oh, you're fine with me?#{myname}?\n Remember that I can't make anything really good.\""
     #マリネやスープが作れるレベル
     when 150..349
-      tx["tx1"] = "\"Can't help it then.\n Just wait a bit, I'll get it ready right now.\""
+      tx["tx1"] = "\"Can't help it then.\n Just wait a little and I'll get it ready right away.\""
     #メインディッシュが作れるレベル
     when 350..999
       tx["tx1"] = "\"Nfufu, leave it to me♪\n I'll give it my best shot\\H\""
