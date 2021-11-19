@@ -25,9 +25,9 @@ class MsgImp_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「えへへっ、#{myname}がしてあげる♪」"
+  tx["tx1"] = "\"Ehehe, lemme do it for you♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "「ね、#{target}、\n　もっと気持ちよくなってぇ\\H」" if $msg.t_target.crisis? #対象がクライシス
+  tx["tx1"] = "\"Hey, #{target}.\n You need to feel even better\\H\"" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
   #格納
   ms.push(tx)
@@ -37,8 +37,8 @@ class MsgImp_A < MsgBase
                           tx={}
 case $msg.at_type
 #▼キス▼****************************************************************************************
-when "キス"
-  tx["tx1"] = "「んちゅ～～っ\\H\n　あはっ、もっとぶちゅーってしていいよぉ\\H」"
+when "Kiss"
+  tx["tx1"] = "\"Smooooch\\H\n Aha, we can have more smoochies if you want\\H\""
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -153,7 +153,7 @@ class MsgImp_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「あ、こうしたら気持ちいいの？\n　んじゃ、もっとやったげるね♪」"
+  tx["tx1"] = "\"Ah, does it feel good when I do it like this?\n Then I'm gonna do more on you♪\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -174,9 +174,9 @@ when "貝合わせ"
   #格納
   ms.push(tx)
 #▼顔面騎乗▼****************************************************************************************
-when "騎乗：アソコ側"
-  tx["tx1"] = "「あははっ、おうまさんパカパカ～♪」"
-  tx["tx1"] = "「あ～、だめだよ、#{myname}がやるんだから！\n　#{target}はうごかないでいいのっ！」" if $game_variables[17] > 50 #パターンB
+when "Pussy on top"
+  tx["tx1"] = "\"Ahaha, the horsie goes clippety-clop♪\""
+  tx["tx1"] = "\"Ah-, nuh-uh. #{myname}'m the one that's doing it!\n You don't hafta move, #{target}!\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -211,8 +211,8 @@ when "ディルド♀挿入","ディルド口挿入","ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -245,7 +245,7 @@ class MsgImp_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「んんっ\\H\n　#{target}、くすぐったいよぉ……あんっ\\H」"
+  tx["tx1"] = "\"Nnnnhh\\H\n That tickles, #{target}....aannh\\H\""
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.weaken? #自分が絶頂中
   #格納
@@ -256,42 +256,42 @@ class MsgImp_A < MsgBase
                           tx={}
 case $msg.at_type
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「んちゅーっ……\\H\n　……ぷはっ……\\H」"
-  tx["tx1"] = "「ん……ちゅっ……ちゅぅ……\n　ねぇ#{target}……#{myname}これすきぃ……\\H\n　もっとやってぇ……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
+when "Kiss"
+  tx["tx1"] = "\"Smooch....\\H\n ....Fwah....\\H\""
+  tx["tx1"] = "\"Mmm....*kiss....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
   ms.push(tx)
 #▼バスト▼****************************************************************************************
-when "バスト"
-  tx["tx1"] = "「あはっ、くすぐったいよぉ♪\n　……ぁんっ\\H」"
-  tx["tx1"] = "「んっ……んふぅ……っ\\H\n　#{target}、そんなにいじっちゃいやぁ……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
+when "Chest"
+  tx["tx1"] = "\"Aha, that tickles♪\n ....Annh\\H\""
+  tx["tx1"] = "\"Mmmm....nfu....\\H\n You shouldn't play with it so much, #{target}....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
   ms.push(tx)
 #▼ヒップ▼****************************************************************************************
-when "ヒップ"
-  tx["tx1"] = "「あはっ、くすぐったいよぉ♪\n　……ぁんっ\\H」"
-  tx["tx1"] = "「んっ……ぁはぁ……\\H\n　#{target}、おしりつつかないでぇ……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
+when "Hips"
+  tx["tx1"] = "\"Aha, that tickles♪\n ....Annh\\H\""
+  tx["tx1"] = "\"Mmmm....ahaa....\\H\n Don't just focus on my butt, #{target}....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
   ms.push(tx)
 #▼クロッチ▼****************************************************************************************
-when "クロッチ"
-  tx["tx1"] = "「あははっ、くすぐったいよ#{target}♪\n　……ぁんっ\\H」"
-  tx["tx1"] = "「あははっ、ぐりぐりしちゃいやぁ♪\n　……ぁんっ\\H」" unless $msg.t_target.nude? # 対象が着衣状態の時
-  tx["tx1"] = "「あ……ん………ふぁ……\\H\n　#{target}、もっとやってぇ……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
+when "Crotch"
+  tx["tx1"] = "\"Ahah, that tickles, #{target}♪\n　……Annh\\H\""
+  tx["tx1"] = "\"Ahaha, you shouldn't grind it so much♪\n ....Annnh\\H\"" unless $msg.t_target.nude? # 対象が着衣状態の時
+  tx["tx1"] = "\"Aah....nnnh........fuah....\\H\n Keep doing it, #{target}....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
   ms.push(tx)
 #▼スクラッチ系▼****************************************************************************************
-when "スクラッチ"
-  tx["tx1"] = "「あぁんっ……\\H\n　おまたがぴりぴりするぅ……\\H」"
-  tx["tx1"] = "「あっ……あっ……！\\H\n　お、おまた動かしちゃいやぁ……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
+when "Tribadism"
+  tx["tx1"] = "\"Aaannh....\\H\n My croth's trembling....\\H\""
+  tx["tx1"] = "\"Aaaugh....aaah....!\\H\n Y-You shouldn't move your crotch so much....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
