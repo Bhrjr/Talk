@@ -99,7 +99,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Ufufu....is that a call for surrender?\n Too bad that #{myname}'m a devil....\n No way I'll give ear to it so simply....\\H\""
+    tx["tx1"] = "\"Hehe....is that a call for surrender?\n Too bad that #{myname}'m a devil....\n No way I'll give ear to it so simply....\\H\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -176,7 +176,7 @@ when "Player stripped"
     tx["tx1"] = "\"Hmph. Well, I thought as much.\""
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Whoa there....that's quite....\\H\n Ufufu, I see you have quit the guts.\""
+    tx["tx1"] = "\"Whoa there....that's quite....\\H\n Hehe, I see you have quit the guts.\""
     tx["tx1"] = "\"Whoa there....that's quite....\\H\n Face this way more, I can't get a good look.\"" if $msg.t_enemy.state?(32) #夢魔がドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -254,7 +254,7 @@ when "Caress - normal"
         tx["tx1"] = "\"Hehe....should I continue?\n Your face tells me so, #{target}\\H」"  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "「Hey now,、you're not supposed to fight it.\n Should you be punished....? \\H」" 
+        tx["tx1"] = "「Hey now, you're not supposed to fight it.\n Should you be punished....? \\H」" 
         tx["tx1"] = "「How long can you endure it, I wonder?\n I'm well-aware of your weak spots.」"  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "「You're holding out alright....\\H\n You should just make yourself comfortable\\H」"  if $msg.chain_attack == true #同じ部位で連撃中
       end
@@ -274,7 +274,7 @@ when "Caress - normal"
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「....Well, that'll be it for now.\n If you want more, you'll have to beg for it\\H」"
+    tx["tx1"] = "\"....Well, that'll be it for now.\n If you want more, you'll have to beg for it\\H\""
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -300,27 +300,27 @@ when "Caress - intercourse"
     #▼MAX
     when 3
       tx["tx1"] = "「#{pleasure_l}\n It's reaching all the way inside me....\\H\n If you cum inside now.... #{pleasure_s}」" 
-      tx["tx1"] = "「Doing it like this give you a good look, right?\n Of where we're connected, that is....\\H」"  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "「Kuku....\\H\n Yes, that's a good expression you've got there\\H\n You have to hold in your voice. もっと声出しても良いんだぜ？」"  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
+      tx["tx1"] = "「Doing it like this give you a good look\n Of where we're connected, that is....\\H」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「Kuku....\\H\n Yes, that's a good expression you've got there\\H\n No need to hold your voice in.」"  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
     when 2
-      tx["tx1"] = "「#{pleasure_l}\n　ふふっ、もっと激しくした方がいいかい？」" 
-      tx["tx1"] = "「イくときはちゃんと言うんだぜ……？\\H\n　#{pleasure_l}」"  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "「#{giggle}\n　抵抗しないのかい？\n　それじゃ、遠慮なくイかせちまうよ……？\\H」"  if $game_actors[101].critical == true #レベル１⇒２上昇時
+      tx["tx1"] = "「#{pleasure_l}\n Hehe, you want me to go harder?」" 
+      tx["tx1"] = "\"Tell me when you're about to cum, alright....?\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「#{giggle}\n You're not gonna resist it?\n Then I won't hesitate to have you cum, alright....? \\H」"  if $game_actors[101].critical == true #レベル１⇒２上昇時
     #▼Lv1
     when 1
-      tx["tx1"] = "「ふふっ、さっきより硬くなってる……\\H\n　#{target}、攻められる方が好きなのかい？」" 
-      tx["tx1"] = "「イくときはちゃんと言うんだぜ……？\\H\n　#{pleasure_l}」"  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "「#{giggle}\n　さぁて、ここからは#{myname}のターンだな♪\n　たっぷりと絞り取ってやるよ……\\H」"  if $game_actors[101].critical == true #攻守交替
-    #▼Deffence
+      tx["tx1"] = "「Hehe, it's even harder than just now....\\H\n #{target}, are you a fan of getting attacked?」" 
+      tx["tx1"] = "\"Tell me when you're about to cum, alright....?\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「#{giggle}\n Alright, my turn from here on♪\n Time to squeeze you out plenty....\\H」"  if $game_actors[101].critical == true #攻守交替
+    #▼Defense
     else
-      tx["tx1"] = "「#{pleasure_s}\n　ふふ、#{myname}の具合はどうだい？\n　割と自信があるんだけどな\\H」" 
-      tx["tx1"] = "「ふふっ……どうしたんだい？\\H\n　心配しなくても続けてやるよ\\H」"  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "「くくっ……\\H\n　どうしたんだい？腰がお留守になってるぞ？」"  if $game_actors[101].critical == true #主人公レベル１～３時
+      tx["tx1"] = "「#{pleasure_s}\n Hehe, how do you like the way #{myname} do it?\n I'm fairly confident in it, you know\\H」" 
+      tx["tx1"] = "「Hehe....what's the matter? \\H\n You don't have have to worry about me pausing\\H」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「Kuku....\\H\n What's the matter? Your hips are slackened.」"  if $game_actors[101].critical == true #主人公レベル１～３時
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「……さぁて、今はここまでだ。\n　もっとして欲しけりゃ、おねだりしてみな？\\H」"
+    tx["tx1"] = "\"....Well, that'll be it for now.\n If you want more, you'll have to beg for it\\H\""
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -334,11 +334,11 @@ when "奉仕"
   case $msg.talk_step
   when 1 #奉仕開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{giggle}\n　#{target}の意気込みを見せてもらいたいな」"
-    tx["tx2"] = "「暫く何もしないでいてやるよ。\n　#{myname}の身体、好きにしていいぜ\\H」" 
+    tx["tx1"] = "「#{giggle}\n I want you to show me your spirit.」"
+    tx["tx2"] = "「I won't do anything for now.\n Feel free to do whatever you want with my body\\H」" 
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「なんだよ、意気地が無いな。\n　そこは二つ返事で来るところだろ？」"
+    tx["tx1"] = "「Wha, you've got no spine.\n I bet you'll そこは二つ返事で来るところだろ？」"
   when 2..76 #レジスト失敗(愛撫を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     #▼SS時
