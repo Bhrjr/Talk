@@ -254,7 +254,7 @@ when "Caress - normal"
         tx["tx1"] = "\"Hehe....should I continue?\n Your face tells me so, #{target}\\H」"  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "「Hey now,、我慢するんじゃないよ。\n　こりゃお仕置きが必要かな……\\H」" 
+        tx["tx1"] = "「Hey now,、you're not supposed to fight it.\n Should you be punished....? \\H」" 
         tx["tx1"] = "「いつまで耐えられるかな？\n　#{target}の弱い所は判ってんだぜ？」"  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "「頑張るねぇ……\\H\n　ほれほれ、楽になっちまいなよ\\H」"  if $msg.chain_attack == true #同じ部位で連撃中
       end
