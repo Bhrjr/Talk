@@ -373,33 +373,33 @@ when "視姦"
   when 1 #自慰開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "「Say, #{target}....?\n You ever seen a girl doing it by herself?」"
-    tx["tx2"] = "「Hehe、見たければ今から見せてやるぜ？\n　ただし、おさわりは無しな」" 
+    tx["tx2"] = "「Hehe, I can show you right now if you want.\n No touching though.」" 
   when 77 #レジスト成功(視姦を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「おや、いいのかい？\n　後から見せてくれってのは無しだよ」"
+    tx["tx1"] = "「Oh, you're good?\n You won't get to see it later.」"
   when 2..76 #レジスト失敗(視姦を了承した場合)
     #----------------------------------------------------------------------------------------------------------------------
     case $msg.at_parts
     #▼胸を弄る
     when "対象：胸","対象：口"
-      tx["tx1"] = "「#{pleasure_l}\n　ふふっ、見られてると思うと興奮するな……\\H」" 
-      tx["tx1"] = "「#{pleasure_l}\n　こんな感じで触ると……#{pleasure_s}」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「#{pleasure_l}\n Hehe, thinking about I'm being watched gets me turned on....\\H」" 
+      tx["tx1"] = "「#{pleasure_l}\n If I touch it in this way.... #{pleasure_s}」"  if $game_variables[17] > 50 #パターンB
     #▼アソコを弄る
     when "対象：アソコ","対象：尻"
-      tx["tx1"] = "「#{pleasure_l}\n　ふふっ、見えやすいようにしてやろうか……\\H」" 
-      tx["tx1"] = "「#{pleasure_l}\n　そら……もっと近くで見ても良いんだぜ？」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「#{pleasure_l}\n Hehe, why don't I make it easer to see....\\H」" 
+      tx["tx1"] = "\"#{pleasure_l}\n See...? I don't mind you watching it from closer up.\""  if $game_variables[17] > 50 #パターンB
     #▼陰核を弄る
     when "対象：陰核","対象：アナル"
-      tx["tx1"] = "「#{pleasure_l}\n　どうだい、こういうのも興奮するだろ？」" 
-      tx["tx1"] = "「#{pleasure_l}\n　そら……もっと近くで見ても良いんだぜ？」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「#{pleasure_l}\n How is it? I bet it turns you on.」" 
+      tx["tx1"] = "\"#{pleasure_l}\n See...? I don't mind you watching it from closer up.\""  if $game_variables[17] > 50 #パターンB
     end
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{giggle}\n　どうだい、興奮したかい？」"
+    tx["tx1"] = "「#{giggle}\n How was it? Were you excited?」"
   when 79 #レジスト成功(視姦しすぎて恍惚となった場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{giggle}\n　今すぐ犯したいって目をしてるぞ？\n　……さぁて、どうしようかね？\\H」"
+    tx["tx1"] = "「#{giggle}\n You're looking at me like you want to fuck me right now.\n ....What should we do now? \\H」"
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
