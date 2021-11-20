@@ -300,7 +300,7 @@ when "Caress - intercourse"
     #▼MAX
     when 3
       tx["tx1"] = "「#{pleasure_l}\n It's reaching all the way inside me....\\H\n If you cum inside now.... #{pleasure_s}」" 
-      tx["tx1"] = "「Doing it like this give you a good look\n Of where we're connected, that is....\\H」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「I bet doing it like this give you a good look.\n Of where we're connected, that is....\\H」"  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "「Kuku....\\H\n Yes, that's a good expression you've got there\\H\n No need to hold your voice in.」"  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
     when 2
@@ -338,27 +338,27 @@ when "奉仕"
     tx["tx2"] = "「I won't do anything for now.\n Feel free to do whatever you want with my body\\H」" 
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「Wha, you've got no spine.\n I bet you'll そこは二つ返事で来るところだろ？」"
+    tx["tx1"] = "「Wha, you've got no spine.\n I bet you'll come back with an immediate retort.」"
   when 2..76 #レジスト失敗(愛撫を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     #▼SS時
     if $msg.t_enemy.critical == true
-      tx["tx1"] = "「#{pleasure_s}\n　だ、ダメ、そこやばい……っ！\\H\n　#{pleasure_cr}」" 
-      tx["tx1"] = "「#{pleasure_cr}\n　ま、待って、そこはっ……！\n　#{pleasure_l}」"  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "「#{pleasure_cr}\n　気持ちいいっ……もっと……っ\\H」"  if $msg.chain_attack == true #同じ部位を連撃中
+      tx["tx1"] = "「#{pleasure_s}\n N-No, not there....! \\H\n #{pleasure_cr}」" 
+      tx["tx1"] = "「#{pleasure_cr}\n W-Wait, that's....!\n #{pleasure_l}」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「#{pleasure_cr}\n That feels so good....more....\\H」"  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
-      tx["tx1"] = "「#{pleasure_l}\n　いいよ、その調子で……#{pleasure_s}」" 
-      tx["tx1"] = "「#{pleasure_l}\n　そこがいい感じ……#{pleasure_s}」"  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "「#{pleasure_s}\n　こら、そこばっかり攻めるんじゃない……\\H\n　#{pleasure_l}」"  if $msg.chain_attack == true #同じ部位を連撃中
+      tx["tx1"] = "「#{pleasure_l}\n That's good, just like that....#{pleasure_s}」" 
+      tx["tx1"] = "「#{pleasure_l}\n That feels nice there.... #{pleasure_s}」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「#{pleasure_s}\n Hey, you're not supposed to just attack that spot....\\H\n　#{pleasure_l}」"  if $msg.chain_attack == true #同じ部位を連撃中
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「えらく淡泊だね、それだけで満足かい？\n　ま、気持ちよかったけどな？」"
-    tx["tx1"] = "「#{giggle}\n　なかなか気持ちよかったぜ\\H」" if $msg.talk_step >= 3
+    tx["tx1"] = "「Talk about being frank. You satisfied with just that?\n That would've felt great though.」"
+    tx["tx1"] = "「#{giggle}\n That felt pretty great\\H」" if $msg.talk_step >= 3
   when 79 #レジスト中断(奉仕しすぎて恍惚した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「#{giggle}\n　さてと、次はもちろん……。\n　#{myname}が#{target}を好きにする番だよな？」"
+    tx["tx1"] = "「#{giggle}\n Now then, next up is, of course....\n my turn to do whatever I want with you.」"
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -372,8 +372,8 @@ when "視姦"
   case $msg.talk_step
   when 1 #自慰開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「なあ、#{target}……？\n　女が一人でする所、見たことあるかい？」"
-    tx["tx2"] = "「ふふ、見たければ今から見せてやるぜ？\n　ただし、おさわりは無しな」" 
+    tx["tx1"] = "「Say, #{target}....?\n You ever seen a girl doing it by herself?」"
+    tx["tx2"] = "「Hehe、見たければ今から見せてやるぜ？\n　ただし、おさわりは無しな」" 
   when 77 #レジスト成功(視姦を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "「おや、いいのかい？\n　後から見せてくれってのは無しだよ」"
