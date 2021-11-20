@@ -255,26 +255,26 @@ when "Caress - normal"
       #▼通常
       else
         tx["tx1"] = "「Hey now,、you're not supposed to fight it.\n Should you be punished....? \\H」" 
-        tx["tx1"] = "「いつまで耐えられるかな？\n　#{target}の弱い所は判ってんだぜ？」"  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "「頑張るねぇ……\\H\n　ほれほれ、楽になっちまいなよ\\H」"  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "「How long can you endure it, I wonder?\n I'm well-aware of your weak spots.」"  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "「You're holding out alright....\\H\n You should just make yourself comfortable\\H」"  if $msg.chain_attack == true #同じ部位で連撃中
       end
     #▼その他
     else
       #▼弱点を発見された(SSを受けた)
       if $game_actors[101].critical == true
-        tx["tx1"] = "「ふふっ、ココが弱いみたいだな？\n　もっとしてやろうか……？\\H」" 
-        tx["tx1"] = "「ふふっ、どうしたんだい？\n　女みたいな声出してさ……\\H\n　そんなに今のが良かったのかい？」"  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "「おっ……\\H\n　そうかそうか、ここだなぁ……？♪」"  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "「Hehe, so this is where you're weak to.\n Should I keep doing it....? \\H」" 
+        tx["tx1"] = "「Hehe, how'd you like it?\n Wailing like a girl....\\H\n Was what I did just now that good?」"  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "「Oho....\\H\n I see then, so this is it....♪」"  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
-        tx["tx1"] = "「ほぉら……どうだい？\n　もっと身体の力を抜きなよ……\\H」" 
-        tx["tx1"] = "「#{target}は大人しくしてな？\n　今は#{myname}が攻める番だぜ……♪」"  if $game_variables[17] > 50 #パターンB
-        tx["tx1"] = "「ふふ、結構我慢強いじゃないか。\n　その強がり、いつまで持つかな……？\\H」"  if $msg.chain_attack == true #同じ部位で連撃中
+        tx["tx1"] = "「Hey there....what do you think?\n You need to relax more....\\H」" 
+        tx["tx1"] = "「You just stay still, #{target}.\n Right now, it's my turn to go on the offensive....♪」"  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "「Hehe, I gotta hand it to you for your persistance.\n How long can you keep up that bluff, I wonder....? \\H」"  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
   when 78 #レジスト成功(愛撫を中断した場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「……さぁて、今はここまでだ。\n　もっとして欲しけりゃ、おねだりしてみな？\\H」"
+    tx["tx1"] = "「....Well, that'll be it for now.\n If you want more, you'll have to beg for it\\H」"
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -284,12 +284,12 @@ when "Caress - normal"
 
 #▼性交▼****************************************************************************************
 #性交を受け入れるよう要求する
-when "愛撫・性交"
+when "Caress - intercourse"
   case $msg.talk_step
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「にしても……、\n　こんな状況で余裕だね、#{target}」"
-    tx["tx2"] = "「その余裕、いつまで持つかな？\n　ちょっと試してやろうか……\\H」" 
+    tx["tx1"] = "「Having said that....\n You're pretty calm for a situation this.」"
+    tx["tx2"] = "「How long can you stay calm, I wonder?\n How 'bout I find out....\\H」" 
     tx["tx2"] = "「それとも、単なる強がりかな？\n　ちょっと試してやろうか……\\H」"  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
