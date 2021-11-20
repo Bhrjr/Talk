@@ -289,19 +289,19 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "「Having said that....\n You're pretty calm for a situation this.」"
-    tx["tx2"] = "「How long can you stay calm, I wonder?\n How 'bout I find out....\\H」" 
-    tx["tx2"] = "「それとも、単なる強がりかな？\n　ちょっと試してやろうか……\\H」"  if $game_actors[101].state?(35) #主人公が欲情状態
+    tx["tx2"] = "「How long can you stay calm, I wonder?\n How about I see for myself....\\H」" 
+    tx["tx2"] = "「Or are you just bluffing?\n How about I see for myself....\\H」"  if $game_actors[101].state?(35) #主人公が欲情状態
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "「おいおい、そこは受けて立つところだろ？」"
+    tx["tx1"] = "「Hey now, isn't this when you rise to the challenge?」"
   when 2..76 #レジスト失敗(愛撫を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     case $msg.t_enemy.initiative_level
     #▼MAX
     when 3
-      tx["tx1"] = "「#{pleasure_l}\n　#{myname}の奥まで届いてる……\\H\n　今中で出されたら……#{pleasure_s}」" 
-      tx["tx1"] = "「そら、こうすればよく見えるだろ？\n　#{myname}達が繋がってる所がさ……\\H」"  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "「くくっ……\\H\n　そうそう、いい表情するじゃないか\\H\n　もっと声出しても良いんだぜ？」"  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
+      tx["tx1"] = "「#{pleasure_l}\n It's reaching all the way inside me....\\H\n If you cum inside now.... #{pleasure_s}」" 
+      tx["tx1"] = "「Doing it like this give you a good look, right?\n Of where we're connected, that is....\\H」"  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "「Kuku....\\H\n Yes, that's a good expression you've got there\\H\n You have to hold in your voice. もっと声出しても良いんだぜ？」"  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
     when 2
       tx["tx1"] = "「#{pleasure_l}\n　ふふっ、もっと激しくした方がいいかい？」" 
