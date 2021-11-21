@@ -56,14 +56,14 @@ elsif $msg.t_enemy.spp <= 20 or $msg.t_enemy.hpp <= 20
   #◆【大事な人】状態◆
   if $msg.t_enemy.have_ability?("Significant Other")
   #====================================================================================================================
-    tx["tx1"] = "\"Phew....I gotta say, I'm beat.\n Hey, #{target},\n I think now's the time to consider turning back.\""
+    tx["tx1"] = "\"Phew....gotta say, I'm beat.\n Hey, #{target},\n I think now's the time to consider turning back.\""
     tx["tx4"] = "#{speaker} gave a deep sigh....\nLooks like she's worn out...." + "TALKTEXT"
 
   #====================================================================================================================
   #◆【寵愛】状態◆
   elsif $msg.t_enemy.have_ability?("Affection")
   #====================================================================================================================
-    tx["tx1"] = "\"Phew....I gotta say, I'm beat.\n Hey, #{target},\n I think now's the time to consider turning back.\""
+    tx["tx1"] = "\"Phew....gotta say, I'm beat.\n Hey, #{target},\n I think now's the time to consider turning back.\""
     tx["tx4"] = "#{speaker} gave a deep sigh....\nLooks like she's worn out...." + "TALKTEXT"
 
   #====================================================================================================================
@@ -102,7 +102,7 @@ else
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Ahaha, why that depressing look?\n You gotta stand straight, I tell you♪\""
+    tx["tx1"] = "\"Ahaha, why the depressing look?\n You gotta stand straight, I tell you♪\""
     tx["tx4"] = "#{speaker} put her arms around #{master}'s neck and squeezed it tight....!\nA soft sensation presses down on his cheek....!" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -145,7 +145,7 @@ else
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Ahaha, why that depressing look?\n You gotta stand straight, I tell you♪\""
+    tx["tx1"] = "\"Ahaha, why the depressing look?\n You gotta stand straight, I tell you♪\""
     tx["tx4"] = "#{speaker} put her arms around #{master}'s neck and squeezed it tight....!\nA soft sensation presses down on his cheek....!" + "TALKTEXT"
     #格納
     ms.push(tx)
@@ -188,7 +188,7 @@ else
     #▼パターン３
     tx={} #ハッシュ再挿入
     #-------------------------------------------------------------
-    tx["tx1"] = "\"Ahaha, why that depressing look?\n You gotta stand straight, I tell you♪\""
+    tx["tx1"] = "\"Ahaha, why the depressing look?\n You gotta stand straight, I tell you♪\""
     tx["tx4"] = "#{speaker} put her arms around #{master}'s neck and squeezed it tight....!\nA soft sensation presses down on his cheek....!" + "TALKTEXT"
     #格納
     ms.push(tx)
