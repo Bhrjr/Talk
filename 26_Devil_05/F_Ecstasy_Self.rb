@@ -42,7 +42,7 @@ when 1 #初撃
 when 9 #とどめ
   tx["tx1"] = "\"N-No....gonna cum again....! \\H\n #{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "\"N-No, hold it, any more and I'll....! \\H\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"N-No, hold it, any more and I'll....! \\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
   tx["tx1"] = "\"Pant....pant....nnhh....\\H\n Didn't think #{myname}'d be beaten this far....\""
   tx["tx2"] = "\"You're something else, #{target}....\\H\n Say, can you still keep going?\n #{myname}'ll do the work next time....understood? \\H\""
@@ -154,19 +154,19 @@ if $msg.t_enemy.have_ability?("Significant Other")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{pleasure_l}\n　ま、まずい……、また……っ\\H」"
+  tx["tx1"] = "\"#{pleasure_l}\n S-Shoot....not again....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{pleasure_l}\n　や、やばいっ……こんなことで……っ！\\H」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n C-Crap....from something like this....! \\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「だ、ダメだっ……またイかされ……っ！\\H\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"N-No....gonna cum again....! \\H\n #{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「だ、ダメ、待って、それ以上はっ……！\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"N-No, hold it, any more and I'll....! \\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ……っ、はぁ……っ、んんっ……\\H\n　くそ、今夜はいいとこなしだな#{myname}……」"
-  tx["tx2"] = "「だけど、まだ夜は明けちゃいないぜ？\n　きっちりお返ししてやるから、\n　今から楽しみにしておけよ……？\\H」"
+  tx["tx1"] = "\"Pant....pant....nnhh....\\H\n Crud, nothing's working out for me tonight....\""
+  tx["tx2"] = "\"But the night isn't over yet, you hear?\n Look forward to when\n I get even with you, understood....? \\H」"
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「く……くそっ……\\H\n　やられたぜ、#{myname}としたことが……」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "「この礼は、きっちり身体で返すぜ……\\H\n　#{myname}が起きたら覚悟しろよ？\n　……あふぅ\\H」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"C....Crud....\\H\n How did #{myname} wound up on the receiving end....\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better brace yourself when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
@@ -243,19 +243,19 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{pleasure_l}\n　ま、まずい……、また……っ\\H」"
+  tx["tx1"] = "\"#{pleasure_l}\n S-Shoot....not again....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{pleasure_l}\n　や、やばいっ……こんなことで……っ！\\H」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n C-Crap....from something like this....! \\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「だ、ダメだっ……またイかされ……っ！\\H\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"N-No....gonna cum again....! \\H\n #{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「だ、ダメ、待って、それ以上はっ……！\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"N-No, hold it, any more and I'll....! \\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ……っ、はぁ……っ、んんっ……\\H\n　くそ、今夜はいいとこなしだな#{myname}……」"
-  tx["tx2"] = "「だけど、まだ夜は明けちゃいないぜ？\n　きっちりお返ししてやるから、\n　今から楽しみにしておけよ……？\\H」"
+  tx["tx1"] = "\"Pant....pant....nnhh....\\H\n Crud, nothing's working out for me tonight....\""
+  tx["tx2"] = "\"But the night isn't over yet, you hear?\n Look forward to when\n I get even with you, understood....? \\H」"
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「く……くそっ……\\H\n　やられたぜ、#{myname}としたことが……」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "「この礼は、きっちり身体で返すぜ……\\H\n　#{myname}が起きたら覚悟しろよ？\n　……あふぅ\\H」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"C....Crud....\\H\n How did #{myname} wound up on the receiving end....\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better brace yourself when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
@@ -331,19 +331,19 @@ else
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{pleasure_l}\n　ま、まずい……、また……っ\\H」"
+  tx["tx1"] = "\"#{pleasure_l}\n S-Shoot....not again....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{pleasure_l}\n　や、やばいっ……こんなことで……っ！\\H」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n C-Crap....from something like this....! \\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「だ、ダメだっ……またイかされ……っ！\\H\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"N-No....gonna cum again....! \\H\n #{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「だ、ダメ、待って、それ以上はっ……！\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"N-No, hold it, any more and I'll....! \\H\n #{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ……っ、はぁ……っ、んんっ……\\H\n　くそ、今夜はいいとこなしだな#{myname}……」"
-  tx["tx2"] = "「だけど、まだ夜は明けちゃいないぜ？\n　きっちりお返ししてやるから、\n　今から楽しみにしておけよ……？\\H」"
+  tx["tx1"] = "\"Pant....pant....nnhh....\\H\n Crud, nothing's working out for me tonight....\""
+  tx["tx2"] = "\"But the night isn't over yet, you hear?\n Look forward to when\n I get even with you, understood....? \\H」"
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「く……くそっ……\\H\n　やられたぜ、#{myname}としたことが……」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "「この礼は、きっちり身体で返すぜ……\\H\n　#{myname}が起きたら覚悟しろよ？\n　……あふぅ\\H」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"C....Crud....\\H\n How did #{myname} wound up on the receiving end....\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better brace yourself when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
