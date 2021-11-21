@@ -210,8 +210,8 @@ when "ディルド♀挿入","ディルド口挿入","ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -255,7 +255,7 @@ class MsgDevil_A < MsgBase
                           tx={}
 case $msg.at_type
 #▼キッス▼****************************************************************************************
-when "キッス"
+when "Kiss"
   tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
