@@ -330,7 +330,7 @@ when "Caress - intercourse"
 
 #▼奉仕▼****************************************************************************************
 #自分に奉仕するよう要求する
-when "奉仕"
+when "Show love"
   case $msg.talk_step
   when 1 #奉仕開始
     #----------------------------------------------------------------------------------------------------------------------
@@ -368,7 +368,7 @@ when "奉仕"
 
 #▼視姦▼****************************************************************************************
 #自慰を見ているように要求される
-when "視姦"
+when "Leer"
   case $msg.talk_step
   when 1 #自慰開始
     #----------------------------------------------------------------------------------------------------------------------
@@ -381,15 +381,15 @@ when "視姦"
     #----------------------------------------------------------------------------------------------------------------------
     case $msg.at_parts
     #▼胸を弄る
-    when "対象：胸","対象：口"
+    when "Target: Breasts","Target: Mouth"
       tx["tx1"] = "\"#{pleasure_l}\n Hehe, thinking about I'm being watched gets me turned on....\\H\"" 
       tx["tx1"] = "\"#{pleasure_l}\n If I touch it in this way.... #{pleasure_s}\""  if $game_variables[17] > 50 #パターンB
     #▼アソコを弄る
-    when "対象：アソコ","対象：尻"
+    when "Target: Pussy","Target: Ass"
       tx["tx1"] = "\"#{pleasure_l}\n Hehe, why don't I make it easer to see....\\H\"" 
       tx["tx1"] = "\"#{pleasure_l}\n See...? I don't mind you watching it from closer up.\""  if $game_variables[17] > 50 #パターンB
     #▼陰核を弄る
-    when "対象：陰核","対象：アナル"
+    when "Target: Clitoris","Target: Anus"
       tx["tx1"] = "\"#{pleasure_l}\n How is it? I bet it turns you on.\"" 
       tx["tx1"] = "\"#{pleasure_l}\n See...? I don't mind you watching it from closer up.\""  if $game_variables[17] > 50 #パターンB
     end
@@ -424,7 +424,7 @@ when "Mingle"
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Nnnhaaah.....\\H\n Good....I just love men that are decisive\\H\""
     end
-  when "口挿入"
+  when "Fellatio"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
@@ -437,7 +437,7 @@ when "Mingle"
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Mmmmph....!\\H\n ....Nfu....pwah....\\H\""
     end
-  when "パイズリ"
+  when "Paizuri"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
@@ -450,7 +450,7 @@ when "Mingle"
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"#{pleasure_s}\n Good....I just love men that are decisive\\H\""
     end
-  when "顔面騎乗"
+  when "Facesitted"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
@@ -488,19 +488,19 @@ class MsgDevil_A < MsgBase
                           case $msg.talk_step
                           when 0
                             tx["md"] = "22"
-                            tx["md"] = "0" if $msg.tag == "不成立"
+                            tx["md"] = "0" if $msg.tag == "Rejected"
                           when 1
                             tx["md"] = "0"
-                            tx["md"] = "27" if $msg.tag == "好意"
+                            tx["md"] = "27" if $msg.tag == "Favor"
                           when 2..76
                             case $msg.tag
-                            when "愛撫・通常","愛撫・性交","視姦","奉仕"
+                            when "Caress - normal","Caress - intercourse","Leer","Show love"
                               tx["md"] = "24"
-                            when "主人公脱衣","夢魔脱衣"
+                            when "Player stripped","Succubus stripped"
                               tx["md"] = "23"
-                            when "吸精・口","吸精・性器"
+                            when "Energy-suck - mouth","Energy-suck - genitals"
                               tx["md"] = "25"
-                            when "交合"
+                            when "Mingle"
                               tx["md"] = "26"
                             end
                           when 77
@@ -515,7 +515,7 @@ class MsgDevil_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -526,19 +526,19 @@ class MsgDevil_A < MsgBase
                           case $msg.talk_step
                           when 0
                             tx["md"] = "22"
-                            tx["md"] = "0" if $msg.tag == "不成立"
+                            tx["md"] = "0" if $msg.tag == "Rejected"
                           when 1
                             tx["md"] = "0"
-                            tx["md"] = "27" if $msg.tag == "好意"
+                            tx["md"] = "27" if $msg.tag == "Favor"
                           when 2..76
                             case $msg.tag
-                            when "愛撫・通常","愛撫・性交","視姦","奉仕"
+                            when "Caress - normal","Caress - intercourse","Leer","Show love"
                               tx["md"] = "24"
-                            when "主人公脱衣","夢魔脱衣"
+                            when "Player stripped","Succubus stripped"
                               tx["md"] = "23"
-                            when "吸精・口","吸精・性器"
+                            when "Energy-suck - mouth","Energy-suck - genitals"
                               tx["md"] = "25"
-                            when "交合"
+                            when "Mingle"
                               tx["md"] = "26"
                             end
                           when 77
@@ -560,7 +560,7 @@ class MsgDevil_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 case $msg.tag
 #▼会話不成立時▼****************************************************************************************
@@ -963,7 +963,7 @@ end #msg.tag
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 case $msg.tag
 #▼会話不成立時▼****************************************************************************************
