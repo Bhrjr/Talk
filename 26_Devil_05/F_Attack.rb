@@ -25,9 +25,9 @@ class MsgDevil_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「ふふっ、いい声出るじゃないか♪\n　#{myname}に任せて気持ちよくなっちまいな\\H」"
+  tx["tx1"] = "\"Hehe, that's a nice sound you're making♪\n Just leave it to me and make yourself feel good\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "「ふふっ、もっと感じてくれていいんだぜ？\n　自分に素直になっちまいなよ……\\H」" if $msg.t_target.crisis? #対象がクライシス
+  tx["tx1"] = "\"Hehe, there's nothing wrong with being turned on.\n You should be more honest to yourself....\\H\"" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
   #格納
   ms.push(tx)
@@ -37,8 +37,8 @@ class MsgDevil_A < MsgBase
                           tx={}
 case $msg.at_type
 #▼キス▼****************************************************************************************
-when "キス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
   #-----------------------------------------------------
   #格納
   ms.push(tx)
@@ -153,9 +153,9 @@ class MsgDevil_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「ふふっ、いい声出るじゃないか♪\n　#{myname}に任せて気持ちよくなっちまいな\\H」"
+  tx["tx1"] = "\"Hehe, that's a nice sound you're making♪\n Just leave it to me and make yourself feel good\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
-  tx["tx1"] = "「ふふっ、もっと感じてくれていいんだぜ？\n　自分に素直になっちまいなよ……\\H」" if $msg.t_target.crisis? #対象がクライシス
+  tx["tx1"] = "\"Hehe, there's nothing wrong with being turned on.\n You should be more honest to yourself....\\H\"" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
   #格納
   ms.push(tx)
@@ -244,9 +244,9 @@ class MsgDevil_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「あはっ……！\\H\n　ふふ、なかなかやるじゃないか……\\H」"
-  tx["tx1"] = "「あぁっ……！\\H\n　そ、そこ……もっと強く……っ……\\H」" if $msg.t_enemy.crisis? #自分がクライシス
-#  tx["tx1"] = "「#{pleasure_cr}」" if $msg.t_enemy.weaken? #自分が絶頂中
+  tx["tx1"] = "\"Aha....! \\H\n Hehe, you're not half bad....\\H」"
+  tx["tx1"] = "\"Aha....! \\H\n T-There....go more rougher........\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+#  tx["tx1"] = "\"#{pleasure_cr}\"" if $msg.t_enemy.weaken? #自分が絶頂中
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -256,7 +256,7 @@ class MsgDevil_A < MsgBase
 case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
