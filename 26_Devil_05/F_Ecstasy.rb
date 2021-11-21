@@ -140,7 +140,7 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"You get some sleep.\n #{myname}'ll see to it that\n #{myname} keep you company, #{partner}\\H\""
-  tx["tx1"] = "\"You get some sleep.\n #{myname}'ll see to it that\n #{myname} keep you company, #{partner}\\H\"" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"You get some sleep.\n #{myname}'ll see to it that\n #{myname} keep you company, #{partner}\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"You get some sleep.\n #{myname}'ll see to it that\n #{myname} keep you company, #{partner}\\H\"" if $msg.t_target.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
