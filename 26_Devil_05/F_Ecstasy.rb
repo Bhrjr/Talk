@@ -21,7 +21,7 @@ class MsgDevil_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -32,13 +32,13 @@ class MsgDevil_A < MsgBase
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{giggle_s}、またイきそうかい？\n　さぁて、どうしてやろうか……？\\H」"
-  tx["tx1"] = "「#{giggle_s}、どうした？\n　ちゃんと言ってくれなきゃ解らんぜ？\\H」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle_s}、もうイきそうかい？\n　感じやすい奴は嫌いじゃないぜ\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s} 'Bout to cum again?\n Then what should I do 'bout it....? \\H」"
+  tx["tx1"] = "「#{giggle_s} What's the matter?\n I won't know unless you tell me nice and clear\\H」" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "「#{giggle_s}'Bout to cum?\n　感じやすい奴は嫌いじゃないぜ\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
   tx["tx1"] = "「おっと……。\n　逃げようったってそうは行かないぜ？\n　大人しく#{myname}達にイかされな\\H」"
-  tx["tx1"] = "「あ、こら！\n　今いい所なんだって！\n　……ったく、もう少し空気読んでくれよ」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "「あ、こら！\n　今いい所なんだって！\n　……ったく、もう少し空気読んでくれよ」" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼シェルマッチ
