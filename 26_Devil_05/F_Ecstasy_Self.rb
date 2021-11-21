@@ -25,7 +25,7 @@ class MsgDevil_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{pleasure_l}\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"#{pleasure_l}\n #{pleasure_cr}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -36,19 +36,19 @@ class MsgDevil_A < MsgBase
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{pleasure_l}\n　ま、まずい……、また……っ\\H」"
+  tx["tx1"] = "\"#{pleasure_l}\n S-Shoot....not again....\\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{pleasure_l}\n　や、やばいっ……こんなことで……っ！\\H」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{pleasure_l}\n C-Crap....from something like this....! \\H\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 9 #とどめ
-  tx["tx1"] = "「だ、ダメだっ……またイかされ……っ！\\H\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"N-No....gonna cum again....! \\H\n #{pleasure_cr}\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「だ、ダメ、待って、それ以上はっ……！\\H\n　#{pleasure_cr}」" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"N-No, hold it, any more and I'll....! \\H\n　#{pleasure_cr}\"" if $msg.t_enemy.ecstasy_count.size <= 0 #絶頂初回
 when 10 #余韻
-  tx["tx1"] = "「はぁ……っ、はぁ……っ、んんっ……\\H\n　#{myname}がこうまでやられるなんて……」"
-  tx["tx2"] = "「凄いね、#{target}……\\H\n　なぁ、まだ出来そうかい？\n　次は#{myname}も頑張るからさ……な？\\H」"
+  tx["tx1"] = "\"Pant....pant....nnhh....\\H\n Didn't think #{myname}'d be beaten this far....\""
+  tx["tx2"] = "\"You're something else, #{target}....\\H\n Say, can you still keep going?\n #{myname}'ll do the work next time....understood? \\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「く……くそっ……\\H\n　やられたぜ、#{myname}としたことが……」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "「この礼は、きっちり身体で返すぜ……\\H\n　#{myname}が起きたら覚悟しろよ？\n　……あふぅ\\H」" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx1"] = "\"C....Crud....\\H\n How did #{myname} wound up on the receiving end....\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better brace yourself when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
@@ -132,7 +132,7 @@ class MsgDevil_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{pleasure_l}\n　#{pleasure_cr}」"
+  tx["tx1"] = "\"#{pleasure_l}\n #{pleasure_cr}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -149,7 +149,7 @@ class MsgDevil_A < MsgBase
 
 #====================================================================================================================
 #◆【大事な人】状態◆
-if $msg.t_enemy.have_ability?("大切な人")
+if $msg.t_enemy.have_ability?("Significant Other")
 #====================================================================================================================
 case $msg.talk_step
 #★汎用★==============================================================================================================
@@ -238,7 +238,7 @@ ms.push(tx)
 
 #====================================================================================================================
 #◆【寵愛】状態◆
-elsif $msg.t_enemy.have_ability?("寵愛")
+elsif $msg.t_enemy.have_ability?("Affection")
 #====================================================================================================================
 case $msg.talk_step
 #★汎用★==============================================================================================================
