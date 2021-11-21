@@ -671,7 +671,7 @@ when "Succubus stripped"
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"You know what....?\n Maybe it's about time #{myname} undress myself\\H\""
     tx["tx2"] = "\"Hehe....\n You can just sit back and watch....\\H\"" 
-    tx["tx2"] = "\"Hehe....\n Not like I feel good about making you waiting so long♪\""  if $game_actors[101].nude? #既に主人公が脱いでいる
+    tx["tx2"] = "\"Hehe....\n Not like I feel good about making you wait for so long♪\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"What?\n You mean you've gotten used to me changing?\""
