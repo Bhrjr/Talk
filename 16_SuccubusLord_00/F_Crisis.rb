@@ -45,7 +45,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"*Giggle....what's the matter? Maybe you're not ready yet to continue? \\H\n Aren't you the one that's\\H\n going to pleasure me, #{target}?\n I still haven't had my fill yet....\\H\""
+  tx["tx1"] = "\"*giggle*....what's the matter? Maybe you're not ready yet to continue? \\H\n Aren't you the one that's\\H\n going to pleasure me, #{target}?\n I still haven't had my fill yet....\\H\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
@@ -128,7 +128,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"*Giggle....what's the matter? Maybe you're not ready yet to continue? \\H\n Aren't you the one that's\\H\n going to pleasure me, #{target}?\n I still haven't had my fill yet....\\H\""
+  tx["tx1"] = "\"*giggle*....what's the matter? Maybe you're not ready yet to continue? \\H\n Aren't you the one that's\\H\n going to pleasure me, #{target}?\n I still haven't had my fill yet....\\H\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
@@ -203,7 +203,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"*Giggle....what's the matter? Maybe you're not ready yet to continue? \\H\n Aren't you the one that's\\H\n going to pleasure me, #{target}?\n I still haven't had my fill yet....\\H\""
+  tx["tx1"] = "\"*giggle*....what's the matter? Maybe you're not ready yet to continue? \\H\n Aren't you the one that's\\H\n going to pleasure me, #{target}?\n I still haven't had my fill yet....\\H\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
@@ -277,7 +277,7 @@ when "Both users"
   ms.push(tx)
 #パートナーがホールド等のリバウンドで自らクライシス
 when "User rebound harm"
-  tx["tx1"] = "\"*Giggle....what's the matter? Maybe you're not ready yet to continue? \\H\n Aren't you the one that's\\H\n going to pleasure me, #{target}?\n I still haven't had my fill yet....\\H\""
+  tx["tx1"] = "\"*giggle*....what's the matter? Maybe you're not ready yet to continue? \\H\n Aren't you the one that's\\H\n going to pleasure me, #{target}?\n I still haven't had my fill yet....\\H\""
   #格納
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
