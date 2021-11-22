@@ -99,7 +99,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Oh my....you can't wait for it?\n *Giggle....dunno what to do about that\\H\""
+    tx["tx1"] = "\"Oh my....you can't wait for it?\n *giggle*....dunno what to do about that\\H\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -268,7 +268,7 @@ when "Caress - normal"
       #▼通常
       else
         tx["tx1"] = "\"#{giggle}\n I wonder how this will feel\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n You've got a cute face, while down here is....*giggle\\H\""  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "\"#{giggle}\n You've got a cute face, while down here is....*giggle*\\H\""  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "\"#{giggle}\n You want me to keep going?\n Dunno if I should though....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
@@ -389,8 +389,8 @@ when "Leer"
       tx["tx1"] = "\"Aaaah....you can see it....\\H\n Nfufu, I don't mind you looking at close up\\H\""  if $game_variables[17] > 50 #パターンB
     #▼陰核を弄る
     when "Target: Clitoris","Target: Anus"
-      tx["tx1"] = "\"#{pleasure_s}\n Since this spot is more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
-      tx["tx1"] = "\"*Giggle....are you looking at it?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"#{pleasure_s}\n Since this spot's more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
+      tx["tx1"] = "\"*giggle*....you seeing this?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
     end
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
@@ -576,7 +576,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Oh my....you can't wait for it?\n *Giggle....dunno what to do about that\\H\""
+    tx["tx1"] = "\"Oh my....you can't wait for it?\n *giggle*....dunno what to do about that\\H\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -745,7 +745,7 @@ when "Caress - normal"
       #▼通常
       else
         tx["tx1"] = "\"#{giggle}\n I wonder how this will feel\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n You've got a cute face, while down here is....*giggle\\H\""  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "\"#{giggle}\n You've got a cute face, while down here is....*giggle*\\H\""  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "\"#{giggle}\n You want me to keep going?\n Dunno if I should though....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
@@ -866,8 +866,8 @@ when "Leer"
       tx["tx1"] = "\"Aaaah....you can see it....\\H\n Nfufu, I don't mind you looking at close up\\H\""  if $game_variables[17] > 50 #パターンB
     #▼陰核を弄る
     when "Target: Clitoris","Target: Anus"
-      tx["tx1"] = "\"#{pleasure_s}\n Since this spot is more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
-      tx["tx1"] = "\"*Giggle....are you looking at it?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"#{pleasure_s}\n Since this spot's more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
+      tx["tx1"] = "\"*giggle*....you seeing this?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
     end
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
@@ -979,7 +979,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Oh my....you can't wait for it?\n *Giggle....dunno what to do about that\\H\""
+    tx["tx1"] = "\"Oh my....you can't wait for it?\n *giggle*....dunno what to do about that\\H\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -1148,7 +1148,7 @@ when "Caress - normal"
       #▼通常
       else
         tx["tx1"] = "\"#{giggle}\n I wonder how this will feel\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n You've got a cute face, while down here is....*giggle\\H\""  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "\"#{giggle}\n You've got a cute face, while down here is....*giggle*\\H\""  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "\"#{giggle}\n You want me to keep going?\n Dunno if I should though....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
@@ -1269,8 +1269,8 @@ when "Leer"
       tx["tx1"] = "\"Aaaah....you can see it....\\H\n Nfufu, I don't mind you looking at close up\\H\""  if $game_variables[17] > 50 #パターンB
     #▼陰核を弄る
     when "Target: Clitoris","Target: Anus"
-      tx["tx1"] = "\"#{pleasure_s}\n Since this spot is more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
-      tx["tx1"] = "\"*Giggle....are you looking at it?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"#{pleasure_s}\n Since this spot's more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
+      tx["tx1"] = "\"*giggle*....you seeing this?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
     end
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
@@ -1381,7 +1381,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"Oh my....you can't wait for it?\n *Giggle....dunno what to do about that\\H\""
+    tx["tx1"] = "\"Oh my....you can't wait for it?\n *giggle*....dunno what to do about that\\H\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -1550,7 +1550,7 @@ when "Caress - normal"
       #▼通常
       else
         tx["tx1"] = "\"#{giggle}\n I wonder how this will feel\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n You've got a cute face, while down here is....*giggle\\H\""  if $game_variables[17] > 50 #パターンB
+        tx["tx1"] = "\"#{giggle}\n You've got a cute face, while down here is....*giggle*\\H\""  if $game_variables[17] > 50 #パターンB
         tx["tx1"] = "\"#{giggle}\n You want me to keep going?\n Dunno if I should though....\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       end
     end
@@ -1671,8 +1671,8 @@ when "Leer"
       tx["tx1"] = "\"Aaaah....you can see it....\\H\n Nfufu, I don't mind you looking at close up\\H\""  if $game_variables[17] > 50 #パターンB
     #▼陰核を弄る
     when "Target: Clitoris","Target: Anus"
-      tx["tx1"] = "\"#{pleasure_s}\n Since this spot is more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
-      tx["tx1"] = "\"*Giggle....are you looking at it?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"#{pleasure_s}\n Since this spot's more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
+      tx["tx1"] = "\"*Giggle....you seeing this?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
     end
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
