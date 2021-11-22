@@ -243,7 +243,7 @@ case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"Smooch....\\H\n ....Fwah....\\H\""
-  tx["tx1"] = "\"Mmm....*kiss....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"Mmm....*kiss*....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
@@ -266,7 +266,7 @@ when "Hips"
   ms.push(tx)
 #▼クロッチ▼****************************************************************************************
 when "Crotch"
-  tx["tx1"] = "\"Ahah, that tickles, #{target}♪\n　……Annh\\H\""
+  tx["tx1"] = "\"Ahah, that tickles, #{target}♪\n ....Annh\\H\""
   tx["tx1"] = "\"Ahaha, you shouldn't grind it so much♪\n ....Annnh\\H\"" unless $msg.t_target.nude? # 対象が着衣状態の時
   tx["tx1"] = "\"Aah....nnnh........fuah....\\H\n Keep doing it, #{target}....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
