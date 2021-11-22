@@ -196,7 +196,7 @@ when "Succubus stripped"
     tx["tx2"] = "\"Not like you're wearing clothes either, #{target}\\H\n Uumph....\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Augh, my wings got stuck!\n *Sob....I can't take it off....\""
+    tx["tx1"] = "\"Augh, my wings got stuck!\n *sob*....I can't take it off....\""
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Ta-dah♪\n Thanks for waiting\\H\""
@@ -673,7 +673,7 @@ when "Succubus stripped"
     tx["tx2"] = "\"Not like you're wearing clothes either, #{target}\\H\n Uumph....\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Augh, my wings got stuck!\n *Sob....I can't take it off....\""
+    tx["tx1"] = "\"Augh, my wings got stuck!\n *sob*....I can't take it off....\""
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Ta-dah♪\n Thanks for waiting\\H\""
@@ -1076,7 +1076,7 @@ when "Succubus stripped"
     tx["tx2"] = "\"Not like you're wearing clothes either, #{target}\\H\n Uumph....\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Augh, my wings got stuck!\n *Sob....I can't take it off....\""
+    tx["tx1"] = "\"Augh, my wings got stuck!\n *sob*....I can't take it off....\""
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Ta-dah♪\n Thanks for waiting\\H\""
@@ -1478,7 +1478,7 @@ when "Succubus stripped"
     tx["tx2"] = "\"Not like you're wearing clothes either, #{target}\\H\n Uumph....\""  if $game_actors[101].nude? #既に主人公が脱いでいる
   when 77 #レジスト成功(脱衣を見るのを拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
-    tx["tx1"] = "\"Augh, my wings got stuck!\n *Sob....I can't take it off....\""
+    tx["tx1"] = "\"Augh, my wings got stuck!\n *sob*....I can't take it off....\""
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Ta-dah♪\n Thanks for waiting\\H\""
