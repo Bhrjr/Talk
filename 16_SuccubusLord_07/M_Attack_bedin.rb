@@ -479,7 +479,7 @@ when "Paizuri"
       tx["tx1"] = "\"Having confined it within my breasts, every gentle squeeze makes it\n stiffly bend back and swell up feverishly....\\H\n #{giggle_s} ....I feel like my breasts' going to melt with it....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
         tx["tx1"] = "\"#{giggle} Let me be a bit cruel to you now\\H\n In order to wring it out from the base to the tip with my breasts....\\H\n Enjoy the feel, look and sound....of being crushed by the breasts\\H\""
-        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *Kiss, *lick....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
+        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *kiss*, *lick*....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
         tx["tx1"] = "\"Can you taste more of my body on your own?\n I'm going to embrace your whole waist and press it tight\\H\n ....#{giggle_s} What a nice cry....it's going to mesmerize me....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     end
@@ -599,7 +599,7 @@ when "Paizuri"
       tx["tx1"] = "\"Having confined it within my breasts, every gentle squeeze makes it\n stiffly bend back and swell up feverishly....\\H\n #{giggle_s} ....I feel like my breasts' going to melt with it....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
         tx["tx1"] = "\"#{giggle} Let me be a bit cruel to you now\\H\n In order to wring it out from the base to the tip with my breasts....\\H\n Enjoy the feel, look and sound....of being crushed by the breasts\\H\""
-        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *Kiss, *lick....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
+        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *kiss*, *lick*....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
         tx["tx1"] = "\"Can you taste more of my body on your own?\n I'm going to embrace your whole waist and press it tight\\H\n ....#{giggle_s} What a nice cry....it's going to mesmerize me....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     end
@@ -717,7 +717,7 @@ when "Paizuri"
       tx["tx1"] = "\"Having confined it within my breasts, every gentle squeeze makes it\n stiffly bend back and swell up feverishly....\\H\n #{giggle_s} ....I feel like my breasts' going to melt with it....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       if $msg.t_target.critical == true #SS時
         tx["tx1"] = "\"#{giggle} Let me be a bit cruel to you now\\H\n In order to wring it out from the base to the tip with my breasts....\\H\n Enjoy the feel, look and sound....of being crushed by the breasts\\H\""
-        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *Kiss, *lick....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
+        tx["tx1"] = "\"This manhood that's so greedly bent that it can't fit into my cleavage,\n I'm going to tease its tip that's sore and swollen....nnnhh\\H\n *kiss*, *lick*....nfufu, doesn't it feel like your waist is going to melt? \\H\"" if $game_variables[17] > 33 #ランダム分岐
         tx["tx1"] = "\"Can you taste more of my body on your own?\n I'm going to embrace your whole waist and press it tight\\H\n ....#{giggle_s} What a nice cry....it's going to mesmerize me....\\H\"" if $game_variables[17] > 66 #ランダム分岐
       end
     end
