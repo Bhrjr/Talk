@@ -100,7 +100,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"*Giggle....♪\n Guess you can't wait?\""
+    tx["tx1"] = "\"*giggle*....♪\n Guess you can't wait?\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -178,7 +178,7 @@ when "Player stripped"
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Aha, looking at it up-close,\n it makes my heart pound\\H\""
-    tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
+    tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp*....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -201,7 +201,7 @@ when "Succubus stripped"
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Aha....\\H\n How is it? Does it make your heart race? \\H\""
-    tx["tx1"] = "\"Aha....\\H\n You're looking at me like a perv, you know, #{target}?\n *Giggle\\H\"" if $game_actors[101].state?(32) #ドキっとした
+    tx["tx1"] = "\"Aha....\\H\n You're looking at me like a perv, you know, #{target}?\n *giggle*\\H\"" if $game_actors[101].state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -576,7 +576,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"*Giggle....♪\n Guess you can't wait?\""
+    tx["tx1"] = "\"*giggle*....♪\n Guess you can't wait?\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -654,7 +654,7 @@ when "Player stripped"
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Aha, looking at it up-close,\n it makes my heart pound\\H\""
-    tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
+    tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp*....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -677,7 +677,7 @@ when "Succubus stripped"
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Aha....\\H\n How is it? Does it make your heart race? \\H\""
-    tx["tx1"] = "\"Aha....\\H\n You're looking at me like a perv, you know, #{target}?\n *Giggle\\H\"" if $game_actors[101].state?(32) #ドキっとした
+    tx["tx1"] = "\"Aha....\\H\n You're looking at me like a perv, you know, #{target}?\n *giggle*\\H\"" if $game_actors[101].state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -978,7 +978,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"*Giggle....♪\n Guess you can't wait?\""
+    tx["tx1"] = "\"*giggle*....♪\n Guess you can't wait?\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -1056,7 +1056,7 @@ when "Player stripped"
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Aha, looking at it up-close,\n it makes my heart pound\\H\""
-    tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
+    tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp*....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -1079,7 +1079,7 @@ when "Succubus stripped"
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Aha....\\H\n How is it? Does it make your heart race? \\H\""
-    tx["tx1"] = "\"Aha....\\H\n You're looking at me like a perv, you know, #{target}?\n *Giggle\\H\"" if $game_actors[101].state?(32) #ドキっとした
+    tx["tx1"] = "\"Aha....\\H\n You're looking at me like a perv, you know, #{target}?\n *giggle*\\H\"" if $game_actors[101].state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -1379,7 +1379,7 @@ when "Rejected"
     tx["md"] = "28"
   when "Player CRISIS"
     # 主人公がクライシス中に話しかけた場合
-    tx["tx1"] = "\"*Giggle....♪\n Guess you can't wait?\""
+    tx["tx1"] = "\"*giggle*....♪\n Guess you can't wait?\""
     #----------------------------
     tx["md"] = "29"
   when "Succubus CRISIS"
@@ -1457,7 +1457,7 @@ when "Player stripped"
   when 2 #レジスト失敗(脱衣を受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Aha, looking at it up-close,\n it makes my heart pound\\H\""
-    tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
+    tx["tx1"] = "\"Whoa....\\H\n #{target}'s body....*gulp*....\\H\"" if $msg.t_enemy.state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
@@ -1480,7 +1480,7 @@ when "Succubus stripped"
   when 2 #レジスト失敗(脱衣を見るのを受け入れた場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Aha....\\H\n How is it? Does it make your heart race? \\H\""
-    tx["tx1"] = "\"Aha....\\H\n You're looking at me like a perv, you know, #{target}?\n *Giggle\\H\"" if $game_actors[101].state?(32) #ドキっとした
+    tx["tx1"] = "\"Aha....\\H\n You're looking at me like a perv, you know, #{target}?\n *giggle*\\H\"" if $game_actors[101].state?(32) #ドキっとした
   end
   #----------------------------------------------------------------------------------------------------------------------
   #格納
