@@ -67,7 +67,7 @@ if $msg.tag == "Start the Battle"
     when 1 #２番目
       tx["tx1"] = "\"Nfufu, play with us\\H\""
     when 2 #３番目
-      tx["tx1"] = "\"What should we play with?\n *Giggle....\\H\""
+      tx["tx1"] = "\"What should we play with?\n *giggle*....\\H\""
     end
   end
   #格納
