@@ -37,8 +37,8 @@ if $msg.t_enemy.have_ability?("Significant Other")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"*Giggle....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
-  tx["tx1"] = "\"*Giggle....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"*giggle*....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
+  tx["tx1"] = "\"*giggle*....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Ufufu....looks like you're totally into it\\H\n You have to be more honest with yourself....\\H\"" if $msg.t_target.crisis? #対象がクライシス
   tx["tx1"] = "\"Ufufu....does it feel good?\n You should be giving yourself in to me....\\H\"" if $msg.t_target.crisis? and $game_variables[17] > 35 #対象がクライシス・パターンB
@@ -53,10 +53,10 @@ if $msg.t_enemy.have_ability?("Significant Other")
 case $msg.at_type
 #▼キス▼****************************************************************************************
 when "Kiss"
-  tx["tx1"] = "\"Nnn....*kiss...smooch, fwah....\\H\n I'm gonna intoxicate you with my lips....\\H\""
-  tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n Ufufu, keep twirling your tongue like that....yeah....\\H\"" if $game_variables[17] > 35 #パターンB
-  tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n That's it, you're...so good with your tongue...*giggle....\\H\"" if $game_variables[17] > 70 #パターンC
-  tx["tx1"] = "\"Smooch...nnn....*lick....\\H\n Ufu....you've totally fallen for it...so adorable\\H\"" if $msg.t_enemy.crisis?
+  tx["tx1"] = "\"Nnn....*kiss*...smooch, fwah....\\H\n I'm gonna intoxicate you with my lips....\\H\""
+  tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n Ufufu, keep twirling your tongue like that....yeah....\\H\"" if $game_variables[17] > 35 #パターンB
+  tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n That's it, you're...so good with your tongue...*giggle*....\\H\"" if $game_variables[17] > 70 #パターンC
+  tx["tx1"] = "\"Smooch...nnn....*lick*....\\H\n Ufu....you've totally fallen for it...so adorable\\H\"" if $msg.t_enemy.crisis?
   tx["tx1"] = "\"...Smooch...smooch, puah...nnn....\\H\n Ufufu, I'll make you fall for it even more....\\H\"" if $msg.t_enemy.crisis? and $game_variables[17] > 50 #パターンB
   #-----------------------------------------------------
   #格納
@@ -158,8 +158,8 @@ elsif $msg.t_enemy.have_ability?("Affection")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"*Giggle....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
-  tx["tx1"] = "\"*Giggle....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"*giggle*....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
+  tx["tx1"] = "\"*giggle*....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Ufufu....looks like you're totally into it\\H\n You have to be more honest with yourself....\\H\"" if $msg.t_target.crisis? #対象がクライシス
   tx["tx1"] = "\"Ufufu....does it feel good?\n You should be giving yourself in to me....\\H\"" if $msg.t_target.crisis? and $game_variables[17] > 35 #対象がクライシス・パターンB
@@ -174,10 +174,10 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.at_type
 #▼キス▼****************************************************************************************
 when "Kiss"
-  tx["tx1"] = "\"Nnn....*kiss...smooch, fwah....\\H\n I'm gonna intoxicate you with my lips....\\H\""
-  tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n Ufufu, keep twirling your tongue like that....yeah....\\H\"" if $game_variables[17] > 35 #パターンB
-  tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n That's it, you're...so good with your tongue...*giggle....\\H\"" if $game_variables[17] > 70 #パターンC
-  tx["tx1"] = "\"Smooch...nnn....*lick....\\H\n Ufu....you've totally fallen for it...so adorable\\H\"" if $msg.t_enemy.crisis?
+  tx["tx1"] = "\"Nnn....*kiss*...smooch, fwah....\\H\n I'm gonna intoxicate you with my lips....\\H\""
+  tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n Ufufu, keep twirling your tongue like that....yeah....\\H\"" if $game_variables[17] > 35 #パターンB
+  tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n That's it, you're...so good with your tongue...*giggle*....\\H\"" if $game_variables[17] > 70 #パターンC
+  tx["tx1"] = "\"Smooch...nnn....*lick*....\\H\n Ufu....you've totally fallen for it...so adorable\\H\"" if $msg.t_enemy.crisis?
   tx["tx1"] = "\"...Smooch...smooch, puah...nnn....\\H\n Ufufu, I'll make you fall for it even more....\\H\"" if $msg.t_enemy.crisis? and $game_variables[17] > 50 #パターンB
   #-----------------------------------------------------
   #格納
@@ -278,8 +278,8 @@ else
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"*Giggle....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
-  tx["tx1"] = "\"*Giggle....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"*giggle*....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
+  tx["tx1"] = "\"*giggle*....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Ufufu....looks like you're totally into it\\H\n You have to be more honest with yourself....\\H\"" if $msg.t_target.crisis? #対象がクライシス
   tx["tx1"] = "\"Ufufu....does it feel good?\n You should be giving yourself in to me....\\H\"" if $msg.t_target.crisis? and $game_variables[17] > 35 #対象がクライシス・パターンB
@@ -294,10 +294,10 @@ else
 case $msg.at_type
 #▼キス▼****************************************************************************************
 when "Kiss"
-  tx["tx1"] = "\"Nnn....*kiss...smooch, fwah....\\H\n I'm gonna intoxicate you with my lips....\\H\""
-  tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n Ufufu, keep twirling your tongue like that....yeah....\\H\"" if $game_variables[17] > 35 #パターンB
-  tx["tx1"] = "\"...*Lick....*slurp....smooch....\\H\n That's it, you're...so good with your tongue...*giggle....\\H\"" if $game_variables[17] > 70 #パターンC
-  tx["tx1"] = "\"Smooch...nnn....*lick....\\H\n Ufu....you've totally fallen for it...so adorable\\H\"" if $msg.t_enemy.crisis?
+  tx["tx1"] = "\"Nnn....*kiss*...smooch, fwah....\\H\n I'm gonna intoxicate you with my lips....\\H\""
+  tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n Ufufu, keep twirling your tongue like that....yeah....\\H\"" if $game_variables[17] > 35 #パターンB
+  tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n That's it, you're...so good with your tongue...*giggle*....\\H\"" if $game_variables[17] > 70 #パターンC
+  tx["tx1"] = "\"Smooch...nnn....*lick*....\\H\n Ufu....you've totally fallen for it...so adorable\\H\"" if $msg.t_enemy.crisis?
   tx["tx1"] = "\"...Smooch...smooch, puah...nnn....\\H\n Ufufu, I'll make you fall for it even more....\\H\"" if $msg.t_enemy.crisis? and $game_variables[17] > 50 #パターンB
   #-----------------------------------------------------
   #格納
@@ -427,8 +427,8 @@ if $msg.t_enemy.have_ability?("Significant Other")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"*Giggle....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
-  tx["tx1"] = "\"*Giggle....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"*giggle*....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
+  tx["tx1"] = "\"*giggle*....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Ufufu....looks like you're totally into it\\H\n You have to be more honest with yourself....\\H\"" if $msg.t_target.crisis? #対象がクライシス
   tx["tx1"] = "\"Ufufu....does it feel good?\n You should be giving yourself in to me....\\H\"" if $msg.t_target.crisis? and $game_variables[17] > 35 #対象がクライシス・パターンB
@@ -443,7 +443,7 @@ if $msg.t_enemy.have_ability?("Significant Other")
 case $msg.at_parts
 #▼インサート(♀)▼****************************************************************************************
 when "♀ rubbing"
-  tx["tx1"] = "\"*Giggle....\\H\n Is this your first time to feel like this?\""
+  tx["tx1"] = "\"*giggle*....\\H\n Is this your first time to feel like this?\""
   tx["tx2"] = "\"Get a good\n taste of my body\\H\""
   tx["tx1"] = "\"Can you see it, #{target}....?\n That is, where you and I are connected....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
@@ -489,8 +489,8 @@ when "ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -523,8 +523,8 @@ elsif $msg.t_enemy.have_ability?("Affection")
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"*Giggle....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
-  tx["tx1"] = "\"*Giggle....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"*giggle*....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
+  tx["tx1"] = "\"*giggle*....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Ufufu....looks like you're totally into it\\H\n You have to be more honest with yourself....\\H\"" if $msg.t_target.crisis? #対象がクライシス
   tx["tx1"] = "\"Ufufu....does it feel good?\n You should be giving yourself in to me....\\H\"" if $msg.t_target.crisis? and $game_variables[17] > 35 #対象がクライシス・パターンB
@@ -539,7 +539,7 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.at_parts
 #▼インサート(♀)▼****************************************************************************************
 when "♀ rubbing"
-  tx["tx1"] = "\"*Giggle....\\H\n Is this your first time to feel like this?\""
+  tx["tx1"] = "\"*giggle*....\\H\n Is this your first time to feel like this?\""
   tx["tx2"] = "\"Get a good\n taste of my body\\H\""
   tx["tx1"] = "\"Can you see it, #{target}....?\n That is, where you and I are connected....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
@@ -585,8 +585,8 @@ when "ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -618,8 +618,8 @@ else
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "\"*Giggle....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
-  tx["tx1"] = "\"*Giggle....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"*giggle*....you're not resisting at all.\n Or maybe....you were looking forward to it?\\H\""
+  tx["tx1"] = "\"*giggle*....♪\n Remember to savor my body....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
   tx["tx1"] = "\"Ufufu....looks like you're totally into it\\H\n You have to be more honest with yourself....\\H\"" if $msg.t_target.crisis? #対象がクライシス
   tx["tx1"] = "\"Ufufu....does it feel good?\n You should be giving yourself in to me....\\H\"" if $msg.t_target.crisis? and $game_variables[17] > 35 #対象がクライシス・パターンB
@@ -634,7 +634,7 @@ else
 case $msg.at_parts
 #▼インサート(♀)▼****************************************************************************************
 when "♀ rubbing"
-  tx["tx1"] = "\"*Giggle....\\H\n Is this your first time to feel like this?\""
+  tx["tx1"] = "\"*giggle*....\\H\n Is this your first time to feel like this?\""
   tx["tx2"] = "\"Get a good\n taste of my body\\H\""
   tx["tx1"] = "\"Can you see it, #{target}....?\n That is, where you and I are connected....\\H\"" if $game_variables[17] > 50 #パターンB
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
@@ -680,8 +680,8 @@ when "ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -755,8 +755,8 @@ case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"Mmm....fuah....\\H\n That's it...you're good, #{target}....\\H\""
-  tx["tx1"] = "\"Smooch....*lick....*roll....\\H\n Hey....get your tongue....deeper in....\\H\""if $game_variables[17] > 50 #パターンB
-  tx["tx1"] = "\"Mmph...smooch....*lick....\\H\n Ufufu....I'm gonna get intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"Smooch....*lick*....*roll*....\\H\n Hey....get your tongue....deeper in....\\H\""if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"Mmph...smooch....*lick*....\\H\n Ufufu....I'm gonna get intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
@@ -842,8 +842,8 @@ case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"Mmm....fuah....\\H\n That's it...you're good, #{target}....\\H\""
-  tx["tx1"] = "\"Smooch....*lick....*roll....\\H\n Hey....get your tongue....deeper in....\\H\""if $game_variables[17] > 50 #パターンB
-  tx["tx1"] = "\"Mmph...smooch....*lick....\\H\n Ufufu....I'm gonna get intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"Smooch....*lick*....*roll*....\\H\n Hey....get your tongue....deeper in....\\H\""if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"Mmph...smooch....*lick*....\\H\n Ufufu....I'm gonna get intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
@@ -928,8 +928,8 @@ case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"Mmm....fuah....\\H\n That's it...you're good, #{target}....\\H\""
-  tx["tx1"] = "\"Smooch....*lick....*roll....\\H\n Hey....get your tongue....deeper in....\\H\""if $game_variables[17] > 50 #パターンB
-  tx["tx1"] = "\"Mmph...smooch....*lick....\\H\n Ufufu....I'm gonna get intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"Smooch....*lick*....*roll*....\\H\n Hey....get your tongue....deeper in....\\H\""if $game_variables[17] > 50 #パターンB
+  tx["tx1"] = "\"Mmph...smooch....*lick*....\\H\n Ufufu....I'm gonna get intoxicated....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
