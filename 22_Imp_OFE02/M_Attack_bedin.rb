@@ -458,8 +458,8 @@ when "ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -551,8 +551,8 @@ when "ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -643,8 +643,8 @@ when "ディルド尻挿入"
   #格納
   ms.push(tx)
 #▼キッス▼****************************************************************************************
-when "キッス"
-  tx["tx1"] = "「#{kiss_l}」"
+when "Kiss"
+  tx["tx1"] = "\"#{kiss_l}\""
 #  tx["tx1"] = "" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_target.crisis? #対象がクライシス
 #  tx["tx1"] = "" if $msg.t_target.weaken? #対象が絶頂中
@@ -718,7 +718,7 @@ case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"Smooch....\\H\n ....Fwah....\\H\""
-  tx["tx1"] = "\"Mmm....*kiss....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"Mmm....*kiss*....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
@@ -796,7 +796,7 @@ case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"Smooch....\\H\n ....Fwah....\\H\""
-  tx["tx1"] = "\"Mmm....*kiss....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"Mmm....*kiss*....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
@@ -873,7 +873,7 @@ case $msg.at_type
 #▼キッス▼****************************************************************************************
 when "Kiss"
   tx["tx1"] = "\"Smooch....\\H\n ....Fwah....\\H\""
-  tx["tx1"] = "\"Mmm....*kiss....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
+  tx["tx1"] = "\"Mmm....*kiss*....smooch....\n Hey, #{target}....#{myname} love this....\\H\n Keep doing it....\\H\"" if $msg.t_enemy.crisis? #自分がクライシス
 #  tx["tx1"] = "" if $msg.t_enemy.weaken? #自分が絶頂中
   #-----------------------------------------------------
   #格納
