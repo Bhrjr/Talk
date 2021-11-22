@@ -98,7 +98,7 @@ when "Rejected"
     when 1,2
     tx["tx1"] = "\"#{pleasure_l}\""
     when 3
-    tx["tx1"] = "\"*Gasp, ah, nnh, kuuh....\\H\n Ufufu....to tell me to get up already,\n you're more unreasonable than you look....\\H」"
+    tx["tx1"] = "\"*gasp*, ah, nnh, kuuh....\\H\n Ufufu....to tell me to get up already,\n you're more unreasonable than you look....\\H」"
     end
     #----------------------------
     tx["md"] = "28"
@@ -121,7 +121,7 @@ when "Rejected"
     # 夢魔が恍惚中の場合
     case rand(3)
     when 1
-      tx["tx1"] = "\"*G-Gasp....\\H\""
+      tx["tx1"] = "\"*g-gasp*....\\H\""
     when 2
       tx["tx1"] = "\"U-Ufufu....\\H\n My cries won't stop....\\H\""
     when 3
@@ -459,14 +459,14 @@ when "Mingle"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"*Kiss\\H ....Ufufu, making a surprised face like that\\H\n Say, #{taregt}.\n Don't you feel like doing with these lips as you please? \\H\""
+      tx["tx1"] = "\"*kiss*\\H ....Ufufu, making a surprised face like that\\H\n Say, #{taregt}.\n Don't you feel like doing with these lips as you please? \\H\""
       tx["tx2"] = "\"Using your shaft,\n violating my lips like there's no tomorrow and\n soiling it with your boiling hot lust. Just imagine....\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"What a shame. ....Aaah, my mouth feels so empty....\\H\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"*Rub, *lick....*droool\\H #{giggle}\n Your smell's wonderful, #{target}\\H\""
+      tx["tx1"] = "\"*rub*, *lick*....*droool*\\H #{giggle}\n Your smell's wonderful, #{target}\\H\""
     end
   when "Paizuri"
     case $msg.talk_step
@@ -607,7 +607,7 @@ when "Rejected"
     when 1,2
     tx["tx1"] = "\"#{pleasure_l}\""
     when 3
-    tx["tx1"] = "\"*Gasp, ah, nnh, kuuh....\\H\n Ufufu....to tell me to get up already,\n you're more unreasonable than you look....\\H」"
+    tx["tx1"] = "\"*gasp*, ah, nnh, kuuh....\\H\n Ufufu....to tell me to get up already,\n you're more unreasonable than you look....\\H」"
     end
     #----------------------------
     tx["md"] = "28"
@@ -630,7 +630,7 @@ when "Rejected"
     # 夢魔が恍惚中の場合
     case rand(3)
     when 1
-      tx["tx1"] = "\"*G-Gasp....\\H\""
+      tx["tx1"] = "\"*g-gasp*....\\H\""
     when 2
       tx["tx1"] = "\"U-Ufufu....\\H\n My cries won't stop....\\H\""
     when 3
@@ -968,14 +968,14 @@ when "Mingle"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"*Kiss\\H ....Ufufu, making a surprised face like that\\H\n Say, #{taregt}.\n Don't you feel like doing with these lips as you please? \\H\""
+      tx["tx1"] = "\"*kiss*\\H ....Ufufu, making a surprised face like that\\H\n Say, #{taregt}.\n Don't you feel like doing with these lips as you please? \\H\""
       tx["tx2"] = "\"Using your shaft,\n violating my lips like there's no tomorrow and\n soiling it with your boiling hot lust. Just imagine....\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"What a shame. ....Aaah, my mouth feels so empty....\\H\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"*Rub, *lick....*droool\\H #{giggle}\n Your smell's wonderful, #{target}\\H\""
+      tx["tx1"] = "\"*rub*, *lick*....*droool*\\H #{giggle}\n Your smell's wonderful, #{target}\\H\""
     end
   when "Paizuri"
     case $msg.talk_step
@@ -1042,7 +1042,7 @@ when "Rejected"
     when 1,2
     tx["tx1"] = "\"#{pleasure_l}\""
     when 3
-    tx["tx1"] = "\"*Gasp, ah, nnh, kuuh....\\H\n Ufufu....to tell me to get up already,\n you're more unreasonable than you look....\\H」"
+    tx["tx1"] = "\"*gasp*, ah, nnh, kuuh....\\H\n Ufufu....to tell me to get up already,\n you're more unreasonable than you look....\\H」"
     end
     #----------------------------
     tx["md"] = "28"
@@ -1065,7 +1065,7 @@ when "Rejected"
     # 夢魔が恍惚中の場合
     case rand(3)
     when 1
-      tx["tx1"] = "\"*G-Gasp....\\H\""
+      tx["tx1"] = "\"*g-gasp*....\\H\""
     when 2
       tx["tx1"] = "\"U-Ufufu....\\H\n My cries won't stop....\\H\""
     when 3
@@ -1403,14 +1403,14 @@ when "Mingle"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"*Kiss\\H ....Ufufu, making a surprised face like that\\H\n Say, #{taregt}.\n Don't you feel like doing with these lips as you please? \\H\""
+      tx["tx1"] = "\"*kiss*\\H ....Ufufu, making a surprised face like that\\H\n Say, #{taregt}.\n Don't you feel like doing with these lips as you please? \\H\""
       tx["tx2"] = "\"Using your shaft,\n violating my lips like there's no tomorrow and\n soiling it with your boiling hot lust. Just imagine....\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"What a shame. ....Aaah, my mouth feels so empty....\\H\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"*Rub, *lick....*droool\\H #{giggle}\n Your smell's wonderful, #{target}\\H\""
+      tx["tx1"] = "\"*rub*, *lick*....*droool*\\H #{giggle}\n Your smell's wonderful, #{target}\\H\""
     end
   when "Paizuri"
     case $msg.talk_step
@@ -1476,7 +1476,7 @@ when "Rejected"
     when 1,2
     tx["tx1"] = "\"#{pleasure_l}\""
     when 3
-    tx["tx1"] = "\"*Gasp, ah, nnh, kuuh....\\H\n Ufufu....to tell me to get up already,\n you're more unreasonable than you look....\\H」"
+    tx["tx1"] = "\"*gasp*, ah, nnh, kuuh....\\H\n Ufufu....to tell me to get up already,\n you're more unreasonable than you look....\\H」"
     end
     #----------------------------
     tx["md"] = "28"
@@ -1499,7 +1499,7 @@ when "Rejected"
     # 夢魔が恍惚中の場合
     case rand(3)
     when 1
-      tx["tx1"] = "\"*G-Gasp....\\H\""
+      tx["tx1"] = "\"*g-gasp*....\\H\""
     when 2
       tx["tx1"] = "\"U-Ufufu....\\H\n My cries won't stop....\\H\""
     when 3
@@ -1837,14 +1837,14 @@ when "Mingle"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"*Kiss\\H ....Ufufu, making a surprised face like that\\H\n Say, #{taregt}.\n Don't you feel like doing with these lips as you please? \\H\""
+      tx["tx1"] = "\"*kiss*\\H ....Ufufu, making a surprised face like that\\H\n Say, #{taregt}.\n Don't you feel like doing with these lips as you please? \\H\""
       tx["tx2"] = "\"Using your shaft,\n violating my lips like there's no tomorrow and\n soiling it with your boiling hot lust. Just imagine....\\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"What a shame. ....Aaah, my mouth feels so empty....\\H\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"*Rub, *lick....*droool\\H #{giggle}\n Your smell's wonderful, #{target}\\H\""
+      tx["tx1"] = "\"*rub*, *lick*....*droool*\\H #{giggle}\n Your smell's wonderful, #{target}\\H\""
     end
   when "Paizuri"
     case $msg.talk_step
