@@ -68,7 +68,7 @@ if $msg.tag == "Start the Battle"
     when 1 #２番目
       tx["tx1"] = "\"Didn't think we'd run into a lost kid.\n You all right? Why don't we show you the way?\""
     when 2 #３番目
-      tx["tx1"] = "\"Oh boy, been a since since we found a boy!\n *Ba-dump *ba-tump....\\H\""
+      tx["tx1"] = "\"Oh boy, been a since since we found a boy!\n *ba-dump* *ba-tump*....\\H\""
     end
   end
   #格納
