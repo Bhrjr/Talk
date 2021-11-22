@@ -232,7 +232,7 @@ elsif $msg.tag == "Succubus binds the player."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle_s} ....Good boy\\H\n For being so obedient,\n you get to be my captive, #{target}....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"*Giggle....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"*giggle*....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -594,7 +594,7 @@ elsif $msg.tag == "Succubus binds the player."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle_s} ....Good boy\\H\n For being so obedient,\n you get to be my captive, #{target}....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"*Giggle....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"*giggle*....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -936,7 +936,7 @@ elsif $msg.tag == "Succubus binds the player."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle_s} ....Good boy\\H\n For being so obedient,\n you get to be my captive, #{target}....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"*Giggle....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"*giggle*....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -1277,7 +1277,7 @@ elsif $msg.tag == "Succubus binds the player."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle_s} ....Good boy\\H\n For being so obedient,\n you get to be my captive, #{target}....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"*Giggle....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"*giggle*....you can't get away anymore.\n I'm going to entwine you in the supreme bliss\n until you're mine....\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
