@@ -171,7 +171,7 @@ elsif $msg.tag == "Succubus binds the partner."
   #==================================================================================================================
   case $msg.talk_step
   when 1 #ホールドレジスト中
-    tx["tx1"] = "「#{giggle}\n Do you mind keeping me company?」"
+    tx["tx1"] = "\"#{giggle}\n Do you mind keeping me company?\""
   when 2 #ホールドレジスト成功
     tx["tx1"] = "\"No?\n Good grief, you're too scared to, I see.\""
   when 3 #ホールドレジスト失敗
@@ -234,13 +234,13 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n　#{myname}の相手をしてもらおうか？」"
+    tx["tx1"] = "\"#{giggle}\n Do you mind keeping me company?\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「イヤだって？\n　やれやれ、怖がられたもんだね」"
+    tx["tx1"] = "\"No?\n Good grief, you're too scared to, I see.\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「#{giggle}\n　簡単には逃がしてやらないぜ？」"
+      tx["tx1"] = "\"#{giggle}\n I ain't letting you get away so easily.\""
       #自ら受け入れた場合
-      tx["tx1"] = "「#{giggle}\n　簡単には逃がしてやらないぜ？」" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n I ain't letting you get away so easily.\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -251,13 +251,13 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n　#{myname}の胸で溺れさせてやるぜ……\\H」"
+      tx["tx1"] = "「#{giggle}\n #{myname}'ll make you succumb to my breasts....\\H」"
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「何だよ、こっちには興味ないってか？」"
+      tx["tx1"] = "「What, you mean you're not interested in them?」"
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「ふふ、捕まえたぜ？\n　簡単には逃がさねえからな？」"
+      tx["tx1"] = "「Hehe, gotcha.\n I'm not letting you get away so simply.」"
       #自ら受け入れた場合
-      tx["tx1"] = "「ふふ、期待してたみたいだな？\n　んじゃ、リクエストにお応えしようか……\\H」" if $game_switches[89] == true
+      tx["tx1"] = "「Hehe, guess that means you couldn't wait.\n Then how 'bout I answer that request of yours....\\H」" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -268,13 +268,13 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n　力、抜いてな？\n　とろけさせてやるぜ……\\H」"
+      tx["tx1"] = "「#{giggle}\n Just relax as\n I leave you captivated....\\H」"
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「イヤだって？\n　やれやれ、怖がられたもんだね」"
+    tx["tx1"] = "\"No?\n Good grief, you're too scared to, I see.\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「#{kiss_l}\n　#{giggle}」"
+      tx["tx1"] = "\"#{kiss_l}\n #{giggle}\""
       #自ら受け入れた場合
-      tx["tx1"] = "「#{kiss_l}\n　#{giggle}」" if $game_switches[89] == true
+      tx["tx1"] = "\"#{kiss_l}\n #{giggle}\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -285,13 +285,13 @@ elsif $msg.tag == "Succubus binds the partner."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n　じっとしてな、気持ちよくしてやるから」"
+      tx["tx1"] = "\"#{giggle}\n Hold still as I make you moan.」"
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「イヤだって？\n　やれやれ、怖がられたもんだね」"
+      tx["tx1"] = "\"No?\n Good grief, you're too scared to, I see.\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「んむ……っ\\H\n　ふふ……じゅるっ……\\H」"
+      tx["tx1"] = "\"Nnnmmph....\\H\n Hehe....*drool*....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「んむ……っ\\H\n　ふふ……じゅるっ……\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"Nnnmmph....\\H\n Hehe....*drool*....\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
