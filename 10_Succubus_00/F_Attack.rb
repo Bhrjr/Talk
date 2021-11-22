@@ -42,7 +42,7 @@ case $msg.at_type
 when "Kiss"
   tx["tx1"] = "\"Mmm....*kiss*...smooch, fwah....\\H\n I'm gonna intoxicate you with my lips....\\H\""
   tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n Ufufu, keep twirling your tongue like that....yeah....\\H\"" if $game_variables[17] > 35 #パターンB
-  tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n That's it, you're...so good with your tongue...*giggle....\\H\"" if $game_variables[17] > 70 #パターンC
+  tx["tx1"] = "\"...*lick*....*slurp*....smooch....\\H\n That's it, you're...so good with your tongue...*giggle*....\\H\"" if $game_variables[17] > 70 #パターンC
   tx["tx1"] = "\"Smooch...mmm....*lick*....\\H\n Ufu....you've totally fallen for it...so adorable\\H\"" if $msg.t_enemy.crisis?
   tx["tx1"] = "\"...Smooch...smooch, puah...mmm....\\H\n Ufufu, I'll make you fall for it even more....\\H\"" if $msg.t_enemy.crisis? and $game_variables[17] > 50 #パターンB
   #-----------------------------------------------------
