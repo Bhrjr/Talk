@@ -57,7 +57,7 @@ when "Enemy solo"
   ms.push(tx)
 #パートナーが既にクライシス、そのパートナーから攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"S-Shoot....I'm gonna cum....!?\n Y-You think I'll let you........kuh....\\H\""
+  tx["tx1"] = "\"S-Shoot....I'm gonna cum....!?\n Y-You think I'll go down like that........kuh....\\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
