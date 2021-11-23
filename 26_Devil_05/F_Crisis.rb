@@ -123,7 +123,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"Hehe, I bet you want me to see it.\n Then you better do it with more gusto\\H\""
+  tx["tx1"] = "\"Hehe, I bet you want me to see it.\n Then you better put more gusto in it\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -193,7 +193,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"Hehe, I bet you want me to see it.\n Then you better do it with more gusto\\H\""
+  tx["tx1"] = "\"Hehe, I bet you want me to see it.\n Then you better put more gusto in it\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -262,7 +262,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"Hehe, I bet you want me to see it.\n Then you better do it with more gusto\\H\""
+  tx["tx1"] = "\"Hehe, I bet you want me to see it.\n Then you better put more gusto in it\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
