@@ -42,8 +42,8 @@ when "Succubus strips the partner."
     tx["tx1"] = "\"#{giggle}\n Hold still as I take them off for you, got it?\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
-    tx["tx1"] = "\"What? I don't see what's wrong with it.\n Not like how we're both girl is anything to get worked up over.\""
-    tx["tx1"] = "\"What? I don't see what's wrong with it.\n Not like how we're both girl is anything to get worked up over.\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+    tx["tx1"] = "\"What? I don't see what's wrong with it.\n Not like how we're both girl's anything to get worked up over.\""
+    tx["tx1"] = "\"What? I don't see what's wrong with it.\n Not like how we're both girl's anything to get worked up over.\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 3 #パートナーが脱衣した
     tx["tx1"] = "\"Oh wow, so eager♪\""
@@ -57,20 +57,20 @@ when "Succubus strips the partner."
 #====================================================================================================================
 #■パートナーが夢魔を脱衣させる
 #====================================================================================================================
-when "Succubus strips the partner."
+when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
     tx["tx1"] = "\"Oh wow, you'll、take them off for me?\""
-    tx["tx1"] = "「Oh, #{myname} should take mine off too?」" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"Oh, #{myname} should take mine off too?\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
-    tx["tx1"] = "「Hehe, gee, thanks.\n　この礼はちゃんと身体で返さないとな\\H」"
-    tx["tx1"] = "「そら、これでいいかい？\n　んじゃ、続きと行こうか\\H」" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"Hehe, gee, thanks.\n I better repay this with my body\\H\""
+    tx["tx1"] = "\"Is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
-    tx["tx1"] = "「ふふ、まあ少し待ちなよ。\n　もう少しお互い楽しもうぜ」"
+    tx["tx1"] = "\"Hehe, just wait a little.\n Let's have a good time with each other for a while.\""
     #途中で行動をキャンセルした場合
-    tx["tx1"] = "「何だよ、止めるのかい？\n　別に構わなかったんだがな」" if $game_switches[89] == true
+    tx["tx1"] = "\"What, you're stopping?\n I didn't really mind it though.\"" if $game_switches[89] == true
   #---------------------------------------------------
   end
   #格納
@@ -78,9 +78,9 @@ when "Succubus strips the partner."
 #====================================================================================================================
 #■パートナーが自ら脱衣する
 #====================================================================================================================
-when "Partner strips the succubus."
-  tx["tx1"] = "「へぇ……結構思い切りいいね。\n　こいつは楽しめそうだ……♪」"
-  tx["tx1"] = "「へぇ……結構思い切りいいね。\n　こいつは楽しめそうだ……♪」" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+when "Partner undresses themself."
+  tx["tx1"] = "\"Hoh....determined here, are we?\n Looks like this one'll prove be fun....♪\""
+  tx["tx1"] = "\"Hoh....determined here, are we?\n Looks like this one'll prove be fun....♪\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -88,10 +88,10 @@ when "Partner strips the succubus."
 #====================================================================================================================
 #■夢魔が自ら脱衣する
 #====================================================================================================================
-when "Partner undresses themself."
+when "Succubus undresses herself."
   #------------------------------------------------------------------------------------------------------------------
-  tx["tx1"] = "「#{giggle}\n　さ、続きといこうか」"
-  tx["tx1"] = "「ふふ、待たせたかな？\n　さ、続きといこうか」" if $msg.t_target.nude? #アクターが先に脱いでいた
+  tx["tx1"] = "\"#{giggle}\n Here, let's continue.\""
+  tx["tx1"] = "\"Hehe, did I keep you waiting?\n Here, let's continue.\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -145,15 +145,15 @@ case $msg.tag
 #====================================================================================================================
 #■夢魔がパートナーを脱衣させる
 #====================================================================================================================
-when "夢魔がパートナーを脱衣"
+when "Succubus strips the partner."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "「#{giggle}\n　さ、脱がせてやるからじっとしてな？」"
-    tx["tx1"] = "「#{giggle}\n　さ、脱がせてやるからじっとしてな？」" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+    tx["tx1"] = "\"#{giggle}\n Hold still as I take them off for you, got it?\""
+    tx["tx1"] = "\"#{giggle}\n Hold still as I take them off for you, got it?\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 2 #パートナーが抵抗した
-    tx["tx1"] = "「なんだよ、別に良いじゃないか。\n　#{partner}の前じゃ恥ずかしいのかい？」"
-    tx["tx1"] = "「なんだよ、別に良いじゃないか。\n　#{partner}の前じゃ恥ずかしいのかい？」" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+    tx["tx1"] = "\"What? I don't see what's wrong with it.\n Not like how we're both girl's anything to get worked up over.\""
+    tx["tx1"] = "\"What? I don't see what's wrong with it.\n Not like how we're both girl's anything to get worked up over.\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   when 3 #パートナーが脱衣した
     tx["tx1"] = "「おっと、乗り気だね♪」"
