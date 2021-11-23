@@ -21,7 +21,7 @@ class MsgDevil_A < MsgBase
   #==================================================================================================================
   #●基礎口上を設定(未設定項目or空白の口上が呼ばれた時に設定され、それ以外では表示されない)
   #==================================================================================================================
-  tx["tx1"] = "「#{giggle}」"
+  tx["tx1"] = "\"#{giggle}\""
   #格納
   ms.push(tx)
   #==================================================================================================================
@@ -32,13 +32,13 @@ class MsgDevil_A < MsgBase
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "「#{giggle_s}、どうしたんだい？\n　言いたいことがあるなら言ってみな？」"
-  tx["tx1"] = "「#{giggle_s}、どうしたんだい？\n　まさかもう限界……なんて言わないよな？」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「#{giggle}\n　#{target}の実力はこんなものかい？\n　少し期待しすぎてたかな」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Tell me if there's something you wanna say.\""
+  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle}\n Is that supposed to be how your skill?\n Guess I got my hopes up too much.」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
-  tx["tx1"] = "「おっと……。\n　逃げようったってそうは行かないぜ？\n　大人しく#{myname}達にイかされな\\H」"
-  tx["tx1"] = "「あ、こら！\n　今いい所なんだって！\n　……ったく、もう少し空気読んでくれよ」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
+  tx["tx1"] = "\"Whoa there....\n I ain't letting you go just because you try to.\n Just stay still and let us make you cum\\H\""
+  tx["tx1"] = "\"Ah, why you!\n Not when I'm at the best part!\n ....Damn, you need to be better at reading the mood.\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
   #▼アクセプト
@@ -76,9 +76,9 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "「……ま、あまり虐めないでやるか♪\n　んじゃ、気持ちよくイっちまいな♪」"
-  tx["tx1"] = "「……ま、あまり虐めないでやるか♪\n　んじゃ、気持ちよくイっちまいな♪」" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
-  tx["tx1"] = "「ま、#{myname}相手じゃ仕方ないか。\n　んじゃ、気持ちよくイかせてやるぜ\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\""
+  tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"ま、#{myname}相手じゃ仕方ないか。\n　んじゃ、気持ちよくイかせてやるぜ\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "「ふふ、ふ……\\H\n　随分溜め込んでたな？\n　こんなに真っ白にしてくれやがって……\\H」"
