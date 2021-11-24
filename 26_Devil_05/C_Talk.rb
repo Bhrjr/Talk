@@ -348,7 +348,7 @@ when "Show love"
       tx["tx1"] = "\"#{pleasure_cr}\n That feels so good....more....\\H\""  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
-      tx["tx1"] = "\"#{pleasure_l}\n That's good, just like that....#{pleasure_s}\"" 
+      tx["tx1"] = "\"#{pleasure_l}\n That's good, just like that.... #{pleasure_s}\"" 
       tx["tx1"] = "\"#{pleasure_l}\n That feels nice there.... #{pleasure_s}\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"#{pleasure_s}\n Hey, you're not supposed to just attack that spot....\\H\n　#{pleasure_l}\""  if $msg.chain_attack == true #同じ部位を連撃中
     end
@@ -826,7 +826,7 @@ when "Show love"
       tx["tx1"] = "\"#{pleasure_cr}\n That feels so good....more....\\H\""  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
-      tx["tx1"] = "\"#{pleasure_l}\n That's good, just like that....#{pleasure_s}\"" 
+      tx["tx1"] = "\"#{pleasure_l}\n That's good, just like that.... #{pleasure_s}\"" 
       tx["tx1"] = "\"#{pleasure_l}\n That feels nice there.... #{pleasure_s}\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"#{pleasure_s}\n Hey, you're not supposed to just attack that spot....\\H\n　#{pleasure_l}\""  if $msg.chain_attack == true #同じ部位を連撃中
     end
@@ -1229,7 +1229,7 @@ when "Show love"
       tx["tx1"] = "\"#{pleasure_cr}\n That feels so good....more....\\H\""  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
-      tx["tx1"] = "\"#{pleasure_l}\n That's good, just like that....#{pleasure_s}\"" 
+      tx["tx1"] = "\"#{pleasure_l}\n That's good, just like that.... #{pleasure_s}\"" 
       tx["tx1"] = "\"#{pleasure_l}\n That feels nice there.... #{pleasure_s}\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"#{pleasure_s}\n Hey, you're not supposed to just attack that spot....\\H\n　#{pleasure_l}\""  if $msg.chain_attack == true #同じ部位を連撃中
     end
@@ -1631,7 +1631,7 @@ when "Show love"
       tx["tx1"] = "\"#{pleasure_cr}\n That feels so good....more....\\H\""  if $msg.chain_attack == true #同じ部位を連撃中
     #▼通常
     else
-      tx["tx1"] = "\"#{pleasure_l}\n That's good, just like that....#{pleasure_s}\"" 
+      tx["tx1"] = "\"#{pleasure_l}\n That's good, just like that.... #{pleasure_s}\"" 
       tx["tx1"] = "\"#{pleasure_l}\n That feels nice there.... #{pleasure_s}\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"#{pleasure_s}\n Hey, you're not supposed to just attack that spot....\\H\n　#{pleasure_l}\""  if $msg.chain_attack == true #同じ部位を連撃中
     end
