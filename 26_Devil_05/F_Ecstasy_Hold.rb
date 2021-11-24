@@ -121,7 +121,7 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
-  tx["tx1"] = "\"I ain't letting you cum so easily.\n Come on, try better than that\\H\""
+  tx["tx1"] = "\"I ain't letting you finish so easily.\n Come on, try better than that\\H\""
   tx["tx1"] = "\"Hey now, I know you can try harder than that.\n Try your best to hold on\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -545,7 +545,7 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
-  tx["tx1"] = "\"I ain't letting you cum so easily.\n Come on, try better than that\\H\""
+  tx["tx1"] = "\"I ain't letting you finish so easily.\n Come on, try better than that\\H\""
   tx["tx1"] = "\"Hey now, I know you can try harder than that.\n Try your best to hold on\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -950,7 +950,7 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
-  tx["tx1"] = "\"I ain't letting you cum so easily.\n Come on, try better than that\\H\""
+  tx["tx1"] = "\"I ain't letting you finish so easily.\n Come on, try better than that\\H\""
   tx["tx1"] = "\"Hey now, I know you can try harder than that.\n Try your best to hold on\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -1353,7 +1353,7 @@ when 2..4 #連携追撃
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 7 #本人追撃(一部のみ)
-  tx["tx1"] = "\"I ain't letting you cum so easily.\n Come on, try better than that\\H\""
+  tx["tx1"] = "\"I ain't letting you finish so easily.\n Come on, try better than that\\H\""
   tx["tx1"] = "\"Hey now, I know you can try harder than that.\n Try your best to hold on\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
