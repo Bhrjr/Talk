@@ -32,8 +32,8 @@ class MsgDevil_A < MsgBase
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Tell me if there's something you wanna say.\""
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n Tell me if there's something you wanna say.\""
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"#{giggle}\n Is that supposed to be your skills?\n Guess I got my hopes up too much.\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
@@ -83,11 +83,11 @@ when 9 #とどめ
 when 10 #余韻
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\""
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} Did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"#{giggle_s} Did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"#{giggle_s}, did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"#{giggle_s}, did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"#{giggle_s} Is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
+  tx["tx1"] = "\"#{giggle_s}, is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
   tx["tx1"] = "\"Tch, so you're just an another cherry-picker.\n Augh, don't you waste my time like that!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -130,8 +130,8 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"....Oh wow, you're still raring to go.\n Hehe, that means we'll still be able to have fun....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} Let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\""
-  tx["tx1"] = "\"#{giggle_s} Let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\""
+  tx["tx1"] = "\"#{giggle_s}, let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"....Now it's my turn.\n You know we're gonna do it today until you're weak in the knees\\H\"" if $game_switches[97] == true #連携が発生していた場合
   tx["tx1"] = "\"So I'm next then?\n I'll have as much fun as possible with you today.\n How about it?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 end
@@ -330,8 +330,8 @@ if $msg.t_enemy.have_ability?("Significant Other")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Tell me if there's something you wanna say.\""
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n Tell me if there's something you wanna say.\""
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"#{giggle}\n Is that supposed to be your skills?\n Guess I got my hopes up too much.\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
@@ -381,11 +381,11 @@ when 9 #とどめ
 when 10 #余韻
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\""
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} Did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"#{giggle_s} Did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"#{giggle_s}, did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"#{giggle_s}, did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"#{giggle_s} Is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
+  tx["tx1"] = "\"#{giggle_s}, is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
   tx["tx1"] = "\"Tch, so you're just an another cherry-picker.\n Augh, don't you waste my time like that!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -428,8 +428,8 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"....Oh wow, you're still raring to go.\n Hehe, that means we'll still be able to have fun....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} Let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\""
-  tx["tx1"] = "\"#{giggle_s} Let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\""
+  tx["tx1"] = "\"#{giggle_s}, let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"....Now it's my turn.\n You know we're gonna do it today until you're weak in the knees\\H\"" if $game_switches[97] == true #連携が発生していた場合
   tx["tx1"] = "\"So I'm next then?\n I'll have as much fun as possible with you today.\n How about it?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 end
@@ -600,8 +600,8 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Tell me if there's something you wanna say.\""
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n Tell me if there's something you wanna say.\""
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"#{giggle}\n Is that supposed to be your skills?\n Guess I got my hopes up too much.\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
@@ -651,11 +651,11 @@ when 9 #とどめ
 when 10 #余韻
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\""
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} Did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"#{giggle_s} Did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"#{giggle_s}, did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"#{giggle_s}, did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"#{giggle_s} Is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
+  tx["tx1"] = "\"#{giggle_s}, is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
   tx["tx1"] = "\"Tch, so you're just an another cherry-picker.\n Augh, don't you waste my time like that!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -698,8 +698,8 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"....Oh wow, you're still raring to go.\n Hehe, that means we'll still be able to have fun....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} Let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\""
-  tx["tx1"] = "\"#{giggle_s} Let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\""
+  tx["tx1"] = "\"#{giggle_s}, let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"....Now it's my turn.\n You know we're gonna do it today until you're weak in the knees\\H\"" if $game_switches[97] == true #連携が発生していた場合
   tx["tx1"] = "\"So I'm next then?\n I'll have as much fun as possible with you today.\n How about it?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 end
@@ -869,8 +869,8 @@ else
 case $msg.talk_step
 #★汎用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Tell me if there's something you wanna say.\""
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n Tell me if there's something you wanna say.\""
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n Don't tell me you're close to your limit....would you? \"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"#{giggle}\n Is that supposed to be your skills?\n Guess I got my hopes up too much.\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 2..4 #連携追撃
@@ -920,11 +920,11 @@ when 9 #とどめ
 when 10 #余韻
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\""
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} Did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"#{giggle_s} Did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"#{giggle_s}, did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"#{giggle_s}, did that feel like heaven for you?\n Oh, no need to pay me back for that♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"#{giggle_s} Is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
+  tx["tx1"] = "\"#{giggle_s}, is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
   tx["tx1"] = "\"Tch, so you're just an another cherry-picker.\n Augh, don't you waste my time like that!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
@@ -967,8 +967,8 @@ when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"....Oh wow, you're still raring to go.\n Hehe, that means we'll still be able to have fun....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} Let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\""
-  tx["tx1"] = "\"#{giggle_s} Let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\""
+  tx["tx1"] = "\"#{giggle_s}, let's carry on.\n ....You don't think I'd be done with this, are you?\n Don't worry, I'll stop just as you're about to dry up\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"....Now it's my turn.\n You know we're gonna do it today until you're weak in the knees\\H\"" if $game_switches[97] == true #連携が発生していた場合
   tx["tx1"] = "\"So I'm next then?\n I'll have as much fun as possible with you today.\n How about it?\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 end
