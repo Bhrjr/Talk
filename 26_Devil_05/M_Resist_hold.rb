@@ -161,16 +161,16 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「You know what....?\n Is now the time? \\H」"
-      tx["tx1"] = "「Now brace yourself....\\H」" if $game_switches[86] == true #空腹戦
+      tx["tx1"] = "\"You know what....?\n Is now the time? \\H\""
+      tx["tx1"] = "\"Now brace yourself....\\H\"" if $game_switches[86] == true #空腹戦
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「Now look here, you know that's not how it goes.\n You gotta be better at reading the mood, #{target}.」"
-      tx["tx1"] = "「Can you just accept it and brace yourself?\n You're just gonna get eaten by hook or crook\\H」" if $game_switches[86] == true #空腹戦
+      tx["tx1"] = "\"Now look here, you know that's not how it goes.\n You gotta be better at reading the mood, #{target}.\""
+      tx["tx1"] = "\"Can you just accept it and brace yourself?\n You're just gonna get eaten by hook or crook\\H\"" if $game_switches[86] == true #空腹戦
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{pleasure_s}\n Now, who's gonna throw in the sponge first....? \\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「#{pleasure_s}\n Hehe, not gonna fight back?\n Or you couldn't wait, maybe? \\H」" if $game_switches[89] == true
-      tx["tx1"] = "「#{pleasure_s}\n Well, I'll be sure to have a nice meal\\H」" if $game_switches[86] == true #空腹戦
+      tx["tx1"] = "\"#{pleasure_s}\n Hehe, not gonna fight back?\n Or you couldn't wait, maybe? \\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{pleasure_s}\n Well, I'll be sure to have a nice meal\\H\"" if $game_switches[86] == true #空腹戦
     end
     #格納
     ms.push(tx)
@@ -183,9 +183,9 @@ elsif $msg.tag == "Succubus binds the player."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n How you like the view....? \\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「Oh, you got away....\n Oh well, guess we can't enjoy ourslef without stuff like.」"
+      tx["tx1"] = "\"Oh, you got away....\n Oh well, guess we can't have fun without stuff like that.\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「Hehe, never should've let your guard down♪\n Maybe I should squish you flat like this?」"
+      tx["tx1"] = "\"Hehe, never should've let your guard down♪\n Maybe I should squish you flat like this?\""
       #自ら受け入れた場合
       tx["tx1"] = "\"Hehe, guess that means you couldn't wait.\n Then how 'bout I answer that request of yours....\\H\"" if $game_switches[89] == true
     end
@@ -233,13 +233,13 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n#{target}のキスの腕前、見せてくれよ\\H」"
+      tx["tx1"] = "\"#{giggle}\n I'll see how good you are at kissing\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「何だよ、自信ないのかい？」"
+      tx["tx1"] = "\"What, you mean you're not confident in it?\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「#{kiss_l}\n　#{giggle}」"
+      tx["tx1"] = "\"#{kiss_l}\n #{giggle}\""
       #自ら受け入れた場合
-      tx["tx1"] = "「#{kiss_l}\n　#{giggle}」" if $game_switches[89] == true
+      tx["tx1"] = "\"#{kiss_l}\n #{giggle}\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -250,13 +250,13 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「#{giggle}\n　じっとしてな、気持ちよくしてやるから」"
+      tx["tx1"] = "\"#{giggle}\n Hold still as I make you moan.\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「おっと、逃げられたか……。\n　ま、そのくらいでないと楽しめないか」"
+      tx["tx1"] = "\"Oh, you got away....\n Oh well, guess we can't have fun without stuff like that.\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「んむ……っ\\H\n　ふふ……じゅるっ……\\H」"
+      tx["tx1"] = "\"Nnnmmph....\\H\n Hehe....*drool*....\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「んむ……っ\\H\n　ふふ……じゅるっ……\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"Nnnmmph....\\H\n Hehe....*drool*....\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -267,13 +267,13 @@ elsif $msg.tag == "Succubus binds the player."
   #====================================================================================================================
     case $msg.talk_step
     when 1 #ホールドレジスト中
-      tx["tx1"] = "「さて……力、抜いてな？」"
+      tx["tx1"] = "\"Hey....just relax.\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "「おっと、逃げられたか……。\n　ま、そのくらいでないと楽しめないか」"
+      tx["tx1"] = "\"Oh, you got away....\n Oh well, guess we can't have fun without stuff like that.\""
     when 3 #ホールドレジスト失敗
-      tx["tx1"] = "「#{giggle}\n　さぁて、楽しませてもらおうかな\\H」"
+      tx["tx1"] = "\"#{giggle}\n Now it's time to keep you entertained\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "「#{giggle}\n　さぁて、楽しませてもらおうかな\\H」" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n Now it's time to keep you entertained\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
