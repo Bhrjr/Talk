@@ -39,7 +39,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
   tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to play with #{target} a bit longer\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}....are you close to cumming?\n What a shame....\n I wanted to play with #{target} a bit longer\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -164,8 +164,8 @@ when 7 #本人追撃(一部のみ)
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
   tx["tx1"] = "\"Well, can you just relax....?\n I'll make you cum in no time\\H\""
-  tx["tx1"] = "\"#{giggle_s} It's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} You don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll make you finish now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}, it's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, you don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll make you finish now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -206,7 +206,7 @@ when 9 #とどめ
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "\"#{giggle}\n Did that leave you satisfied....? \\H\""
-  tx["tx1"] = "\"#{giggle_s} ....Did you just cum? \\H\n That was so adorable....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....did you just cum? \\H\n That was so adorable....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -375,7 +375,7 @@ when 21 #続行(ホールド継続)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} Guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
+  tx["tx1"] = "\"#{giggle_s}, guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
   tx["tx1"] = "\"#{giggle}\n Since you're the contractor,\n #{myname}'m gonna treat you with respect, #{target}\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -461,7 +461,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
   tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to play with #{target} a bit longer\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}....are you close to cumming?\n What a shame....\n I wanted to play with #{target} a bit longer\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -586,8 +586,8 @@ when 7 #本人追撃(一部のみ)
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
   tx["tx1"] = "\"Well, can you just relax....?\n I'll make you cum in no time\\H\""
-  tx["tx1"] = "\"#{giggle_s} It's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} You don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll make you finish now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}, it's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, you don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll make you finish now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -628,7 +628,7 @@ when 9 #とどめ
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "\"#{giggle}\n Did that leave you satisfied....? \\H\""
-  tx["tx1"] = "\"#{giggle_s} ....Did you just cum? \\H\n That was so adorable....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....did you just cum? \\H\n That was so adorable....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -797,7 +797,7 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} Guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
+  tx["tx1"] = "\"#{giggle_s}, guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
   tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -864,7 +864,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
   tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to play with #{target} a bit longer\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}....are you close to cumming?\n What a shame....\n I wanted to play with #{target} a bit longer\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -989,8 +989,8 @@ when 7 #本人追撃(一部のみ)
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
   tx["tx1"] = "\"Well, can you just relax....?\n I'll make you cum in no time\\H\""
-  tx["tx1"] = "\"#{giggle_s} It's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} You don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll make you finish now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}, it's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, you don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll make you finish now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1031,7 +1031,7 @@ when 9 #とどめ
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "\"#{giggle}\n Did that leave you satisfied....? \\H\""
-  tx["tx1"] = "\"#{giggle_s} ....Did you just cum? \\H\n That was so adorable....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....did you just cum? \\H\n That was so adorable....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1200,7 +1200,7 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} Guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
+  tx["tx1"] = "\"#{giggle_s}, guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
   tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -1266,7 +1266,7 @@ case $msg.talk_step
 when 1 #初撃
   tx["tx1"] = "\"Ufufu....about to cum again?\n No need to hold back....\\H\""
   tx["tx1"] = "\"Oh, about to cum again?\n Ufufu, I wonder if you can hold it in....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s}....Are you close to cumming?\n What a shame....\n I wanted to play with #{target} a bit longer\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}....are you close to cumming?\n What a shame....\n I wanted to play with #{target} a bit longer\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1391,8 +1391,8 @@ when 7 #本人追撃(一部のみ)
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
   tx["tx1"] = "\"Well, can you just relax....?\n I'll make you cum in no time\\H\""
-  tx["tx1"] = "\"#{giggle_s} It's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} You don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll make you finish now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}, it's pointless to try and fight it\\H\n Just let it all out....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, you don't have to hold it back, you know.\n Not like it's anything to be embarrassed about\\H\n I'll make you finish now....\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1433,7 +1433,7 @@ when 9 #とどめ
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "\"#{giggle}\n Did that leave you satisfied....? \\H\""
-  tx["tx1"] = "\"#{giggle_s} ....Did you just cum? \\H\n That was so adorable....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}....did you just cum? \\H\n That was so adorable....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1602,7 +1602,7 @@ when 21 #続行(ホールド継続)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
-  tx["tx1"] = "\"#{giggle_s} Guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
+  tx["tx1"] = "\"#{giggle_s}, guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
   tx["tx1"] = "\"#{giggle}\n You go ahead and rest first\\H\n We'll be taking our time to enjoy ourselves....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
