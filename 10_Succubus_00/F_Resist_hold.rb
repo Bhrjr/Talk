@@ -175,7 +175,7 @@ elsif $msg.tag == "Succubus binds the partner."
   when 1 #ホールドレジスト中
     tx["tx1"] = "\"Lemme make you squeal....\\H\""
   when 2 #ホールドレジスト成功
-    tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+    tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
   when 3 #ホールドレジスト失敗
     tx["tx1"] = "\"#{giggle}\n Let's have even more fun\\H\""
     #自ら受け入れた場合
@@ -226,7 +226,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{pleasure_s}\n You can stick your tongue deeper if you wanna\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you're not resisting at all.\n Are you a fan of stuff like this? \\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you're not fighting back at all.\n Are you a fan of stuff like this? \\H\"" if $game_switches[89] == true
       tx["tx1"] = "\"#{pleasure_s}\n I'll go so hard that you can't breathe\\H\"" if $game_switches[86] == true #空腹戦
     end
     #格納
@@ -240,7 +240,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n Let's make love from closer up\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n I can feel your breath, #{target}....\\H\""
       #自ら受け入れた場合
@@ -257,11 +257,11 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{myname}'ll get you hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n How does my breasts feel....? \\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"#{giggle}\n If you aren't resisting, does that mean you like boobies?\\H\n Then I'll let you have plenty of fun with it\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n If you're not fighting back, does that mean you do like boobies?\\H\n Then I'll let you have plenty of fun with it\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -292,7 +292,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"#{giggle}\n Let me give you a good sucking....\\H\""
       tx["tx1"] = "\"#{giggle}\n Your pussy's so wet\\H\n Let me suck it up for you with my mouth....\\H\"" if $msg.t_target.lub_female > 30
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Nfu....\\H\n It keeps flowing out....\\H\""
       #自ら受け入れた場合
@@ -525,7 +525,7 @@ elsif $msg.tag == "Succubus binds the partner."
   when 1 #ホールドレジスト中
     tx["tx1"] = "\"Lemme make you squeal....\\H\""
   when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
   when 3 #ホールドレジスト失敗
     tx["tx1"] = "\"#{giggle}\n Let's have even more fun\\H\""
     #自ら受け入れた場合
@@ -576,7 +576,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{pleasure_s}\n You can stick your tongue deeper if you wanna\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you're not resisting at all.\n Are you a fan of stuff like this? \\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you're not fighting back at all.\n Are you a fan of stuff like this? \\H\"" if $game_switches[89] == true
       tx["tx1"] = "\"#{pleasure_s}\n I'll go so hard that you can't breathe\\H\"" if $game_switches[86] == true #空腹戦
     end
     #格納
@@ -590,7 +590,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n Let's make love from closer up\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n I can feel your breath, #{target}....\\H\""
       #自ら受け入れた場合
@@ -607,11 +607,11 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{myname}'ll get you hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n How does my breasts feel....? \\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"#{giggle}\n If you aren't resisting, does that mean you like boobies?\\H\n Then I'll let you have plenty of fun with it\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n If you're not fighting back, does that mean you do like boobies?\\H\n Then I'll let you have plenty of fun with it\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -642,7 +642,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"#{giggle}\n Let me give you a good sucking....\\H\""
       tx["tx1"] = "\"#{giggle}\n Your pussy's so wet\\H\n Let me suck it up for you with my mouth....\\H\"" if $msg.t_target.lub_female > 30
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Nfu....\\H\n It keeps flowing out....\\H\""
       #自ら受け入れた場合
@@ -854,7 +854,7 @@ elsif $msg.tag == "Succubus binds the partner."
   when 1 #ホールドレジスト中
     tx["tx1"] = "\"Lemme make you squeal....\\H\""
   when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
   when 3 #ホールドレジスト失敗
     tx["tx1"] = "\"#{giggle}\n Let's have even more fun\\H\""
     #自ら受け入れた場合
@@ -905,7 +905,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{pleasure_s}\n You can stick your tongue deeper if you wanna\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you're not resisting at all.\n Are you a fan of stuff like this? \\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you're not fighting back at all.\n Are you a fan of stuff like this? \\H\"" if $game_switches[89] == true
       tx["tx1"] = "\"#{pleasure_s}\n I'll go so hard that you can't breathe\\H\"" if $game_switches[86] == true #空腹戦
     end
     #格納
@@ -919,7 +919,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n Let's make love from closer up\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n I can feel your breath, #{target}....\\H\""
       #自ら受け入れた場合
@@ -936,11 +936,11 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{myname}'ll get you hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n How does my breasts feel....? \\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"#{giggle}\n If you aren't resisting, does that mean you like boobies?\\H\n Then I'll let you have plenty of fun with it\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n If you're not fighting back, does that mean you do like boobies?\\H\n Then I'll let you have plenty of fun with it\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -971,7 +971,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"#{giggle}\n Let me give you a good sucking....\\H\""
       tx["tx1"] = "\"#{giggle}\n Your pussy's so wet\\H\n Let me suck it up for you with my mouth....\\H\"" if $msg.t_target.lub_female > 30
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Nfu....\\H\n It keeps flowing out....\\H\""
       #自ら受け入れた場合
@@ -1182,7 +1182,7 @@ elsif $msg.tag == "Succubus binds the partner."
   when 1 #ホールドレジスト中
     tx["tx1"] = "\"Lemme make you squeal....\\H\""
   when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
   when 3 #ホールドレジスト失敗
     tx["tx1"] = "\"#{giggle}\n Let's have even more fun\\H\""
     #自ら受け入れた場合
@@ -1233,7 +1233,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{pleasure_s}\n You can stick your tongue deeper if you wanna\\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you're not resisting at all.\n Are you a fan of stuff like this? \\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{pleasure_s}\n Ufufu, you're not fighting back at all.\n Are you a fan of stuff like this? \\H\"" if $game_switches[89] == true
       tx["tx1"] = "\"#{pleasure_s}\n I'll go so hard that you can't breathe\\H\"" if $game_switches[86] == true #空腹戦
     end
     #格納
@@ -1247,7 +1247,7 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{giggle}\n Let's make love from closer up\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n I can feel your breath, #{target}....\\H\""
       #自ら受け入れた場合
@@ -1264,11 +1264,11 @@ elsif $msg.tag == "Succubus binds the partner."
     when 1 #ホールドレジスト中
       tx["tx1"] = "\"#{myname}'ll get you hooked on my breasts\\H\n Just relax and make yourself comfortable....\\H\""
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"#{giggle}\n How does my breasts feel....? \\H\""
       #自ら受け入れた場合
-      tx["tx1"] = "\"#{giggle}\n If you aren't resisting, does that mean you like boobies?\\H\n Then I'll let you have plenty of fun with it\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"#{giggle}\n If you're not fighting back, does that mean you do like boobies?\\H\n Then I'll let you have plenty of fun with it\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -1299,7 +1299,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"#{giggle}\n Let me give you a good sucking....\\H\""
       tx["tx1"] = "\"#{giggle}\n Your pussy's so wet\\H\n Let me suck it up for you with my mouth....\\H\"" if $msg.t_target.lub_female > 30
     when 2 #ホールドレジスト成功
-      tx["tx1"] = "\"Man....\n Can you like, not resist it?\""
+      tx["tx1"] = "\"Man....\n Can you like, not fight back?\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Nfu....\\H\n It keeps flowing out....\\H\""
       #自ら受け入れた場合
