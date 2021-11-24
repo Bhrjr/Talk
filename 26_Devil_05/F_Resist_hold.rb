@@ -128,7 +128,7 @@ if $msg.tag == "Partner binds the succubus."
     when 3 #ホールド失敗
       tx["tx1"] = "\"Hehe, what were you trying to do just now?\n I won't get mad, so just tell me, will you? \\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"Hehe, did you think I'd let you go so easily?\n Just keep still like this and cum\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Hehe, you thought I'd let you go so easily?\n Just keep still like this and cum\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -469,7 +469,7 @@ if $msg.tag == "Partner binds the succubus."
     when 3 #ホールド失敗
       tx["tx1"] = "\"Hehe, what were you trying to do just now?\n I won't get mad, so just tell me, will you? \\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"Hehe, did you think I'd let you go so easily?\n Just keep still like this and cum\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Hehe, you thought I'd let you go so easily?\n Just keep still like this and cum\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -789,7 +789,7 @@ if $msg.tag == "Partner binds the succubus."
     when 3 #ホールド失敗
       tx["tx1"] = "\"Hehe, what were you trying to do just now?\n I won't get mad, so just tell me, will you? \\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"Hehe, did you think I'd let you go so easily?\n Just keep still like this and cum\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Hehe, you thought I'd let you go so easily?\n Just keep still like this and cum\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
@@ -1108,7 +1108,7 @@ if $msg.tag == "Partner binds the succubus."
     when 3 #ホールド失敗
       tx["tx1"] = "\"Hehe, what were you trying to do just now?\n I won't get mad, so just tell me, will you? \\H\""
       #途中で行動をキャンセルした場合
-      tx["tx1"] = "\"Hehe, did you think I'd let you go so easily?\n Just keep still like this and cum\\H\"" if $game_switches[89] == true
+      tx["tx1"] = "\"Hehe, you thought I'd let you go so easily?\n Just keep still like this and cum\\H\"" if $game_switches[89] == true
     end
     #格納
     ms.push(tx)
