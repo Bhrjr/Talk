@@ -92,7 +92,7 @@ when 11..14 #連携余韻
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
     tx["tx1"] = "\"\"Ah....ha....\\H\n How did much did you save up that it's still filling me up inside....? \\H\""
-    tx["tx1"] = "\"Oh wow....\\H\n W-Why you....you need to take it slow a little.\n You're gonna make me have frustrations....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"Oh wow....\\H\n W-Why you....you need to take it more slowly.\n You're gonna make me have frustrations....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
   #  tx["tx1"] = ""
@@ -390,7 +390,7 @@ when 11..14 #連携余韻
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
     tx["tx1"] = "\"\"Ah....ha....\\H\n How did much did you save up that it's still filling me up inside....? \\H\""
-    tx["tx1"] = "\"Oh wow....\\H\n W-Why you....you need to take it slow a little.\n You're gonna make me have frustrations....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"Oh wow....\\H\n W-Why you....you need to take it more slowly.\n You're gonna make me have frustrations....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
   #  tx["tx1"] = ""
@@ -660,7 +660,7 @@ when 11..14 #連携余韻
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
     tx["tx1"] = "\"\"Ah....ha....\\H\n How did much did you save up that it's still filling me up inside....? \\H\""
-    tx["tx1"] = "\"Oh wow....\\H\n W-Why you....you need to take it slow a little.\n You're gonna make me have frustrations....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"Oh wow....\\H\n W-Why you....you need to take it more slowly.\n You're gonna make me have frustrations....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
   #  tx["tx1"] = ""
@@ -929,7 +929,7 @@ when 11..14 #連携余韻
   #▼アクセプト
   if $msg.t_enemy.vagina_insert?
     tx["tx1"] = "\"\"Ah....ha....\\H\n How did much did you save up that it's still filling me up inside....? \\H\""
-    tx["tx1"] = "\"Oh wow....\\H\n W-Why you....you need to take it slow a little.\n You're gonna make me have frustrations....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+    tx["tx1"] = "\"Oh wow....\\H\n W-Why you....you need to take it more slowly.\n You're gonna make me have frustrations....\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   #▼エキサイトビュー
   elsif $msg.t_enemy.vagina_riding?
   #  tx["tx1"] = ""
