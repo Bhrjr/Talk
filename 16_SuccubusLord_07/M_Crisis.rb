@@ -34,13 +34,13 @@ when "User solo"
   when 0
     tx["tx1"] = "\"#{giggle} Looks like you're at the threshold\\H\n Leave your body to me as\n I make you surrender in pleasure....\\H\""
   when 1
-    tx["tx1"] = "\"#{giggle_s} Your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
+    tx["tx1"] = "\"#{giggle_s}, your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
   end
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle_s}……\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
@@ -62,7 +62,7 @@ when "Enemy solo"
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"#{giggle}\n Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
+  tx["tx1"] = "\"#{giggle}\n aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
@@ -117,13 +117,13 @@ when "User solo"
   when 0
     tx["tx1"] = "\"#{giggle} Looks like you're at the threshold\\H\n Leave your body to me as\n I make you surrender in pleasure....\\H\""
   when 1
-    tx["tx1"] = "\"#{giggle_s} Your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
+    tx["tx1"] = "\"#{giggle_s}, your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
   end
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle}\n Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
+  tx["tx1"] = "\"#{giggle}, aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
@@ -145,7 +145,7 @@ when "Enemy solo"
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle_s}……\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
@@ -192,13 +192,13 @@ when "User solo"
   when 0
     tx["tx1"] = "\"#{giggle} Looks like you're at the threshold\\H\n Leave your body to me as\n I make you surrender in pleasure....\\H\""
   when 1
-    tx["tx1"] = "\"#{giggle_s} Your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
+    tx["tx1"] = "\"#{giggle_s}, your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
   end
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle}\n Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
+  tx["tx1"] = "\"#{giggle}, aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
@@ -220,7 +220,7 @@ when "Enemy solo"
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle_s}……\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
@@ -266,13 +266,13 @@ when "User solo"
   when 0
     tx["tx1"] = "\"#{giggle} Looks like you're at the threshold\\H\n Leave your body to me as\n I make you surrender in pleasure....\\H\""
   when 1
-    tx["tx1"] = "\"#{giggle_s} Your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
+    tx["tx1"] = "\"#{giggle_s}, your face is in ecstasy\\H\n I want to see more of that cute expression of yours,\n so hold out as much as possible\\H\""
   end
   #格納
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle}\n Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
+  tx["tx1"] = "\"#{giggle}, aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
@@ -294,7 +294,7 @@ when "Enemy solo"
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle_s}……\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
+  tx["tx1"] = "\"#{giggle_s}....\\H Hey, your hand stopped moving, you know?\n If you don't step on it,\n I might even wring you out, #{target}....\\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
