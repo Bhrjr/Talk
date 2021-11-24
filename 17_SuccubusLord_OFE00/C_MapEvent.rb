@@ -32,7 +32,7 @@ when "Energy Feeding"
   #====================================================================================================================
     case $msg.talk_step
     when 1 #献上開始
-      tx["tx1"] = "\"Just stay still.\n I want to get a full taste of you, #{target}\\H\n #{giggle_s} Here I dig in....\\H\""
+      tx["tx1"] = "\"Just stay still.\n I want to get a full taste of you, #{target}\\H\n #{giggle_s}, here I dig in....\\H\""
       #------------------------------------------------------------------------------------------------------------------
     when 2 #献上終了
       tx["tx1"] = "\"Aaaahh, it's spreading through me....\\H\n The semen from you really are something else, #{target}\\H\n I just love it\\H\""
@@ -89,7 +89,7 @@ when "Hungry"
       #tx["tx2"] = ""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
-      tx["tx1"] = "\"#{giggle_s}\n You sure are popular, #{target}.\n What say #{myname} join in as well\\H\""
+      tx["tx1"] = "\"#{giggle_s},\n you sure are popular, #{target}.\n What say #{myname} join in as well\\H\""
       #tx["tx2"] = ""
     end
 
@@ -109,7 +109,7 @@ when "Hungry"
       #tx["tx2"] = ""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
-      tx["tx1"] = "\"#{giggle_s} Let me join in as well\\H\""
+      tx["tx1"] = "\"#{giggle_s}, let me join in as well\\H\""
       #tx["tx2"] = ""
     end
 
@@ -129,7 +129,7 @@ when "Hungry"
       #tx["tx2"] = ""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
-      tx["tx1"] = "\"#{giggle_s} Let me join in as well\\H\""
+      tx["tx1"] = "\"#{giggle_s}, let me join in as well\\H\""
       #tx["tx2"] = ""
     end
   end
