@@ -278,7 +278,7 @@ when 20 #続行(ホールド解除)
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "\"Look at how.... #{giggle_s} It's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
+    tx["tx1"] = "\"Look at how.... #{giggle_s}, it's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -660,7 +660,7 @@ when 20 #続行(ホールド解除)
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "\"Look at how.... #{giggle_s} It's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
+    tx["tx1"] = "\"Look at how.... #{giggle_s}, it's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -1021,7 +1021,7 @@ when 20 #続行(ホールド解除)
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "\"Look at how.... #{giggle_s} It's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
+    tx["tx1"] = "\"Look at how.... #{giggle_s}, it's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
@@ -1381,7 +1381,7 @@ when 20 #続行(ホールド解除)
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ペリスコープ
   elsif $msg.t_enemy.tops_paizuri?
-    tx["tx1"] = "\"Look at how.... #{giggle_s} It's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
+    tx["tx1"] = "\"Look at how.... #{giggle_s}, it's overflowing from the gap\\H\n Are you satisfied with just breasts, #{target}?\n You can indulge in this body all you like....\\H」"
 #    tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   #▼ヘブンリーフィール
   elsif $msg.t_enemy.tops_pahupahu?
