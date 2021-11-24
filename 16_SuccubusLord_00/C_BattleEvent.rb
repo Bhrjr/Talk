@@ -48,7 +48,7 @@ if $msg.tag == "Start the Battle"
     when 2 #３番目
       tx["tx1"] = "\"Feel free to leave everything to me.\n I'll do well to make this night the best\\H\""
       #▼初ベッドイン
-      tx["tx1"] = "\"#{giggle_s} Anyone told you how greedy you are, #{target}?\n I doubt you'll be able to show proper love to everyone\\H\"" if $msg.t_enemy.bedin_count == 0
+      tx["tx1"] = "\"#{giggle_s}, anyone told you how greedy you are, #{target}?\n I doubt you'll be able to show proper love to everyone\\H\"" if $msg.t_enemy.bedin_count == 0
     end
   #●空腹戦闘中
   elsif $game_switches[86] == true
@@ -59,7 +59,7 @@ if $msg.tag == "Start the Battle"
     when 1 #２番目
       tx["tx1"] = "\"I don't know if this is shameful of me, but\n but this is how it is for all succubi once they're hungry.\n Aaah, you smell wonderful, #{target}....\\H\""
     when 2 #３番目
-      tx["tx1"] = "\"#{giggle_s} Looks like you get to pick and choose\\H\n I just wonder who'll be the one\n to give you love, #{target}\\H\""
+      tx["tx1"] = "\"#{giggle_s}Looks like you get to pick and choose\\H\n I just wonder who'll be the one\n to give you love, #{target}\\H\""
     end
   #●レア戦闘中(OFEの場合は[$game_switches[92] == true]、BOSSの場合は[$game_switches[91] == true]をそれぞれelsifでつけること)
   else
