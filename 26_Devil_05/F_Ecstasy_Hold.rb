@@ -36,9 +36,9 @@ class MsgDevil_A < MsgBase
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{giggle_s} 'Bout to cum again?\n Then what should I do 'bout it....? \\H\""
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n I won't know unless you tell me nice and clear\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} 'Bout to cum?\n I don't mind gals that get aroused easily\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}, 'bout to cum again?\n Then what should I do 'bout it....? \\H\""
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n I won't know unless you tell me nice and clear\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, 'bout to cum?\n I don't mind gals that get aroused easily\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -162,8 +162,8 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "\"#{giggle_s} Maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\""
-  tx["tx1"] = "\"#{giggle_s} Maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\""
+  tx["tx1"] = "\"#{giggle_s}, maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"With that settled....time to make you cum♪\n Taste my skill in all its glory\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -246,7 +246,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"#{giggle_s} Is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
+  tx["tx1"] = "\"#{giggle_s}, is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
   tx["tx1"] = "\"Tch, so you're just an another cherry-picker.\n Augh, don't you waste my time like that!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -289,10 +289,10 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -332,10 +332,10 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -460,9 +460,9 @@ if $msg.t_enemy.have_ability?("Significant Other")
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{giggle_s} 'Bout to cum again?\n Then what should I do 'bout it....? \\H\""
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n I won't know unless you tell me nice and clear\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} 'Bout to cum?\n I don't mind gals that get aroused easily\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}, 'bout to cum again?\n Then what should I do 'bout it....? \\H\""
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n I won't know unless you tell me nice and clear\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, 'bout to cum?\n I don't mind gals that get aroused easily\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -586,8 +586,8 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "\"#{giggle_s} Maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\""
-  tx["tx1"] = "\"#{giggle_s} Maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\""
+  tx["tx1"] = "\"#{giggle_s}, maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"With that settled....time to make you cum♪\n Taste my skill in all its glory\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -670,7 +670,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"#{giggle_s} Is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
+  tx["tx1"] = "\"#{giggle_s}, is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
   tx["tx1"] = "\"Tch, so you're just an another cherry-picker.\n Augh, don't you waste my time like that!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -713,10 +713,10 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -756,10 +756,10 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -865,9 +865,9 @@ elsif $msg.t_enemy.have_ability?("Affection")
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{giggle_s} 'Bout to cum again?\n Then what should I do 'bout it....? \\H\""
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n I won't know unless you tell me nice and clear\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} 'Bout to cum?\n I don't mind gals that get aroused easily\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}, 'bout to cum again?\n Then what should I do 'bout it....? \\H\""
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n I won't know unless you tell me nice and clear\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, 'bout to cum?\n I don't mind gals that get aroused easily\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -991,8 +991,8 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "\"#{giggle_s} Maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\""
-  tx["tx1"] = "\"#{giggle_s} Maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\""
+  tx["tx1"] = "\"#{giggle_s}, maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"With that settled....time to make you cum♪\n Taste my skill in all its glory\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -1075,7 +1075,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"#{giggle_s} Is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
+  tx["tx1"] = "\"#{giggle_s}, is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
   tx["tx1"] = "\"Tch, so you're just an another cherry-picker.\n Augh, don't you waste my time like that!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -1118,10 +1118,10 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1161,10 +1161,10 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1268,9 +1268,9 @@ else
 case $msg.talk_step
 #★専用★==============================================================================================================
 when 1 #初撃
-  tx["tx1"] = "\"#{giggle_s} 'Bout to cum again?\n Then what should I do 'bout it....? \\H\""
-  tx["tx1"] = "\"#{giggle_s} What's the matter?\n I won't know unless you tell me nice and clear\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"#{giggle_s} 'Bout to cum?\n I don't mind gals that get aroused easily\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"#{giggle_s}, 'bout to cum again?\n Then what should I do 'bout it....? \\H\""
+  tx["tx1"] = "\"#{giggle_s}, what's the matter?\n I won't know unless you tell me nice and clear\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, 'bout to cum?\n I don't mind gals that get aroused easily\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1394,8 +1394,8 @@ when 7 #本人追撃(一部のみ)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 9 #とどめ
-  tx["tx1"] = "\"#{giggle_s} Maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\""
-  tx["tx1"] = "\"#{giggle_s} Maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"#{giggle_s}, maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\""
+  tx["tx1"] = "\"#{giggle_s}, maybe I should tone down the mean-spiritedness\\H\n Time for you to cum nice and neatly\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
   tx["tx1"] = "\"With that settled....time to make you cum♪\n Taste my skill in all its glory\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
@@ -1478,7 +1478,7 @@ when 10 #余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 11..14 #連携余韻
-  tx["tx1"] = "\"#{giggle_s} Is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
+  tx["tx1"] = "\"#{giggle_s}, is this what my opponent's supposed to be?\n Shouldn't you to try a bit better than that?\""
   tx["tx1"] = "\"Tch, so you're just an another cherry-picker.\n Augh, don't you waste my time like that!\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
 #  tx["tx1"] = "" if @doppel_cp == true #仕掛け手が同種族
 #  tx["tx1"] = "" if @doppel_cp == true and $msg.t_enemy.ecstasy_emotion == "怒" #仕掛け手が同種族・パターンB
@@ -1521,10 +1521,10 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(ホールド解除)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1564,10 +1564,10 @@ when 20 #続行(ホールド解除)
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 21 #続行(ホールド継続)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
