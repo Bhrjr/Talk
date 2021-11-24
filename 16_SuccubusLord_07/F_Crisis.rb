@@ -32,9 +32,9 @@ case $msg.tag
 when "User solo"
   case rand(2)
   when 0
-    tx["tx1"] = "\"#{giggle_s} You look happy there\\H\n Not resisting it and yielding your body to it will make it easier....\\H\""
+    tx["tx1"] = "\"#{giggle_s}, you look happy there\\H\n Not resisting it and yielding your body to it will make it easier....\\H\""
   when 1
-    tx["tx1"] = "\"#{giggle_s}、What a lovely face\\H Your voice, your skin,\n I'm going to dye it all in euphoria and\n make both your body and mind my captive, #{target}....\\H\""
+    tx["tx1"] = "\"#{giggle_s}, what a lovely face\\H Your voice, your skin,\n I'm going to dye it all in euphoria and\n make both your body and mind my captive, #{target}....\\H\""
   end
   #格納
   ms.push(tx)
@@ -50,7 +50,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle_s} Getting all keyed up on your own....\n You should've told me sooner\n if you want me to pick on you....\\H\""
+  tx["tx1"] = "\"#{giggle_s}, getting all keyed up on your own....\n You should've told me sooner\n if you want me to pick on you....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -115,9 +115,9 @@ case $msg.tag
 when "User solo"
   case rand(2)
   when 0
-    tx["tx1"] = "\"#{giggle_s} You look happy there\\H\n Not resisting it and yielding your body to it will make it easier....\\H\""
+    tx["tx1"] = "\"#{giggle_s}, you look happy there\\H\n Not resisting it and yielding your body to it will make it easier....\\H\""
   when 1
-    tx["tx1"] = "\"#{giggle_s}、What a lovely face\\H Your voice, your skin,\n I'm going to dye it all in euphoria and\n make both your body and mind my captive, #{target}....\\H\""
+    tx["tx1"] = "\"#{giggle_s}, what a lovely face\\H Your voice, your skin,\n I'm going to dye it all in euphoria and\n make both your body and mind my captive, #{target}....\\H\""
   end
   #格納
   ms.push(tx)
@@ -133,7 +133,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle_s} Getting all keyed up on your own....\n You should've told me sooner\n if you want me to pick on you....\\H\""
+  tx["tx1"] = "\"#{giggle_s}, getting all keyed up on your own....\n You should've told me sooner\n if you want me to pick on you....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -190,9 +190,9 @@ case $msg.tag
 when "User solo"
   case rand(2)
   when 0
-    tx["tx1"] = "\"#{giggle_s} You look happy there\\H\n Not resisting it and yielding your body to it will make it easier....\\H\""
+    tx["tx1"] = "\"#{giggle_s}, you look happy there\\H\n Not resisting it and yielding your body to it will make it easier....\\H\""
   when 1
-    tx["tx1"] = "\"#{giggle_s}、What a lovely face\\H Your voice, your skin,\n I'm going to dye it all in euphoria and\n make both your body and mind my captive, #{target}....\\H\""
+    tx["tx1"] = "\"#{giggle_s}, what a lovely face\\H Your voice, your skin,\n I'm going to dye it all in euphoria and\n make both your body and mind my captive, #{target}....\\H\""
   end
   #格納
   ms.push(tx)
@@ -208,7 +208,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle_s} Getting all keyed up on your own....\n You should've told me sooner\n if you want me to pick on you....\\H\""
+  tx["tx1"] = "\"#{giggle_s}, getting all keyed up on your own....\n You should've told me sooner\n if you want me to pick on you....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
@@ -264,9 +264,9 @@ case $msg.tag
 when "User solo"
   case rand(2)
   when 0
-    tx["tx1"] = "\"#{giggle_s} You look happy there\\H\n Not resisting it and yielding your body to it will make it easier....\\H\""
+    tx["tx1"] = "\"#{giggle_s}, you look happy there\\H\n Not resisting it and yielding your body to it will make it easier....\\H\""
   when 1
-    tx["tx1"] = "\"#{giggle_s}、What a lovely face\\H Your voice, your skin,\n I'm going to dye it all in euphoria and\n make both your body and mind my captive, #{target}....\\H\""
+    tx["tx1"] = "\"#{giggle_s}, what a lovely face\\H Your voice, your skin,\n I'm going to dye it all in euphoria and\n make both your body and mind my captive, #{target}....\\H\""
   end
   #格納
   ms.push(tx)
@@ -282,7 +282,7 @@ when "User rebound harm"
   ms.push(tx)
 #パートナーが自慰行為等で自らクライシス
 when "User onanism"
-  tx["tx1"] = "\"#{giggle_s} Getting all keyed up on your own....\n You should've told me sooner\n if you want me to pick on you....\\H\""
+  tx["tx1"] = "\"#{giggle_s}, getting all keyed up on your own....\n You should've told me sooner\n if you want me to pick on you....\\H\""
   #格納
   ms.push(tx)
 #----------------------------------------------------------------------------------------------------------------------
