@@ -80,7 +80,7 @@ when "Hungry"
     case $msg.talk_step
     when 1 # 空腹１人目
       tx["tx1"] = "\"....Gotta say, #{myname} can't bear this anymore.\n I was waiting to see if you'd realize by now, but it doesn't seem like it.\""
-      tx["tx2"] = "\"It'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
+      tx["tx2"] = "\"You'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
       tx["tx3"] = "\"Well then, it's punishiment time.\n Hope you're ready to be flat on your back for a good while....! \\H\""
       tx["tx4"] = "#{speaker} approaches quietly!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
@@ -99,7 +99,7 @@ when "Hungry"
     case $msg.talk_step
     when 1 # 空腹１人目
       tx["tx1"] = "\"....Gotta say, #{myname} can't bear this anymore.\n I was waiting to see if you'd realize by now, but it doesn't seem like it.\""
-      tx["tx2"] = "\"It'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
+      tx["tx2"] = "\"You'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
       tx["tx3"] = "\"Well then, it's punishiment time.\n Hope you're ready to be flat on your back for a good while....! \\H\""
       tx["tx4"] = "#{speaker}'s eyes have an eerie shine to them!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
@@ -118,7 +118,7 @@ when "Hungry"
     case $msg.talk_step
     when 1 # 空腹１人目
       tx["tx1"] = "\"....Gotta say, #{myname} can't bear this anymore.\n I was waiting to see if you'd realize by now, but it doesn't seem like it.\""
-      tx["tx2"] = "\"It'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
+      tx["tx2"] = "\"You'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
       tx["tx3"] = "\"Well then, it's punishiment time.\n Hope you're ready to be flat on your back for a good while....! \\H\""
       tx["tx4"] = "#{speaker} is going mad from the hunger!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
