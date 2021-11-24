@@ -80,13 +80,13 @@ when "Hungry"
     case $msg.talk_step
     when 1 # 空腹１人目
       tx["tx1"] = "\"....Gotta say, #{myname} can't bear this anymore.\n I was waiting to see if you'd realize by now, but it doesn't seem like it.\""
-      tx["tx2"] = "\"It'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
+      tx["tx2"] = "\"You'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
       tx["tx3"] = "\"Well then, it's punishiment time.\n Hope you're ready to be flat on your back for a good while....! \\H\""
       tx["tx4"] = "#{speaker} approaches quietly!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
       tx["tx1"] = "\"Hold on a sec, let me chip in too.\n You ain't the only one that's hungry.\""
-      tx["tx2"] = "\"How about I just stuff myself for this occasion....?\n Nfufufu....\\H\""
+      tx["tx2"] = "\"How about I stuff myself for this occasion....?\n Nfufufu....\\H\""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
       tx["tx1"] = "\"Hey now....\n You're gonna make me all dried up like this.\n All 'cause my share won't be as much....\\H\""
@@ -99,13 +99,13 @@ when "Hungry"
     case $msg.talk_step
     when 1 # 空腹１人目
       tx["tx1"] = "\"....Gotta say, #{myname} can't bear this anymore.\n I was waiting to see if you'd realize by now, but it doesn't seem like it.\""
-      tx["tx2"] = "\"It'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
+      tx["tx2"] = "\"You'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
       tx["tx3"] = "\"Well then, it's punishiment time.\n Hope you're ready to be flat on your back for a good while....! \\H\""
       tx["tx4"] = "#{speaker}'s eyes have an eerie shine to them!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
     when 2 # 空腹２人目
       tx["tx1"] = "\"Hold on a sec, let me chip in too.\n You ain't the only one that's hungry.\""
-      tx["tx2"] = "\"How about I just stuff myself for this occasion....?\n Nfufufu....\\H\""
+      tx["tx2"] = "\"How about I stuff myself for this occasion....?\n Nfufufu....\\H\""
     #------------------------------------------------------------------------------------------------------------------
     when 3 # 空腹３人目
       tx["tx1"] = "\"Hey now....\n You're gonna make me all dried up like this.\n All 'cause my share won't be as much....\\H\""
@@ -118,7 +118,7 @@ when "Hungry"
     case $msg.talk_step
     when 1 # 空腹１人目
       tx["tx1"] = "\"....Gotta say, #{myname} can't bear this anymore.\n I was waiting to see if you'd realize by now, but it doesn't seem like it.\""
-      tx["tx2"] = "\"It'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
+      tx["tx2"] = "\"You'd be thoughtless to now ask what I mean.\n Oh well, I'll go easy on you.\""
       tx["tx3"] = "\"Well then, it's punishiment time.\n Hope you're ready to be flat on your back for a good while....! \\H\""
       tx["tx4"] = "#{speaker} is going mad from the hunger!\n#{master} has nowhere to escape....!" + "TALKTEXT"
     #------------------------------------------------------------------------------------------------------------------
