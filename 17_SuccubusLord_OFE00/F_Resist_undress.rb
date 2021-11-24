@@ -59,11 +59,11 @@ when "Succubus strips the partner."
 when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"#{giggle_s} You're going to take it off for me?\""
+    tx["tx1"] = "\"#{giggle_s}, you're going to take it off for me?\""
   #  tx["tx1"] = "" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
-    tx["tx1"] = "\"#{giggle_s} Thanks.\n Then let's carry on\\H\""
+    tx["tx1"] = "\"#{giggle_s}, thanks.\n Then let's carry on\\H\""
   #  tx["tx1"] = "" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
@@ -78,8 +78,8 @@ when "Partner strips the succubus."
 #■パートナーが自ら脱衣する
 #====================================================================================================================
 when "Partner undresses themself."
-  tx["tx1"] = "\"#{giggle_s} You couldn't wait?\""
-  tx["tx1"] = "\"#{giggle_s} I've been waiting\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+  tx["tx1"] = "\"#{giggle_s}, you couldn't wait?\""
+  tx["tx1"] = "\"#{giggle_s}, I've been waiting\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -168,11 +168,11 @@ when "Succubus strips the partner."
 when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"#{giggle_s} You're going to take it off for me?\""
+    tx["tx1"] = "\"#{giggle_s}, you're going to take it off for me?\""
   #  tx["tx1"] = "" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
-    tx["tx1"] = "\"#{giggle_s} Thanks.\n Then let's carry on\\H\""
+    tx["tx1"] = "\"#{giggle_s}, thanks.\n Then let's carry on\\H\""
   #  tx["tx1"] = "" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
@@ -187,8 +187,8 @@ when "Partner strips the succubus."
 #■パートナーが自ら脱衣する
 #====================================================================================================================
 when "Partner undresses themself."
-  tx["tx1"] = "\"#{giggle_s} You couldn't wait?\""
-  tx["tx1"] = "\"#{giggle_s} I've been waiting\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+  tx["tx1"] = "\"#{giggle_s}, you couldn't wait?\""
+  tx["tx1"] = "\"#{giggle_s}, I've been waiting\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -248,11 +248,11 @@ when "Succubus strips the partner."
 when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"#{giggle_s} You're going to take it off for me?\""
+    tx["tx1"] = "\"#{giggle_s}, you're going to take it off for me?\""
   #  tx["tx1"] = "" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
-    tx["tx1"] = "\"#{giggle_s} Thanks.\n Then let's carry on\\H\""
+    tx["tx1"] = "\"#{giggle_s}, thanks.\n Then let's carry on\\H\""
   #  tx["tx1"] = "" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
@@ -267,8 +267,8 @@ when "Partner strips the succubus."
 #■パートナーが自ら脱衣する
 #====================================================================================================================
 when "Partner undresses themself."
-  tx["tx1"] = "\"#{giggle_s} You couldn't wait?\""
-  tx["tx1"] = "\"#{giggle_s} I've been waiting\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+  tx["tx1"] = "\"#{giggle_s}, you couldn't wait?\""
+  tx["tx1"] = "\"#{giggle_s}, I've been waiting\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   #格納
   tx["md"] = "3"
@@ -328,11 +328,11 @@ when "Succubus strips the partner."
 when "Partner strips the succubus."
   case $msg.talk_step
   when 1 #脱衣開始
-    tx["tx1"] = "\"#{giggle_s} You're going to take it off for me?\""
+    tx["tx1"] = "\"#{giggle_s}, you're going to take it off for me?\""
   #  tx["tx1"] = "" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
-    tx["tx1"] = "\"#{giggle_s} Thanks.\n Then let's carry on\\H\""
+    tx["tx1"] = "\"#{giggle_s}, thanks.\n Then let's carry on\\H\""
   #  tx["tx1"] = "" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
@@ -347,8 +347,8 @@ when "Partner strips the succubus."
 #■パートナーが自ら脱衣する
 #====================================================================================================================
 when "Partner undresses themself."
-  tx["tx1"] = "\"#{giggle_s} You couldn't wait?\""
-  tx["tx1"] = "\"#{giggle_s} I've been waiting\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
+  tx["tx1"] = "\"#{giggle_s}, you couldn't wait?\""
+  tx["tx1"] = "\"#{giggle_s}, I've been waiting\\H\"" if $msg.t_enemy.nude? #夢魔が先に脱いでいた
   #---------------------------------------------------
   #格納
   tx["md"] = "3"
