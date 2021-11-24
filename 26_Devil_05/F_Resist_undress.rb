@@ -65,7 +65,7 @@ when "Partner strips the succubus."
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"Hehe, gee, thanks.\n I better pay back for this with my body\\H\""
-    tx["tx1"] = "\"Is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"Here, is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
     tx["tx1"] = "\"Hehe, just wait a little.\n Let's have fun with each other first.\""
@@ -175,7 +175,7 @@ when "Partner strips the succubus."
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"Hehe, thanks.\n I better pay back for this with my body\\H\""
-    tx["tx1"] = "\"Is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"Here, is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
     tx["tx1"] = "\"Hehe, just wait a little.\n Let's have fun with each other first.\""
@@ -256,7 +256,7 @@ when "Partner strips the succubus."
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"Hehe, thanks.\n I better pay back for this with my body\\H\""
-    tx["tx1"] = "\"Is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"Here, is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
     tx["tx1"] = "\"Hehe, just wait a little.\n Let's have fun with each other first.\""
@@ -337,7 +337,7 @@ when "Partner strips the succubus."
   #---------------------------------------------------
   when 2 #夢魔を脱衣させた
     tx["tx1"] = "\"Hehe, thanks.\n I better pay back for this with my body\\H\""
-    tx["tx1"] = "\"Is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
+    tx["tx1"] = "\"Here, is this enough for you?\n Then let's carry on\\H\"" if $msg.t_target.nude? #アクターが先に脱いでいた
   #---------------------------------------------------
   when 3 #夢魔に抵抗された
     tx["tx1"] = "\"Hehe, just wait a little.\n Let's have fun with each other first.\""
