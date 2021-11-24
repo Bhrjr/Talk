@@ -1,6 +1,6 @@
 =begin
 #######################################################################################################################
- ●『サキュバスロード（桃）』トーク口上
+ ●『サキュバスロード（橙）』トーク口上
  ●性格：好色
  version 1.0.0
 #######################################################################################################################
@@ -12,8 +12,8 @@
 #######################################################################################################################
 ######################################★トーク：主人公への追撃を行う口上群#############################################
 #######################################################################################################################
-class MsgSuccubuslord_B < MsgBase
- def msg_talk_00
+class MsgSuccubuslord_A < MsgBase
+ def msg_talk_07
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -329,7 +329,7 @@ when "Caress - intercourse"
     #▼MAX
     when 3
       tx["tx1"] = "\"#{giggle_s}, I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n Time to tease you while I've swallowed you up....\\H\"" 
-      tx["tx1"] = "\"There's no use in resisting it, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"There's no point in fighting back, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aha\\H Quivering inside me....\\H\n I wonder what'll happen if I squeeze you out,\n bite you gently, and playfully pick on you....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"You're making a nice moan\\H Did getting teased inside me feel good?\n Going even far as to relax....it was so easy to pin you down\\H\n #{giggle_s}, like this, I'm going to squeeze it all out with my privates....\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
@@ -509,8 +509,8 @@ end #class
 #######################################################################################################################
 ######################################★トーク：主人公への追撃を行う口上群#############################################
 #######################################################################################################################
-class MsgSuccubuslord_B < MsgBase 
- def msg_bedin_talk_00
+class MsgSuccubuslord_A < MsgBase 
+ def msg_bedin_talk_07
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -838,7 +838,7 @@ when "Caress - intercourse"
     #▼MAX
     when 3
       tx["tx1"] = "\"#{giggle_s}, I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n Time to tease you while I've swallowed you up....\\H\"" 
-      tx["tx1"] = "\"There's no use in resisting it, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"There's no point in fighting back, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aha\\H Quivering inside me....\\H\n I wonder what'll happen if I squeeze you out,\n bite you gently, and playfully pick on you....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"You're making a nice moan\\H Did getting teased inside me feel good?\n Going even far as to relax....it was so easy to pin you down\\H\n #{giggle_s}, like this, I'm going to squeeze it all out with my privates....\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
@@ -1273,7 +1273,7 @@ when "Caress - intercourse"
     #▼MAX
     when 3
       tx["tx1"] = "\"#{giggle_s}, I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n Time to tease you while I've swallowed you up....\\H\"" 
-      tx["tx1"] = "\"There's no use in resisting it, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"There's no point in fighting back, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aha\\H Quivering inside me....\\H\n I wonder what'll happen if I squeeze you out,\n bite you gently, and playfully pick on you....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"You're making a nice moan\\H Did getting teased inside me feel good?\n Going even far as to relax....it was so easy to pin you down\\H\n #{giggle_s}, like this, I'm going to squeeze it all out with my privates....\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
@@ -1707,7 +1707,7 @@ when "Caress - intercourse"
     #▼MAX
     when 3
       tx["tx1"] = "\"#{giggle_s}, I'm fully aware that shaking my hips makes you squirm inside me, #{target}\\H\n Time to tease you while I've swallowed you up....\\H\"" 
-      tx["tx1"] = "\"There's no use in resisting it, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"There's no point in fighting back, since I'm not letting you go.\n As for your endurance, I'm going to envelop it, lick it,\n and dissolve it all inside me, #{target}\\H\""  if $game_variables[17] > 50 #パターンB
       tx["tx1"] = "\"Aha\\H Quivering inside me....\\H\n I wonder what'll happen if I squeeze you out,\n bite you gently, and playfully pick on you....\\H\""  if $msg.t_target.crisis? == true
       tx["tx1"] = "\"You're making a nice moan\\H Did getting teased inside me feel good?\n Going even far as to relax....it was so easy to pin you down\\H\n #{giggle_s}, like this, I'm going to squeeze it all out with my privates....\\H\""  if $game_actors[101].critical == true #レベル２⇒MAX上昇時
     #▼Lv2
