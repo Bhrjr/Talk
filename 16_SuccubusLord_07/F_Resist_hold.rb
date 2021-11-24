@@ -289,7 +289,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"You'll hurt my feelings by refusing me like that....\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Mmmhh....\\H\n #{giggle_s}, be sure to get a full taste of it....\\H\""
-      tx["tx1"] = "\"Resisting it won't do anything....\n I'll be training you to\n accept the pleasure\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Fighting back it won't do anything....\n I'll be training you to\n accept the pleasure\\H\"" if $msg.t_target.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
         tx["tx1"] = "\"#{giggle_s}, talk about being greedy, #{target}\\H\n I don't dislike such girls....\\H\""
@@ -311,7 +311,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"#{giggle_s}, you've got it....\n Getting ahold of you will even let us share the happiness...\\H\""
       tx["md"] = "3"
       if $msg.t_target.crisis? == true
-        tx["tx1"] = "\"#{giggle_s}, resisting so frantically....\n even when you're staying true to the burning sensation of your body....\\H\""
+        tx["tx1"] = "\"#{giggle_s}, fighting back so frantically....\n even when you're staying true to the burning sensation of your body....\\H\""
         tx["md"] = "0"
       end
     when 3 #ホールドレジスト失敗
@@ -715,7 +715,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"You'll hurt my feelings by refusing me like that....\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Mmmhh....\\H\n #{giggle_s}, be sure to get a full taste of it....\\H\""
-      tx["tx1"] = "\"Resisting it won't do anything....\n I'll be training you to\n accept the pleasure\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Fighting back it won't do anything....\n I'll be training you to\n accept the pleasure\\H\"" if $msg.t_target.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
         tx["tx1"] = "\"#{giggle_s}, talk about being greedy, #{target}\\H\n I don't dislike such girls....\\H\""
@@ -737,7 +737,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"#{giggle_s}, you've got it....\n Getting ahold of you will even let us share the happiness...\\H\""
       tx["md"] = "3"
       if $msg.t_target.crisis? == true
-        tx["tx1"] = "\"#{giggle_s}, resisting so frantically....\n even when you're staying true to the burning sensation of your body....\\H\""
+        tx["tx1"] = "\"#{giggle_s}, fighting back so frantically....\n even when you're staying true to the burning sensation of your body....\\H\""
         tx["md"] = "0"
       end
     when 3 #ホールドレジスト失敗
@@ -1120,7 +1120,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"You'll hurt my feelings by refusing me like that....\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Mmmhh....\\H\n #{giggle_s}, be sure to get a full taste of it....\\H\""
-      tx["tx1"] = "\"Resisting it won't do anything....\n I'll be training you to\n accept the pleasure\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Fighting back it won't do anything....\n I'll be training you to\n accept the pleasure\\H\"" if $msg.t_target.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
         tx["tx1"] = "\"#{giggle_s}, talk about being greedy, #{target}\\H\n I don't dislike such girls....\\H\""
@@ -1142,7 +1142,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"#{giggle_s}, you've got it....\n Getting ahold of you will even let us share the happiness...\\H\""
       tx["md"] = "3"
       if $msg.t_target.crisis? == true
-        tx["tx1"] = "\"#{giggle_s}, resisting so frantically....\n even when you're staying true to the burning sensation of your body....\\H\""
+        tx["tx1"] = "\"#{giggle_s}, fighting back so frantically....\n even when you're staying true to the burning sensation of your body....\\H\""
         tx["md"] = "0"
       end
     when 3 #ホールドレジスト失敗
@@ -1524,7 +1524,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"You'll hurt my feelings by refusing me like that....\""
     when 3 #ホールドレジスト失敗
       tx["tx1"] = "\"Mmmhh....\\H\n #{giggle_s}, be sure to get a full taste of it....\\H\""
-      tx["tx1"] = "\"Resisting it won't do anything....\n I'll be training you to\n accept the pleasure\\H\"" if $msg.t_target.crisis? == true
+      tx["tx1"] = "\"Fighting back it won't do anything....\n I'll be training you to\n accept the pleasure\\H\"" if $msg.t_target.crisis? == true
       #自ら受け入れた場合
       if $game_switches[89] == true
         tx["tx1"] = "\"#{giggle_s}, talk about being greedy, #{target}\\H\n I don't dislike such girls....\\H\""
@@ -1546,7 +1546,7 @@ elsif $msg.tag == "Succubus binds the partner."
       tx["tx1"] = "\"#{giggle_s}, you've got it....\n Getting ahold of you will even let us share the happiness...\\H\""
       tx["md"] = "3"
       if $msg.t_target.crisis? == true
-        tx["tx1"] = "\"#{giggle_s}, resisting so frantically....\n even when you're staying true to the burning sensation of your body....\\H\""
+        tx["tx1"] = "\"#{giggle_s}, fighting back so frantically....\n even when you're staying true to the burning sensation of your body....\\H\""
         tx["md"] = "0"
       end
     when 3 #ホールドレジスト失敗
