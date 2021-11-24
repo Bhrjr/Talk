@@ -62,7 +62,7 @@ when "Enemy solo"
   ms.push(tx)
 #主人公が既にクライシス、その主人公から攻めを受け夢魔もクライシス
 when "Both foes"
-  tx["tx1"] = "\"#{giggle}\n Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
+  tx["tx1"] = "\"#{giggle}\n aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #夢魔がホールド等のリバウンドで自らクライシス
@@ -123,7 +123,7 @@ when "User solo"
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle}, Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
+  tx["tx1"] = "\"#{giggle}, aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
@@ -198,7 +198,7 @@ when "User solo"
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle}, Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
+  tx["tx1"] = "\"#{giggle}, aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
@@ -272,7 +272,7 @@ when "User solo"
   ms.push(tx)
 #夢魔が既にクライシス、その夢魔から攻めを受け主人公もクライシス
 when "Both users"
-  tx["tx1"] = "\"#{giggle}, Aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
+  tx["tx1"] = "\"#{giggle}, aren't you at the threshold too, #{target}?\n Don't you think it'd be nice if the two of us can finish together....? \\H\""
   #格納
   ms.push(tx)
 #主人公がホールド等のリバウンドで自らクライシス
