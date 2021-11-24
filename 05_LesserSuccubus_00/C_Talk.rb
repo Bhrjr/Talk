@@ -251,7 +251,7 @@ when "Caress - normal"
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n Aren't you gonna resist me?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle}\n Aren't you gonna fight back?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle}\n I can see right through #{target}'s weak spots\\H\n I'm gonna keep going\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
@@ -727,7 +727,7 @@ when "Caress - normal"
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n Aren't you gonna resist me?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle}\n Aren't you gonna fight back?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle}\n I can see right through #{target}'s weak spots\\H\n I'm gonna keep going\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
@@ -1129,7 +1129,7 @@ when "Caress - normal"
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n Aren't you gonna resist me?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle}\n Aren't you gonna fight back?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle}\n I can see right through #{target}'s weak spots\\H\n I'm gonna keep going\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
@@ -1530,7 +1530,7 @@ when "Caress - normal"
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n Aren't you gonna resist me?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle}\n Aren't you gonna fight back?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle}\n I can see right through #{target}'s weak spots\\H\n I'm gonna keep going\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
