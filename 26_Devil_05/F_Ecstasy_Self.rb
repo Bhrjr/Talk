@@ -48,7 +48,7 @@ when 10 #余韻
   tx["tx2"] = "\"You're something else, #{target}....\\H\n Say, can you still keep going?\n #{myname}'ll do the work next time....understood? \\H\""
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"C....Crud....\\H\n How did #{myname} wound up on the receiving end....\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better brace yourself when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better be ready when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
@@ -166,7 +166,7 @@ when 10 #余韻
   tx["tx2"] = "\"But the night isn't over yet, you hear?\n Look forward to when\n I get even with you, understood....? \\H」"
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"C....Crud....\\H\n How did #{myname} wound up on the receiving end....\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better brace yourself when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better be ready when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
@@ -255,7 +255,7 @@ when 10 #余韻
   tx["tx2"] = "\"But the night isn't over yet, you hear?\n Look forward to when\n I get even with you, understood....? \\H」"
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"C....Crud....\\H\n How did #{myname} wound up on the receiving end....\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better brace yourself when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better be ready when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
@@ -343,7 +343,7 @@ when 10 #余韻
   tx["tx2"] = "\"But the night isn't over yet, you hear?\n Look forward to when\n I get even with you, understood....? \\H」"
 #  tx["tx1"] = "" if $msg.t_enemy.ecstasy_emotion == "怒" #パターンB
   tx["tx1"] = "\"C....Crud....\\H\n How did #{myname} wound up on the receiving end....\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
-  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better brace yourself when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
+  tx["tx2"] = "\"I'll have you pay for that with my body....\\H\n You better be ready when #{myname} wake up.\n ....Phooey\\H\"" if $msg.t_enemy.ecstasy_count.size <= 1 #絶頂初回
 end
 #格納
 ms.push(tx)
