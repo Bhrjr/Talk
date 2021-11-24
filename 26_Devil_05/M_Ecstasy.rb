@@ -78,7 +78,7 @@ when 2..4 #連携追撃
 when 9 #とどめ
   tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\""
   tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Well, that's what happens when someone takes on me.\n Now time to make you cum in pleasure\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Well, that's what happens when someone takes on me.\n Then time to make you cum in bliss\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\""
@@ -376,7 +376,7 @@ when 2..4 #連携追撃
 when 9 #とどめ
   tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\""
   tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Well, that's what happens when someone takes on me.\n Now time to make you cum in pleasure\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Well, that's what happens when someone takes on me.\n Then time to make you cum in bliss\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\""
@@ -646,7 +646,7 @@ when 2..4 #連携追撃
 when 9 #とどめ
   tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\""
   tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Well, that's what happens when someone takes on me.\n Now time to make you cum in pleasure\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Well, that's what happens when someone takes on me.\n Then time to make you cum in bliss\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\""
@@ -915,7 +915,7 @@ when 2..4 #連携追撃
 when 9 #とどめ
   tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\""
   tx["tx1"] = "\"....Well, maybe I shouldn't be too mean to you♪\n Then just squirt it out in bliss♪\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Well, that's what happens when someone takes on me.\n Now time to make you cum in pleasure\\H」" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
+  tx["tx1"] = "\"Well, that's what happens when someone takes on me.\n Then time to make you cum in bliss\\H\"" if $msg.t_target.ecstasy_count.size <= 0 #絶頂初回
 #----------------------------------------------------------------------------------------------------------------------
 when 10 #余韻
   tx["tx1"] = "\"Hehe, heh....\\H\n You've been saving up quite a lot, eh?\n Making me all pure-white like this....\\H\""
