@@ -133,10 +133,10 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(非ホールド時はホールド解除と同じstep)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"You get some sleep.\n #{myname}'ll see to it that\n #{myname} keep you company, #{partner}\\H\""
@@ -439,10 +439,10 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(非ホールド時はホールド解除と同じstep)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"Ah....my bad, I overdid it.\n ....And thanks for waiting, #{partner}.\n Now it's your turn to be left moaning\\H\""
@@ -717,10 +717,10 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(非ホールド時はホールド解除と同じstep)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"Ah....my bad, I overdid it.\n ....And thanks for waiting, #{partner}.\n Now it's your turn to be left moaning\\H\""
@@ -994,10 +994,10 @@ when 11..14 #連携余韻
   end
 #----------------------------------------------------------------------------------------------------------------------
 when 20 #続行(非ホールド時はホールド解除と同じstep)
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\""
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you're able to get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\""
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"....Have a break for now.\n I'll face you properly\n when you can get up again\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"Ah....my bad, I overdid it.\n ....And thanks for waiting, #{partner}.\n Now it's your turn to be left moaning\\H\""
