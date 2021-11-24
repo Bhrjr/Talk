@@ -136,8 +136,8 @@ when 11..14 #連携余韻
 when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you cum any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you cum any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"#{giggle_s}, guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
@@ -444,8 +444,8 @@ when 11..14 #連携余韻
 when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you cum any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you cum any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"#{giggle_s}, guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
@@ -724,8 +724,8 @@ when 11..14 #連携余韻
 when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you cum any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you cum any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"#{giggle_s}, guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
@@ -1003,8 +1003,8 @@ when 11..14 #連携余韻
 when 20 #続行(非ホールド時はホールド解除と同じstep)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you cum any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you cum any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
 #----------------------------------------------------------------------------------------------------------------------
 when 30 #ゲームオーバー(失神)
   tx["tx1"] = "\"#{giggle_s}, guess you're at the end of your rope.\n Don't worry about it and take a nice, long rest\\H\""
