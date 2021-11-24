@@ -180,7 +180,7 @@ elsif $msg.tag == "Succubus binds the partner."
   when 3 #ホールドレジスト失敗
     tx["tx1"] = "\"Gotcha♪\""
     #自ら受け入れた場合
-    tx["tx1"] = "\"You're not resisting at all!\n Does that mean you were looking forward to it? \\H\"" if $game_switches[89] == true
+    tx["tx1"] = "\"You're not fighting back at all!\n Does that mean you were looking forward to it? \\H\"" if $game_switches[89] == true
   end
   #格納
   ms.push(tx)
@@ -524,7 +524,7 @@ elsif $msg.tag == "Succubus binds the partner."
   when 3 #ホールドレジスト失敗
     tx["tx1"] = "\"Gotcha♪\""
     #自ら受け入れた場合
-    tx["tx1"] = "\"You're not resisting at all!\n Does that mean you were looking forward to it? \\H\"" if $game_switches[89] == true
+    tx["tx1"] = "\"You're not fighting back at all!\n Does that mean you were looking forward to it? \\H\"" if $game_switches[89] == true
   end
   #格納
   ms.push(tx)
@@ -847,7 +847,7 @@ elsif $msg.tag == "Succubus binds the partner."
   when 3 #ホールドレジスト失敗
     tx["tx1"] = "\"Gotcha♪\""
     #自ら受け入れた場合
-    tx["tx1"] = "\"You're not resisting at all!\n Does that mean you were looking forward to it? \\H\"" if $game_switches[89] == true
+    tx["tx1"] = "\"You're not fighting back at all!\n Does that mean you were looking forward to it? \\H\"" if $game_switches[89] == true
   end
   #格納
   ms.push(tx)
@@ -1169,7 +1169,7 @@ elsif $msg.tag == "Succubus binds the partner."
   when 3 #ホールドレジスト失敗
     tx["tx1"] = "\"Gotcha♪\""
     #自ら受け入れた場合
-    tx["tx1"] = "\"You're not resisting at all!\n Does that mean you were looking forward to it? \\H\"" if $game_switches[89] == true
+    tx["tx1"] = "\"You're not fighting back at all!\n Does that mean you were looking forward to it? \\H\"" if $game_switches[89] == true
   end
   #格納
   ms.push(tx)
