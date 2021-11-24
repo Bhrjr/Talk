@@ -114,7 +114,7 @@ when "Rejected"
     tx["md"] = "30"
   when "Succubus running berserk"
     # 夢魔が暴走中の場合
-    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything....#{giggle}\""
+    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything.... #{giggle}\""
     #----------------------------
     tx["md"] = "30"
   when "Excess moves"
@@ -306,7 +306,7 @@ when "Caress - intercourse"
     when 2
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\"" 
       tx["tx1"] = "\"#{pleasure_s}\n I'm sure you can see where we're connected....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}....#{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
+      tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}.... #{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
     #▼Lv1
     when 1
       tx["tx1"] = "\"#{giggle}\n I like this position.\n After all, I can get a full view of your cute face, #{target}....\\H\"" 
@@ -460,7 +460,7 @@ when "Mingle"
       tx["tx1"] = "\"Oh dear....\nnot a fan of that stuff?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{pleasure_s}\n I'm asking you here....#{giggle}\""
+      tx["tx1"] = "\"#{pleasure_s}\n I'm asking you here.... #{giggle}\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -478,7 +478,7 @@ end #class
 ######################################★トーク：主人公への追撃を行う口上群#############################################
 #######################################################################################################################
 class MsgSuccubus_A < MsgBase 
- def msg_bedin_talk_07
+ def msg_bedin_talk_07_07
 #==================================================================================================================
 # ☆事前設定☆
                           #空ハッシュ挿入
@@ -591,7 +591,7 @@ when "Rejected"
     tx["md"] = "30"
   when "Succubus running berserk"
     # 夢魔が暴走中の場合
-    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything....#{giggle}\""
+    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything.... #{giggle}\""
     #----------------------------
     tx["md"] = "30"
   when "Excess moves"
@@ -783,7 +783,7 @@ when "Caress - intercourse"
     when 2
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\"" 
       tx["tx1"] = "\"#{pleasure_s}\n I'm sure you can see where we're connected....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}....#{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
+      tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}.... #{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
     #▼Lv1
     when 1
       tx["tx1"] = "\"#{giggle}\n I like this position.\n After all, I can get a full view of your cute face, #{target}....\\H\"" 
@@ -937,7 +937,7 @@ when "Mingle"
       tx["tx1"] = "\"Ugh, why?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{pleasure_s}\n I'm asking you here....#{giggle}\""
+      tx["tx1"] = "\"#{pleasure_s}\n I'm asking you here.... #{giggle}\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -994,7 +994,7 @@ when "Rejected"
     tx["md"] = "30"
   when "Succubus running berserk"
     # 夢魔が暴走中の場合
-    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything....#{giggle}\""
+    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything.... #{giggle}\""
     #----------------------------
     tx["md"] = "30"
   when "Excess moves"
@@ -1186,7 +1186,7 @@ when "Caress - intercourse"
     when 2
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\"" 
       tx["tx1"] = "\"#{pleasure_s}\n I'm sure you can see where we're connected....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}....#{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
+      tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}.... #{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
     #▼Lv1
     when 1
       tx["tx1"] = "\"#{giggle}\n I like this position.\n After all, I can get a full view of your cute face, #{target}....\\H\"" 
@@ -1340,7 +1340,7 @@ when "Mingle"
       tx["tx1"] = "\"Ugh, why?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{pleasure_s}\n I'm asking you here....#{giggle}\""
+      tx["tx1"] = "\"#{pleasure_s}\n I'm asking you here.... #{giggle}\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
@@ -1396,7 +1396,7 @@ when "Rejected"
     tx["md"] = "30"
   when "Succubus running berserk"
     # 夢魔が暴走中の場合
-    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything....#{giggle}\""
+    tx["tx1"] = "\"You don't hafta do anything, #{target}....\n #{myname}'ll take care of everything.... #{giggle}\""
     #----------------------------
     tx["md"] = "30"
   when "Excess moves"
@@ -1588,7 +1588,7 @@ when "Caress - intercourse"
     when 2
       tx["tx1"] = "\"No need to fight it\\H\n Keep tasting....my insides....\\H\"" 
       tx["tx1"] = "\"#{pleasure_s}\n I'm sure you can see where we're connected....\\H\""  if $game_variables[17] > 50 #パターンB
-      tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}....#{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
+      tx["tx1"] = "\"Aaaah....it's going all the way in....\\H\n You're great, #{target}.... #{pleasure_s}\""  if $game_actors[101].critical == true #レベル１⇒２上昇時
     #▼Lv1
     when 1
       tx["tx1"] = "\"#{giggle}\n I like this position.\n After all, I can get a full view of your cute face, #{target}....\\H\"" 
@@ -1672,7 +1672,7 @@ when "Leer"
     #▼陰核を弄る
     when "Target: Clitoris","Target: Anus"
       tx["tx1"] = "\"#{pleasure_s}\n Since this spot's more intimate, you better be more careful with it....\\H\n #{pleasure_l}\"" 
-      tx["tx1"] = "\"*Giggle....you seeing this?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
+      tx["tx1"] = "\"*giggle*....you seeing this?\n I know this arouses you too\\H\n #{pleasure_l}\""  if $game_variables[17] > 50 #パターンB
     end
     #----------------------------------------------------------------------------------------------------------------------
   when 78 #レジスト成功(視姦を中断した場合)
@@ -1742,7 +1742,7 @@ when "Mingle"
       tx["tx1"] = "\"Ugh, why?\""
     when 2 #レジスト失敗(交合を了承した場合)
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"#{pleasure_s}\n I'm asking you here....#{giggle}\""
+      tx["tx1"] = "\"#{pleasure_s}\n I'm asking you here.... #{giggle}\""
     end
   end
   #----------------------------------------------------------------------------------------------------------------------
