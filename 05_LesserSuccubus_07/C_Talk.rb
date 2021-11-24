@@ -250,8 +250,8 @@ when "Caress - normal"
     when 20,10
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
-        tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\""
-        tx["tx1"] = "\"#{giggle}\n Aren't you gonna resist me?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\"" 
+        tx["tx1"] = "\"#{giggle}\n Aren't you gonna fight back?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle}\n I can see right through #{target}'s weak spots\\H\n I'm gonna keep going\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
@@ -289,7 +289,7 @@ when "Caress - intercourse"
   when 1 #愛撫開始
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Hey, #{target}....\n Can you leave everything to me for a bit?\""
-    tx["tx2"] = "\"Lemme make you feel good\n with my body....\\H\""  
+    tx["tx2"] = "\"Lemme make you feel good\n with my body....\\H\"" 
   when 77 #レジスト成功(愛撫を拒んだ場合)
     #----------------------------------------------------------------------------------------------------------------------
     tx["tx1"] = "\"Oh, you big meanie....\""
@@ -440,7 +440,7 @@ when "Mingle"
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Hey, #{target}....\\H\n I'm pretty confindent in my boobs\\H\""
-      tx["tx2"] = "\"Wanna try fucking my boobs?\n Here you go\\H\"" 
+      tx["tx2"] = "\"Wanna try fucking my boobs?\n Here you go\\H\""
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
       tx["tx1"] = "\"Oh come on....\n You don't like it?\""
@@ -452,7 +452,7 @@ when "Mingle"
     case $msg.talk_step
     when 1 #ホールド開始
       #----------------------------------------------------------------------------------------------------------------------
-      tx["tx1"] = "\"Hey, #{target}....\\H\n I have a request for you....\\H\""
+      tx["tx1"] = "\"Hey, #{target}....\\H\n #{myname} have a request for you....\\H\""
       tx["tx2"] = "\"Lick my pussy for me....\\H\n You can do that, right....? \\H\"" 
     when 77 #レジスト成功(交合を拒んだ場合)
       #----------------------------------------------------------------------------------------------------------------------
@@ -727,7 +727,7 @@ when "Caress - normal"
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n Aren't you gonna resist me?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle}\n Aren't you gonna fight back?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle}\n I can see right through #{target}'s weak spots\\H\n I'm gonna keep going\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
@@ -1129,7 +1129,7 @@ when "Caress - normal"
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n Aren't you gonna resist me?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle}\n Aren't you gonna fight back?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle}\n I can see right through #{target}'s weak spots\\H\n I'm gonna keep going\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
@@ -1530,7 +1530,7 @@ when "Caress - normal"
       #▼弱点を突かれた(SSを受けた)
       if $game_actors[101].critical == true
         tx["tx1"] = "\"#{giggle} Did that hit the spot just now?\n Nfufu....so cute\\H\"" 
-        tx["tx1"] = "\"#{giggle}\n Aren't you gonna resist me?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
+        tx["tx1"] = "\"#{giggle}\n Aren't you gonna fight back?\n Then I'll keep going\\H\""  if $game_variables[17] > 50
         tx["tx1"] = "\"#{giggle}\n I can see right through #{target}'s weak spots\\H\n I'm gonna keep going\\H\""  if $msg.chain_attack == true #同じ部位で連撃中
       #▼通常
       else
@@ -1751,9 +1751,9 @@ end #msg.tag
 
 
 
- 
- 
- #----------------------------------------------------------------------------------------------------------------------
+
+
+#----------------------------------------------------------------------------------------------------------------------
 end
 end #def
 end #class
