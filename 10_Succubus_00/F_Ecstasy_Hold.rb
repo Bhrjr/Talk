@@ -291,8 +291,8 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -334,8 +334,8 @@ when 20 #続行(ホールド解除)
 when 21 #続行(ホールド継続)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -713,8 +713,8 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -756,8 +756,8 @@ when 20 #続行(ホールド解除)
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1116,8 +1116,8 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1159,8 +1159,8 @@ when 20 #続行(ホールド解除)
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1518,8 +1518,8 @@ when 11..14 #連携余韻
 when 20 #続行(ホールド解除)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
@@ -1561,8 +1561,8 @@ when 20 #続行(ホールド解除)
 when 21 #続行(ホールド継続)
   tx["tx1"] = "\"Ufufu, looks like you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\""
   tx["tx1"] = "\"....Ufufu, your face tells me you haven't had enough\\H\n That's fine, I'll make you finish any number of times....\\H\"" if $msg.t_enemy.ecstasy_emotion == "Angry" #パターンB
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
-  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep....#{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $game_switches[97] == true #連携が発生していた場合
+  tx["tx1"] = "\"Then what say we switch places and do it again\\H\n It's still too early to go to sleep.... #{giggle}\"" if $msg.t_enemy.ecstasy_emotion == "Angry" and $game_switches[97] == true #連携が発生していた場合パターンB
   #▼シェルマッチ
   if $msg.t_enemy.shellmatch?
   #  tx["tx1"] = ""
